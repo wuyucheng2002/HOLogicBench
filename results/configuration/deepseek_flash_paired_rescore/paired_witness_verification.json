@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "bert_cross_device_tolerance": 0.0001,
+  "samples": [
+    {
+      "key": "finance/sample3/22",
+      "bert_witness_difference": 2.9763677744543138e-05,
+      "independent_bert_max": 0.7497918605804443,
+      "roscoe_witness_difference": 5.960464477539063e-08
+    },
+    {
+      "key": "finance/sample1/107",
+      "bert_witness_difference": 5.757987708854273e-08,
+      "independent_bert_max": null,
+      "roscoe_witness_difference": 5.960464477539063e-08
+    },
+    {
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_01",
+      "bert_witness_difference": 3.741479603913689e-08,
+      "independent_bert_max": null,
+      "roscoe_witness_difference": 0.0
+    }
+  ]
+}

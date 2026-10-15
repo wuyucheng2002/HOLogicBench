@@ -1,0 +1,42 @@
+{
+  "archive_relic_with_rescue_exceptions": {
+    "obligations": 489,
+    "references": 489
+  },
+  "aviation_security_with_authorizations": {
+    "obligations": 324,
+    "references": 324
+  },
+  "cyber_intrusion_with_authorizations": {
+    "obligations": 183,
+    "references": 183
+  },
+  "dream_archive_with_exceptions": {
+    "obligations": 259,
+    "references": 311
+  },
+  "environmental_pollution_with_permits": {
+    "obligations": 219,
+    "references": 219
+  },
+  "mechanical_city_maintenance_rules": {
+    "obligations": 130,
+    "references": 166
+  },
+  "mirror_customs_border_rules": {
+    "obligations": 383,
+    "references": 383
+  },
+  "orbital_habitat_safety_rules": {
+    "obligations": 216,
+    "references": 234
+  },
+  "property_crime_with_defenses": {
+    "obligations": 54,
+    "references": 54
+  },
+  "subterranean_signal_dispatch_rules": {
+    "obligations": 314,
+    "references": 314
+  }
+}

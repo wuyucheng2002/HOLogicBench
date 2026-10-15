@@ -1,0 +1,1691 @@
+[
+  {
+    "case_id": "arwre_case_06",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Catalog_Alteration",
+      "Art_Curator_Order_Authorization",
+      "Art_Relic_Handling_Breach",
+      "Art_Restricted_Shelf_Access"
+    ],
+    "stored_value": [
+      "Art_Restricted_Shelf_Access",
+      "Art_Catalog_Alteration",
+      "Art_Curator_Order_Authorization"
+    ]
+  },
+  {
+    "case_id": "arwre_case_11",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Relic_Handling_Breach",
+      "Art_Restricted_Shelf_Access",
+      "Art_Vault_Removal"
+    ],
+    "stored_value": [
+      "Art_Vault_Removal"
+    ]
+  },
+  {
+    "case_id": "arwre_case_12",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Catalog_Alteration",
+      "Art_Restricted_Shelf_Access"
+    ],
+    "stored_value": [
+      "Art_Catalog_Alteration"
+    ]
+  },
+  {
+    "case_id": "arwre_case_13",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Relic_Handling_Breach",
+      "Art_Restricted_Shelf_Access"
+    ],
+    "stored_value": [
+      "Art_Relic_Handling_Breach"
+    ]
+  },
+  {
+    "case_id": "arwre_case_14",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Catalog_Alteration",
+      "Art_Relic_Handling_Breach",
+      "Art_Restricted_Shelf_Access",
+      "Art_Vault_Removal"
+    ],
+    "stored_value": [
+      "Art_Catalog_Alteration",
+      "Art_Vault_Removal"
+    ]
+  },
+  {
+    "case_id": "arwre_case_15",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Relic_Handling_Breach",
+      "Art_Restricted_Shelf_Access",
+      "Art_Vault_Removal"
+    ],
+    "stored_value": [
+      "Art_Relic_Handling_Breach",
+      "Art_Vault_Removal"
+    ]
+  },
+  {
+    "case_id": "arwre_case_16",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Relic_Handling_Breach",
+      "Art_Restricted_Shelf_Access",
+      "Art_Vault_Removal"
+    ],
+    "stored_value": [
+      "Art_Restricted_Shelf_Access",
+      "Art_Vault_Removal"
+    ]
+  },
+  {
+    "case_id": "arwre_case_17",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Catalog_Alteration",
+      "Art_Relic_Handling_Breach",
+      "Art_Restricted_Shelf_Access"
+    ],
+    "stored_value": [
+      "Art_Relic_Handling_Breach",
+      "Art_Catalog_Alteration"
+    ]
+  },
+  {
+    "case_id": "arwre_case_18",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Catalog_Alteration",
+      "Art_Relic_Handling_Breach",
+      "Art_Restricted_Shelf_Access",
+      "Art_Vault_Removal"
+    ],
+    "stored_value": [
+      "Art_Restricted_Shelf_Access",
+      "Art_Catalog_Alteration",
+      "Art_Vault_Removal"
+    ]
+  },
+  {
+    "case_id": "arwre_case_19",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Catalog_Alteration",
+      "Art_Relic_Handling_Breach",
+      "Art_Restricted_Shelf_Access",
+      "Art_Vault_Removal"
+    ],
+    "stored_value": [
+      "Art_Relic_Handling_Breach",
+      "Art_Catalog_Alteration",
+      "Art_Vault_Removal"
+    ]
+  },
+  {
+    "case_id": "arwre_case_24",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Catalog_Alteration",
+      "Art_Curator_Order_Authorization",
+      "Art_Flood_Rescue_Authorization",
+      "Art_Relic_Handling_Breach",
+      "Art_Restricted_Shelf_Access",
+      "Art_Vault_Removal"
+    ],
+    "stored_value": [
+      "Art_Restricted_Shelf_Access",
+      "Art_Catalog_Alteration",
+      "Art_Vault_Removal",
+      "Art_Curator_Order_Authorization",
+      "Art_Flood_Rescue_Authorization"
+    ]
+  },
+  {
+    "case_id": "arwre_case_26",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Catalog_Alteration",
+      "Art_Curator_Order_Authorization",
+      "Art_Flood_Rescue_Authorization",
+      "Art_Relic_Handling_Breach",
+      "Art_Restricted_Shelf_Access",
+      "Art_Vault_Removal"
+    ],
+    "stored_value": [
+      "Art_Relic_Handling_Breach",
+      "Art_Catalog_Alteration",
+      "Art_Vault_Removal",
+      "Art_Curator_Order_Authorization",
+      "Art_Flood_Rescue_Authorization"
+    ]
+  },
+  {
+    "case_id": "arwre_case_27",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Catalog_Alteration",
+      "Art_Flood_Rescue_Authorization",
+      "Art_Relic_Handling_Breach",
+      "Art_Restricted_Shelf_Access",
+      "Art_Vault_Removal"
+    ],
+    "stored_value": [
+      "Art_Restricted_Shelf_Access",
+      "Art_Catalog_Alteration",
+      "Art_Vault_Removal",
+      "Art_Flood_Rescue_Authorization"
+    ]
+  },
+  {
+    "case_id": "arwre_case_28",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Catalog_Alteration",
+      "Art_Curator_Order_Authorization",
+      "Art_Relic_Handling_Breach",
+      "Art_Restricted_Shelf_Access",
+      "Art_Vault_Removal"
+    ],
+    "stored_value": [
+      "Art_Restricted_Shelf_Access",
+      "Art_Catalog_Alteration",
+      "Art_Vault_Removal",
+      "Art_Curator_Order_Authorization"
+    ]
+  },
+  {
+    "case_id": "aswa_case_11",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Navigation_Signal_Interference",
+      "Art_Runway_Drone_Interference"
+    ],
+    "stored_value": [
+      "Art_Compound_Airspace_Hazard"
+    ]
+  },
+  {
+    "case_id": "aswa_case_12",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Runway_Drone_Interference"
+    ],
+    "stored_value": [
+      "Art_Runway_Drone_Interference"
+    ]
+  },
+  {
+    "case_id": "aswa_case_13",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Navigation_Signal_Interference",
+      "Art_Runway_Drone_Interference"
+    ],
+    "stored_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Compound_Airspace_Hazard"
+    ]
+  },
+  {
+    "case_id": "aswa_case_14",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Navigation_Signal_Interference",
+      "Art_Runway_Drone_Interference"
+    ],
+    "stored_value": [
+      "Art_Navigation_Signal_Interference",
+      "Art_Compound_Airspace_Hazard"
+    ]
+  },
+  {
+    "case_id": "aswa_case_15",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Navigation_Signal_Interference",
+      "Art_Runway_Drone_Interference"
+    ],
+    "stored_value": [
+      "Art_Runway_Drone_Interference",
+      "Art_Compound_Airspace_Hazard"
+    ]
+  },
+  {
+    "case_id": "aswa_case_18",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Navigation_Signal_Interference",
+      "Art_Runway_Drone_Interference"
+    ],
+    "stored_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Navigation_Signal_Interference",
+      "Art_Compound_Airspace_Hazard"
+    ]
+  },
+  {
+    "case_id": "aswa_case_19",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Navigation_Signal_Interference",
+      "Art_Runway_Drone_Interference"
+    ],
+    "stored_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Runway_Drone_Interference",
+      "Art_Compound_Airspace_Hazard"
+    ]
+  },
+  {
+    "case_id": "aswa_case_20",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Navigation_Signal_Interference",
+      "Art_Runway_Drone_Interference"
+    ],
+    "stored_value": [
+      "Art_Runway_Drone_Interference",
+      "Art_Navigation_Signal_Interference",
+      "Art_Compound_Airspace_Hazard"
+    ]
+  },
+  {
+    "case_id": "aswa_case_22",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Emergency_Tarmac_Authorization",
+      "Art_Maintenance_Window_Authorization",
+      "Art_Navigation_Signal_Interference",
+      "Art_Runway_Drone_Interference"
+    ],
+    "stored_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Runway_Drone_Interference",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Maintenance_Window_Authorization",
+      "Art_Emergency_Tarmac_Authorization"
+    ]
+  },
+  {
+    "case_id": "aswa_case_24",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Emergency_Tarmac_Authorization",
+      "Art_Maintenance_Window_Authorization",
+      "Art_Navigation_Signal_Interference",
+      "Art_Runway_Drone_Interference"
+    ],
+    "stored_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Navigation_Signal_Interference",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Maintenance_Window_Authorization",
+      "Art_Emergency_Tarmac_Authorization"
+    ]
+  },
+  {
+    "case_id": "aswa_case_25",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Emergency_Tarmac_Authorization",
+      "Art_Maintenance_Window_Authorization",
+      "Art_Navigation_Signal_Interference",
+      "Art_Runway_Drone_Interference"
+    ],
+    "stored_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Runway_Drone_Interference",
+      "Art_Navigation_Signal_Interference",
+      "Art_Maintenance_Window_Authorization",
+      "Art_Emergency_Tarmac_Authorization"
+    ]
+  },
+  {
+    "case_id": "aswa_case_25",
+    "field": "applicable_articles",
+    "source_value": [
+      "Art_Emergency_Tarmac_Authorization",
+      "Art_Maintenance_Window_Authorization"
+    ],
+    "stored_value": [
+      "Art_Navigation_Signal_Interference",
+      "Art_Maintenance_Window_Authorization",
+      "Art_Emergency_Tarmac_Authorization"
+    ]
+  },
+  {
+    "case_id": "aswa_case_26",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Emergency_Tarmac_Authorization",
+      "Art_Navigation_Signal_Interference",
+      "Art_Runway_Drone_Interference"
+    ],
+    "stored_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Runway_Drone_Interference",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Emergency_Tarmac_Authorization"
+    ]
+  },
+  {
+    "case_id": "aswa_case_27",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Emergency_Tarmac_Authorization",
+      "Art_Maintenance_Window_Authorization",
+      "Art_Navigation_Signal_Interference",
+      "Art_Runway_Drone_Interference"
+    ],
+    "stored_value": [
+      "Art_Runway_Drone_Interference",
+      "Art_Navigation_Signal_Interference",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Maintenance_Window_Authorization",
+      "Art_Emergency_Tarmac_Authorization"
+    ]
+  },
+  {
+    "case_id": "aswa_case_28",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Maintenance_Window_Authorization",
+      "Art_Navigation_Signal_Interference",
+      "Art_Runway_Drone_Interference"
+    ],
+    "stored_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Runway_Drone_Interference",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Maintenance_Window_Authorization"
+    ]
+  },
+  {
+    "case_id": "aswa_case_29",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Emergency_Tarmac_Authorization",
+      "Art_Navigation_Signal_Interference",
+      "Art_Runway_Drone_Interference"
+    ],
+    "stored_value": [
+      "Art_Airside_Access_Breach",
+      "Art_Navigation_Signal_Interference",
+      "Art_Compound_Airspace_Hazard",
+      "Art_Emergency_Tarmac_Authorization"
+    ]
+  },
+  {
+    "case_id": "ciwa_case_11",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Financial_Cyber_Fraud",
+      "Art_Unauthorized_Access"
+    ],
+    "stored_value": [
+      "Art_Financial_Cyber_Fraud"
+    ]
+  },
+  {
+    "case_id": "ciwa_case_12",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Data_Theft",
+      "Art_Unauthorized_Access"
+    ],
+    "stored_value": [
+      "Art_Data_Theft"
+    ]
+  },
+  {
+    "case_id": "ciwa_case_13",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_System_Disruption",
+      "Art_Unauthorized_Access"
+    ],
+    "stored_value": [
+      "Art_System_Disruption"
+    ]
+  },
+  {
+    "case_id": "ciwa_case_14",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Data_Theft",
+      "Art_Financial_Cyber_Fraud",
+      "Art_Unauthorized_Access"
+    ],
+    "stored_value": [
+      "Art_Data_Theft",
+      "Art_Financial_Cyber_Fraud"
+    ]
+  },
+  {
+    "case_id": "ciwa_case_15",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Data_Theft",
+      "Art_System_Disruption",
+      "Art_Unauthorized_Access"
+    ],
+    "stored_value": [
+      "Art_Data_Theft",
+      "Art_System_Disruption"
+    ]
+  },
+  {
+    "case_id": "ciwa_case_17",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Financial_Cyber_Fraud",
+      "Art_System_Disruption",
+      "Art_Unauthorized_Access"
+    ],
+    "stored_value": [
+      "Art_System_Disruption",
+      "Art_Financial_Cyber_Fraud"
+    ]
+  },
+  {
+    "case_id": "ciwa_case_19",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Data_Theft",
+      "Art_Financial_Cyber_Fraud",
+      "Art_System_Disruption",
+      "Art_Unauthorized_Access"
+    ],
+    "stored_value": [
+      "Art_Data_Theft",
+      "Art_System_Disruption",
+      "Art_Financial_Cyber_Fraud"
+    ]
+  },
+  {
+    "case_id": "ciwa_case_25",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Data_Theft",
+      "Art_Financial_Cyber_Fraud",
+      "Art_Incident_Response_Authorization",
+      "Art_Security_Testing_Authorization",
+      "Art_System_Disruption",
+      "Art_Unauthorized_Access"
+    ],
+    "stored_value": [
+      "Art_Data_Theft",
+      "Art_System_Disruption",
+      "Art_Financial_Cyber_Fraud",
+      "Art_Security_Testing_Authorization",
+      "Art_Incident_Response_Authorization"
+    ]
+  },
+  {
+    "case_id": "ciwa_case_29",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Data_Theft",
+      "Art_Financial_Cyber_Fraud",
+      "Art_Incident_Response_Authorization",
+      "Art_System_Disruption",
+      "Art_Unauthorized_Access"
+    ],
+    "stored_value": [
+      "Art_Data_Theft",
+      "Art_System_Disruption",
+      "Art_Financial_Cyber_Fraud",
+      "Art_Incident_Response_Authorization"
+    ]
+  },
+  {
+    "case_id": "ciwa_case_30",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Data_Theft",
+      "Art_Incident_Response_Authorization",
+      "Art_Security_Testing_Authorization",
+      "Art_System_Disruption",
+      "Art_Unauthorized_Access"
+    ],
+    "stored_value": [
+      "Art_Data_Theft",
+      "Art_System_Disruption",
+      "Art_Security_Testing_Authorization",
+      "Art_Incident_Response_Authorization"
+    ]
+  },
+  {
+    "case_id": "dawe_case_05",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Emergency_Preservation_Authorization",
+      "Art_Fading_Archive_Damage",
+      "Art_Unregistered_Archive_Entry"
+    ],
+    "stored_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Fading_Archive_Damage",
+      "Art_Emergency_Preservation_Authorization"
+    ]
+  },
+  {
+    "case_id": "dawe_case_11",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Unregistered_Archive_Entry"
+    ],
+    "stored_value": [
+      "Art_Dream_Page_Intervention"
+    ]
+  },
+  {
+    "case_id": "dawe_case_13",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Fading_Archive_Damage",
+      "Art_Unregistered_Archive_Entry"
+    ],
+    "stored_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Fading_Archive_Damage"
+    ]
+  },
+  {
+    "case_id": "dawe_case_14",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Fading_Archive_Damage",
+      "Art_Unregistered_Archive_Entry"
+    ],
+    "stored_value": [
+      "Art_Unregistered_Archive_Entry",
+      "Art_Fading_Archive_Damage"
+    ]
+  },
+  {
+    "case_id": "dawe_case_17",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Emergency_Preservation_Authorization",
+      "Art_Fading_Archive_Damage",
+      "Art_Restorer_Route_Authorization",
+      "Art_Unregistered_Archive_Entry",
+      "Art_Visitor_Escort_Allowance"
+    ],
+    "stored_value": [
+      "Art_Unregistered_Archive_Entry",
+      "Art_Dream_Page_Intervention",
+      "Art_Restorer_Route_Authorization",
+      "Art_Emergency_Preservation_Authorization",
+      "Art_Visitor_Escort_Allowance"
+    ]
+  },
+  {
+    "case_id": "dawe_case_18",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Emergency_Preservation_Authorization",
+      "Art_Fading_Archive_Damage",
+      "Art_Restorer_Route_Authorization",
+      "Art_Unregistered_Archive_Entry",
+      "Art_Visitor_Escort_Allowance"
+    ],
+    "stored_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Fading_Archive_Damage",
+      "Art_Restorer_Route_Authorization",
+      "Art_Emergency_Preservation_Authorization",
+      "Art_Visitor_Escort_Allowance"
+    ]
+  },
+  {
+    "case_id": "dawe_case_19",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Emergency_Preservation_Authorization",
+      "Art_Fading_Archive_Damage",
+      "Art_Restorer_Route_Authorization",
+      "Art_Unregistered_Archive_Entry",
+      "Art_Visitor_Escort_Allowance"
+    ],
+    "stored_value": [
+      "Art_Unregistered_Archive_Entry",
+      "Art_Fading_Archive_Damage",
+      "Art_Restorer_Route_Authorization",
+      "Art_Emergency_Preservation_Authorization",
+      "Art_Visitor_Escort_Allowance"
+    ]
+  },
+  {
+    "case_id": "dawe_case_20",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Emergency_Preservation_Authorization",
+      "Art_Fading_Archive_Damage",
+      "Art_Restorer_Route_Authorization",
+      "Art_Unregistered_Archive_Entry"
+    ],
+    "stored_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Fading_Archive_Damage",
+      "Art_Restorer_Route_Authorization",
+      "Art_Emergency_Preservation_Authorization"
+    ]
+  },
+  {
+    "case_id": "dawe_case_22",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Emergency_Preservation_Authorization",
+      "Art_Fading_Archive_Damage",
+      "Art_Restorer_Route_Authorization",
+      "Art_Unregistered_Archive_Entry"
+    ],
+    "stored_value": [
+      "Art_Unregistered_Archive_Entry",
+      "Art_Dream_Page_Intervention",
+      "Art_Restorer_Route_Authorization",
+      "Art_Emergency_Preservation_Authorization"
+    ]
+  },
+  {
+    "case_id": "dawe_case_24",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Emergency_Preservation_Authorization",
+      "Art_Fading_Archive_Damage",
+      "Art_Unregistered_Archive_Entry",
+      "Art_Visitor_Escort_Allowance"
+    ],
+    "stored_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Fading_Archive_Damage",
+      "Art_Emergency_Preservation_Authorization",
+      "Art_Visitor_Escort_Allowance"
+    ]
+  },
+  {
+    "case_id": "dawe_case_25",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Emergency_Preservation_Authorization",
+      "Art_Fading_Archive_Damage",
+      "Art_Unregistered_Archive_Entry",
+      "Art_Visitor_Escort_Allowance"
+    ],
+    "stored_value": [
+      "Art_Unregistered_Archive_Entry",
+      "Art_Fading_Archive_Damage",
+      "Art_Emergency_Preservation_Authorization",
+      "Art_Visitor_Escort_Allowance"
+    ]
+  },
+  {
+    "case_id": "dawe_case_26",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Fading_Archive_Damage",
+      "Art_Restorer_Route_Authorization",
+      "Art_Unregistered_Archive_Entry",
+      "Art_Visitor_Escort_Allowance"
+    ],
+    "stored_value": [
+      "Art_Unregistered_Archive_Entry",
+      "Art_Fading_Archive_Damage",
+      "Art_Restorer_Route_Authorization",
+      "Art_Visitor_Escort_Allowance"
+    ]
+  },
+  {
+    "case_id": "dawe_case_27",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Fading_Archive_Damage",
+      "Art_Restorer_Route_Authorization",
+      "Art_Unregistered_Archive_Entry",
+      "Art_Visitor_Escort_Allowance"
+    ],
+    "stored_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Fading_Archive_Damage",
+      "Art_Restorer_Route_Authorization",
+      "Art_Visitor_Escort_Allowance"
+    ]
+  },
+  {
+    "case_id": "dawe_case_29",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Fading_Archive_Damage",
+      "Art_Restorer_Route_Authorization",
+      "Art_Unregistered_Archive_Entry"
+    ],
+    "stored_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Fading_Archive_Damage",
+      "Art_Restorer_Route_Authorization"
+    ]
+  },
+  {
+    "case_id": "dawe_case_30",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dream_Page_Intervention",
+      "Art_Fading_Archive_Damage",
+      "Art_Restorer_Route_Authorization",
+      "Art_Unregistered_Archive_Entry"
+    ],
+    "stored_value": [
+      "Art_Unregistered_Archive_Entry",
+      "Art_Fading_Archive_Damage",
+      "Art_Restorer_Route_Authorization"
+    ]
+  },
+  {
+    "case_id": "epwp_case_11",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Falsified_Monitoring",
+      "Art_Unlawful_Discharge"
+    ],
+    "stored_value": [
+      "Art_Falsified_Monitoring"
+    ]
+  },
+  {
+    "case_id": "epwp_case_12",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Serious_Contamination",
+      "Art_Unlawful_Discharge"
+    ],
+    "stored_value": [
+      "Art_Serious_Contamination"
+    ]
+  },
+  {
+    "case_id": "epwp_case_13",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Serious_Contamination",
+      "Art_Unlawful_Discharge"
+    ],
+    "stored_value": [
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Serious_Contamination"
+    ]
+  },
+  {
+    "case_id": "epwp_case_14",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Falsified_Monitoring",
+      "Art_Serious_Contamination",
+      "Art_Unlawful_Discharge"
+    ],
+    "stored_value": [
+      "Art_Serious_Contamination",
+      "Art_Falsified_Monitoring"
+    ]
+  },
+  {
+    "case_id": "epwp_case_15",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Falsified_Monitoring",
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Unlawful_Discharge"
+    ],
+    "stored_value": [
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Falsified_Monitoring"
+    ]
+  },
+  {
+    "case_id": "epwp_case_18",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Falsified_Monitoring",
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Serious_Contamination",
+      "Art_Unlawful_Discharge"
+    ],
+    "stored_value": [
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Serious_Contamination",
+      "Art_Falsified_Monitoring"
+    ]
+  },
+  {
+    "case_id": "epwp_case_29",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Emergency_Release_Defense",
+      "Art_Falsified_Monitoring",
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Serious_Contamination",
+      "Art_Unlawful_Discharge",
+      "Art_Valid_Permit_Defense"
+    ],
+    "stored_value": [
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Serious_Contamination",
+      "Art_Falsified_Monitoring",
+      "Art_Valid_Permit_Defense",
+      "Art_Emergency_Release_Defense"
+    ]
+  },
+  {
+    "case_id": "mcmr_case_11",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Restricted_Gear_Access",
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "stored_value": [
+      "Art_Unsafe_Automaton_Release"
+    ]
+  },
+  {
+    "case_id": "mcmr_case_12",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Public_Clock_Disruption",
+      "Art_Restricted_Gear_Access",
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "stored_value": [
+      "Art_Unsafe_Automaton_Release",
+      "Art_Public_Clock_Disruption"
+    ]
+  },
+  {
+    "case_id": "mcmr_case_19",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Calibration_Fault_Exemption",
+      "Art_Emergency_Reset_Authorization",
+      "Art_Maintenance_Order_Authorization",
+      "Art_Public_Clock_Disruption",
+      "Art_Restricted_Gear_Access",
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "stored_value": [
+      "Art_Unsafe_Automaton_Release",
+      "Art_Public_Clock_Disruption",
+      "Art_Maintenance_Order_Authorization",
+      "Art_Emergency_Reset_Authorization",
+      "Art_Calibration_Fault_Exemption"
+    ]
+  },
+  {
+    "case_id": "mcmr_case_20",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Emergency_Reset_Authorization",
+      "Art_Maintenance_Order_Authorization",
+      "Art_Public_Clock_Disruption",
+      "Art_Restricted_Gear_Access",
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "stored_value": [
+      "Art_Restricted_Gear_Access",
+      "Art_Unsafe_Automaton_Release",
+      "Art_Maintenance_Order_Authorization",
+      "Art_Emergency_Reset_Authorization"
+    ]
+  },
+  {
+    "case_id": "mcmr_case_23",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Calibration_Fault_Exemption",
+      "Art_Emergency_Reset_Authorization",
+      "Art_Public_Clock_Disruption",
+      "Art_Restricted_Gear_Access",
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "stored_value": [
+      "Art_Unsafe_Automaton_Release",
+      "Art_Public_Clock_Disruption",
+      "Art_Emergency_Reset_Authorization",
+      "Art_Calibration_Fault_Exemption"
+    ]
+  },
+  {
+    "case_id": "mcmr_case_24",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Calibration_Fault_Exemption",
+      "Art_Maintenance_Order_Authorization",
+      "Art_Public_Clock_Disruption",
+      "Art_Restricted_Gear_Access",
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "stored_value": [
+      "Art_Unsafe_Automaton_Release",
+      "Art_Public_Clock_Disruption",
+      "Art_Maintenance_Order_Authorization",
+      "Art_Calibration_Fault_Exemption"
+    ]
+  },
+  {
+    "case_id": "mcmr_case_26",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Calibration_Fault_Exemption",
+      "Art_Public_Clock_Disruption",
+      "Art_Restricted_Gear_Access",
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "stored_value": [
+      "Art_Unsafe_Automaton_Release",
+      "Art_Public_Clock_Disruption",
+      "Art_Calibration_Fault_Exemption"
+    ]
+  },
+  {
+    "case_id": "mcmr_case_27",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Calibration_Fault_Exemption",
+      "Art_Emergency_Reset_Authorization",
+      "Art_Public_Clock_Disruption",
+      "Art_Restricted_Gear_Access"
+    ],
+    "stored_value": [
+      "Art_Public_Clock_Disruption",
+      "Art_Emergency_Reset_Authorization",
+      "Art_Calibration_Fault_Exemption"
+    ]
+  },
+  {
+    "case_id": "mcmr_case_28",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Emergency_Reset_Authorization",
+      "Art_Public_Clock_Disruption",
+      "Art_Restricted_Gear_Access",
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "stored_value": [
+      "Art_Unsafe_Automaton_Release",
+      "Art_Public_Clock_Disruption",
+      "Art_Emergency_Reset_Authorization"
+    ]
+  },
+  {
+    "case_id": "mcmr_case_29",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Maintenance_Order_Authorization",
+      "Art_Public_Clock_Disruption",
+      "Art_Restricted_Gear_Access",
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "stored_value": [
+      "Art_Unsafe_Automaton_Release",
+      "Art_Public_Clock_Disruption",
+      "Art_Maintenance_Order_Authorization"
+    ]
+  },
+  {
+    "case_id": "mcbr_case_12",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Label_Inversion",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "stored_value": [
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Label_Inversion"
+    ]
+  },
+  {
+    "case_id": "mcbr_case_17",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Customs_Clearance_Authorization",
+      "Art_Label_Inversion",
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Returned_Cargo_Allowance",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "stored_value": [
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Label_Inversion",
+      "Art_Customs_Clearance_Authorization",
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Returned_Cargo_Allowance"
+    ]
+  },
+  {
+    "case_id": "mcbr_case_19",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Label_Inversion",
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Returned_Cargo_Allowance",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "stored_value": [
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Label_Inversion",
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Returned_Cargo_Allowance"
+    ]
+  },
+  {
+    "case_id": "mcbr_case_22",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Customs_Clearance_Authorization",
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Returned_Cargo_Allowance",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "stored_value": [
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Customs_Clearance_Authorization",
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Returned_Cargo_Allowance"
+    ]
+  },
+  {
+    "case_id": "mcbr_case_23",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Customs_Clearance_Authorization",
+      "Art_Label_Inversion",
+      "Art_Returned_Cargo_Allowance",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "stored_value": [
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Label_Inversion",
+      "Art_Customs_Clearance_Authorization",
+      "Art_Returned_Cargo_Allowance"
+    ]
+  },
+  {
+    "case_id": "mcbr_case_24",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Customs_Clearance_Authorization",
+      "Art_Label_Inversion",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "stored_value": [
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Label_Inversion",
+      "Art_Customs_Clearance_Authorization"
+    ]
+  },
+  {
+    "case_id": "mcbr_case_26",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Customs_Clearance_Authorization",
+      "Art_Label_Inversion",
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "stored_value": [
+      "Art_Label_Inversion",
+      "Art_Customs_Clearance_Authorization",
+      "Art_Mirror_Rescue_Transfer"
+    ]
+  },
+  {
+    "case_id": "mcbr_case_27",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Customs_Clearance_Authorization",
+      "Art_Returned_Cargo_Allowance",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "stored_value": [
+      "Art_Unregistered_Mirror_Crossing",
+      "Art_Customs_Clearance_Authorization",
+      "Art_Returned_Cargo_Allowance"
+    ]
+  },
+  {
+    "case_id": "mcbr_case_28",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Label_Inversion",
+      "Art_Returned_Cargo_Allowance",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "stored_value": [
+      "Art_Unregistered_Mirror_Crossing",
+      "Art_Label_Inversion",
+      "Art_Returned_Cargo_Allowance"
+    ]
+  },
+  {
+    "case_id": "mcbr_case_29",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Label_Inversion",
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "stored_value": [
+      "Art_Label_Inversion",
+      "Art_Mirror_Rescue_Transfer"
+    ]
+  },
+  {
+    "case_id": "mcbr_case_30",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "stored_value": [
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Mirror_Rescue_Transfer"
+    ]
+  },
+  {
+    "case_id": "ohsr_case_11",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Oxygen_System_Interference",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "stored_value": [
+      "Art_Oxygen_System_Interference"
+    ]
+  },
+  {
+    "case_id": "ohsr_case_12",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Oxygen_System_Interference",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "stored_value": [
+      "Art_Oxygen_System_Interference",
+      "Art_Corridor_Safety_Obstruction"
+    ]
+  },
+  {
+    "case_id": "ohsr_case_19",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Habitat_Duty_Authorization",
+      "Art_Oxygen_System_Interference",
+      "Art_Pressure_Stabilization_Exemption",
+      "Art_Restricted_Airlock_Operation",
+      "Art_Salvage_Emergency_Authorization"
+    ],
+    "stored_value": [
+      "Art_Restricted_Airlock_Operation",
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Habitat_Duty_Authorization",
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Pressure_Stabilization_Exemption"
+    ]
+  },
+  {
+    "case_id": "ohsr_case_24",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Habitat_Duty_Authorization",
+      "Art_Oxygen_System_Interference",
+      "Art_Restricted_Airlock_Operation",
+      "Art_Salvage_Emergency_Authorization"
+    ],
+    "stored_value": [
+      "Art_Oxygen_System_Interference",
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Habitat_Duty_Authorization",
+      "Art_Salvage_Emergency_Authorization"
+    ]
+  },
+  {
+    "case_id": "ohsr_case_26",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Oxygen_System_Interference",
+      "Art_Pressure_Stabilization_Exemption",
+      "Art_Restricted_Airlock_Operation",
+      "Art_Salvage_Emergency_Authorization"
+    ],
+    "stored_value": [
+      "Art_Restricted_Airlock_Operation",
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Pressure_Stabilization_Exemption"
+    ]
+  },
+  {
+    "case_id": "ohsr_case_26",
+    "field": "applicable_articles",
+    "source_value": [
+      "Art_Pressure_Stabilization_Exemption",
+      "Art_Salvage_Emergency_Authorization"
+    ],
+    "stored_value": [
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Pressure_Stabilization_Exemption"
+    ]
+  },
+  {
+    "case_id": "ohsr_case_27",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Habitat_Duty_Authorization",
+      "Art_Oxygen_System_Interference",
+      "Art_Pressure_Stabilization_Exemption",
+      "Art_Restricted_Airlock_Operation",
+      "Art_Salvage_Emergency_Authorization"
+    ],
+    "stored_value": [
+      "Art_Oxygen_System_Interference",
+      "Art_Habitat_Duty_Authorization",
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Pressure_Stabilization_Exemption"
+    ]
+  },
+  {
+    "case_id": "ohsr_case_28",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Habitat_Duty_Authorization",
+      "Art_Oxygen_System_Interference",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "stored_value": [
+      "Art_Oxygen_System_Interference",
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Habitat_Duty_Authorization"
+    ]
+  },
+  {
+    "case_id": "ohsr_case_29",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Oxygen_System_Interference",
+      "Art_Pressure_Stabilization_Exemption",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "stored_value": [
+      "Art_Oxygen_System_Interference",
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Pressure_Stabilization_Exemption"
+    ]
+  },
+  {
+    "case_id": "ohsr_case_30",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Oxygen_System_Interference",
+      "Art_Pressure_Stabilization_Exemption",
+      "Art_Restricted_Airlock_Operation",
+      "Art_Salvage_Emergency_Authorization"
+    ],
+    "stored_value": [
+      "Art_Oxygen_System_Interference",
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Pressure_Stabilization_Exemption"
+    ]
+  },
+  {
+    "case_id": "pcwd_case_11",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Aggravated_Theft",
+      "Art_Theft"
+    ],
+    "stored_value": [
+      "Art_Aggravated_Theft"
+    ]
+  },
+  {
+    "case_id": "pcwd_case_12",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Robbery",
+      "Art_Theft"
+    ],
+    "stored_value": [
+      "Art_Robbery"
+    ]
+  },
+  {
+    "case_id": "pcwd_case_14",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Aggravated_Theft",
+      "Art_Robbery",
+      "Art_Theft"
+    ],
+    "stored_value": [
+      "Art_Robbery",
+      "Art_Aggravated_Theft"
+    ]
+  },
+  {
+    "case_id": "pcwd_case_15",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Aggravated_Theft",
+      "Art_Fraud",
+      "Art_Theft"
+    ],
+    "stored_value": [
+      "Art_Fraud",
+      "Art_Aggravated_Theft"
+    ]
+  },
+  {
+    "case_id": "pcwd_case_16",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Fraud",
+      "Art_Robbery",
+      "Art_Theft"
+    ],
+    "stored_value": [
+      "Art_Fraud",
+      "Art_Robbery"
+    ]
+  },
+  {
+    "case_id": "pcwd_case_20",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Aggravated_Theft",
+      "Art_Fraud",
+      "Art_Robbery",
+      "Art_Theft"
+    ],
+    "stored_value": [
+      "Art_Fraud",
+      "Art_Robbery",
+      "Art_Aggravated_Theft"
+    ]
+  },
+  {
+    "case_id": "pcwd_case_27",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Aggravated_Theft",
+      "Art_Consent_Defense",
+      "Art_Fraud",
+      "Art_Necessity_Defense",
+      "Art_Robbery",
+      "Art_Theft"
+    ],
+    "stored_value": [
+      "Art_Fraud",
+      "Art_Robbery",
+      "Art_Aggravated_Theft",
+      "Art_Consent_Defense",
+      "Art_Necessity_Defense"
+    ]
+  },
+  {
+    "case_id": "ssdr_case_11",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "stored_value": [
+      "Art_Route_Misdirection"
+    ]
+  },
+  {
+    "case_id": "ssdr_case_12",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Route_Misdirection",
+      "Art_Sealed_Track_Breach",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "stored_value": [
+      "Art_Route_Misdirection",
+      "Art_Sealed_Track_Breach"
+    ]
+  },
+  {
+    "case_id": "ssdr_case_13",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Route_Misdirection",
+      "Art_Sealed_Track_Breach",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "stored_value": [
+      "Art_Unauthorized_Signal_Change",
+      "Art_Sealed_Track_Breach"
+    ]
+  },
+  {
+    "case_id": "ssdr_case_19",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Dispatch_Order_Authorization",
+      "Art_Route_Misdirection",
+      "Art_Sealed_Track_Breach",
+      "Art_Sensor_Fault_Exemption",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "stored_value": [
+      "Art_Unauthorized_Signal_Change",
+      "Art_Sealed_Track_Breach",
+      "Art_Dispatch_Order_Authorization",
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Sensor_Fault_Exemption"
+    ]
+  },
+  {
+    "case_id": "ssdr_case_20",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Route_Misdirection",
+      "Art_Sealed_Track_Breach",
+      "Art_Sensor_Fault_Exemption",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "stored_value": [
+      "Art_Route_Misdirection",
+      "Art_Sealed_Track_Breach",
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Sensor_Fault_Exemption"
+    ]
+  },
+  {
+    "case_id": "ssdr_case_21",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Dispatch_Order_Authorization",
+      "Art_Route_Misdirection",
+      "Art_Sealed_Track_Breach",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "stored_value": [
+      "Art_Route_Misdirection",
+      "Art_Sealed_Track_Breach",
+      "Art_Dispatch_Order_Authorization",
+      "Art_Collapse_Avoidance_Authorization"
+    ]
+  },
+  {
+    "case_id": "ssdr_case_24",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Dispatch_Order_Authorization",
+      "Art_Route_Misdirection",
+      "Art_Sensor_Fault_Exemption",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "stored_value": [
+      "Art_Route_Misdirection",
+      "Art_Dispatch_Order_Authorization",
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Sensor_Fault_Exemption"
+    ]
+  },
+  {
+    "case_id": "ssdr_case_26",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dispatch_Order_Authorization",
+      "Art_Route_Misdirection",
+      "Art_Sealed_Track_Breach",
+      "Art_Sensor_Fault_Exemption",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "stored_value": [
+      "Art_Unauthorized_Signal_Change",
+      "Art_Sealed_Track_Breach",
+      "Art_Dispatch_Order_Authorization",
+      "Art_Sensor_Fault_Exemption"
+    ]
+  },
+  {
+    "case_id": "ssdr_case_27",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Dispatch_Order_Authorization",
+      "Art_Route_Misdirection",
+      "Art_Sensor_Fault_Exemption",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "stored_value": [
+      "Art_Unauthorized_Signal_Change",
+      "Art_Dispatch_Order_Authorization",
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Sensor_Fault_Exemption"
+    ]
+  },
+  {
+    "case_id": "ssdr_case_28",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dispatch_Order_Authorization",
+      "Art_Route_Misdirection",
+      "Art_Sealed_Track_Breach",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "stored_value": [
+      "Art_Route_Misdirection",
+      "Art_Sealed_Track_Breach",
+      "Art_Dispatch_Order_Authorization"
+    ]
+  },
+  {
+    "case_id": "ssdr_case_29",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Dispatch_Order_Authorization",
+      "Art_Route_Misdirection",
+      "Art_Sealed_Track_Breach",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "stored_value": [
+      "Art_Unauthorized_Signal_Change",
+      "Art_Sealed_Track_Breach",
+      "Art_Dispatch_Order_Authorization"
+    ]
+  },
+  {
+    "case_id": "ssdr_case_30",
+    "field": "triggered_articles",
+    "source_value": [
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Route_Misdirection",
+      "Art_Sensor_Fault_Exemption",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "stored_value": [
+      "Art_Route_Misdirection",
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Sensor_Fault_Exemption"
+    ]
+  }
+]

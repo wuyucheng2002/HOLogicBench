@@ -1,0 +1,26 @@
+{
+  "layout_version": 3,
+  "status": "passed",
+  "removed_files": 81,
+  "removed_categories": [
+    "LaTeX table and renderer",
+    "obsolete single-reference metric and historical table entry points",
+    "duplicate enriched Finance representations",
+    "unused legacy analysis inputs and plots",
+    "local metadata",
+    "outdated packaging/navigation documents"
+  ],
+  "main_and_case_results_and_references_unchanged_files": 57,
+  "model_case_pairs_verified": 22064,
+  "python_tests_passed": 14,
+  "enumeration_comparisons": 2000,
+  "annotation_checks": [
+    "finance",
+    "law"
+  ],
+  "generation_dry_run": "passed without API calls",
+  "metric_workspace_and_reference_reader": "passed",
+  "markdown_links": "passed",
+  "neural_metrics_rerun": false,
+  "isabelle_build_rerun": false
+}

@@ -1,0 +1,116 @@
+{
+  "bundle_name": "cyber_intrusion_with_authorizations",
+  "bundle_dir": "rule_bundles/cyber_intrusion_with_authorizations",
+  "person_symbol": "actor",
+  "person_name_pool": ["Alex", "Jordan", "Taylor", "Morgan", "Casey", "Riley", "Jamie", "Drew", "Cameron", "Quinn"],
+  "article_order": [
+    "Art_Unauthorized_Access",
+    "Art_Data_Theft",
+    "Art_System_Disruption",
+    "Art_Financial_Cyber_Fraud",
+    "Art_Security_Testing_Authorization",
+    "Art_Incident_Response_Authorization"
+  ],
+  "articles": {
+    "Art_Unauthorized_Access": {
+      "title": "Unauthorized Access",
+      "result": "fine_or_short_detention",
+      "rule_text": "The unauthorized access article covers intrusion into a protected system and carries a fine or short detention."
+    },
+    "Art_Data_Theft": {
+      "title": "Data Theft",
+      "result": "imprisonment_not_exceeding_3_years",
+      "rule_text": "The data theft article covers protected-system intrusion combined with data copying and carries imprisonment of not more than 3 years."
+    },
+    "Art_System_Disruption": {
+      "title": "System Disruption",
+      "result": "imprisonment_between_3_7_years",
+      "rule_text": "The system disruption article covers protected-system intrusion combined with disruptive operation and carries imprisonment of between 3 and 7 years."
+    },
+    "Art_Financial_Cyber_Fraud": {
+      "title": "Financial Cyber Fraud",
+      "result": "imprisonment_between_7_15_years",
+      "rule_text": "The financial cyber fraud article covers protected-system intrusion, deceptive payment conduct, and a completed payment loss; it carries imprisonment of between 7 and 15 years."
+    },
+    "Art_Security_Testing_Authorization": {
+      "title": "Security Testing Authorization",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The security testing authorization article covers protected-system intrusion conducted within documented testing safeguards and carries no criminal liability."
+    },
+    "Art_Incident_Response_Authorization": {
+      "title": "Incident Response Authorization",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The incident response authorization article covers protected-system intrusion conducted under documented incident-response safeguards and carries no criminal liability."
+    }
+  },
+  "nodes": {
+    "uses_stolen_password": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} used a stolen password to enter the system.", "order": 10},
+    "bypasses_login_control": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} bypassed the login control.", "order": 12},
+    "exploits_unpatched_service": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} exploited an unpatched service.", "order": 14},
+    "target_system_requires_authorization": {"layer": "atomic", "assumable_values": [true, false], "case_text_policy": "always", "positive_text": "The target system required authorization.", "negative_text": "The target system did not require authorization.", "order": 20},
+    "owner_permission_for_access": {"layer": "atomic", "assumable_values": [true, false], "case_text_policy": "always", "positive_text": "The system owner permitted {name}'s access.", "negative_text": "The system owner did not permit {name}'s access.", "order": 22},
+    "downloads_customer_records": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} downloaded customer records.", "order": 30},
+    "copies_authentication_tokens": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} copied authentication tokens.", "order": 32},
+    "exports_database_snapshot": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} exported a database snapshot.", "order": 34},
+    "deletes_server_files": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} deleted server files.", "order": 40},
+    "disables_monitoring_service": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} disabled a monitoring service.", "order": 42},
+    "floods_service_with_requests": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} flooded the service with requests.", "order": 44},
+    "sends_fake_payment_request": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} sent a fake payment request.", "order": 50},
+    "redirects_invoice_account": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} redirected an invoice account.", "order": 52},
+    "obtains_victim_payment": {"layer": "atomic", "assumable_values": [true, false], "case_text_policy": "always", "positive_text": "A victim payment was obtained.", "negative_text": "No victim payment was obtained.", "order": 54},
+    "has_security_testing_contract": {"layer": "atomic", "assumable_values": [true, false], "case_text_policy": "always", "positive_text": "{name} had a written security-testing contract.", "negative_text": "{name} had no written security-testing contract.", "order": 60},
+    "stays_within_test_scope": {"layer": "atomic", "assumable_values": [true, false], "case_text_policy": "always", "case_text_requires_positive": ["has_security_testing_contract"], "positive_text": "{name} stayed within the agreed testing scope.", "negative_text": "{name} did not stay within the agreed testing scope.", "order": 62},
+    "reports_findings_promptly": {"layer": "atomic", "assumable_values": [true, false], "case_text_policy": "always", "case_text_requires_positive": ["has_security_testing_contract"], "positive_text": "{name} promptly reported the findings.", "negative_text": "{name} did not promptly report the findings.", "order": 64},
+    "receives_incident_response_order": {"layer": "atomic", "assumable_values": [true, false], "case_text_policy": "always", "positive_text": "{name} received a written incident-response order.", "negative_text": "{name} received no written incident-response order.", "order": 70},
+    "limits_actions_to_containment": {"layer": "atomic", "assumable_values": [true, false], "case_text_policy": "always", "case_text_requires_positive": ["receives_incident_response_order"], "positive_text": "{name} limited the actions to containment.", "negative_text": "{name} did not limit the actions to containment.", "order": 72},
+    "preserves_activity_logs": {"layer": "atomic", "assumable_values": [true, false], "case_text_policy": "always", "case_text_requires_positive": ["receives_incident_response_order"], "positive_text": "{name} preserved activity logs.", "negative_text": "{name} did not preserve activity logs.", "order": 74}
+  },
+  "article_trigger_mappings": [
+    {"article": "Art_Unauthorized_Access", "source_predicate": "intrusion_basis"},
+    {"article": "Art_Data_Theft", "source_predicate": "data_acquisition_basis"},
+    {"article": "Art_System_Disruption", "source_predicate": "service_interference_basis"},
+    {"article": "Art_Financial_Cyber_Fraud", "source_predicate": "payment_fraud_basis"},
+    {"article": "Art_Security_Testing_Authorization", "source_predicates": ["intrusion_basis", "testing_authorization"]},
+    {"article": "Art_Incident_Response_Authorization", "source_predicates": ["intrusion_basis", "response_authorization"]}
+  ],
+  "rules": [
+    {"name": "access_methods_imply_access_method", "head": {"predicate": "access_method", "value": true}, "body": {"any_of_groups": [[{"predicate": "uses_stolen_password", "value": true}, {"predicate": "bypasses_login_control", "value": true}, {"predicate": "exploits_unpatched_service", "value": true}]]}, "natural_text": "Use of a prohibited access method is present if any one of the following occurs: a person uses a stolen password, bypasses a login control, or exploits an unpatched service."},
+    {"name": "authorization_facts_imply_protected_system", "head": {"predicate": "protected_system", "value": true}, "body": {"all_of": [{"predicate": "target_system_requires_authorization", "value": true}, {"predicate": "owner_permission_for_access", "value": false}]}, "natural_text": "Protected-system status is present when the system requires authorization and the owner has not permitted the access."},
+    {"name": "copy_facts_imply_data_copy_action", "head": {"predicate": "data_copy_action", "value": true}, "body": {"any_of_groups": [[{"predicate": "downloads_customer_records", "value": true}, {"predicate": "copies_authentication_tokens", "value": true}, {"predicate": "exports_database_snapshot", "value": true}]]}, "natural_text": "Data-copying conduct is present if any one of the following occurs: the person downloads customer records, copies authentication tokens, or exports a database snapshot."},
+    {"name": "disruption_facts_imply_disruptive_action", "head": {"predicate": "disruptive_action", "value": true}, "body": {"any_of_groups": [[{"predicate": "deletes_server_files", "value": true}, {"predicate": "disables_monitoring_service", "value": true}, {"predicate": "floods_service_with_requests", "value": true}]]}, "natural_text": "Service-disruption conduct is present if any one of the following occurs: the person deletes server files, disables monitoring services, or floods a service with requests."},
+    {"name": "payment_facts_imply_deceptive_payment_step", "head": {"predicate": "deceptive_payment_step", "value": true}, "body": {"any_of_groups": [[{"predicate": "sends_fake_payment_request", "value": true}, {"predicate": "redirects_invoice_account", "value": true}]]}, "natural_text": "Deceptive payment conduct is present when the person either sends a false payment request or redirects an invoice account."},
+    {"name": "obtained_payment_implies_payment_obtained", "head": {"predicate": "payment_obtained", "value": true}, "body": {"all_of": [{"predicate": "obtains_victim_payment", "value": true}]}, "natural_text": "Payment loss is present when a victim payment is actually obtained."},
+    {"name": "testing_facts_imply_security_testing_safeguards", "head": {"predicate": "security_testing_safeguards", "value": true}, "body": {"all_of": [{"predicate": "has_security_testing_contract", "value": true}, {"predicate": "stays_within_test_scope", "value": true}, {"predicate": "reports_findings_promptly", "value": true}]}, "natural_text": "Security-testing authorization safeguards are satisfied by a written testing contract, conduct within scope, and prompt reporting."},
+    {"name": "response_facts_imply_incident_response_safeguards", "head": {"predicate": "incident_response_safeguards", "value": true}, "body": {"all_of": [{"predicate": "receives_incident_response_order", "value": true}, {"predicate": "limits_actions_to_containment", "value": true}, {"predicate": "preserves_activity_logs", "value": true}]}, "natural_text": "Incident-response authorization safeguards are satisfied by a written response order, containment-limited conduct, and preserved logs."},
+    {"name": "access_and_protection_imply_intrusion_basis", "head": {"predicate": "intrusion_basis", "value": true}, "body": {"all_of": [{"predicate": "access_method", "value": true}, {"predicate": "protected_system", "value": true}]}, "natural_text": "Unauthorized protected-system intrusion is established when prohibited access is made against a protected system."},
+    {"name": "intrusion_and_copy_imply_data_acquisition_basis", "head": {"predicate": "data_acquisition_basis", "value": true}, "body": {"all_of": [{"predicate": "intrusion_basis", "value": true}, {"predicate": "data_copy_action", "value": true}]}, "natural_text": "Unauthorized data acquisition is established when protected-system intrusion is combined with data-copying conduct."},
+    {"name": "intrusion_and_disruption_imply_service_interference_basis", "head": {"predicate": "service_interference_basis", "value": true}, "body": {"all_of": [{"predicate": "intrusion_basis", "value": true}, {"predicate": "disruptive_action", "value": true}]}, "natural_text": "Unauthorized service interference is established when protected-system intrusion is combined with service-disruption conduct."},
+    {"name": "intrusion_payment_step_and_loss_imply_payment_fraud_basis", "head": {"predicate": "payment_fraud_basis", "value": true}, "body": {"all_of": [{"predicate": "intrusion_basis", "value": true}, {"predicate": "deceptive_payment_step", "value": true}, {"predicate": "payment_obtained", "value": true}]}, "natural_text": "Completed payment fraud is established when protected-system intrusion, deceptive payment conduct, and payment loss are all present."},
+    {"name": "testing_safeguards_imply_testing_authorization", "head": {"predicate": "testing_authorization", "value": true}, "body": {"all_of": [{"predicate": "security_testing_safeguards", "value": true}]}, "natural_text": "Security-testing authorization is established when the required security-testing safeguards are satisfied."},
+    {"name": "response_safeguards_imply_response_authorization", "head": {"predicate": "response_authorization", "value": true}, "body": {"all_of": [{"predicate": "incident_response_safeguards", "value": true}]}, "natural_text": "Incident-response authorization is established when the required response safeguards are satisfied."},
+    {"name": "intrusion_triggers_unauthorized_access", "head": {"predicate": "article_triggered", "article": "Art_Unauthorized_Access", "value": true}, "body": {"all_of": [{"predicate": "intrusion_basis", "value": true}]}},
+    {"name": "data_acquisition_triggers_data_theft", "head": {"predicate": "article_triggered", "article": "Art_Data_Theft", "value": true}, "body": {"all_of": [{"predicate": "data_acquisition_basis", "value": true}]}},
+    {"name": "service_interference_triggers_system_disruption", "head": {"predicate": "article_triggered", "article": "Art_System_Disruption", "value": true}, "body": {"all_of": [{"predicate": "service_interference_basis", "value": true}]}},
+    {"name": "payment_fraud_triggers_financial_cyber_fraud", "head": {"predicate": "article_triggered", "article": "Art_Financial_Cyber_Fraud", "value": true}, "body": {"all_of": [{"predicate": "payment_fraud_basis", "value": true}]}},
+    {"name": "intrusion_and_testing_authorization_trigger_testing_defense", "head": {"predicate": "article_triggered", "article": "Art_Security_Testing_Authorization", "value": true}, "body": {"all_of": [{"predicate": "intrusion_basis", "value": true}, {"predicate": "testing_authorization", "value": true}]}},
+    {"name": "intrusion_and_response_authorization_trigger_response_defense", "head": {"predicate": "article_triggered", "article": "Art_Incident_Response_Authorization", "value": true}, "body": {"all_of": [{"predicate": "intrusion_basis", "value": true}, {"predicate": "response_authorization", "value": true}]}}
+  ],
+  "conflicts": {
+    "stronger_than": [
+      ["Art_Data_Theft", "Art_Unauthorized_Access"],
+      ["Art_System_Disruption", "Art_Unauthorized_Access"],
+      ["Art_Financial_Cyber_Fraud", "Art_Unauthorized_Access"],
+      ["Art_Financial_Cyber_Fraud", "Art_Data_Theft"],
+      ["Art_System_Disruption", "Art_Data_Theft"]
+    ],
+    "exception_to": [
+      ["Art_Security_Testing_Authorization", "Art_Unauthorized_Access"],
+      ["Art_Security_Testing_Authorization", "Art_Data_Theft"],
+      ["Art_Security_Testing_Authorization", "Art_System_Disruption"],
+      ["Art_Incident_Response_Authorization", "Art_Unauthorized_Access"],
+      ["Art_Incident_Response_Authorization", "Art_Data_Theft"],
+      ["Art_Incident_Response_Authorization", "Art_System_Disruption"],
+      ["Art_Incident_Response_Authorization", "Art_Financial_Cyber_Fraud"]
+    ]
+  }
+}

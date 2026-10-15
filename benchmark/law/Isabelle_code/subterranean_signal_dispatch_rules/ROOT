@@ -1,0 +1,12 @@
+session Subterranean_Signal_Dispatch_Rules = HOL +
+  theories
+    ssdr_case_01
+    ssdr_case_02
+    ssdr_case_03
+    ssdr_case_04
+    ssdr_case_05
+    ssdr_case_06
+    ssdr_case_07
+    ssdr_case_08
+    ssdr_case_09
+    ssdr_case_10

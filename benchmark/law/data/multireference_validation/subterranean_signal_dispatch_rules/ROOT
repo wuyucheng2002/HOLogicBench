@@ -1,0 +1,3 @@
+session MultiRef_subterranean_signal_dispatch_rules = HOL +
+ options [document=false]
+ theories Paths_Validated

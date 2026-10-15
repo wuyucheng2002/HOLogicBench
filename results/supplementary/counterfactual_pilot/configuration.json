@@ -1,0 +1,56 @@
+{
+  "seed": 20261009,
+  "pairs": 250,
+  "variants_per_pair": 3,
+  "model_settings": [
+    "MiniMax-M3-Adaptive",
+    "MiniMax-M3-Non-thinking",
+    "GLM-5.3-Flash"
+  ],
+  "calls_without_retries": 2250,
+  "max_tokens": 32000,
+  "attempts_per_call": 4,
+  "strata": {
+    "PT": 50,
+    "PR": 50,
+    "PQ": 50,
+    "PC": 50,
+    "PS": 50
+  },
+  "domains": {
+    "finance": 112,
+    "law": 138
+  },
+  "sampling": "Unique originals; 50 assigned to each HOL stratum, preserving all overlapping labels. Stratification cycles over source/depth/original-gold buckets among eligible cases; not representative of ineligible cases.",
+  "estimated_input_tokens_per_model_char_div4": 6048925.25,
+  "protocol": "Canonical factual renderings; regenerate all three variants independently; same rules, one fact changed, no gold or intervention label sent. Source decisions translated into fixed decision codes.",
+  "metrics": {
+    "CRS": "P(counterfactual answer = counterfactual gold | original answer = original gold), denominator reported; also report unconditional both-correct rate.",
+    "flip_rate": "P(model decisive answer differs from original answer); not sufficient for correctness.",
+    "invariant_accuracy": "Accuracy on gold-preserving control.",
+    "false_flip_rate": "P(model invariant answer differs from original answer).",
+    "selectivity_gap": "Decisive flip rate minus invariant false-flip rate."
+  },
+  "sampling_parameters": {
+    "MiniMax-M3": {
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "thinking": [
+        "adaptive",
+        "disabled"
+      ]
+    },
+    "GLM-5.3-Flash": {
+      "temperature": 0,
+      "seed": 20261009
+    }
+  },
+  "supersedes": "DeepSeek requests retired due to rate limiting; GLM completed responses reused unchanged.",
+  "glm_route_revision": "glm_alternatives_v1",
+  "glm_provider_order": [
+    "relace",
+    "inference-net/fp4",
+    "open-inference/fp4"
+  ],
+  "glm_routing_note": "User authorized provider switch; reuse successful responses, new round of up to 4 attempts for unresolved GLM requests. Provider defaults and quantization may differ; actual provider retained in full_response."
+}

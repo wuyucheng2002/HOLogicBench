@@ -1,0 +1,18 @@
+session Property_Crime_With_Defenses = HOL +
+  options [document = false]
+  theories
+    General
+    Case_kernel
+    Middle_concept
+    Conflict
+    case_demo
+    pcwd_case_01
+    pcwd_case_02
+    pcwd_case_03
+    pcwd_case_04
+    pcwd_case_05
+    pcwd_case_06
+    pcwd_case_07
+    pcwd_case_08
+    pcwd_case_09
+    pcwd_case_10

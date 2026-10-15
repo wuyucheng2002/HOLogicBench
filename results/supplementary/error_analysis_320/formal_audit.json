@@ -1,0 +1,3239 @@
+{
+  "method": "Finite Boolean evaluation of source definitions using existing repository parser; no Isabelle recompilation and no change to source.",
+  "sources": {
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_28.thy": "581c507cbc7873173ca63fb6962473fa23ae0cebccd17d12dd4fa452f72c3c7a",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_14.thy": "cbf7bb05d2fb1bb082fa3ebdfbdc69c6bf11a4df95406b7caa8778159ea2818d",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_01.thy": "7864e88ad758458cbd88f13cd9dcb07eede13291b6575163ce15efa197335d5c",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_15.thy": "2ca37033e33e7018d4ba28d2d02d85e15c3bac7d2a8075d4c1dc8daee9fbab4f",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_29.thy": "416fd362511feb9ce62509e6c465f76cb21f04abf4311753037f3c078e778028",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_03.thy": "ea0a916519bf1811a42be8eb1fa19953a581f140401f4652cd2ad8eac02f4230",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_17.thy": "9ee4db4f9641e398b8705b8d2d8c123d03088412305c0f095c324afdd88ca01b",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_16.thy": "05306b507cd8e9b8bf6eb14a2b022da785133a4fab9ce61d6de8cda018e4570f",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_02.thy": "ba6f8b6f08be53f5c20389a625ff749a6a113dfea573bd0399917d3d68598731",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_06.thy": "b7ddea8d25d348e3dc809ca1dd50dd5724702202c8c33df118a36bd172c91a8d",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_12.thy": "bfc2637a9a4e6390e41d66294c0881a99090da37fc0ac278588b9b23fd2e1a7e",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_13.thy": "2c047f775129fcc784ca8c1a62b51883e366d60934cfef3acba42c889ce1cd01",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_07.thy": "312cd6a7a4786965a14b6393908fdfee8ed79f23a3e5d7a83fc26e62f85aca93",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/Middle_concept.thy": "d4d6f3b6f033be2eadddd3158a6775fa10daffb8933205997628c998bce3f115",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_11.thy": "5ab6710384ef0c33bc2a8eacd3665601878d2bea136a956f4ff752440959744d",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_05.thy": "21cdfb82e181390112b513d03c87a8e56b90edf73ddd0486fbbbf20d93c793d5",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_04.thy": "ea8485ef60619e92bb64e12dc5107a833cc223cbdf45ab54f6834c1fcf416f2b",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_10.thy": "87830c3d90930f5359b499d62f92ed9ffed4825ee8c3df40a6451f1a6786f21c",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/Case_kernel.thy": "6a6cde42319d3ab592136cfd3322a5c10cc632b904be5e2994ba48fd64ecaa9e",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_09.thy": "ac798176beac137f714d97983dacdf97bcbcdee2432c1c5688a2e3830e6fa983",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/General.thy": "81fe6bd332629af2a54f7db6e1aacf5796da306fba935a97b9d886a2ff17d197",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_21.thy": "ecc473551ac0143fabdd3354ce6806faf9c7a3cfe231d58b816c31f3ca91591a",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_20.thy": "fc0b1f05305dde7df4bda1bd2f8c73675223cf99f2d65ccd673c0882dc2a6357",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_08.thy": "abd5e1d5dbaae1f737275e981b5ee6ea458c0872805e26f3253c872126bc271d",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_22.thy": "c5ac3c009d0b627a1d3710ef61b83d63b00b12f921cc6952c359369d8a9d4011",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_23.thy": "1dd314c19fe4db5781c31284631f6d1b2b5812261ee701ba485168d121c344d2",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_27.thy": "203bc5e31814ffddbd52d7d7bd9569db06b2557f541800f80368132d7cfcf35d",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_26.thy": "1b5a054cecc13f2e42faadacf2236d17e6f2fecfe435d65bfc63701db08bfa72",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_30.thy": "8a4b90aabccfab9e889bdf19d3fb0b87b6e3679ee9940823eea84d1d5b8f5fff",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_24.thy": "c0fa21b82a177f1173b2a60971a9ab184fd9bf73a7d1f85a78188ddbf01583a2",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_18.thy": "56820f9845029c9134328cb9ab693815ebf97e6a103e0f6550fad2387be244b2",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_19.thy": "a5a731a1dfa0526d4c9e3c60ec0ce4f2f06d5d9b08785fba52197e8c042487d8",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/ssdr_case_25.thy": "598305466a71759955aadb58373146da35068862bb6a2b27986851e1205527e5",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/Conflict.thy": "c98f6bebe3cf7ca19fda3026687adb07678307bb787b7cc2ff6f445d6af171e8",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_21.thy": "91925e4993e839c08797f54236ab9d39769f1a632899d58ab5694862942e9359",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_09.thy": "fe62c97c2e628a525f0fb317df651d86962bf914b32a8ae839421f35a6e23987",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_08.thy": "c84288b42dc8bd2315b16d729e624dffd58bc9983db5bfc104b7c981939339fa",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_20.thy": "642bd30e7b5b02156d10e1554fd7c6ff419388497090490e868c1168e9a95577",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_22.thy": "315ab401595ec8a77d9ca4ccda96e99c8c90781b20a60349c464f089c6920160",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_23.thy": "b8a4fac906ab48941087ad3b6004b086d64317931f3fbd2a261c1da37a5df767",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_27.thy": "d00c8f4962a17c9aa3d2a5d09626555a9a4b50cf51d66e9d16f4af7e689fa570",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_26.thy": "745028e15562b0914d691df31f2975a2c1581a55166f9f4bd725f872b3837203",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/Middle_concept.thy": "399ddd8e0f691220f07fbbaf3249896fbe649fc5d88f22a4465c9c3f2c8c2cfb",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_18.thy": "26d1d27fbcff02b0fb2640d65658698260ca25f33185201e5f827f6e2aa5c0fd",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_30.thy": "483d1215e30a3aae7adf6f941e569f280555f28acea5bb44f937f9f878039f57",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_24.thy": "aa957c3f25f35a083deec0393e3bc01b6cf80d4c84c127349809c8323082c44c",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_25.thy": "4595072a12f8e47c3c3d4f539bb4ea618ec69a82bed7564fb1c577135550f16c",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_19.thy": "400dfb7206571108f37616210a79f009e8804729a4d21ee984a6284cd6ba975d",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/Case_kernel.thy": "14886d3b65a4a138239ab1f44d5b31b46754ef27219b6b11af309c23457d05b9",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_14.thy": "15e9588a80a281c1148640589bdf6d1ff3713a830df7993641e6989d4fa0bea2",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_28.thy": "ad69426a0f761f1a423e7849b88c623d3df896f66e1d1f69bcdaca5f480b7c1b",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/General.thy": "48f748fdc73079f0602e0ca76c7049876ebdd5ee3b96d7a8ccc0b4420657674a",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_29.thy": "e81ce3a39f21a4460cd40794b0f65b34bd80f1c9486f1181bee2dbc25ceef356",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_01.thy": "c13949fbc5601163cc42bc78dfb9c76414af886d114e878dbf413e62f0f5850f",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_15.thy": "3fd66fccbadcda5f30e897a8021f206507973d912d110f5e8aac7dbb76eb3754",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_03.thy": "8e8d788f60da8cd7a5209fb5290d7204d24597918a05a2b3be81d3d6817f0ba0",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_17.thy": "4a099aab8709d86f6bb50ac1d8e23e00d6176a97995f27327fb7d21c7dbf5b4a",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_16.thy": "6fb389b1dd12e3c3197c28c9dc92a4e3c94a498b966e13cdeb9674c3056240a6",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_02.thy": "565429f830bd5c8b90aa93e4abbfda311d4df28236c0c531b5565558a587dc95",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_06.thy": "3d7fe88ffc7da3502916070b69fe880482d0d7a2876964fc28d85bbd952ff20c",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_12.thy": "756f43deefcd29ad4f54bc06caef83008fee78088747dea3aff4e896a4fc761d",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_13.thy": "c05437aab471313d3657085177a7e223023e78b9164741104c8d2b93770f3e8a",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_07.thy": "9e633b902215626802bad6eee619059c5863ef177c829997284b1c0b7d443869",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_11.thy": "7ca6ebbf3fbe6552a0d426dbe0f2cbcdcc65a4a2f826d1caaed7a1c1762f3673",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_05.thy": "ae4b8f01b12bad6d6848385eccc820ffe4a8e2bd6f2fca6c6414f8219188bde4",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/Conflict.thy": "eeaa4e38d0e3bf6c62d050c943f9cc11282468a7ef20997aa934d2e769e6c850",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_04.thy": "1c2b8ad565b74e3864f114d42f4bb1dcb0a56251ffee40d6aa0bb083506b688a",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/mcmr_case_10.thy": "d6f5566ffffb4c74b4f7afde1f447cfe064a0acd535fd61e785a9515e068d5da",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_05.thy": "bb77a6cbbe4832433720fb343b8f8bf80ff4693f5d68b7ef2cf0cc89594f932c",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_11.thy": "5a0505b776f79dfb2e1c3071a956cf1a690712821ac0d6a443657b94275ff828",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_10.thy": "aeb0bb56407fa90d677b2074ea71b102326ca331a5ad57ef0b7d187f07e6ed1c",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_04.thy": "0f13e4c0e354b9de54f655e45eae805f5f1bfdc65f147c3f4c41c884cf7abd76",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_12.thy": "79eaccdd19e04625f893158aa229eac1a635c896ee959c09e1a3478d0d58acbe",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_06.thy": "88e7bc35fd2ed659b565f040391f3ac9f2694a866dbc69d4e4928dbb306d703a",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_07.thy": "da6243d0b86bbcf95a26a86ea64448b7aa2e53011742d318ff63e07d46fef18d",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_13.thy": "8b1c8b8df4a4a2c8c26a5d55658bf925c260dfa5e83f20ef160711474a7725a6",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_17.thy": "82540dfba3921d700f9deaa5abe4f19d5fe2ed6016db3879751feec556cf7b34",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_03.thy": "e32496c23808ca67798e828db29123f9a922c50102d3cff4a637f958014959fd",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_02.thy": "dc2a345cfbbcae6b8d539599b7cfc3d1ee8510754258dd0931b9dae1b137d79d",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_16.thy": "ec52709bb7111b9989cc77d47fe9d7eff2894bc80510d5dd642098dcad5b965d",
+    "law/Isabelle_code/environmental_pollution_with_permits/Middle_concept.thy": "8879cc6d8d84449ae311e50072cf746e12c45290f762a6b5035f297da43035f4",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_28.thy": "0341b53e109c38c00382a3b574ae12d3619e91f8a11cf5664afb738b233ed934",
+    "law/Isabelle_code/environmental_pollution_with_permits/case_demo.thy": "1caf37c35c1f1b201e7d73a4aaa1a1c769e48a614f68d089aba7aee2cfb9b1fc",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_14.thy": "6e99fdfbec6865c6d454570ac6b3d83cfef6a24a21b9934d2fb1447e904ff198",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_15.thy": "11f92f11b76f8814ab31a2228a7358f63af90a08caa3a8bf0796f4630c5e7be8",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_01.thy": "4b10ed6f284aa0728d00a8907bf6d72a0f8d0f91a06124aebf0f53f2e1e9b36d",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_29.thy": "3c11f8cc02544d1086d01cba57cf777c4b7c34c0db70a10a9eb76d0e2be798fb",
+    "law/Isabelle_code/environmental_pollution_with_permits/Case_kernel.thy": "02ef9d4e3a9a06c5ed9940f948567bcfe4b611f5f0d4eb6876fe55ad33ef68d8",
+    "law/Isabelle_code/environmental_pollution_with_permits/General.thy": "64dc5e0f7a6038a26fb5aeb04191d0674ff4647594dadd5d641df3c263c6380f",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_24.thy": "149b2ecfdc91b28ce715fba1edf97f30b180c25cdb65350d25149d43d44e605f",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_30.thy": "8989a545892d0e4a7953082f7b4905f824ebbc617ea9b204498386702b81f7d0",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_18.thy": "adfbea11ac6cddc2a3e1b1791ce2438d300fa2650173f31d4212c7ef6dd4ce71",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_19.thy": "feb1df93145909d5699dac9ca0bc248b5a5bcd3650553679139c57746151ec6b",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_25.thy": "5d9d27b140f4b9457cc84177893c45d4d9b7979a79e815e9241546521742d0e0",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_27.thy": "dffe113cfa1e95a197c39f2f7f0a8f587bb5d4816e1919cde3e8ca5f97c7e613",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_26.thy": "eb57d80ec2aeb88cfa9240c2da8fab8e50c424b8a25c6074275248c01eb0ee5d",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_22.thy": "aa999b240b5c766188e4df0d5523a334465a0576e46c4a33f1f51b975e203417",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_23.thy": "dbb59a8a7386313b3d45e3eef32186f943d34ca2424449f8c526f482f5475767",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_09.thy": "a944d5524b56d1395e85fdd35749a3a74b6e63d646de7e6900502a86cef9e2a8",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_21.thy": "caf06f9d6bc44b9724f56442cf6d4f6f56ac7d976508531f7237fcec7f0cf101",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_20.thy": "6e7456bccf7427372601d7a1dc1f4e7398b092c366a986229d4db80b719e3299",
+    "law/Isabelle_code/environmental_pollution_with_permits/epwp_case_08.thy": "b08aa5d25700e539a5ebae3cbd8e87872e16d3708209209d364183a9e15ccdfd",
+    "law/Isabelle_code/environmental_pollution_with_permits/Conflict.thy": "ab62085717f573e2e416a0c8255d2ed056c1ab3c80550f310aa51eaee1db66f0",
+    "law/Isabelle_code/dream_archive_with_exceptions/Middle_concept.thy": "0232cdd48a4860be8cab82e096fc26abea7f187f8fefe6cb96e470ce9cab5477",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_04.thy": "68d5833b1631531e8682bb2d900d548d25b5e5f0bca326125cd3c49393ccc008",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_10.thy": "3111ec3f75f3a8387da0d84eab5622bcabd519275669be77b6275875fa2a1d03",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_11.thy": "d01007e9049e3cb9a43073f8f6f42cf6ec3f4f11ede61d5137a1f937791c774c",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_05.thy": "ecfbd08189453efad777ea56d0b771725e0a028ceb7e999bd7d11eaeb8d43a7b",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_13.thy": "78cdc6a71f9f60feaee821ac185fe3a7fe5f14db1676b51b707517e1c9f10e96",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_07.thy": "59a9465711457bbe8a465fbc33d423714ca397d1938d618f19221b8daa33a46b",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_06.thy": "b9b871da6a5315e377f2d6fb22231a77fb236869aeaecad053c6da4d10678d3b",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_12.thy": "9909dad9bb6b62943d4734d60d00a6f65dc5f67830050a24516a7d65369a278d",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_16.thy": "055dd5ea9c3aa3a6f5742096482516ccbb8714d77d5dd76eaeb452b409a548d4",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_02.thy": "7270b7663c1fb52e5423374c1792203143ea1ef1af498351da21c24c55fafaf4",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_03.thy": "6e5239d4a8407975f1b27dedf1912e37f2f2a31071bc795e88b65671bb5a4e90",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_17.thy": "5cff54fe393316c89bfb15cb39ee5c0ed7eebb55430318c679b4a3f7316aa809",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_01.thy": "72e5897cf9fea92dbe1bf55e1f138d7247137e9112bd73b81acc65c81ff9105d",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_15.thy": "1421627a33f4c8c192456f302c89af8c54164f5f56cb32cdd469cbcc7c61f19a",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_29.thy": "343371554e040c606f25fbde29b1e92c22632c2870286066edafba6fc82e22bf",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_28.thy": "4abd94b4af6bf3eea3aa322a81834abc246c0d93b2b845435b1283e2943eb19f",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_14.thy": "c5b2cf54a3e29f21dbe24fc514d54b17a3191d4ee4f4487890e3bf2e3cfdf0cf",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_19.thy": "b21d6bccd9fe9ca57987250389834892132550241c012c41ecc65d95f516fb20",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_25.thy": "7b065218a5bb533d82e2b41a37a15b342bd67ed0379db79a9442441aee274e09",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_30.thy": "9db7a2044fcd7e7ee6ab517a92f9a2fb60404ecf76503cb52607f4e47cf93c94",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_24.thy": "1386feef65420c1ea1a84f99bc394092053b62eb5aa1c912995b3edea96cfa87",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_18.thy": "0fe03e615b341f5beb6398e9f088f726e7037c880c78d8e26cdf63d194ed1f88",
+    "law/Isabelle_code/dream_archive_with_exceptions/Case_kernel.thy": "514b388c84616987547c5f4baf62671a14d03ee05441ff05a3689139cebd640e",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_26.thy": "1088d5a524d1759d5785b5a67869e7771fb5f29c20936e36a80d167b55cc0cc1",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_27.thy": "1f9ef806f5485e0fd27320f1841dc0de87d857b760ced4857341c0b3b2ee8217",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_23.thy": "680eca45fadda19070888522c20f6dc51335e0819171e8acc5d58cd80d980f03",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_22.thy": "7e2001ebe7c0d77150df927f768df3c695101b9f273bdf5f81cd93c1a75e26ad",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_20.thy": "541cc737c6a1aca6b7abfbf8baaaee5b207e8e7da19a4374a2e7c73ec9b4bc71",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_08.thy": "bb9bf7bb2d69e2352788343ed69042d66c7e754727060ca6c4c7a43bf1377651",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_09.thy": "2ebad37593828f7ce96a012f2533016c6b0a919d6a64f7210e8137e8e817ceac",
+    "law/Isabelle_code/dream_archive_with_exceptions/dawe_case_21.thy": "67eb48569157d7d1c7875bd38d061dc663802ae709897af361764c3952bb6224",
+    "law/Isabelle_code/dream_archive_with_exceptions/General.thy": "4726503b31f22f32bf0ef442d1ce4f1502284c6c68a63a55f33b335995c22ab3",
+    "law/Isabelle_code/dream_archive_with_exceptions/Conflict.thy": "f04e4ae887390b7c936a587b9bf296fede1da6f30897fcf69068ce39052cbc6e",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_02.thy": "14d677fd3eb41dcea9b5fbaa9a72d849744dd04df6ae7a4bc18b37469c1a202c",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_16.thy": "ccc4935d1d5234ec5b48651c5851cb9bc831a61cd276acfca64d67a33593a84b",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_17.thy": "24de692f0ce46abb593a641398116126c555ce12403d14b6d45e107a67568e81",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_03.thy": "da5b3e19a39a0ed08b7c7ca9810d679c1fe788f128e819df7796ce3fca492ad9",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_15.thy": "279672b8790ace23f51d83aac930cc402330e7183b20ee8faa9780e3c4ff5b82",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_01.thy": "99c8f235ba48bfbcbb07e6f803f4b6f30e2bfb99b70402f7800707acc5d6656c",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_29.thy": "2f49c6fa38c216ffdaeb801c0d2371671bee5cdd907dd0e3b20c34ad192b64b6",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_28.thy": "635f2dde01cf8da28e7fbfc96ee769b63618a87df9288cd97bacc53c821b07eb",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_14.thy": "1319ca563745e92bb1cf961a2760eb83964aa36fb008c9da0cca2160ac04f3a8",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_10.thy": "767bc4638836fd89f19382bafaf79c2d9079e51a5abbeb1191005b2bc259bbd0",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_04.thy": "dbee05ebd15cc33dc567cd66ffddd71f93bd8ef47e1dc1febb26aba6807badee",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_05.thy": "97ab2e750fd84bbdf2048d9bce36a4b4e65d92de8ab13ee7587709be7dad7297",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_11.thy": "65d6b001ad72496be4c48ac16879f65c30f189a4675aea40fdc7c755e112678f",
+    "law/Isabelle_code/orbital_habitat_safety_rules/Middle_concept.thy": "8c7a6424ea72117e6162408d021a0876623055c77fca1a5dd3ad584386523455",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_07.thy": "b5e82d514b4f2e7287465ec0a9e812818961807872f12e6ebe1a7c0554e65b29",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_13.thy": "67ada557d5ddcffef732c93d66ae0159af6b1675cb3e81d96ca345622ee181e2",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_12.thy": "8b25942fb922d5bc739e4a16752899a9b12b57318c8c1eede296acab49710e62",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_06.thy": "111484aef497d75620f4777be0185ca0bf2ba991875927e748326118557bd2ae",
+    "law/Isabelle_code/orbital_habitat_safety_rules/Case_kernel.thy": "3ab2b7d522c2a48c5d2d2a9f0b4fc092b806d94c04fd778a3d0505679b60733b",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_23.thy": "95f1207147d2a90887558c708cad5a5c095aaf3c2bb6e03e32b3d503acff217e",
+    "law/Isabelle_code/orbital_habitat_safety_rules/General.thy": "83a5c6246d19fc196fa912cb3bad700a8e2f3a293b0a1a9f26413e889b10dcd9",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_22.thy": "802b1c91404825e026e9de29f4b62324c98692e07ffea73b98756946b77ccedc",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_20.thy": "085bcfdd3a51d5644e16d9ee811d81e2a92e25f011dc0689d938d39b91ac0ce2",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_08.thy": "5693fd3cff3c088d1892ddf3f9990860300edb3de7eb70a8a539b364032b60dd",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_09.thy": "71764d087b7b48c036084d7fceb0523632f215af15d717e0bb2543cff74c8bc4",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_21.thy": "c443276076a78f5000711e77ec836d6d9ac70970198143aafd2104e548c6a54b",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_19.thy": "b60ef8052f5ab054cf13407bf202738065f6c8e954733fda445e434062c2ade9",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_25.thy": "34348bb51e822a8633c354deded0dc37495940d9ffcef99c9fd0fcba901cb94a",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_24.thy": "8d4202a0ea1c5ffdf3b2f6c09fbc0b4aa342fffb099d7bead6171e4d1289fb0e",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_30.thy": "5a1ae35e97d72be775e49ed010c6a0045f68eaffc90aa8ba3303258d4c388c3d",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_18.thy": "041d3bebea6449a8a62672b72361b272f8806b38a9859d3037979f97d6ed0569",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_26.thy": "dbfb02e4078fa05765913585fc159d4ad8990eb446eede5c85403475f0b5b39f",
+    "law/Isabelle_code/orbital_habitat_safety_rules/Conflict.thy": "23306131a369e9ac54ff63dac409a39371153d003931f9d112dc1cee9632aa9a",
+    "law/Isabelle_code/orbital_habitat_safety_rules/ohsr_case_27.thy": "0c55bdc588fb755be8d1fcb9c07bc98f34d6019d5501ee98e576b78679363ac9",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_05.thy": "018efa48cc346d17e1a34a23219eca8752599334cb18120fc2182bc995637e13",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_11.thy": "05faad82d4a7e0d48fbb277c99189fe5f28e2e225c8b1cda5255657f74aef5b4",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_10.thy": "964009b6266cdeb129db9fd3439121358c6ce852b5a6144218eae5ff898d426f",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_04.thy": "b6a40ce3be91e5181e959436a036e5e24a27d22f9dcbd44a5a3c4d8996838ff6",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_12.thy": "5f2a90aa51da061c88a5d23034d42070e3347b3831494556790d17d28e32a81d",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_06.thy": "af5d1065c4d18b49f8e24a3cc4eff5c2d884ad170f83a4c19ad192a8ccfec63e",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_07.thy": "f99f8a8713b8711cd2aa15f1068a22dc3740d7d664ede89e13545dfbc8b101d0",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_13.thy": "bf78d3cf98ce3413086c8bf6379e8e1c0c75bf62b0103a648ff370ea6cc5c6d6",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_17.thy": "65bc3e148b79d28587cd6e1ab030ad613c5e2aecaf7249f34a9434f7f053e9d7",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_03.thy": "15eb410dac16e52fe4a036f6185a0999df283fe19d31928331fd8fe8e5042b39",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_02.thy": "ef37dc7b6bed8be7a07c3ebb07003b24701211cdaec976a5794bca3b94ced014",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/Middle_concept.thy": "18dce7ec34264a03d4511b5f55400a6bcabfa9100ff042f664f1420d012a746a",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_16.thy": "7bb4333165ba60d76980982bc4cd6b10eedb2a5080693c6848432064a6b47cb4",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_28.thy": "e8bc0a18456aa1da300b21ba7cc43942d53a431668a70b76de1f0c416d07875e",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_14.thy": "115821da9f8081dc58bd6d5246cd5cdf4881ee89192dbaa5d21b4314727c884a",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/case_demo.thy": "79dcfe46cde0f2e8a9607de005ab2f35fa05332a812ede0b8e4670718c704bcb",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_15.thy": "231c98b074ef2ddd3e00940e6b22fbeeb44e103e75b07ae09bba3f3caa0bf975",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_01.thy": "b91e6f550ffe31b395ae43f102c99db2adbf3fd307211e84cdb53f4846a5b0a8",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_29.thy": "1f2852b93c30f422e0614c23c2e700156dc12c02ffa2ed577f3b939e8f7d36a1",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/Case_kernel.thy": "ecc3eed7f54b9f5cb6a714d764e9e7b9f607ca67ce5c7f35d93af33cadc16cbc",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_24.thy": "d64f16fa3b0edf2403a77d79f2616dd1f44a62c5798562b3baee17fc6b003131",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_30.thy": "243042d092cd3d79b577be5332e97b2b5c00a0a7a2fdc536f7997b467e493850",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_18.thy": "3718cb4605a56adfc63f6e62f1aced6ab14d9f4cef57c1f3637a89f78cae3185",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/General.thy": "82eddd8b7b6baa7598192b991f44595827c031322f44c7bf1c99ac0658841265",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_19.thy": "d3bcb0c2e07a5154b4f3731d915457df46d10d0ec867e126759abbe37656db0e",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_25.thy": "c7710de195057f3c547f6eb57d70af13a131fdb47206c107d6b2de9bd7326bed",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_27.thy": "ff7bbac289b4394a6fc6e722f24dd63c84b9b4d725a612d7abea57478e5ec8b3",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_26.thy": "e9240d9f0c94483d2d83e9ff6875ab5483fe24b7e5f63295775f2bce8863c557",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_22.thy": "1a916532d99f77dad62374f98a308a646b43e332dd68a1a8675fc1df46c5b601",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_23.thy": "bf4cbcc5608c09c96048050874385124e4298cdd5e4e1fb54e5ccd1b016dbaf2",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_09.thy": "37d8028ce46926ca8b07fa152f4509c72d5c5bc22af390f57db77492c0c8eb6c",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_21.thy": "97ff3a849942ba9f76627cfc58b5e72b120e9544ad1a070f75a3d881d61eb1a4",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/Conflict.thy": "c8ec587bf8cc67feabf14196e7dd152c170ff6ca649dd60b23113e131e445e53",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_20.thy": "53c1430994ec0392578c7e77f11e8973f373d7a7f887c7fddef894edcb17ef75",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/arwre_case_08.thy": "1ae849fae395378c73911cec1a16dcf17f65a26c21215c385e03873fba3ca2c2",
+    "law/Isabelle_code/mirror_customs_border_rules/Middle_concept.thy": "906050969266056213f1ae2302db1c64338c687092fdd272a9aadda42843bc40",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_02.thy": "269ab16b9ce023ed0e49112598de29be655678abcf17a1068d80c019ac0b4246",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_16.thy": "3d2abc1983accba05138f0b72805e10db9de084956dcff060c378a629243e017",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_17.thy": "ae5aa9a65d0f9242b0f29088483461234912b82dc2aea6a05e1878998582c880",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_03.thy": "190d72e11ffc963e4d9eab7eada5ccd783aae643fa960a01bd3a6c157a43f1d5",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_15.thy": "476a6f711cad3998c725cf464cad75bbc0499c3b8bc1f1e07c9edac526d5a35a",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_01.thy": "9cc10eb896146762df52e4f8b39d2eb412477756dec7319968bdff8284a63839",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_29.thy": "89fe0986526f8f16d9db46ed271b29b0ae23f1f9656e1591d848e0f3454bb4f0",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_28.thy": "e5117b4e85c551751b4d3f1b6419cb2e51a055a904dcd11a017adda9764bd5fd",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_14.thy": "62cb2fd6ad59d6ea95ca6ac58be0803f245ecf8c28e8c70c51b2453d5d1de97b",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_10.thy": "ffafd155a8d64315699d879e829fa561a561f953f09f3030def267a1fedf52b4",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_04.thy": "169b20389d2336bea180af83da98a6a5b5491e0fa43dd1341bf4e028527d63e7",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_05.thy": "1b85653690202f0f49b5d94695ad75d91c1acc243ce881250af9a37b947edea2",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_11.thy": "28c08c1bd88395ba151806b0bccfcd3586bc0110a4e2ff324d1c0a8a74c9610e",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_07.thy": "abe10cd9fcbac263717b011ee39ec45e9c3159fa2077673aa60b533ad51abbf4",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_13.thy": "011eb952c56451068684f7df100b25320335b372990bf1914c52ef505cde726a",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_12.thy": "c423def62da796408386503a398dcffb7ae9014ace264b36778f8164ac06bc5b",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_06.thy": "810a92651b2457546f5b8283aa19b596ef3d64553fbc6754f3e746b235bdba5b",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_23.thy": "6cd836e7af76e751b7c80988dbc537e9314a9afa86ae195558b84eeb5e4e8bb8",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_22.thy": "216d06fdbaa5501ba287b01e7e5a4824166aed7377e07dc3921dd95b80ce9f44",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_20.thy": "da6a406b8c0a9fb58548df1fdc0889f38a6e4b88df53f952c3c591848e69810e",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_08.thy": "08afc890648d0218f84324c247de6a2d00ee3085981c1c08b28dabc7f2646bd5",
+    "law/Isabelle_code/mirror_customs_border_rules/Case_kernel.thy": "e90ae9017ba74c14a3fb192507927ebc2960732566d04009bb21e0e205d5d7be",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_09.thy": "bf4bd7d81639adf2d32233a5aad6d42ada3f0ff4a6764dcecacf5f3c43982075",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_21.thy": "762178fc2c49d955959e12aaed6ab528b73d7f7f1e9e2ba7ffb61c45614941dc",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_19.thy": "fcdab9dfbd99fecc652a2a5be2a030be18248a9a2268ec2fae81c60daafa2cf6",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_25.thy": "4d568deafacb70934af0dfb7f3b9938b18291332954487b65d405d7a93cc9d08",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_24.thy": "d90af2346f1a8c0fbc34cb9886800631939ffc3b5887230e2f85409364e2b901",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_30.thy": "5e4681048b56e61211bdc7bacb473abcf51f9a1b1be1364c8baf990029498ba5",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_18.thy": "c4aeefd0616306c20b3f45cfc44ac7a5039c23cc20a0208d03dd79a11d6ac4f8",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_26.thy": "612f12c45c49d4c8d1825d1c1bf45c8e9134ade8c427a8c8490ce53cda932f8f",
+    "law/Isabelle_code/mirror_customs_border_rules/mcbr_case_27.thy": "89576139ca1e9c569ad76750286aae3379fdca0bdfcf3cb284ee1d6e9f80a8ba",
+    "law/Isabelle_code/mirror_customs_border_rules/General.thy": "ac19fb0aa0041c213c81bfb095802d383acfd720626a03cdc3d866957a452539",
+    "law/Isabelle_code/mirror_customs_border_rules/Conflict.thy": "c0bd0500e61b3d2aafebadc5dc02c9d28f396df6e6100507f3c54acd67601c7b",
+    "law/Isabelle_code/aviation_security_with_authorizations/Middle_concept.thy": "2a59dd7fb7bae4f9a5480044bad562d3e482c13835399264ce5d5c3768cee6e5",
+    "law/Isabelle_code/aviation_security_with_authorizations/case_demo.thy": "e7d0b41983bebf854918ebc82f905e02d59826b1d845016da756911c44e7018e",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_24.thy": "614ea8d4fd380b44249c5b642d5efff9555299855319e400ea7901c8096a3167",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_30.thy": "045b5a5de6deb1c54d349c9633ade6eba76f3bcb47505073e4f24f3ed0af35a3",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_18.thy": "3945bcf369c98d23e13eaa55b0103b406b613313f421d2c3e8fced762473a47d",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_19.thy": "523308ce066a27ad0882c9a665a989b4ecac092c09f5f8e683059c2e479c7c2c",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_25.thy": "d8df6f5722388ae6a080e69e344923ace7650ef1a99d5aeb259a8e970ba9857d",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_27.thy": "b4e54268b81de679d329db799068f10341b67b19bdb362b92421ba650fda7fba",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_26.thy": "0dbcd85c5238f3cdcebb89bdf75a04939eec5ea2d40472caac0c729f73b282e5",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_22.thy": "696117581b694c4495073c45b888dc80a470656e7db76e969a70eca48528bcbd",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_23.thy": "825318d82881e297b547750aa98493b08b35ff9736f7feceba88f32325037d0a",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_09.thy": "f0850abe8b4ba09d4181193b9117f5c4e130090a0752c8f66aa5e384ee487ece",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_21.thy": "db540bca081d11aa33829fb14053107db16b04bb21b11cd07105314206a6bf39",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_20.thy": "1d2cec5220654dd2ecf7048861ada7491a41fb1c160c20e492c06d2d28dec1bf",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_08.thy": "782805f8bc738875132d95185fa66c36bd79045f3f99ec32e62a74575e8afc33",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_05.thy": "05e26ee2342231b07e93d79ba716a580c9a79314300188860312017ff9dac996",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_11.thy": "9f782ec488749fb129a8f4f96f0525218b752dc2c83bfd775ef4736180816659",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_10.thy": "eb1f8f867b1fccbd60273d315c0d4c6ed847d353dce15afcb320cb0a869e5096",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_04.thy": "95960ad11592ed55d1c1d412a2a5a4b0a9d8299f372d755621d669bbb86e8f9e",
+    "law/Isabelle_code/aviation_security_with_authorizations/Case_kernel.thy": "23cca26820e55839dedcf23218999c617e10efe66dfb099be42e8ec7c84cf22c",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_12.thy": "658e51cf18015246e4e8031fa353031c6a22cc73fe05e4f78e7a04264778567d",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_06.thy": "d5d045cad75c27525f01b63d8658d276d276b19690d8750f58bc10b8cf3c0ed8",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_07.thy": "cab4a8dfa9024e1cbcfdcd3eb11991d247beb09156ba17296cde6565b74e1752",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_13.thy": "f1c3b093d3ca4a1c9d06f12c86bfb2747899709b7ff041f59bf12f5cb7d2cb87",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_17.thy": "e0e3cd935e08205f8adadc0f66f5bb900244c2ac634d66b6b903037836374e4c",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_03.thy": "3711ea5f0a00e510d0b726b3b35e12834676e19b4ebe008d3cb33a15839d0369",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_02.thy": "0873091c6733d0fdef1b1f3221c66d330cf0407d64f39cde11fdfcf32a25a789",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_16.thy": "95a12fc526d0cf6eaf62c30bf538e38fbdd2dcd0cda4c6779d4dada49481191f",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_28.thy": "7b6decf10ea6989b507d17edce1c32c50dda3bad7655dc503741a0ab4bceaea6",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_14.thy": "f24042ba6aaffc04c5f9012dc554a42a739a11a43514a9c4a71498580836008d",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_15.thy": "542c8a83dbb7d8c6cd093662d27ed42e6cd04a1d52b5d5dc9f1550e35590484b",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_01.thy": "968e9dacb96b561aa569aed7164a99f8dfa2a58533c2724ce7e078e2548008eb",
+    "law/Isabelle_code/aviation_security_with_authorizations/aswa_case_29.thy": "557c74746562232b1de47a00e0ce3dd308ae0b2cdb878b74ab76c3c5902f3db3",
+    "law/Isabelle_code/aviation_security_with_authorizations/General.thy": "7495f7525d2be15281c57e654709e6f41e8177c0fc86d64f9ee618acc1f9e1c7",
+    "law/Isabelle_code/aviation_security_with_authorizations/Conflict.thy": "a087bbe8ae909d5074a83e15e94cbb3abcc9f11db959e8d3ac5a3d949c5be001",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_26.thy": "d3f3bae3b4dd648b1d5a02194bf3058f6ad841f94dd08cbf67865fca3bb740bd",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_27.thy": "9b38d29151465c2df06060fdb84427f32837530dda5956bd748432897b4d9f07",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_19.thy": "0bac63ba3cc95cd3f1da2e93f8b6bffa38d9f6eba8bb7f1634f940d5690d82e7",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_25.thy": "0334e6d2006dc06f3b125178dd4053c0ce6c6acebe8492c34afb551a4ea3f5b4",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_30.thy": "bd6c806860997bc6a7b7e03d3cc7ee7e5f65a298bf27081afb71526ad4cd965e",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_24.thy": "056d3a738db12d6f62e9d5c4666045663f49d4d544d1acdb75cfb842f0d94518",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_18.thy": "cd1fa997bf6584d360cc2073faaba64e9ed51ff2c70c1b1a5b64c57fdb2a1afe",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_20.thy": "661ac603bf7cb326887cf0ec2c362256cbbbb096c1ff41ea94fa9bd73242a4e4",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_08.thy": "a49847df7dc7d773b92a81982f519055ad4331e5ac72288db71e5eb8a0e340af",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_09.thy": "b6a8d5bc2f8e305ff519a1bdcd7ac3f94e123845c6cb8a0fd9630bcc36b179ec",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_21.thy": "79934f9eb2adaeadba411da1723a0fef4375e04c3194a8cdee985ded2a8455f3",
+    "law/Isabelle_code/property_crime_with_defenses/Middle_concept.thy": "8c494e7aaeffaf7cd4c45701f2968bb86a3cd544a9c9458ef534c3a024fab83f",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_23.thy": "61cb6562836e00919a3848c5caafb831a216c7000e3800c3879f053aa18869e3",
+    "law/Isabelle_code/property_crime_with_defenses/case_demo.thy": "2e7136d9c08e9ae483e1eef22c6164ae31151cf1a2e79537d47d216a5341d0cb",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_22.thy": "870df8a7aa6e571d799c7efe4a7e2d6238fd08749433c6d39fdebe843e4ba439",
+    "law/Isabelle_code/property_crime_with_defenses/Case_kernel.thy": "2f8185e2dbe911a83769d76d2ee4dd1683fa0730e6e911741799fcc2e9b05d4b",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_13.thy": "77620b011106e0425ec9612576049177da63e0c6946cad68d389e81eff719ae6",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_07.thy": "8b8dc073369f4ca1a6f68f9e6214132adf0e5bc75ab9e02849ef19adc0fc760f",
+    "law/Isabelle_code/property_crime_with_defenses/General.thy": "7b92814564bac2c47eb17e98d53c1820a87b921e4ea604472f013535a8667420",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_06.thy": "453f1f7d393ec2a50df555dcaae451e9ce23dda206485133586419ede8a2fdda",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_12.thy": "58c1f9970a51821bf2c1b107dcca63597c24c573b646db1671522b997eef440e",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_04.thy": "6d16be8561eba46b0e9ed8e9461b8efec8c41ef23fa4f56d22d400295d346bb1",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_10.thy": "6f5d260e206750153dd770e83ea400affa67ed9bdd1d3c6bc70275774188ce6e",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_11.thy": "8f643f86ab70e0a66396db0950dd68ce46d1886c5cb8536dfafeea30541f38e9",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_05.thy": "6e98051abf900b5fe3ce66dda341737034c7c7a2a9df315f8c59803afd65978f",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_01.thy": "5d6f700dc5d22bdb09e4be3a8d9785b7c07850453b39b34c19a5fde8e555764f",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_15.thy": "5363461674b0048e07dae6f0cbc6855b5fea4b1cf1ae9e7e6c90a8b7823a283b",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_29.thy": "e2e7e2e09e4c972a8e1cc7a785e0e847f14eb9cc4a9450cf4972462bb11b5df6",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_28.thy": "ae8bd56ef270caca0dbb0380668fc8d6958ad2d0f5be2a4c9f0555ce0a1af19b",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_14.thy": "060f5abb6bd3a6a4f617bb42a5c679d1e67d319fa6e78711cfd544bc188a1491",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_16.thy": "99ecc0c25f7865e3870f563811614171f9179486b13acffd4e5788b81f4b234e",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_02.thy": "bec9d03f8c7624c4765e09d3d44773892d7bcfa7d4ef508ef76c9bfa46f39f81",
+    "law/Isabelle_code/property_crime_with_defenses/Conflict.thy": "99a0123c26d32d2199533fa5ac81ede7647d62ab146f31017194fe80b1d9581c",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_03.thy": "0dafcf0bdc59aadb2384a28b6bbc5991a361c4b31d148e8afa014993ad3107af",
+    "law/Isabelle_code/property_crime_with_defenses/pcwd_case_17.thy": "aac591269b40245ca4ae69168011d0a4b5909bc195eb2678f7420c5f73469553",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/Middle_concept.thy": "73a726df7dc45ab26b7f4a414da1dcc3eb2c5fe66697fe0aacdf801d2edd880b",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/case_demo.thy": "1a6cf707580aad9ef0db0929b11f8b1166480a6b44c523c0aab8b6aafaf196ad",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_14.thy": "2f9e47855f4d8c57edf48f701faabb1c4dbe2f5fb577d44cdded38f8057b3b0b",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_28.thy": "fa20ef357ab5e90994df3e1531de0abdda0a494ea49d4a5705fa85d2a7a2fa74",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_29.thy": "713203124ca615756b8da9cb012e85a33cd0eeb8e20359d73f3c56929428e50e",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_15.thy": "cf86296f465d2fb35c4dad89fdd4d67a011ac36aaa8b7c564d183a7fe4fbf020",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_01.thy": "030bb79b9cc0b252ca0f1128510a8ab5628e2328df1ebb65c959bd3efd59b4ed",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_17.thy": "0f71998b96b536c366519d59e1585ecaf6b5168da53483444b66033fd9c7d2e6",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_03.thy": "ccfd6e97045e9b4764acfee19aecec6ade6730284fa4db763bc6c9f03003ca41",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_02.thy": "20c8a2f0f018a270fbc2ccd5e2bbd490557d3ca23f3b17ca7b60a9d478bb5b64",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_16.thy": "4c712e9da4913bf80ec049e59a8b78284508eefeb8a1c8361fb27fd3b20467c7",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_12.thy": "183d5a9dad3c9a59bbb7ac12e92486db44fc001dbbbc604a6088dd87b341954d",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_06.thy": "7fe667ae769842dea1c4ace490b69db0d2e77b7e1b9834b5d22689913c3c42ad",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_07.thy": "5b758015f3e67015c5d25d8b5af93d5595e8910bc83434f5964d9a3785c41528",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_13.thy": "269884eb8dafc0c25e4120618b0053e00d47a30ec4827f5a7677a47af02299c0",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_05.thy": "95d15b2cee238c41ab13e0aae43776f0e7d3d0a7df1c9e62be539ef66c4a8692",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_11.thy": "19163ee2bea9fc00a82c37ff5b790b94ebc2ce4a7c801e527df6d0d16c24fe6d",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_10.thy": "616909660fdbb08579464af9809828e222f290d059c016c5bd8c6f3692125520",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_04.thy": "0cbc62b9850c7d2877f5241bf8b193ca79e121176210f4b37c25e6eeb8f972e9",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_21.thy": "277ef1a4b3620311879b290551e1c0e20779477f2088ba54a25fe7d2de55f225",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_09.thy": "f4f06be35558bcc46a8860dbe41e85d9118bdd86bda02e552f7d4115e9dc1804",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_08.thy": "1d17e7bf27b80e3ff8c7a5f2deb100eac000e41d072abedd36a990181e0e7908",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_20.thy": "b6f2d7b6f683fe5c2ead615850873449cdf475d0270e110b1e27e761facca7d7",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/Case_kernel.thy": "b90cd5226656ac99df5664adbaa48f3ebf22ac39ca23747dc08fc012a6c62e1d",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_22.thy": "4d495ab1210ad508f4490f86e43afaf74397070e8432697842b18584e3e9c5ff",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_23.thy": "8599db2a8d20da95553da5128a73e8956ab2aab0349911f26444cca42c0cca5c",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_27.thy": "66a09844e15da3c34d4218863e827abb3ccd9355a341f26221034884b034e268",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_26.thy": "1969cdb1544746013d803e74693deb8f5735865ae73812a1b0a9c26b231379d4",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_18.thy": "1613cdc4bd394557b6365d10b37c8ba5c5bb61878fcbc1936a7e4c8515da46fe",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_24.thy": "3697c0557a8b8690a536f80307b2e8542b5084e2e6202371c0eb63741b147597",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_30.thy": "b0da5376e639ac1be470e7baffdb2be09232a2d640b29cb6940f05bc6d8fda32",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_25.thy": "80517cb2dd95e0e35ba68ad0c4d70b76c0f122f336fe4d2e096a48dc41f27c51",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/ciwa_case_19.thy": "d2848fd079391df58e5d05e2fac3c92ba58e4fd184ec664704f39225b702623e",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/General.thy": "66266580f40413bfc8bd4b272a7c1ace291822cc0635d4a47de6326581114c9e",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/Conflict.thy": "76befb99c483f9972501f0cbf20ab2833a725968fccc3f880bb3edddc9cc622c"
+  },
+  "cases": [
+    {
+      "sample_id": "S01",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_14",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization",
+        "Art_Collapse_Avoidance_Authorization"
+      ],
+      "applicable": [
+        "Art_Dispatch_Order_Authorization",
+        "Art_Collapse_Avoidance_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S02",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_23",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Unsafe_Automaton_Release",
+        "Art_Public_Clock_Disruption",
+        "Art_Emergency_Reset_Authorization",
+        "Art_Calibration_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Emergency_Reset_Authorization",
+        "Art_Calibration_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S03",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_15",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Collapse_Avoidance_Authorization",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Collapse_Avoidance_Authorization",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S04",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_12",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach"
+      ],
+      "applicable": [
+        "Art_Sealed_Track_Breach"
+      ],
+      "formal_result_set": [
+        "tunnel_access_ban"
+      ],
+      "stored_gold": "tunnel_access_ban"
+    },
+    {
+      "sample_id": "S05",
+      "key": "law/environmental_pollution_with_permits/epwp_case_20",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Serious_Contamination",
+        "Art_Falsified_Monitoring",
+        "Art_Valid_Permit_Defense",
+        "Art_Emergency_Release_Defense"
+      ],
+      "applicable": [
+        "Art_Valid_Permit_Defense",
+        "Art_Emergency_Release_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S06",
+      "key": "law/environmental_pollution_with_permits/epwp_case_25",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Serious_Contamination",
+        "Art_Valid_Permit_Defense"
+      ],
+      "applicable": [
+        "Art_Valid_Permit_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S08",
+      "key": "law/dream_archive_with_exceptions/dawe_case_02",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention"
+      ],
+      "applicable": [
+        "Art_Dream_Page_Intervention"
+      ],
+      "formal_result_set": [
+        "page_quarantine_order"
+      ],
+      "stored_gold": "page_quarantine_order"
+    },
+    {
+      "sample_id": "S09",
+      "key": "law/dream_archive_with_exceptions/dawe_case_27",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "applicable": [
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S10",
+      "key": "law/orbital_habitat_safety_rules/ohsr_case_24",
+      "triggered": [
+        "Art_Restricted_Airlock_Operation",
+        "Art_Oxygen_System_Interference",
+        "Art_Corridor_Safety_Obstruction",
+        "Art_Habitat_Duty_Authorization",
+        "Art_Salvage_Emergency_Authorization"
+      ],
+      "applicable": [
+        "Art_Habitat_Duty_Authorization",
+        "Art_Salvage_Emergency_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S11",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_15",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Unsafe_Automaton_Release",
+        "Art_Public_Clock_Disruption",
+        "Art_Maintenance_Order_Authorization",
+        "Art_Calibration_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Maintenance_Order_Authorization",
+        "Art_Calibration_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S12",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_14",
+      "triggered": [
+        "Art_Restricted_Shelf_Access",
+        "Art_Relic_Handling_Breach",
+        "Art_Catalog_Alteration",
+        "Art_Vault_Removal"
+      ],
+      "applicable": [
+        "Art_Vault_Removal"
+      ],
+      "formal_result_set": [
+        "permanent_archive_exclusion"
+      ],
+      "stored_gold": "permanent_archive_exclusion"
+    },
+    {
+      "sample_id": "S13",
+      "key": "law/dream_archive_with_exceptions/dawe_case_07",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization"
+      ],
+      "applicable": [
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S14",
+      "key": "law/mirror_customs_border_rules/mcbr_case_09",
+      "triggered": [
+        "Art_Unregistered_Mirror_Crossing",
+        "Art_Shadow_Cargo_Irregularity",
+        "Art_Label_Inversion",
+        "Art_Returned_Cargo_Allowance"
+      ],
+      "applicable": [
+        "Art_Label_Inversion",
+        "Art_Returned_Cargo_Allowance"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S16",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_22",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Public_Clock_Disruption",
+        "Art_Emergency_Reset_Authorization",
+        "Art_Calibration_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Emergency_Reset_Authorization",
+        "Art_Calibration_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S20",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_15",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Unsafe_Automaton_Release",
+        "Art_Public_Clock_Disruption",
+        "Art_Maintenance_Order_Authorization",
+        "Art_Calibration_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Maintenance_Order_Authorization",
+        "Art_Calibration_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S21",
+      "key": "law/aviation_security_with_authorizations/aswa_case_29",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard",
+        "Art_Emergency_Tarmac_Authorization"
+      ],
+      "applicable": [
+        "Art_Emergency_Tarmac_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S23",
+      "key": "law/aviation_security_with_authorizations/aswa_case_23",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard",
+        "Art_Maintenance_Window_Authorization"
+      ],
+      "applicable": [
+        "Art_Compound_Airspace_Hazard",
+        "Art_Maintenance_Window_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S24",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_21",
+      "triggered": [
+        "Art_Restricted_Shelf_Access",
+        "Art_Relic_Handling_Breach",
+        "Art_Catalog_Alteration",
+        "Art_Vault_Removal",
+        "Art_Curator_Order_Authorization",
+        "Art_Flood_Rescue_Authorization"
+      ],
+      "applicable": [
+        "Art_Curator_Order_Authorization",
+        "Art_Flood_Rescue_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S25",
+      "key": "law/orbital_habitat_safety_rules/ohsr_case_30",
+      "triggered": [
+        "Art_Restricted_Airlock_Operation",
+        "Art_Oxygen_System_Interference",
+        "Art_Salvage_Emergency_Authorization",
+        "Art_Pressure_Stabilization_Exemption"
+      ],
+      "applicable": [
+        "Art_Salvage_Emergency_Authorization",
+        "Art_Pressure_Stabilization_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S27",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_18",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Unsafe_Automaton_Release",
+        "Art_Public_Clock_Disruption",
+        "Art_Maintenance_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Public_Clock_Disruption",
+        "Art_Maintenance_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S28",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_05",
+      "triggered": [
+        "Art_Restricted_Shelf_Access",
+        "Art_Relic_Handling_Breach",
+        "Art_Curator_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Curator_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S29",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_29",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Unsafe_Automaton_Release",
+        "Art_Public_Clock_Disruption",
+        "Art_Maintenance_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Public_Clock_Disruption",
+        "Art_Maintenance_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S31",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_22",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Sealed_Track_Breach",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S65",
+      "key": "law/dream_archive_with_exceptions/dawe_case_23",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "applicable": [
+        "Art_Fading_Archive_Damage",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S66",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_22",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Sealed_Track_Breach",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S67",
+      "key": "law/property_crime_with_defenses/pcwd_case_16",
+      "triggered": [
+        "Art_Theft",
+        "Art_Fraud",
+        "Art_Robbery"
+      ],
+      "applicable": [
+        "Art_Fraud",
+        "Art_Robbery"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_10_years",
+        "imprisonment_not_exceeding_3_years"
+      ],
+      "stored_gold": "imprisonment_not_exceeding_3_years"
+    },
+    {
+      "sample_id": "S68",
+      "key": "law/aviation_security_with_authorizations/aswa_case_14",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard"
+      ],
+      "applicable": [
+        "Art_Compound_Airspace_Hazard"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_7_15_years"
+      ],
+      "stored_gold": "imprisonment_between_7_15_years"
+    },
+    {
+      "sample_id": "S69",
+      "key": "law/environmental_pollution_with_permits/epwp_case_24",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Serious_Contamination",
+        "Art_Falsified_Monitoring",
+        "Art_Valid_Permit_Defense",
+        "Art_Emergency_Release_Defense"
+      ],
+      "applicable": [
+        "Art_Valid_Permit_Defense",
+        "Art_Emergency_Release_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S70",
+      "key": "law/environmental_pollution_with_permits/epwp_case_19",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Falsified_Monitoring"
+      ],
+      "applicable": [
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Falsified_Monitoring"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_7_years",
+        "imprisonment_not_exceeding_3_years"
+      ],
+      "stored_gold": "imprisonment_not_exceeding_3_years"
+    },
+    {
+      "sample_id": "S71",
+      "key": "law/environmental_pollution_with_permits/epwp_case_30",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Falsified_Monitoring",
+        "Art_Valid_Permit_Defense",
+        "Art_Emergency_Release_Defense"
+      ],
+      "applicable": [
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Falsified_Monitoring",
+        "Art_Valid_Permit_Defense",
+        "Art_Emergency_Release_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S72",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_26",
+      "triggered": [
+        "Art_Restricted_Shelf_Access",
+        "Art_Relic_Handling_Breach",
+        "Art_Catalog_Alteration",
+        "Art_Vault_Removal",
+        "Art_Curator_Order_Authorization",
+        "Art_Flood_Rescue_Authorization"
+      ],
+      "applicable": [
+        "Art_Curator_Order_Authorization",
+        "Art_Flood_Rescue_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S73",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_07",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S74",
+      "key": "law/dream_archive_with_exceptions/dawe_case_29",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization"
+      ],
+      "applicable": [
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S75",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_26",
+      "triggered": [
+        "Art_Restricted_Shelf_Access",
+        "Art_Relic_Handling_Breach",
+        "Art_Catalog_Alteration",
+        "Art_Vault_Removal",
+        "Art_Curator_Order_Authorization",
+        "Art_Flood_Rescue_Authorization"
+      ],
+      "applicable": [
+        "Art_Curator_Order_Authorization",
+        "Art_Flood_Rescue_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S76",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_05",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Public_Clock_Disruption",
+        "Art_Emergency_Reset_Authorization"
+      ],
+      "applicable": [
+        "Art_Emergency_Reset_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S77",
+      "key": "law/cyber_intrusion_with_authorizations/ciwa_case_19",
+      "triggered": [
+        "Art_Unauthorized_Access",
+        "Art_Data_Theft",
+        "Art_System_Disruption",
+        "Art_Financial_Cyber_Fraud"
+      ],
+      "applicable": [
+        "Art_System_Disruption",
+        "Art_Financial_Cyber_Fraud"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_7_years",
+        "imprisonment_between_7_15_years"
+      ],
+      "stored_gold": "imprisonment_between_3_7_years"
+    },
+    {
+      "sample_id": "S78",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_10",
+      "triggered": [
+        "Art_Restricted_Shelf_Access",
+        "Art_Relic_Handling_Breach",
+        "Art_Catalog_Alteration",
+        "Art_Vault_Removal",
+        "Art_Flood_Rescue_Authorization"
+      ],
+      "applicable": [
+        "Art_Flood_Rescue_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S79",
+      "key": "law/aviation_security_with_authorizations/aswa_case_28",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard",
+        "Art_Maintenance_Window_Authorization"
+      ],
+      "applicable": [
+        "Art_Compound_Airspace_Hazard",
+        "Art_Maintenance_Window_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S80",
+      "key": "law/cyber_intrusion_with_authorizations/ciwa_case_27",
+      "triggered": [
+        "Art_Unauthorized_Access",
+        "Art_Data_Theft",
+        "Art_Financial_Cyber_Fraud",
+        "Art_Incident_Response_Authorization"
+      ],
+      "applicable": [
+        "Art_Incident_Response_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S81",
+      "key": "law/aviation_security_with_authorizations/aswa_case_23",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard",
+        "Art_Maintenance_Window_Authorization"
+      ],
+      "applicable": [
+        "Art_Compound_Airspace_Hazard",
+        "Art_Maintenance_Window_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S82",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_06",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S83",
+      "key": "law/dream_archive_with_exceptions/dawe_case_27",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "applicable": [
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S84",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_21",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization",
+        "Art_Collapse_Avoidance_Authorization"
+      ],
+      "applicable": [
+        "Art_Dispatch_Order_Authorization",
+        "Art_Collapse_Avoidance_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S85",
+      "key": "law/cyber_intrusion_with_authorizations/ciwa_case_19",
+      "triggered": [
+        "Art_Unauthorized_Access",
+        "Art_Data_Theft",
+        "Art_System_Disruption",
+        "Art_Financial_Cyber_Fraud"
+      ],
+      "applicable": [
+        "Art_System_Disruption",
+        "Art_Financial_Cyber_Fraud"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_7_years",
+        "imprisonment_between_7_15_years"
+      ],
+      "stored_gold": "imprisonment_between_3_7_years"
+    },
+    {
+      "sample_id": "S86",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_14",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Unsafe_Automaton_Release",
+        "Art_Public_Clock_Disruption",
+        "Art_Emergency_Reset_Authorization",
+        "Art_Calibration_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Emergency_Reset_Authorization",
+        "Art_Calibration_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S87",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_20",
+      "triggered": [
+        "Art_Restricted_Shelf_Access",
+        "Art_Relic_Handling_Breach",
+        "Art_Catalog_Alteration"
+      ],
+      "applicable": [
+        "Art_Relic_Handling_Breach",
+        "Art_Catalog_Alteration"
+      ],
+      "formal_result_set": [
+        "conservation_quarantine",
+        "reading_room_suspension"
+      ],
+      "stored_gold": "reading_room_suspension"
+    },
+    {
+      "sample_id": "S88",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_07",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S89",
+      "key": "law/dream_archive_with_exceptions/dawe_case_30",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization"
+      ],
+      "applicable": [
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S90",
+      "key": "law/property_crime_with_defenses/pcwd_case_05",
+      "triggered": [
+        "Art_Theft",
+        "Art_Consent_Defense"
+      ],
+      "applicable": [
+        "Art_Consent_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S91",
+      "key": "law/property_crime_with_defenses/pcwd_case_26",
+      "triggered": [
+        "Art_Theft",
+        "Art_Fraud",
+        "Art_Robbery",
+        "Art_Aggravated_Theft",
+        "Art_Necessity_Defense"
+      ],
+      "applicable": [
+        "Art_Necessity_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S92",
+      "key": "law/orbital_habitat_safety_rules/ohsr_case_25",
+      "triggered": [
+        "Art_Restricted_Airlock_Operation",
+        "Art_Oxygen_System_Interference",
+        "Art_Salvage_Emergency_Authorization"
+      ],
+      "applicable": [
+        "Art_Salvage_Emergency_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S93",
+      "key": "law/property_crime_with_defenses/pcwd_case_14",
+      "triggered": [
+        "Art_Theft",
+        "Art_Robbery",
+        "Art_Aggravated_Theft"
+      ],
+      "applicable": [
+        "Art_Robbery"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_10_years"
+      ],
+      "stored_gold": "imprisonment_between_3_10_years"
+    },
+    {
+      "sample_id": "S94",
+      "key": "law/aviation_security_with_authorizations/aswa_case_22",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard",
+        "Art_Maintenance_Window_Authorization",
+        "Art_Emergency_Tarmac_Authorization"
+      ],
+      "applicable": [
+        "Art_Maintenance_Window_Authorization",
+        "Art_Emergency_Tarmac_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S95",
+      "key": "law/cyber_intrusion_with_authorizations/ciwa_case_20",
+      "triggered": [
+        "Art_Unauthorized_Access",
+        "Art_System_Disruption",
+        "Art_Financial_Cyber_Fraud"
+      ],
+      "applicable": [
+        "Art_System_Disruption",
+        "Art_Financial_Cyber_Fraud"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_7_years",
+        "imprisonment_between_7_15_years"
+      ],
+      "stored_gold": "imprisonment_between_3_7_years"
+    },
+    {
+      "sample_id": "S96",
+      "key": "law/dream_archive_with_exceptions/dawe_case_29",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization"
+      ],
+      "applicable": [
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S97",
+      "key": "law/dream_archive_with_exceptions/dawe_case_26",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "applicable": [
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S98",
+      "key": "law/environmental_pollution_with_permits/epwp_case_10",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Serious_Contamination",
+        "Art_Emergency_Release_Defense"
+      ],
+      "applicable": [
+        "Art_Emergency_Release_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S99",
+      "key": "law/aviation_security_with_authorizations/aswa_case_10",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard",
+        "Art_Emergency_Tarmac_Authorization"
+      ],
+      "applicable": [
+        "Art_Emergency_Tarmac_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S100",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_18",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Unsafe_Automaton_Release",
+        "Art_Public_Clock_Disruption",
+        "Art_Maintenance_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Public_Clock_Disruption",
+        "Art_Maintenance_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S101",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_18",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Dispatch_Order_Authorization",
+        "Art_Collapse_Avoidance_Authorization"
+      ],
+      "applicable": [
+        "Art_Dispatch_Order_Authorization",
+        "Art_Collapse_Avoidance_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S102",
+      "key": "law/orbital_habitat_safety_rules/ohsr_case_07",
+      "triggered": [
+        "Art_Restricted_Airlock_Operation",
+        "Art_Oxygen_System_Interference",
+        "Art_Corridor_Safety_Obstruction"
+      ],
+      "applicable": [
+        "Art_Oxygen_System_Interference"
+      ],
+      "formal_result_set": [
+        "oxygen_bay_quarantine"
+      ],
+      "stored_gold": "oxygen_bay_quarantine"
+    },
+    {
+      "sample_id": "S103",
+      "key": "law/dream_archive_with_exceptions/dawe_case_16",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "applicable": [
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S104",
+      "key": "law/property_crime_with_defenses/pcwd_case_05",
+      "triggered": [
+        "Art_Theft",
+        "Art_Consent_Defense"
+      ],
+      "applicable": [
+        "Art_Consent_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S105",
+      "key": "law/cyber_intrusion_with_authorizations/ciwa_case_20",
+      "triggered": [
+        "Art_Unauthorized_Access",
+        "Art_System_Disruption",
+        "Art_Financial_Cyber_Fraud"
+      ],
+      "applicable": [
+        "Art_System_Disruption",
+        "Art_Financial_Cyber_Fraud"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_7_years",
+        "imprisonment_between_7_15_years"
+      ],
+      "stored_gold": "imprisonment_between_3_7_years"
+    },
+    {
+      "sample_id": "S107",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_26",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S108",
+      "key": "law/orbital_habitat_safety_rules/ohsr_case_20",
+      "triggered": [
+        "Art_Restricted_Airlock_Operation",
+        "Art_Corridor_Safety_Obstruction",
+        "Art_Habitat_Duty_Authorization",
+        "Art_Salvage_Emergency_Authorization"
+      ],
+      "applicable": [
+        "Art_Habitat_Duty_Authorization",
+        "Art_Salvage_Emergency_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S109",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_21",
+      "triggered": [
+        "Art_Restricted_Shelf_Access",
+        "Art_Relic_Handling_Breach",
+        "Art_Catalog_Alteration",
+        "Art_Vault_Removal",
+        "Art_Curator_Order_Authorization",
+        "Art_Flood_Rescue_Authorization"
+      ],
+      "applicable": [
+        "Art_Curator_Order_Authorization",
+        "Art_Flood_Rescue_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S110",
+      "key": "law/aviation_security_with_authorizations/aswa_case_18",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard"
+      ],
+      "applicable": [
+        "Art_Compound_Airspace_Hazard"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_7_15_years"
+      ],
+      "stored_gold": "imprisonment_between_7_15_years"
+    },
+    {
+      "sample_id": "S111",
+      "key": "law/aviation_security_with_authorizations/aswa_case_04",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard"
+      ],
+      "applicable": [
+        "Art_Compound_Airspace_Hazard"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_7_15_years"
+      ],
+      "stored_gold": "imprisonment_between_7_15_years"
+    },
+    {
+      "sample_id": "S112",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_22",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Sealed_Track_Breach",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S113",
+      "key": "law/dream_archive_with_exceptions/dawe_case_26",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "applicable": [
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S114",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_08",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Collapse_Avoidance_Authorization"
+      ],
+      "applicable": [
+        "Art_Collapse_Avoidance_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S115",
+      "key": "law/orbital_habitat_safety_rules/ohsr_case_07",
+      "triggered": [
+        "Art_Restricted_Airlock_Operation",
+        "Art_Oxygen_System_Interference",
+        "Art_Corridor_Safety_Obstruction"
+      ],
+      "applicable": [
+        "Art_Oxygen_System_Interference"
+      ],
+      "formal_result_set": [
+        "oxygen_bay_quarantine"
+      ],
+      "stored_gold": "oxygen_bay_quarantine"
+    },
+    {
+      "sample_id": "S116",
+      "key": "law/dream_archive_with_exceptions/dawe_case_17",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization",
+        "Art_Emergency_Preservation_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "applicable": [
+        "Art_Restorer_Route_Authorization",
+        "Art_Emergency_Preservation_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S117",
+      "key": "law/property_crime_with_defenses/pcwd_case_19",
+      "triggered": [
+        "Art_Theft",
+        "Art_Fraud",
+        "Art_Robbery"
+      ],
+      "applicable": [
+        "Art_Fraud",
+        "Art_Robbery"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_10_years",
+        "imprisonment_not_exceeding_3_years"
+      ],
+      "stored_gold": "imprisonment_not_exceeding_3_years"
+    },
+    {
+      "sample_id": "S118",
+      "key": "law/dream_archive_with_exceptions/dawe_case_30",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization"
+      ],
+      "applicable": [
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S119",
+      "key": "law/mirror_customs_border_rules/mcbr_case_07",
+      "triggered": [
+        "Art_Unregistered_Mirror_Crossing",
+        "Art_Shadow_Cargo_Irregularity",
+        "Art_Label_Inversion",
+        "Art_Customs_Clearance_Authorization"
+      ],
+      "applicable": [
+        "Art_Label_Inversion",
+        "Art_Customs_Clearance_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S120",
+      "key": "law/dream_archive_with_exceptions/dawe_case_27",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "applicable": [
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S121",
+      "key": "law/orbital_habitat_safety_rules/ohsr_case_26",
+      "triggered": [
+        "Art_Restricted_Airlock_Operation",
+        "Art_Oxygen_System_Interference",
+        "Art_Corridor_Safety_Obstruction",
+        "Art_Salvage_Emergency_Authorization",
+        "Art_Pressure_Stabilization_Exemption"
+      ],
+      "applicable": [
+        "Art_Salvage_Emergency_Authorization",
+        "Art_Pressure_Stabilization_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S122",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_27",
+      "triggered": [
+        "Art_Restricted_Shelf_Access",
+        "Art_Relic_Handling_Breach",
+        "Art_Catalog_Alteration",
+        "Art_Vault_Removal",
+        "Art_Flood_Rescue_Authorization"
+      ],
+      "applicable": [
+        "Art_Flood_Rescue_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S123",
+      "key": "law/property_crime_with_defenses/pcwd_case_20",
+      "triggered": [
+        "Art_Theft",
+        "Art_Fraud",
+        "Art_Robbery",
+        "Art_Aggravated_Theft"
+      ],
+      "applicable": [
+        "Art_Fraud",
+        "Art_Robbery"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_10_years",
+        "imprisonment_not_exceeding_3_years"
+      ],
+      "stored_gold": "imprisonment_not_exceeding_3_years"
+    },
+    {
+      "sample_id": "S125",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_16",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S126",
+      "key": "law/property_crime_with_defenses/pcwd_case_30",
+      "triggered": [
+        "Art_Theft",
+        "Art_Fraud",
+        "Art_Aggravated_Theft",
+        "Art_Consent_Defense"
+      ],
+      "applicable": [
+        "Art_Consent_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S127",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_07",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Unsafe_Automaton_Release",
+        "Art_Public_Clock_Disruption"
+      ],
+      "applicable": [
+        "Art_Public_Clock_Disruption"
+      ],
+      "formal_result_set": [
+        "clock_tower_lockdown"
+      ],
+      "stored_gold": "clock_tower_lockdown"
+    },
+    {
+      "sample_id": "S128",
+      "key": "law/aviation_security_with_authorizations/aswa_case_08",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard",
+        "Art_Emergency_Tarmac_Authorization"
+      ],
+      "applicable": [
+        "Art_Emergency_Tarmac_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S129",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_26",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S130",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_29",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Unsafe_Automaton_Release",
+        "Art_Public_Clock_Disruption",
+        "Art_Maintenance_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Public_Clock_Disruption",
+        "Art_Maintenance_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S135",
+      "key": "law/environmental_pollution_with_permits/epwp_case_30",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Falsified_Monitoring",
+        "Art_Valid_Permit_Defense",
+        "Art_Emergency_Release_Defense"
+      ],
+      "applicable": [
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Falsified_Monitoring",
+        "Art_Valid_Permit_Defense",
+        "Art_Emergency_Release_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S138",
+      "key": "law/environmental_pollution_with_permits/epwp_case_28",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Serious_Contamination",
+        "Art_Falsified_Monitoring",
+        "Art_Valid_Permit_Defense"
+      ],
+      "applicable": [
+        "Art_Valid_Permit_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S139",
+      "key": "law/cyber_intrusion_with_authorizations/ciwa_case_24",
+      "triggered": [
+        "Art_Unauthorized_Access",
+        "Art_Data_Theft",
+        "Art_Financial_Cyber_Fraud",
+        "Art_Security_Testing_Authorization",
+        "Art_Incident_Response_Authorization"
+      ],
+      "applicable": [
+        "Art_Security_Testing_Authorization",
+        "Art_Incident_Response_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S140",
+      "key": "law/environmental_pollution_with_permits/epwp_case_20",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Serious_Contamination",
+        "Art_Falsified_Monitoring",
+        "Art_Valid_Permit_Defense",
+        "Art_Emergency_Release_Defense"
+      ],
+      "applicable": [
+        "Art_Valid_Permit_Defense",
+        "Art_Emergency_Release_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S141",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_23",
+      "triggered": [
+        "Art_Restricted_Shelf_Access",
+        "Art_Relic_Handling_Breach",
+        "Art_Catalog_Alteration",
+        "Art_Vault_Removal",
+        "Art_Curator_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Vault_Removal",
+        "Art_Curator_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S143",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_28",
+      "triggered": [
+        "Art_Restricted_Shelf_Access",
+        "Art_Relic_Handling_Breach",
+        "Art_Catalog_Alteration",
+        "Art_Vault_Removal",
+        "Art_Curator_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Vault_Removal",
+        "Art_Curator_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S145",
+      "key": "law/environmental_pollution_with_permits/epwp_case_21",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Serious_Contamination",
+        "Art_Falsified_Monitoring",
+        "Art_Emergency_Release_Defense"
+      ],
+      "applicable": [
+        "Art_Emergency_Release_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S149",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_29",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Unsafe_Automaton_Release",
+        "Art_Public_Clock_Disruption",
+        "Art_Maintenance_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Public_Clock_Disruption",
+        "Art_Maintenance_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S150",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_20",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Unsafe_Automaton_Release",
+        "Art_Public_Clock_Disruption",
+        "Art_Maintenance_Order_Authorization",
+        "Art_Emergency_Reset_Authorization"
+      ],
+      "applicable": [
+        "Art_Maintenance_Order_Authorization",
+        "Art_Emergency_Reset_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S151",
+      "key": "law/mirror_customs_border_rules/mcbr_case_17",
+      "triggered": [
+        "Art_Unregistered_Mirror_Crossing",
+        "Art_Shadow_Cargo_Irregularity",
+        "Art_Label_Inversion",
+        "Art_Customs_Clearance_Authorization",
+        "Art_Mirror_Rescue_Transfer",
+        "Art_Returned_Cargo_Allowance"
+      ],
+      "applicable": [
+        "Art_Customs_Clearance_Authorization",
+        "Art_Mirror_Rescue_Transfer",
+        "Art_Returned_Cargo_Allowance"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S154",
+      "key": "law/mirror_customs_border_rules/mcbr_case_16",
+      "triggered": [
+        "Art_Unregistered_Mirror_Crossing",
+        "Art_Shadow_Cargo_Irregularity",
+        "Art_Label_Inversion",
+        "Art_Customs_Clearance_Authorization",
+        "Art_Returned_Cargo_Allowance"
+      ],
+      "applicable": [
+        "Art_Label_Inversion",
+        "Art_Customs_Clearance_Authorization",
+        "Art_Returned_Cargo_Allowance"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S157",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_29",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S162",
+      "key": "law/environmental_pollution_with_permits/epwp_case_29",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Serious_Contamination",
+        "Art_Falsified_Monitoring",
+        "Art_Valid_Permit_Defense",
+        "Art_Emergency_Release_Defense"
+      ],
+      "applicable": [
+        "Art_Valid_Permit_Defense",
+        "Art_Emergency_Release_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S163",
+      "key": "law/mirror_customs_border_rules/mcbr_case_25",
+      "triggered": [
+        "Art_Unregistered_Mirror_Crossing",
+        "Art_Customs_Clearance_Authorization",
+        "Art_Mirror_Rescue_Transfer"
+      ],
+      "applicable": [
+        "Art_Customs_Clearance_Authorization",
+        "Art_Mirror_Rescue_Transfer"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S164",
+      "key": "law/mirror_customs_border_rules/mcbr_case_24",
+      "triggered": [
+        "Art_Unregistered_Mirror_Crossing",
+        "Art_Shadow_Cargo_Irregularity",
+        "Art_Label_Inversion",
+        "Art_Customs_Clearance_Authorization"
+      ],
+      "applicable": [
+        "Art_Label_Inversion",
+        "Art_Customs_Clearance_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S165",
+      "key": "law/environmental_pollution_with_permits/epwp_case_26",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Serious_Contamination",
+        "Art_Falsified_Monitoring",
+        "Art_Emergency_Release_Defense"
+      ],
+      "applicable": [
+        "Art_Emergency_Release_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S166",
+      "key": "law/dream_archive_with_exceptions/dawe_case_16",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "applicable": [
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S167",
+      "key": "law/aviation_security_with_authorizations/aswa_case_10",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard",
+        "Art_Emergency_Tarmac_Authorization"
+      ],
+      "applicable": [
+        "Art_Emergency_Tarmac_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S168",
+      "key": "law/dream_archive_with_exceptions/dawe_case_23",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "applicable": [
+        "Art_Fading_Archive_Damage",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S170",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_07",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S173",
+      "key": "law/mirror_customs_border_rules/mcbr_case_23",
+      "triggered": [
+        "Art_Unregistered_Mirror_Crossing",
+        "Art_Shadow_Cargo_Irregularity",
+        "Art_Label_Inversion",
+        "Art_Customs_Clearance_Authorization",
+        "Art_Returned_Cargo_Allowance"
+      ],
+      "applicable": [
+        "Art_Label_Inversion",
+        "Art_Customs_Clearance_Authorization",
+        "Art_Returned_Cargo_Allowance"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S174",
+      "key": "law/dream_archive_with_exceptions/dawe_case_25",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Emergency_Preservation_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "applicable": [
+        "Art_Emergency_Preservation_Authorization",
+        "Art_Visitor_Escort_Allowance"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S175",
+      "key": "law/mirror_customs_border_rules/mcbr_case_19",
+      "triggered": [
+        "Art_Unregistered_Mirror_Crossing",
+        "Art_Shadow_Cargo_Irregularity",
+        "Art_Label_Inversion",
+        "Art_Mirror_Rescue_Transfer",
+        "Art_Returned_Cargo_Allowance"
+      ],
+      "applicable": [
+        "Art_Mirror_Rescue_Transfer",
+        "Art_Returned_Cargo_Allowance"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S176",
+      "key": "law/dream_archive_with_exceptions/dawe_case_09",
+      "triggered": [
+        "Art_Unregistered_Archive_Entry",
+        "Art_Dream_Page_Intervention",
+        "Art_Fading_Archive_Damage",
+        "Art_Restorer_Route_Authorization",
+        "Art_Emergency_Preservation_Authorization"
+      ],
+      "applicable": [
+        "Art_Restorer_Route_Authorization",
+        "Art_Emergency_Preservation_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S273",
+      "key": "law/aviation_security_with_authorizations/aswa_case_24",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard",
+        "Art_Maintenance_Window_Authorization",
+        "Art_Emergency_Tarmac_Authorization"
+      ],
+      "applicable": [
+        "Art_Maintenance_Window_Authorization",
+        "Art_Emergency_Tarmac_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S274",
+      "key": "law/environmental_pollution_with_permits/epwp_case_19",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Falsified_Monitoring"
+      ],
+      "applicable": [
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Falsified_Monitoring"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_7_years",
+        "imprisonment_not_exceeding_3_years"
+      ],
+      "stored_gold": "imprisonment_not_exceeding_3_years"
+    },
+    {
+      "sample_id": "S275",
+      "key": "law/environmental_pollution_with_permits/epwp_case_21",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Serious_Contamination",
+        "Art_Falsified_Monitoring",
+        "Art_Emergency_Release_Defense"
+      ],
+      "applicable": [
+        "Art_Emergency_Release_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S276",
+      "key": "law/environmental_pollution_with_permits/epwp_case_24",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Serious_Contamination",
+        "Art_Falsified_Monitoring",
+        "Art_Valid_Permit_Defense",
+        "Art_Emergency_Release_Defense"
+      ],
+      "applicable": [
+        "Art_Valid_Permit_Defense",
+        "Art_Emergency_Release_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S277",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_30",
+      "triggered": [
+        "Art_Restricted_Shelf_Access",
+        "Art_Relic_Handling_Breach",
+        "Art_Vault_Removal",
+        "Art_Curator_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Vault_Removal",
+        "Art_Curator_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S278",
+      "key": "law/property_crime_with_defenses/pcwd_case_20",
+      "triggered": [
+        "Art_Theft",
+        "Art_Fraud",
+        "Art_Robbery",
+        "Art_Aggravated_Theft"
+      ],
+      "applicable": [
+        "Art_Fraud",
+        "Art_Robbery"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_10_years",
+        "imprisonment_not_exceeding_3_years"
+      ],
+      "stored_gold": "imprisonment_not_exceeding_3_years"
+    },
+    {
+      "sample_id": "S279",
+      "key": "law/cyber_intrusion_with_authorizations/ciwa_case_18",
+      "triggered": [
+        "Art_Unauthorized_Access",
+        "Art_Data_Theft",
+        "Art_System_Disruption",
+        "Art_Financial_Cyber_Fraud"
+      ],
+      "applicable": [
+        "Art_System_Disruption",
+        "Art_Financial_Cyber_Fraud"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_7_years",
+        "imprisonment_between_7_15_years"
+      ],
+      "stored_gold": "imprisonment_between_3_7_years"
+    },
+    {
+      "sample_id": "S280",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_28",
+      "triggered": [
+        "Art_Restricted_Shelf_Access",
+        "Art_Relic_Handling_Breach",
+        "Art_Catalog_Alteration",
+        "Art_Vault_Removal",
+        "Art_Curator_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Vault_Removal",
+        "Art_Curator_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S281",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_28",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S282",
+      "key": "law/aviation_security_with_authorizations/aswa_case_08",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard",
+        "Art_Emergency_Tarmac_Authorization"
+      ],
+      "applicable": [
+        "Art_Emergency_Tarmac_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S283",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_30",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Collapse_Avoidance_Authorization",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Collapse_Avoidance_Authorization",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S284",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_05",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Public_Clock_Disruption",
+        "Art_Emergency_Reset_Authorization"
+      ],
+      "applicable": [
+        "Art_Emergency_Reset_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S285",
+      "key": "law/orbital_habitat_safety_rules/ohsr_case_26",
+      "triggered": [
+        "Art_Restricted_Airlock_Operation",
+        "Art_Oxygen_System_Interference",
+        "Art_Corridor_Safety_Obstruction",
+        "Art_Salvage_Emergency_Authorization",
+        "Art_Pressure_Stabilization_Exemption"
+      ],
+      "applicable": [
+        "Art_Salvage_Emergency_Authorization",
+        "Art_Pressure_Stabilization_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S286",
+      "key": "law/property_crime_with_defenses/pcwd_case_20",
+      "triggered": [
+        "Art_Theft",
+        "Art_Fraud",
+        "Art_Robbery",
+        "Art_Aggravated_Theft"
+      ],
+      "applicable": [
+        "Art_Fraud",
+        "Art_Robbery"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_10_years",
+        "imprisonment_not_exceeding_3_years"
+      ],
+      "stored_gold": "imprisonment_not_exceeding_3_years"
+    },
+    {
+      "sample_id": "S287",
+      "key": "law/cyber_intrusion_with_authorizations/ciwa_case_17",
+      "triggered": [
+        "Art_Unauthorized_Access",
+        "Art_System_Disruption",
+        "Art_Financial_Cyber_Fraud"
+      ],
+      "applicable": [
+        "Art_System_Disruption",
+        "Art_Financial_Cyber_Fraud"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_7_years",
+        "imprisonment_between_7_15_years"
+      ],
+      "stored_gold": "imprisonment_between_3_7_years"
+    },
+    {
+      "sample_id": "S288",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_26",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S289",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_30",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Public_Clock_Disruption",
+        "Art_Maintenance_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Public_Clock_Disruption",
+        "Art_Maintenance_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S290",
+      "key": "law/property_crime_with_defenses/pcwd_case_19",
+      "triggered": [
+        "Art_Theft",
+        "Art_Fraud",
+        "Art_Robbery"
+      ],
+      "applicable": [
+        "Art_Fraud",
+        "Art_Robbery"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_10_years",
+        "imprisonment_not_exceeding_3_years"
+      ],
+      "stored_gold": "imprisonment_not_exceeding_3_years"
+    },
+    {
+      "sample_id": "S291",
+      "key": "law/environmental_pollution_with_permits/epwp_case_15",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Falsified_Monitoring"
+      ],
+      "applicable": [
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Falsified_Monitoring"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_7_years",
+        "imprisonment_not_exceeding_3_years"
+      ],
+      "stored_gold": "imprisonment_not_exceeding_3_years"
+    },
+    {
+      "sample_id": "S292",
+      "key": "law/property_crime_with_defenses/pcwd_case_16",
+      "triggered": [
+        "Art_Theft",
+        "Art_Fraud",
+        "Art_Robbery"
+      ],
+      "applicable": [
+        "Art_Fraud",
+        "Art_Robbery"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_10_years",
+        "imprisonment_not_exceeding_3_years"
+      ],
+      "stored_gold": "imprisonment_not_exceeding_3_years"
+    },
+    {
+      "sample_id": "S293",
+      "key": "law/aviation_security_with_authorizations/aswa_case_28",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard",
+        "Art_Maintenance_Window_Authorization"
+      ],
+      "applicable": [
+        "Art_Compound_Airspace_Hazard",
+        "Art_Maintenance_Window_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S294",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_25",
+      "triggered": [
+        "Art_Restricted_Shelf_Access",
+        "Art_Relic_Handling_Breach",
+        "Art_Catalog_Alteration",
+        "Art_Curator_Order_Authorization",
+        "Art_Flood_Rescue_Authorization"
+      ],
+      "applicable": [
+        "Art_Curator_Order_Authorization",
+        "Art_Flood_Rescue_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S295",
+      "key": "law/orbital_habitat_safety_rules/ohsr_case_09",
+      "triggered": [
+        "Art_Restricted_Airlock_Operation",
+        "Art_Oxygen_System_Interference",
+        "Art_Habitat_Duty_Authorization",
+        "Art_Pressure_Stabilization_Exemption"
+      ],
+      "applicable": [
+        "Art_Habitat_Duty_Authorization",
+        "Art_Pressure_Stabilization_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S296",
+      "key": "law/orbital_habitat_safety_rules/ohsr_case_06",
+      "triggered": [
+        "Art_Restricted_Airlock_Operation",
+        "Art_Oxygen_System_Interference",
+        "Art_Pressure_Stabilization_Exemption"
+      ],
+      "applicable": [
+        "Art_Pressure_Stabilization_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S297",
+      "key": "law/aviation_security_with_authorizations/aswa_case_19",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard"
+      ],
+      "applicable": [
+        "Art_Compound_Airspace_Hazard"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_7_15_years"
+      ],
+      "stored_gold": "imprisonment_between_7_15_years"
+    },
+    {
+      "sample_id": "S298",
+      "key": "law/aviation_security_with_authorizations/aswa_case_13",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard"
+      ],
+      "applicable": [
+        "Art_Compound_Airspace_Hazard"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_7_15_years"
+      ],
+      "stored_gold": "imprisonment_between_7_15_years"
+    },
+    {
+      "sample_id": "S299",
+      "key": "law/property_crime_with_defenses/pcwd_case_11",
+      "triggered": [
+        "Art_Theft",
+        "Art_Aggravated_Theft"
+      ],
+      "applicable": [
+        "Art_Aggravated_Theft"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_10_years"
+      ],
+      "stored_gold": "imprisonment_between_3_10_years"
+    },
+    {
+      "sample_id": "S300",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_28",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S301",
+      "key": "law/property_crime_with_defenses/pcwd_case_20",
+      "triggered": [
+        "Art_Theft",
+        "Art_Fraud",
+        "Art_Robbery",
+        "Art_Aggravated_Theft"
+      ],
+      "applicable": [
+        "Art_Fraud",
+        "Art_Robbery"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_10_years",
+        "imprisonment_not_exceeding_3_years"
+      ],
+      "stored_gold": "imprisonment_not_exceeding_3_years"
+    },
+    {
+      "sample_id": "S302",
+      "key": "law/aviation_security_with_authorizations/aswa_case_26",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard",
+        "Art_Emergency_Tarmac_Authorization"
+      ],
+      "applicable": [
+        "Art_Emergency_Tarmac_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S303",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_14",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Unsafe_Automaton_Release",
+        "Art_Public_Clock_Disruption",
+        "Art_Emergency_Reset_Authorization",
+        "Art_Calibration_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Emergency_Reset_Authorization",
+        "Art_Calibration_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S304",
+      "key": "law/orbital_habitat_safety_rules/ohsr_case_04",
+      "triggered": [
+        "Art_Restricted_Airlock_Operation",
+        "Art_Habitat_Duty_Authorization"
+      ],
+      "applicable": [
+        "Art_Habitat_Duty_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S305",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_10",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization",
+        "Art_Collapse_Avoidance_Authorization",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Dispatch_Order_Authorization",
+        "Art_Collapse_Avoidance_Authorization",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S306",
+      "key": "law/environmental_pollution_with_permits/epwp_case_06",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Hazardous_Waste_Dumping"
+      ],
+      "applicable": [
+        "Art_Hazardous_Waste_Dumping"
+      ],
+      "formal_result_set": [
+        "imprisonment_not_exceeding_3_years"
+      ],
+      "stored_gold": "imprisonment_not_exceeding_3_years"
+    },
+    {
+      "sample_id": "S307",
+      "key": "law/mechanical_city_maintenance_rules/mcmr_case_06",
+      "triggered": [
+        "Art_Restricted_Gear_Access",
+        "Art_Public_Clock_Disruption",
+        "Art_Calibration_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Calibration_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S308",
+      "key": "law/property_crime_with_defenses/pcwd_case_12",
+      "triggered": [
+        "Art_Theft",
+        "Art_Robbery"
+      ],
+      "applicable": [
+        "Art_Robbery"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_10_years"
+      ],
+      "stored_gold": "imprisonment_between_3_10_years"
+    },
+    {
+      "sample_id": "S309",
+      "key": "law/property_crime_with_defenses/pcwd_case_11",
+      "triggered": [
+        "Art_Theft",
+        "Art_Aggravated_Theft"
+      ],
+      "applicable": [
+        "Art_Aggravated_Theft"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_10_years"
+      ],
+      "stored_gold": "imprisonment_between_3_10_years"
+    },
+    {
+      "sample_id": "S310",
+      "key": "law/environmental_pollution_with_permits/epwp_case_19",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Falsified_Monitoring"
+      ],
+      "applicable": [
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Falsified_Monitoring"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_7_years",
+        "imprisonment_not_exceeding_3_years"
+      ],
+      "stored_gold": "imprisonment_not_exceeding_3_years"
+    },
+    {
+      "sample_id": "S311",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_26",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "applicable": [
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization",
+        "Art_Sensor_Fault_Exemption"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S312",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_28",
+      "triggered": [
+        "Art_Restricted_Shelf_Access",
+        "Art_Relic_Handling_Breach",
+        "Art_Catalog_Alteration",
+        "Art_Vault_Removal",
+        "Art_Curator_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Vault_Removal",
+        "Art_Curator_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S313",
+      "key": "law/environmental_pollution_with_permits/epwp_case_22",
+      "triggered": [
+        "Art_Unlawful_Discharge",
+        "Art_Hazardous_Waste_Dumping",
+        "Art_Serious_Contamination",
+        "Art_Valid_Permit_Defense",
+        "Art_Emergency_Release_Defense"
+      ],
+      "applicable": [
+        "Art_Valid_Permit_Defense",
+        "Art_Emergency_Release_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S314",
+      "key": "law/orbital_habitat_safety_rules/ohsr_case_17",
+      "triggered": [
+        "Art_Restricted_Airlock_Operation",
+        "Art_Oxygen_System_Interference",
+        "Art_Corridor_Safety_Obstruction",
+        "Art_Habitat_Duty_Authorization"
+      ],
+      "applicable": [
+        "Art_Oxygen_System_Interference",
+        "Art_Habitat_Duty_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S315",
+      "key": "law/subterranean_signal_dispatch_rules/ssdr_case_29",
+      "triggered": [
+        "Art_Unauthorized_Signal_Change",
+        "Art_Route_Misdirection",
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization"
+      ],
+      "applicable": [
+        "Art_Sealed_Track_Breach",
+        "Art_Dispatch_Order_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S316",
+      "key": "law/aviation_security_with_authorizations/aswa_case_23",
+      "triggered": [
+        "Art_Airside_Access_Breach",
+        "Art_Runway_Drone_Interference",
+        "Art_Navigation_Signal_Interference",
+        "Art_Compound_Airspace_Hazard",
+        "Art_Maintenance_Window_Authorization"
+      ],
+      "applicable": [
+        "Art_Compound_Airspace_Hazard",
+        "Art_Maintenance_Window_Authorization"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S317",
+      "key": "law/cyber_intrusion_with_authorizations/ciwa_case_15",
+      "triggered": [
+        "Art_Unauthorized_Access",
+        "Art_Data_Theft",
+        "Art_System_Disruption"
+      ],
+      "applicable": [
+        "Art_System_Disruption"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_3_7_years"
+      ],
+      "stored_gold": "imprisonment_between_3_7_years"
+    },
+    {
+      "sample_id": "S318",
+      "key": "law/property_crime_with_defenses/pcwd_case_05",
+      "triggered": [
+        "Art_Theft",
+        "Art_Consent_Defense"
+      ],
+      "applicable": [
+        "Art_Consent_Defense"
+      ],
+      "formal_result_set": [
+        "No_Criminal_Liability"
+      ],
+      "stored_gold": "No_Criminal_Liability"
+    },
+    {
+      "sample_id": "S319",
+      "key": "law/cyber_intrusion_with_authorizations/ciwa_case_14",
+      "triggered": [
+        "Art_Unauthorized_Access",
+        "Art_Data_Theft",
+        "Art_Financial_Cyber_Fraud"
+      ],
+      "applicable": [
+        "Art_Financial_Cyber_Fraud"
+      ],
+      "formal_result_set": [
+        "imprisonment_between_7_15_years"
+      ],
+      "stored_gold": "imprisonment_between_7_15_years"
+    },
+    {
+      "sample_id": "S320",
+      "key": "law/orbital_habitat_safety_rules/ohsr_case_07",
+      "triggered": [
+        "Art_Restricted_Airlock_Operation",
+        "Art_Oxygen_System_Interference",
+        "Art_Corridor_Safety_Obstruction"
+      ],
+      "applicable": [
+        "Art_Oxygen_System_Interference"
+      ],
+      "formal_result_set": [
+        "oxygen_bay_quarantine"
+      ],
+      "stored_gold": "oxygen_bay_quarantine"
+    }
+  ]
+}

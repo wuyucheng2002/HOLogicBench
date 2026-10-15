@@ -1,0 +1,14 @@
+{
+  "reference_sha256": "4a22e182fdbeb8f4755004cc600d8ea49bc5801b999d11acd80d34a4dd78d3d9",
+  "steps_sha256": "e607fca812b08e38e741591d736bbb7764c96d6e4a70ff1618a79f8800ebc773",
+  "rouge": "rouge-score 0.1.2 ROUGE-L F1, no stemming",
+  "roscoe_model": "sentence-transformers/all-mpnet-base-v2",
+  "roscoe_max_seq_length": 512,
+  "roscoe": "mean hypothesis-step max cosine to reference steps",
+  "reference_steps": "one complete source inference or fact node per finance step; law line splitting",
+  "hypothesis_steps": "original domain-specific splitting",
+  "prediction_sha256": {
+    "V4Flash-Complement_predictions.jsonl": "843334b848ddc2cb527db0ca42f389b5672ed3375f4a284d499566607f0f4784"
+  },
+  "signature": "e17fb93b0ef38f23aa9eb705e6b8d8886edbca5c37c259521d2aaa3eca6f1c6a"
+}

@@ -1,0 +1,4 @@
+session baoxiao (HOL) = HOL +
+  theories
+    baoxiao_rules
+    baoxiao_cases

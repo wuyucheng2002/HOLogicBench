@@ -1,0 +1,681 @@
+{
+  "bundle_name": "dream_archive_with_exceptions",
+  "bundle_dir": "rule_bundles/dream_archive_with_exceptions",
+  "person_symbol": "actor",
+  "person_name_pool": [
+    "Avery",
+    "Blake",
+    "Casey",
+    "Devon",
+    "Elliot",
+    "Finley",
+    "Harper",
+    "Jules",
+    "Logan",
+    "Rowan"
+  ],
+  "article_order": [
+    "Art_Unregistered_Archive_Entry",
+    "Art_Dream_Page_Intervention",
+    "Art_Fading_Archive_Damage",
+    "Art_Restorer_Route_Authorization",
+    "Art_Emergency_Preservation_Authorization",
+    "Art_Visitor_Escort_Allowance"
+  ],
+  "articles": {
+    "Art_Unregistered_Archive_Entry": {
+      "title": "Unregistered Archive Entry",
+      "result": "quiet_room_warning",
+      "rule_text": "The unregistered archive entry article carries a quiet room warning."
+    },
+    "Art_Dream_Page_Intervention": {
+      "title": "Dream Page Intervention",
+      "result": "page_quarantine_order",
+      "rule_text": "The dream page intervention article carries a page quarantine order."
+    },
+    "Art_Fading_Archive_Damage": {
+      "title": "Fading Archive Damage",
+      "result": "memory_shelf_sealing",
+      "rule_text": "The fading archive damage article carries memory shelf sealing."
+    },
+    "Art_Restorer_Route_Authorization": {
+      "title": "Restorer Route Authorization",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The restorer route authorization article carries no criminal liability."
+    },
+    "Art_Emergency_Preservation_Authorization": {
+      "title": "Emergency Preservation Authorization",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The emergency preservation authorization article carries no criminal liability."
+    },
+    "Art_Visitor_Escort_Allowance": {
+      "title": "Visitor Escort Allowance",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The visitor escort allowance article carries no criminal liability."
+    }
+  },
+  "nodes": {
+    "unlocks_silent_door": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} unlocked the silent door of the dream archive.",
+      "order": 10
+    },
+    "presents_gray_reader_card": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} presented a gray reader card at the archive desk.",
+      "order": 11
+    },
+    "enters_lower_stack": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} entered the lower stack beyond that door.",
+      "order": 12
+    },
+    "follows_echo_stair": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} followed the echo stair into the lower stack.",
+      "order": 13
+    },
+    "moves_unsealed_dream_page": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} moved an unsealed dream page from its shelf.",
+      "order": 20
+    },
+    "rewrites_margin_note": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} rewrote a margin note on a dream page.",
+      "order": 22
+    },
+    "places_page_under_glass": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} placed a loose dream page under viewing glass.",
+      "order": 24
+    },
+    "dream_page_fades": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "The dream page began to fade.",
+      "negative_text": "No dream page began to fade.",
+      "order": 30
+    },
+    "carries_repair_bell": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "{name} carried a repair bell.",
+      "negative_text": "{name} did not carry a repair bell.",
+      "order": 40
+    },
+    "rings_bell_before_closure": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "carries_repair_bell"
+      ],
+      "positive_text": "{name} rang the repair bell before closure.",
+      "negative_text": "{name} did not ring the repair bell before closure.",
+      "order": 42
+    },
+    "stamps_repair_slip": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "carries_repair_bell"
+      ],
+      "positive_text": "{name} stamped a repair slip before closure.",
+      "negative_text": "{name} did not stamp a repair slip before closure.",
+      "order": 44
+    },
+    "night_restorer_badge": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "{name} wore a night-restorer badge.",
+      "negative_text": "{name} did not wear a night-restorer badge.",
+      "order": 50
+    },
+    "logs_repair_at_blue_desk": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "night_restorer_badge"
+      ],
+      "positive_text": "{name} logged the repair at the blue desk.",
+      "negative_text": "{name} did not log the repair at the blue desk.",
+      "order": 52
+    },
+    "moves_page_to_safe_shelf": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} moved the fading page to the safe shelf.",
+      "order": 60
+    },
+    "covers_page_with_sleep_cloth": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} covered the fading page with a sleep cloth.",
+      "order": 62
+    },
+    "guides_lost_visitor_out": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} guided a lost visitor out of the lower stack.",
+      "order": 70
+    },
+    "carries_visitor_rope": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} carried the visitor rope while guiding the visitor.",
+      "order": 72
+    }
+  },
+  "article_trigger_mappings": [
+    {
+      "article": "Art_Unregistered_Archive_Entry",
+      "source_predicate": "unregistered_archive_entry_basis"
+    },
+    {
+      "article": "Art_Dream_Page_Intervention",
+      "source_predicate": "dream_page_intervention_basis"
+    },
+    {
+      "article": "Art_Fading_Archive_Damage",
+      "source_predicate": "fading_archive_damage_basis"
+    },
+    {
+      "article": "Art_Restorer_Route_Authorization",
+      "source_predicate": "restorer_route_authorization_basis"
+    },
+    {
+      "article": "Art_Emergency_Preservation_Authorization",
+      "source_predicate": "emergency_preservation_authorization_basis"
+    },
+    {
+      "article": "Art_Visitor_Escort_Allowance",
+      "source_predicate": "visitor_escort_allowance_basis"
+    }
+  ],
+  "rules": [
+    {
+      "name": "door_and_stack_imply_archive_entry",
+      "head": {
+        "predicate": "archive_entry",
+        "value": true
+      },
+      "body": {
+        "any_of_groups": [
+          [
+            {
+              "predicate": "unlocks_silent_door",
+              "value": true
+            },
+            {
+              "predicate": "presents_gray_reader_card",
+              "value": true
+            }
+          ],
+          [
+            {
+              "predicate": "enters_lower_stack",
+              "value": true
+            },
+            {
+              "predicate": "follows_echo_stair",
+              "value": true
+            }
+          ]
+        ]
+      },
+      "natural_text": "Archive entry requires a recognized way into the archive and movement into the lower stack."
+    },
+    {
+      "name": "page_handling_implies_record_interference",
+      "head": {
+        "predicate": "record_interference",
+        "value": true
+      },
+      "body": {
+        "any_of_groups": [
+          [
+            {
+              "predicate": "moves_unsealed_dream_page",
+              "value": true
+            },
+            {
+              "predicate": "rewrites_margin_note",
+              "value": true
+            },
+            {
+              "predicate": "places_page_under_glass",
+              "value": true
+            }
+          ]
+        ]
+      },
+      "natural_text": "Record interference includes moving an unsealed dream page, rewriting a margin note, or placing a loose page under viewing glass."
+    },
+    {
+      "name": "fading_page_implies_fading_condition",
+      "head": {
+        "predicate": "fading_condition",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "dream_page_fades",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "A fading condition is present when a dream page begins to fade."
+    },
+    {
+      "name": "bell_facts_imply_repair_tool_record",
+      "head": {
+        "predicate": "repair_tool_record",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "carries_repair_bell",
+            "value": true
+          }
+        ],
+        "any_of_groups": [
+          [
+            {
+              "predicate": "rings_bell_before_closure",
+              "value": true
+            },
+            {
+              "predicate": "stamps_repair_slip",
+              "value": true
+            }
+          ]
+        ]
+      },
+      "natural_text": "A repair-tool record requires carrying a repair bell and either ringing it or stamping a repair slip before closure."
+    },
+    {
+      "name": "badge_and_log_imply_restorer_status",
+      "head": {
+        "predicate": "restorer_status",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "night_restorer_badge",
+            "value": true
+          },
+          {
+            "predicate": "logs_repair_at_blue_desk",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "Restorer status requires a night-restorer badge and a repair log at the blue desk."
+    },
+    {
+      "name": "fading_and_safe_shelf_imply_rescue_transfer",
+      "head": {
+        "predicate": "rescue_transfer",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "dream_page_fades",
+            "value": true
+          }
+        ],
+        "any_of_groups": [
+          [
+            {
+              "predicate": "moves_page_to_safe_shelf",
+              "value": true
+            },
+            {
+              "predicate": "covers_page_with_sleep_cloth",
+              "value": true
+            }
+          ]
+        ]
+      },
+      "natural_text": "Rescue transfer requires a fading dream page and either moving it to the safe shelf or covering it with a sleep cloth."
+    },
+    {
+      "name": "visitor_guidance_implies_visitor_assistance",
+      "head": {
+        "predicate": "visitor_assistance",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "guides_lost_visitor_out",
+            "value": true
+          },
+          {
+            "predicate": "carries_visitor_rope",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "Visitor assistance requires guiding a lost visitor out while carrying the visitor rope."
+    },
+    {
+      "name": "unregistered_archive_entry_basis_rule",
+      "head": {
+        "predicate": "unregistered_archive_entry_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "archive_entry",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The unregistered archive entry basis is present when there is archive entry."
+    },
+    {
+      "name": "dream_page_intervention_basis_rule",
+      "head": {
+        "predicate": "dream_page_intervention_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "archive_entry",
+            "value": true
+          },
+          {
+            "predicate": "record_interference",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The dream page intervention basis is present when archive entry is combined with record interference."
+    },
+    {
+      "name": "fading_archive_damage_basis_rule",
+      "head": {
+        "predicate": "fading_archive_damage_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "record_interference",
+            "value": true
+          },
+          {
+            "predicate": "fading_condition",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The fading archive damage basis is present when record interference concerns a fading page."
+    },
+    {
+      "name": "restorer_route_authorization_basis_rule",
+      "head": {
+        "predicate": "restorer_route_authorization_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "restorer_status",
+            "value": true
+          },
+          {
+            "predicate": "repair_tool_record",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The restorer route authorization basis requires restorer status and a repair-tool record."
+    },
+    {
+      "name": "emergency_preservation_authorization_basis_rule",
+      "head": {
+        "predicate": "emergency_preservation_authorization_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "rescue_transfer",
+            "value": true
+          },
+          {
+            "predicate": "repair_tool_record",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The emergency preservation authorization basis requires a rescue transfer and a repair-tool record."
+    },
+    {
+      "name": "visitor_escort_allowance_basis_rule",
+      "head": {
+        "predicate": "visitor_escort_allowance_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "visitor_assistance",
+            "value": true
+          },
+          {
+            "predicate": "archive_entry",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The visitor escort allowance basis requires visitor assistance connected to archive entry."
+    },
+    {
+      "name": "basis_triggers_unregistered_archive_entry",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Unregistered_Archive_Entry",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "unregistered_archive_entry_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_dream_page_intervention",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Dream_Page_Intervention",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "dream_page_intervention_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_fading_archive_damage",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Fading_Archive_Damage",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "fading_archive_damage_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_restorer_route_authorization",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Restorer_Route_Authorization",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "restorer_route_authorization_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_emergency_preservation_authorization",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Emergency_Preservation_Authorization",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "emergency_preservation_authorization_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_visitor_escort_allowance",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Visitor_Escort_Allowance",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "visitor_escort_allowance_basis",
+            "value": true
+          }
+        ]
+      }
+    }
+  ],
+  "conflicts": {
+    "stronger_than": [
+      [
+        "Art_Dream_Page_Intervention",
+        "Art_Unregistered_Archive_Entry"
+      ],
+      [
+        "Art_Fading_Archive_Damage",
+        "Art_Unregistered_Archive_Entry"
+      ],
+      [
+        "Art_Fading_Archive_Damage",
+        "Art_Dream_Page_Intervention"
+      ]
+    ],
+    "exception_to": [
+      [
+        "Art_Restorer_Route_Authorization",
+        "Art_Unregistered_Archive_Entry"
+      ],
+      [
+        "Art_Restorer_Route_Authorization",
+        "Art_Dream_Page_Intervention"
+      ],
+      [
+        "Art_Emergency_Preservation_Authorization",
+        "Art_Dream_Page_Intervention"
+      ],
+      [
+        "Art_Emergency_Preservation_Authorization",
+        "Art_Fading_Archive_Damage"
+      ],
+      [
+        "Art_Visitor_Escort_Allowance",
+        "Art_Unregistered_Archive_Entry"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+# Versions recorded for the CUDA scoring environment (Python 3.12).
+# Install a matching CUDA-enabled torch build for your GPU separately if needed.
+torch==2.8.0
+transformers==4.51.3
+tokenizers==0.21.4
+numpy==1.26.3
+pandas==2.2.3
+bert-score==0.3.13
+sentence-transformers==3.0.1
+rouge-score==0.1.2

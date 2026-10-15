@@ -1,0 +1,14 @@
+{
+  "configuration": "uniform_32k_3attempts_v1",
+  "activated_at": "2026-10-04T17:22:28.015772+00:00",
+  "manifest": "requests_32k.jsonl",
+  "max_output_tokens_all_models": 32000,
+  "max_attempts_per_round": 3,
+  "concurrency_ceiling": 96,
+  "rate_limit_policy": "On HTTP 429, halve active concurrency ceiling and pause new requests for at least 30 seconds; retry with 20/40 second backoff.",
+  "stream_timeout_seconds": 1800,
+  "remaining_cases_at_activation": 36,
+  "preserves_prior_completed_answers": true,
+  "historical_r1_budget": 16000,
+  "full_uniform_32k_regeneration_performed": false
+}

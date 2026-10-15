@@ -1,0 +1,112 @@
+{
+  "models": {
+    "GLM-5.3-Flash": "z-ai/glm-5.3-flash",
+    "Kimi-K2.6": "moonshotai/kimi-k2.6"
+  },
+  "cases_per_model": 1379,
+  "law_per_model": 300,
+  "finance_per_model": 1079,
+  "total_requests": 2758,
+  "reasoning_policy": "omit all thinking/reasoning/effort controls as explicitly requested; retain actual response evidence",
+  "sampling": "provider/model defaults; no temperature or top_p override",
+  "max_tokens": 32000,
+  "max_attempts_per_case_per_round": 4,
+  "concurrency_upper_bound": 256,
+  "concurrency_scope": "independent rolling queues and backoff per model",
+  "socket_timeout_seconds": 600,
+  "stream_timeout_seconds": 3600,
+  "providers_with_32000_output_budget": {
+    "GLM-5.3-Flash": [
+      "relace",
+      "inference-net/fp4",
+      "sail-research/us",
+      "open-inference/fp4",
+      "wafer",
+      "deepinfra/fp4",
+      "novita/fp8",
+      "streamlake/fp8",
+      "decart/fp4",
+      "gmicloud/fp8",
+      "dekallm",
+      "near-ai/fp8",
+      "phala/fp8",
+      "morph/fp8",
+      "modal/nvfp4",
+      "baseten/fp8",
+      "crusoe/fp4",
+      "coreweave/nvfp4",
+      "atlas-cloud/fp8",
+      "fireworks",
+      "friendli",
+      "siliconflow/fp8",
+      "digitalocean",
+      "together",
+      "reka",
+      "parasail/fp4",
+      "baseten/fp8",
+      "venice",
+      "z-ai/fp8",
+      "nextbit/fp8",
+      "inceptron/fp8",
+      "fireworks/us",
+      "cloudflare"
+    ],
+    "Kimi-K2.6": [
+      "inceptron/int4",
+      "chutes/int4",
+      "digitalocean",
+      "decart/fp4",
+      "streamlake/fp8",
+      "coreweave/fp4",
+      "crusoe/bf16",
+      "venice/int4",
+      "parasail/int4",
+      "siliconflow/fp8",
+      "novita",
+      "gmicloud/fp8",
+      "baidu/fp4",
+      "atlas-cloud/int4",
+      "cloudflare",
+      "moonshotai/int4",
+      "phala"
+    ]
+  },
+  "prompt_source": "evaluation/results/deepseek_v4_flash_paired/requests.jsonl",
+  "prompt_source_sha256": "b3bd1a7e79e26a98c70b9cb9d768757bdb442c47ac783137990e6e189115391c",
+  "response_selection": "first valid response per model/case in log order; no selection by correctness",
+  "credentials": "process memory only, no keys in experiment files",
+  "concurrency_changes": [
+    {
+      "previous": 64,
+      "new": 128,
+      "at": 1791206346.729881,
+      "reason": "user requested higher concurrency"
+    },
+    {
+      "at": 1791211202.1481311,
+      "new_per_model": 128,
+      "total": 256
+    },
+    {
+      "at": 1791214071.6427252,
+      "new_per_model": 128,
+      "total": 256
+    },
+    {
+      "at": 1791216493.002988,
+      "new_per_model": 128,
+      "total": 256
+    },
+    {
+      "at": 1791283832.211385,
+      "new_per_model": 128,
+      "total": 256
+    },
+    {
+      "at": 1791296227.229293,
+      "new_per_model": 128,
+      "total": 256
+    }
+  ],
+  "concurrency_per_model": 128
+}

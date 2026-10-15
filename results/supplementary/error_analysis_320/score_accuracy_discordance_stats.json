@@ -1,0 +1,526 @@
+{
+  "bertscore_f1": {
+    "high_all": 70,
+    "low_all": 103,
+    "high_wrong": {
+      "n": 45,
+      "ids": [
+        "S35",
+        "S46",
+        "S50",
+        "S51",
+        "S62",
+        "S94",
+        "S110",
+        "S111",
+        "S122",
+        "S165",
+        "S167",
+        "S177",
+        "S181",
+        "S183",
+        "S184",
+        "S185",
+        "S189",
+        "S192",
+        "S195",
+        "S196",
+        "S197",
+        "S201",
+        "S205",
+        "S208",
+        "S213",
+        "S214",
+        "S217",
+        "S225",
+        "S228",
+        "S231",
+        "S237",
+        "S243",
+        "S249",
+        "S251",
+        "S253",
+        "S277",
+        "S278",
+        "S287",
+        "S297",
+        "S298",
+        "S299",
+        "S304",
+        "S309",
+        "S312",
+        "S317"
+      ],
+      "status": {
+        "confirmed_model_error": 24,
+        "evaluation_issue": 10,
+        "ambiguous_spec": 11
+      },
+      "any_error": 27,
+      "families": {
+        "事实读取与无依据前提": 7,
+        "适用条件与政策分支": 10,
+        "数值计算与聚合": 3,
+        "推导与最终输出不一致": 3,
+        "例外与优先级执行": 3,
+        "对象拆分与资料归属": 7,
+        "额度／条件变换": 4
+      },
+      "mechanisms": {
+        "unsupported_approval": 1,
+        "gold_reference_mismatch": 1,
+        "wrong_policy_branch": 2,
+        "output_field_inconsistency": 2,
+        "policy_check_replaced_by_input_flag": 1,
+        "explicit_exception_ignored": 2,
+        "answer_normalization_failure": 2,
+        "defeated_rule_reinstatement": 3,
+        "object_fact_binding": 3,
+        "object_merge": 3,
+        "input_formal_alignment_gap": 3,
+        "quota_transformation_omitted": 3,
+        "applicable_requirement_omitted": 4,
+        "prompt_formal_coverage_gap": 1,
+        "unsupported_numeric_inference": 1,
+        "decision_aggregation_disagreement": 2,
+        "numeric_aggregation_error": 1,
+        "spurious_applicability": 1,
+        "local_vs_global_exemption": 2,
+        "nonunique_formal_conclusion": 2,
+        "answer_normalization_false_negative": 5
+      }
+    },
+    "low_correct": {
+      "n": 12,
+      "ids": [
+        "S32",
+        "S52",
+        "S116",
+        "S126",
+        "S152",
+        "S186",
+        "S199",
+        "S212",
+        "S222",
+        "S246",
+        "S248",
+        "S283"
+      ],
+      "status": {
+        "no_substantive_error_observed": 11,
+        "confirmed_model_error": 1
+      },
+      "any_error": 1,
+      "families": {
+        "适用条件与政策分支": 1
+      },
+      "mechanisms": {
+        "none_observed": 11,
+        "spurious_applicability": 1
+      }
+    },
+    "by_type": {
+      "PR": {
+        "high_wrong": 4,
+        "low_correct": 2
+      },
+      "PT": {
+        "high_wrong": 2,
+        "low_correct": 2
+      },
+      "PC": {
+        "high_wrong": 18,
+        "low_correct": 4
+      },
+      "PS": {
+        "high_wrong": 11,
+        "low_correct": 3
+      },
+      "PQ": {
+        "high_wrong": 10,
+        "low_correct": 1
+      }
+    }
+  },
+  "roscoe_sa_prec": {
+    "high_all": 67,
+    "low_all": 85,
+    "high_wrong": {
+      "n": 40,
+      "ids": [
+        "S17",
+        "S37",
+        "S38",
+        "S39",
+        "S41",
+        "S42",
+        "S54",
+        "S57",
+        "S63",
+        "S87",
+        "S110",
+        "S111",
+        "S153",
+        "S156",
+        "S165",
+        "S169",
+        "S171",
+        "S172",
+        "S178",
+        "S192",
+        "S209",
+        "S215",
+        "S216",
+        "S220",
+        "S226",
+        "S227",
+        "S230",
+        "S239",
+        "S242",
+        "S243",
+        "S244",
+        "S253",
+        "S261",
+        "S264",
+        "S269",
+        "S297",
+        "S298",
+        "S299",
+        "S304",
+        "S309"
+      ],
+      "status": {
+        "confirmed_model_error": 19,
+        "ambiguous_spec": 14,
+        "evaluation_issue": 7
+      },
+      "any_error": 20,
+      "families": {
+        "推导与最终输出不一致": 4,
+        "适用条件与政策分支": 12,
+        "数值计算与聚合": 3,
+        "对象拆分与资料归属": 1,
+        "额度／条件变换": 2,
+        "事实读取与无依据前提": 2,
+        "例外与优先级执行": 1
+      },
+      "mechanisms": {
+        "output_field_inconsistency": 2,
+        "decision_aggregation_disagreement": 5,
+        "prompt_formal_coverage_gap": 5,
+        "spurious_applicability": 6,
+        "numeric_aggregation_error": 1,
+        "object_omission_and_merge": 1,
+        "input_formal_alignment_gap": 3,
+        "nonunique_formal_conclusion": 1,
+        "answer_normalization_failure": 2,
+        "discount_actual_instead_of_cap": 1,
+        "quota_comparison_error": 1,
+        "defeated_rule_reinstatement": 1,
+        "input_ignored": 1,
+        "applicable_requirement_omitted": 2,
+        "fact_polarity_reversal": 1,
+        "wrong_policy_branch": 1,
+        "unsupported_document_requirement": 1,
+        "answer_normalization_false_negative": 4,
+        "explicit_exception_ignored": 1
+      }
+    },
+    "low_correct": {
+      "n": 17,
+      "ids": [
+        "S44",
+        "S48",
+        "S64",
+        "S80",
+        "S91",
+        "S103",
+        "S114",
+        "S116",
+        "S126",
+        "S174",
+        "S176",
+        "S188",
+        "S211",
+        "S234",
+        "S235",
+        "S270",
+        "S272"
+      ],
+      "status": {
+        "no_substantive_error_observed": 13,
+        "confirmed_model_error": 3,
+        "ambiguous_spec": 1
+      },
+      "any_error": 3,
+      "families": {
+        "事实读取与无依据前提": 2,
+        "对象拆分与资料归属": 1,
+        "适用条件与政策分支": 1
+      },
+      "mechanisms": {
+        "none_observed": 13,
+        "unsupported_semantic_premise": 1,
+        "object_fact_binding": 1,
+        "spurious_applicability": 1,
+        "role_mapping_disagreement": 1
+      }
+    },
+    "by_type": {
+      "PR": {
+        "high_wrong": 3,
+        "low_correct": 5
+      },
+      "PT": {
+        "high_wrong": 7,
+        "low_correct": 2
+      },
+      "PC": {
+        "high_wrong": 11,
+        "low_correct": 4
+      },
+      "PS": {
+        "high_wrong": 14,
+        "low_correct": 5
+      },
+      "PQ": {
+        "high_wrong": 5,
+        "low_correct": 1
+      }
+    }
+  },
+  "either_high_wrong": {
+    "n": 74,
+    "ids": [
+      "S17",
+      "S35",
+      "S37",
+      "S38",
+      "S39",
+      "S41",
+      "S42",
+      "S46",
+      "S50",
+      "S51",
+      "S54",
+      "S57",
+      "S62",
+      "S63",
+      "S87",
+      "S94",
+      "S110",
+      "S111",
+      "S122",
+      "S153",
+      "S156",
+      "S165",
+      "S167",
+      "S169",
+      "S171",
+      "S172",
+      "S177",
+      "S178",
+      "S181",
+      "S183",
+      "S184",
+      "S185",
+      "S189",
+      "S192",
+      "S195",
+      "S196",
+      "S197",
+      "S201",
+      "S205",
+      "S208",
+      "S209",
+      "S213",
+      "S214",
+      "S215",
+      "S216",
+      "S217",
+      "S220",
+      "S225",
+      "S226",
+      "S227",
+      "S228",
+      "S230",
+      "S231",
+      "S237",
+      "S239",
+      "S242",
+      "S243",
+      "S244",
+      "S249",
+      "S251",
+      "S253",
+      "S261",
+      "S264",
+      "S269",
+      "S277",
+      "S278",
+      "S287",
+      "S297",
+      "S298",
+      "S299",
+      "S304",
+      "S309",
+      "S312",
+      "S317"
+    ],
+    "status": {
+      "confirmed_model_error": 41,
+      "ambiguous_spec": 22,
+      "evaluation_issue": 11
+    },
+    "any_error": 45,
+    "families": {
+      "推导与最终输出不一致": 6,
+      "事实读取与无依据前提": 9,
+      "适用条件与政策分支": 21,
+      "数值计算与聚合": 6,
+      "对象拆分与资料归属": 8,
+      "例外与优先级执行": 3,
+      "额度／条件变换": 6
+    },
+    "mechanisms": {
+      "output_field_inconsistency": 4,
+      "unsupported_approval": 1,
+      "decision_aggregation_disagreement": 6,
+      "prompt_formal_coverage_gap": 5,
+      "spurious_applicability": 6,
+      "numeric_aggregation_error": 2,
+      "gold_reference_mismatch": 1,
+      "wrong_policy_branch": 3,
+      "object_omission_and_merge": 1,
+      "policy_check_replaced_by_input_flag": 1,
+      "input_formal_alignment_gap": 6,
+      "nonunique_formal_conclusion": 3,
+      "explicit_exception_ignored": 2,
+      "answer_normalization_failure": 2,
+      "defeated_rule_reinstatement": 3,
+      "discount_actual_instead_of_cap": 1,
+      "quota_comparison_error": 1,
+      "input_ignored": 1,
+      "object_fact_binding": 3,
+      "object_merge": 3,
+      "quota_transformation_omitted": 3,
+      "applicable_requirement_omitted": 6,
+      "unsupported_numeric_inference": 1,
+      "fact_polarity_reversal": 1,
+      "unsupported_document_requirement": 1,
+      "local_vs_global_exemption": 2,
+      "answer_normalization_false_negative": 5
+    }
+  },
+  "either_low_correct": {
+    "n": 27,
+    "ids": [
+      "S32",
+      "S44",
+      "S48",
+      "S52",
+      "S64",
+      "S80",
+      "S91",
+      "S103",
+      "S114",
+      "S116",
+      "S126",
+      "S152",
+      "S174",
+      "S176",
+      "S186",
+      "S188",
+      "S199",
+      "S211",
+      "S212",
+      "S222",
+      "S234",
+      "S235",
+      "S246",
+      "S248",
+      "S270",
+      "S272",
+      "S283"
+    ],
+    "status": {
+      "no_substantive_error_observed": 22,
+      "confirmed_model_error": 4,
+      "ambiguous_spec": 1
+    },
+    "any_error": 4,
+    "families": {
+      "事实读取与无依据前提": 2,
+      "对象拆分与资料归属": 1,
+      "适用条件与政策分支": 2
+    },
+    "mechanisms": {
+      "none_observed": 22,
+      "unsupported_semantic_premise": 1,
+      "object_fact_binding": 1,
+      "spurious_applicability": 2,
+      "role_mapping_disagreement": 1
+    }
+  },
+  "both_high_wrong": {
+    "n": 11,
+    "ids": [
+      "S110",
+      "S111",
+      "S165",
+      "S192",
+      "S243",
+      "S253",
+      "S297",
+      "S298",
+      "S299",
+      "S304",
+      "S309"
+    ],
+    "status": {
+      "evaluation_issue": 6,
+      "ambiguous_spec": 3,
+      "confirmed_model_error": 2
+    },
+    "any_error": 2,
+    "families": {
+      "适用条件与政策分支": 1,
+      "例外与优先级执行": 1,
+      "推导与最终输出不一致": 1
+    },
+    "mechanisms": {
+      "answer_normalization_failure": 2,
+      "defeated_rule_reinstatement": 1,
+      "prompt_formal_coverage_gap": 1,
+      "spurious_applicability": 1,
+      "decision_aggregation_disagreement": 1,
+      "answer_normalization_false_negative": 4,
+      "explicit_exception_ignored": 1
+    }
+  },
+  "both_low_correct": {
+    "n": 2,
+    "ids": [
+      "S116",
+      "S126"
+    ],
+    "status": {
+      "no_substantive_error_observed": 2
+    },
+    "any_error": 0,
+    "families": {},
+    "mechanisms": {
+      "none_observed": 2
+    }
+  },
+  "method": {
+    "n": 320,
+    "original_wrong": 240,
+    "original_correct": 80,
+    "high": "within-model/type full-population midrank percentile >= 0.75",
+    "low": "within-model/type full-population midrank percentile <= 0.25",
+    "union": "either metric; deduplicated by sample_id",
+    "labels": "GPT-6 Astra, pending human review",
+    "caution": "Fixed 3:1 wrong/correct sampling; descriptive sample counts, not population prevalence. Error families overlap."
+  }
+}

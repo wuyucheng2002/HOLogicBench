@@ -1,0 +1,4 @@
+session MultiRef_aviation_security_with_authorizations = HOL +
+ options [document=false]
+ theories Paths_Validated
+    aswa_case_17

@@ -1,0 +1,23 @@
+{
+  "model": "answerdotai/ModernBERT-base",
+  "weights_sha256": "340ac08b74eef0d7bdec2d7981a6a3d4249bf0e6aab60634b72ad02c2b8023a9",
+  "tokenizer_sha256": "9fd55248d51d33976b324fc11592e28071da7d41e0e9401dfb7082e30574b7b1",
+  "layer": 22,
+  "window_tokens": 8192,
+  "content_tokens": 8190,
+  "overlap_content_tokens": 1024,
+  "overlap_handling": "midpoint ownership; each content token once",
+  "matching": "global token cosine greedy precision/recall, then harmonic F1; not a mean of window scores",
+  "idf": false,
+  "rescale_with_baseline": false,
+  "special_tokens": "first CLS and last SEP only; zero averaging weights, eligible matching targets",
+  "encoder_dtype": "float16",
+  "matching_dtype": "float32",
+  "reference_sha256": "4a22e182fdbeb8f4755004cc600d8ea49bc5801b999d11acd80d34a4dd78d3d9",
+  "steps_sha256": "e607fca812b08e38e741591d736bbb7764c96d6e4a70ff1618a79f8800ebc773",
+  "prediction_sha256": {
+    "GLM-5.3-Flash_predictions.jsonl": "d56fe9a687ff177f5bc150d765f9cdff5ee08056b4d361c93679c44e9d9a8c70",
+    "Kimi-K2.6_predictions.jsonl": "709d11686b3e845648510797fa0bbec5341e6403fcf6c557955568958d9c4fa0"
+  },
+  "signature": "d98aa07a84a26af8e25a8d323dead3f89b1ddd9a959f4c36c3b1cac2dbbc3481"
+}

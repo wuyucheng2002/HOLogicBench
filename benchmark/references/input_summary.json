@@ -1,0 +1,16 @@
+{
+  "cases": 1379,
+  "rendered_references": 264926,
+  "per_domain": {
+    "law": {
+      "cases": 300,
+      "references": 2677,
+      "multi_reference_cases": 207
+    },
+    "finance": {
+      "cases": 1079,
+      "references": 262249,
+      "multi_reference_cases": 635
+    }
+  }
+}

@@ -1,0 +1,3 @@
+session MultiRef_environmental_pollution_with_permits = HOL +
+ options [document=false]
+ theories Paths_Validated

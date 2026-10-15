@@ -1,0 +1,7 @@
+{
+  "pairs": 250,
+  "visible_edits_per_variant": 1,
+  "gold_flip_checks": 250,
+  "gold_invariance_checks": 250,
+  "variants_sha256": "154cfab1d73156945d32a9e48c891da625441b7f32a6502217ba1482021bdf7c"
+}

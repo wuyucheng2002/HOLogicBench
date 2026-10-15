@@ -1,0 +1,36 @@
+{
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "device": "NVIDIA GeForce RTX 4090",
+  "cuda": "12.8",
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.51.3",
+    "tokenizers": "0.21.4",
+    "numpy": "1.26.3",
+    "pandas": "2.2.3",
+    "bert-score": "0.3.13",
+    "sentence-transformers": "3.0.1",
+    "rouge-score": "0.1.2"
+  },
+  "script_sha256": {
+    "finish_evidence_pipeline.py": "a7da4a346c72aec28360c865ae677caa75fb1999befc4fe0b2c656251d018d86",
+    "verify_results.py": "95adb633acdf5f28fc178f82b9cc62ee4df9438b67308cdf3dab579ea3bb3814",
+    "evidence_reference_reader.py": "b286e6f158849da7cb755219599ee1bf5448cbfed6fef79ab1108ec6da7b914c",
+    "prepare_inputs.py": "28c9facec355bc6a37ce13f87eba7811c4e589e9adf463ba24a6f3f4fe5c2164",
+    "score_evidence_rouge_roscoe.py": "ac52d86bbdba4e06352a93087dc27a3021b1d5cff74776063a48fef0652ff830",
+    "build_evidence_references.py": "73fd9e5094e322727c2d40579d5f916be0658c97ca4e0e2b9ccd7a0f67244d41",
+    "score_evidence_modernbert.py": "97392dee3cf5cb0c1b39bc9c68ad80582314f895312ff2f24bf37e295f4b8dd2",
+    "score_multireference.py": "07f816c519279a01abbffb0ece654c98c0e1d7f0f935abf833c04c7c9918c4a5",
+    "audit_long_context_lengths.py": "fa5bda155c807d20d280f10fc0cfe446812502ae5245bd9810f90edcd86230bc",
+    "model_catalog.py": "af9e04075bb4d9615604c1c164f11078c2257d12c69f97416612eaf8601c06df",
+    "verify_evidence_references.py": "74ca2f7f6c9dbed41b193685939fa5b5c7bc4bc4f37b91c3f59c26059c2dbce5",
+    "finalize_evidence_results.py": "cff16141208701297a6a39a097953dc6cd59938892b96df1233568c0bd9fbbf5",
+    "verify_metric_samples.py": "4b2afe096e5ee870b8f32038ab0f5a206c3362347ed7f89d97f87d5001601204",
+    "modernbert_sparse_attention.py": "666b39ff3d7395a6211ada9171d9a4ba435040019b727ec4081760f5ffbaf216",
+    "build_table.py": "dabada52cb1ad493970a21b4221c6015d93899078a2dcc83a5ab22998ab40b45",
+    "verify_cuda_attention.py": "f0089c21b0a87473eab3454f2fffe50e4268541e8aad43a81065afe7132c4bf9",
+    "run_gpu_evaluation.py": "d159d6120ceb7040defdea61f0b1e2f7cebc999c676e41b9e1574105c038b6d1",
+    "verify_cuda_actual_cases.py": "cbad3f5d5394f81571faed240ffa3093e4f7eac345944d765ac7df0afdc20904"
+  },
+  "final_scores_device": "CUDA; MPS checkpoints retained separately, not mixed into final scores"
+}

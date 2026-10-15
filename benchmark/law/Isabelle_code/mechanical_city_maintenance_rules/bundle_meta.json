@@ -1,0 +1,674 @@
+{
+  "bundle_name": "mechanical_city_maintenance_rules",
+  "bundle_dir": "rule_bundles/mechanical_city_maintenance_rules",
+  "person_symbol": "actor",
+  "person_name_pool": [
+    "Ari",
+    "Bryn",
+    "Cato",
+    "Dale",
+    "Evan",
+    "Flint",
+    "Gale",
+    "Hollis",
+    "Indigo",
+    "Joss"
+  ],
+  "article_order": [
+    "Art_Restricted_Gear_Access",
+    "Art_Unsafe_Automaton_Release",
+    "Art_Public_Clock_Disruption",
+    "Art_Maintenance_Order_Authorization",
+    "Art_Emergency_Reset_Authorization",
+    "Art_Calibration_Fault_Exemption"
+  ],
+  "articles": {
+    "Art_Restricted_Gear_Access": {
+      "title": "Restricted Gear Access",
+      "result": "gear_room_warning",
+      "rule_text": "The restricted gear access article carries a gear room warning."
+    },
+    "Art_Unsafe_Automaton_Release": {
+      "title": "Unsafe Automaton Release",
+      "result": "automaton_release_suspension",
+      "rule_text": "The unsafe automaton release article carries automaton release suspension."
+    },
+    "Art_Public_Clock_Disruption": {
+      "title": "Public Clock Disruption",
+      "result": "clock_tower_lockdown",
+      "rule_text": "The public clock disruption article carries clock tower lockdown."
+    },
+    "Art_Maintenance_Order_Authorization": {
+      "title": "Maintenance Order Authorization",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The maintenance order authorization article carries no criminal liability."
+    },
+    "Art_Emergency_Reset_Authorization": {
+      "title": "Emergency Reset Authorization",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The emergency reset authorization article carries no criminal liability."
+    },
+    "Art_Calibration_Fault_Exemption": {
+      "title": "Calibration Fault Exemption",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The calibration fault exemption article carries no criminal liability."
+    }
+  },
+  "nodes": {
+    "opens_gear_well_cover": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} opened a gear-well cover in the mechanical city.",
+      "order": 10
+    },
+    "opens_service_hatch": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} opened a service hatch beside the gear well.",
+      "order": 11
+    },
+    "pulls_copper_speed_pin": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} pulled a copper speed pin from the gear well.",
+      "order": 12
+    },
+    "loosens_brass_regulator": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} loosened a brass regulator in the gear well.",
+      "order": 13
+    },
+    "releases_uncalibrated_automaton": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} released an uncalibrated automaton.",
+      "order": 20
+    },
+    "releases_clockwork_runner": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} released a clockwork runner.",
+      "order": 21
+    },
+    "automaton_crosses_public_line": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "The automaton crossed the public line.",
+      "order": 22
+    },
+    "runner_enters_public_square": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "The clockwork runner entered the public square.",
+      "order": 23
+    },
+    "public_clock_stops": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "The public clock stopped.",
+      "negative_text": "The public clock did not stop.",
+      "order": 30
+    },
+    "reset_alarm_sounds": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "The reset alarm sounded.",
+      "negative_text": "The reset alarm did not sound.",
+      "order": 32
+    },
+    "wears_maintenance_badge": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "{name} wore a maintenance badge.",
+      "negative_text": "{name} did not wear a maintenance badge.",
+      "order": 40
+    },
+    "receives_municipal_order": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "wears_maintenance_badge"
+      ],
+      "positive_text": "{name} received a municipal maintenance order.",
+      "negative_text": "{name} did not receive a municipal maintenance order.",
+      "order": 42
+    },
+    "supervisor_seals_work_ticket": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "wears_maintenance_badge"
+      ],
+      "positive_text": "A supervisor sealed {name}'s work ticket.",
+      "negative_text": "No supervisor sealed {name}'s work ticket.",
+      "order": 44
+    },
+    "turns_clocktower_reset_wheel": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} turned the clocktower reset wheel.",
+      "order": 50
+    },
+    "reports_reset_to_clock_desk": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "turns_clocktower_reset_wheel"
+      ],
+      "positive_text": "{name} reported the reset to the clock desk.",
+      "negative_text": "{name} did not report the reset to the clock desk.",
+      "order": 52
+    },
+    "fault_flag_raised_before_contact": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "A fault flag was raised before the contact.",
+      "negative_text": "No fault flag was raised before the contact.",
+      "order": 60
+    },
+    "calibration_panel_records_fault": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "fault_flag_raised_before_contact"
+      ],
+      "positive_text": "The calibration panel recorded the fault.",
+      "negative_text": "The calibration panel did not record the fault.",
+      "order": 62
+    }
+  },
+  "article_trigger_mappings": [
+    {
+      "article": "Art_Restricted_Gear_Access",
+      "source_predicate": "restricted_gear_access_basis"
+    },
+    {
+      "article": "Art_Unsafe_Automaton_Release",
+      "source_predicate": "unsafe_automaton_release_basis"
+    },
+    {
+      "article": "Art_Public_Clock_Disruption",
+      "source_predicate": "public_clock_disruption_basis"
+    },
+    {
+      "article": "Art_Maintenance_Order_Authorization",
+      "source_predicate": "maintenance_order_authorization_basis"
+    },
+    {
+      "article": "Art_Emergency_Reset_Authorization",
+      "source_predicate": "emergency_reset_authorization_basis"
+    },
+    {
+      "article": "Art_Calibration_Fault_Exemption",
+      "source_predicate": "calibration_fault_exemption_basis"
+    }
+  ],
+  "rules": [
+    {
+      "name": "gear_cover_and_pin_imply_restricted_mechanical_access",
+      "head": {
+        "predicate": "restricted_mechanical_access",
+        "value": true
+      },
+      "body": {
+        "any_of_groups": [
+          [
+            {
+              "predicate": "opens_gear_well_cover",
+              "value": true
+            },
+            {
+              "predicate": "opens_service_hatch",
+              "value": true
+            }
+          ],
+          [
+            {
+              "predicate": "pulls_copper_speed_pin",
+              "value": true
+            },
+            {
+              "predicate": "loosens_brass_regulator",
+              "value": true
+            }
+          ]
+        ]
+      },
+      "natural_text": "Restricted mechanical access requires opening a gear entry point and disturbing a speed-control part."
+    },
+    {
+      "name": "automaton_facts_imply_unsafe_automaton_release",
+      "head": {
+        "predicate": "unsafe_automaton_release",
+        "value": true
+      },
+      "body": {
+        "any_of_groups": [
+          [
+            {
+              "predicate": "releases_uncalibrated_automaton",
+              "value": true
+            },
+            {
+              "predicate": "releases_clockwork_runner",
+              "value": true
+            }
+          ],
+          [
+            {
+              "predicate": "automaton_crosses_public_line",
+              "value": true
+            },
+            {
+              "predicate": "runner_enters_public_square",
+              "value": true
+            }
+          ]
+        ]
+      },
+      "natural_text": "Unsafe automaton release requires releasing an uncalibrated machine and that machine entering a public area."
+    },
+    {
+      "name": "clock_stop_and_access_imply_clock_disruption",
+      "head": {
+        "predicate": "clock_disruption",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "public_clock_stops",
+            "value": true
+          },
+          {
+            "predicate": "restricted_mechanical_access",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "Clock disruption requires the public clock to stop after restricted mechanical access."
+    },
+    {
+      "name": "badge_and_order_imply_maintenance_authority",
+      "head": {
+        "predicate": "maintenance_authority",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "wears_maintenance_badge",
+            "value": true
+          },
+          {
+            "predicate": "receives_municipal_order",
+            "value": true
+          },
+          {
+            "predicate": "supervisor_seals_work_ticket",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "Maintenance authority requires a maintenance badge, a municipal order, and a sealed work ticket."
+    },
+    {
+      "name": "reset_facts_imply_emergency_reset_action",
+      "head": {
+        "predicate": "emergency_reset_action",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "public_clock_stops",
+            "value": true
+          },
+          {
+            "predicate": "reset_alarm_sounds",
+            "value": true
+          },
+          {
+            "predicate": "turns_clocktower_reset_wheel",
+            "value": true
+          },
+          {
+            "predicate": "reports_reset_to_clock_desk",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "Emergency reset action requires a stopped public clock, a reset alarm, turning the clocktower reset wheel, and reporting the reset."
+    },
+    {
+      "name": "fault_facts_imply_calibration_fault_condition",
+      "head": {
+        "predicate": "calibration_fault_condition",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "fault_flag_raised_before_contact",
+            "value": true
+          },
+          {
+            "predicate": "calibration_panel_records_fault",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "Calibration fault condition requires a prior fault flag and a matching calibration-panel record."
+    },
+    {
+      "name": "restricted_gear_access_basis_rule",
+      "head": {
+        "predicate": "restricted_gear_access_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "restricted_mechanical_access",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The restricted gear access basis is present when restricted mechanical access occurs."
+    },
+    {
+      "name": "unsafe_automaton_release_basis_rule",
+      "head": {
+        "predicate": "unsafe_automaton_release_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "restricted_mechanical_access",
+            "value": true
+          },
+          {
+            "predicate": "unsafe_automaton_release",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The unsafe automaton release basis requires restricted mechanical access and unsafe automaton release."
+    },
+    {
+      "name": "public_clock_disruption_basis_rule",
+      "head": {
+        "predicate": "public_clock_disruption_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "clock_disruption",
+            "value": true
+          },
+          {
+            "predicate": "restricted_mechanical_access",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The public clock disruption basis requires clock disruption connected to restricted mechanical access."
+    },
+    {
+      "name": "maintenance_order_authorization_basis_rule",
+      "head": {
+        "predicate": "maintenance_order_authorization_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "maintenance_authority",
+            "value": true
+          },
+          {
+            "predicate": "restricted_mechanical_access",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The maintenance order authorization basis requires maintenance authority connected to restricted mechanical access."
+    },
+    {
+      "name": "emergency_reset_authorization_basis_rule",
+      "head": {
+        "predicate": "emergency_reset_authorization_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "emergency_reset_action",
+            "value": true
+          },
+          {
+            "predicate": "clock_disruption",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The emergency reset authorization basis requires emergency reset action connected to clock disruption."
+    },
+    {
+      "name": "calibration_fault_exemption_basis_rule",
+      "head": {
+        "predicate": "calibration_fault_exemption_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "calibration_fault_condition",
+            "value": true
+          },
+          {
+            "predicate": "clock_disruption",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The calibration fault exemption basis requires a calibration-fault condition connected to clock disruption."
+    },
+    {
+      "name": "basis_triggers_restricted_gear_access",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Restricted_Gear_Access",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "restricted_gear_access_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_unsafe_automaton_release",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Unsafe_Automaton_Release",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "unsafe_automaton_release_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_public_clock_disruption",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Public_Clock_Disruption",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "public_clock_disruption_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_maintenance_order_authorization",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Maintenance_Order_Authorization",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "maintenance_order_authorization_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_emergency_reset_authorization",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Emergency_Reset_Authorization",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "emergency_reset_authorization_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_calibration_fault_exemption",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Calibration_Fault_Exemption",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "calibration_fault_exemption_basis",
+            "value": true
+          }
+        ]
+      }
+    }
+  ],
+  "conflicts": {
+    "stronger_than": [
+      [
+        "Art_Unsafe_Automaton_Release",
+        "Art_Restricted_Gear_Access"
+      ],
+      [
+        "Art_Public_Clock_Disruption",
+        "Art_Restricted_Gear_Access"
+      ],
+      [
+        "Art_Public_Clock_Disruption",
+        "Art_Unsafe_Automaton_Release"
+      ]
+    ],
+    "exception_to": [
+      [
+        "Art_Maintenance_Order_Authorization",
+        "Art_Restricted_Gear_Access"
+      ],
+      [
+        "Art_Maintenance_Order_Authorization",
+        "Art_Unsafe_Automaton_Release"
+      ],
+      [
+        "Art_Emergency_Reset_Authorization",
+        "Art_Restricted_Gear_Access"
+      ],
+      [
+        "Art_Emergency_Reset_Authorization",
+        "Art_Public_Clock_Disruption"
+      ],
+      [
+        "Art_Calibration_Fault_Exemption",
+        "Art_Public_Clock_Disruption"
+      ]
+    ]
+  }
+}

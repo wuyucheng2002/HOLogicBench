@@ -1,0 +1,316 @@
+[
+  {
+    "case_id": "mcmr_case_01",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "mcmr_case_02",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Unsafe_Automaton_Release",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "mcmr_case_03",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Public_Clock_Disruption",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "mcmr_case_04",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Maintenance_Order_Authorization",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_05",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Emergency_Reset_Authorization",
+      "Art_Public_Clock_Disruption",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_06",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Calibration_Fault_Exemption",
+      "Art_Public_Clock_Disruption",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_07",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Public_Clock_Disruption",
+      "Art_Unsafe_Automaton_Release",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "mcmr_case_08",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Unsafe_Automaton_Release",
+      "Art_Restricted_Gear_Access",
+      "Art_Maintenance_Order_Authorization"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_09",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Public_Clock_Disruption",
+      "Art_Restricted_Gear_Access",
+      "Art_Maintenance_Order_Authorization",
+      "Art_Emergency_Reset_Authorization"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_10",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Public_Clock_Disruption",
+      "Art_Unsafe_Automaton_Release",
+      "Art_Restricted_Gear_Access",
+      "Art_Maintenance_Order_Authorization",
+      "Art_Emergency_Reset_Authorization",
+      "Art_Calibration_Fault_Exemption"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_11",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "mcmr_case_12",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Public_Clock_Disruption",
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "mcmr_case_13",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Maintenance_Order_Authorization",
+      "Art_Emergency_Reset_Authorization",
+      "Art_Public_Clock_Disruption",
+      "Art_Unsafe_Automaton_Release",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_14",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Emergency_Reset_Authorization",
+      "Art_Calibration_Fault_Exemption",
+      "Art_Public_Clock_Disruption",
+      "Art_Unsafe_Automaton_Release",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_15",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Maintenance_Order_Authorization",
+      "Art_Calibration_Fault_Exemption",
+      "Art_Public_Clock_Disruption",
+      "Art_Unsafe_Automaton_Release",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_16",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Maintenance_Order_Authorization",
+      "Art_Emergency_Reset_Authorization",
+      "Art_Calibration_Fault_Exemption",
+      "Art_Public_Clock_Disruption",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_17",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Emergency_Reset_Authorization",
+      "Art_Public_Clock_Disruption",
+      "Art_Unsafe_Automaton_Release",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_18",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Public_Clock_Disruption",
+      "Art_Maintenance_Order_Authorization",
+      "Art_Unsafe_Automaton_Release",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_19",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Maintenance_Order_Authorization",
+      "Art_Emergency_Reset_Authorization",
+      "Art_Calibration_Fault_Exemption",
+      "Art_Public_Clock_Disruption",
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_20",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Maintenance_Order_Authorization",
+      "Art_Unsafe_Automaton_Release",
+      "Art_Emergency_Reset_Authorization",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_21",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Calibration_Fault_Exemption",
+      "Art_Public_Clock_Disruption",
+      "Art_Unsafe_Automaton_Release",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_22",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Emergency_Reset_Authorization",
+      "Art_Calibration_Fault_Exemption",
+      "Art_Public_Clock_Disruption",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_23",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Emergency_Reset_Authorization",
+      "Art_Calibration_Fault_Exemption",
+      "Art_Public_Clock_Disruption",
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_24",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Maintenance_Order_Authorization",
+      "Art_Calibration_Fault_Exemption",
+      "Art_Public_Clock_Disruption",
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_25",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Maintenance_Order_Authorization",
+      "Art_Calibration_Fault_Exemption",
+      "Art_Public_Clock_Disruption",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_26",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Calibration_Fault_Exemption",
+      "Art_Public_Clock_Disruption",
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_27",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Emergency_Reset_Authorization",
+      "Art_Calibration_Fault_Exemption",
+      "Art_Public_Clock_Disruption"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_28",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Emergency_Reset_Authorization",
+      "Art_Public_Clock_Disruption",
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_29",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Public_Clock_Disruption",
+      "Art_Maintenance_Order_Authorization",
+      "Art_Unsafe_Automaton_Release"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcmr_case_30",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Public_Clock_Disruption",
+      "Art_Maintenance_Order_Authorization",
+      "Art_Restricted_Gear_Access"
+    ],
+    "case_type": "liability_with_exception"
+  }
+]

@@ -1,0 +1,4 @@
+session Theorem1_Review = HOL +
+  options [document = false, quick_and_dirty = false]
+  theories
+    General_Explanation_Spec

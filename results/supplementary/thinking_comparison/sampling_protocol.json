@@ -1,0 +1,12 @@
+{
+  "seed": "20261010",
+  "candidate_source": "254 unique source questions in existing 320 model-output dossiers",
+  "selection": "2 gains and 2 losses per assigned type, SHA256 deterministic order, unique questions within each model; PC,PS,PR,PT,PQ assignment order",
+  "purpose": "mechanism illustrations; not population mechanism prevalence",
+  "qwen": "12 purposively selected pairs already analyzed by Astra",
+  "models_settings": {
+    "MiniMax": "adaptive vs disabled",
+    "V4Flash": "observed legacy mode plus complementary regeneration",
+    "Qwen": "two separate named model variants"
+  }
+}

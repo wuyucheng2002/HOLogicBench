@@ -1,0 +1,100 @@
+theory mcbr_case_25
+  imports Conflict
+begin
+
+consts
+  actor :: person
+
+axiomatization where
+  f1: "passes_unlit_mirror_gate actor"
+and f2: "border_lantern_turns_blue actor"
+and f3: "holds_silver_customs_token actor"
+and f4: "customs_clock_records_arrival actor"
+and f5: "mirror_officer_confirms_token actor"
+and f6: "broken_mirror_alarm_sounds actor"
+and f7: "transfers_cargo_for_rescue actor"
+and f8: "rescue_logged_at_gate actor"
+and f9: "\<not> crosses_without_reflection_stamp actor"
+and f10: "\<not> carries_shadowless_box actor"
+and f11: "\<not> cargo_vanishes_in_mirror actor"
+and f12: "\<not> switches_left_right_labels actor"
+and f13: "\<not> attaches_reversed_crescent_tag actor"
+and f14: "\<not> cargo_moves_after_label_change actor"
+and f15: "\<not> cargo_returned_to_origin actor"
+and f16: "\<not> return_receipt_issued actor"
+and f17: "\<not> crate_seal_matches_origin actor"
+
+lemma derive_mirror_crossing: "mirror_crossing actor"
+  using f2 f1
+  unfolding mirror_crossing_def
+  by simp
+lemma derive_customs_clearance: "customs_clearance actor"
+  using f3 f4 f5
+  unfolding customs_clearance_def
+  by simp
+lemma derive_mirror_rescue_transfer: "mirror_rescue_transfer actor"
+  using f6 f7 f8
+  unfolding mirror_rescue_transfer_def
+  by simp
+lemma derive_unregistered_mirror_crossing_basis: "unregistered_mirror_crossing_basis actor"
+  using derive_mirror_crossing
+  unfolding unregistered_mirror_crossing_basis_def
+  by simp
+lemma derive_customs_clearance_authorization_basis: "customs_clearance_authorization_basis actor"
+  using derive_customs_clearance derive_mirror_crossing
+  unfolding customs_clearance_authorization_basis_def
+  by simp
+lemma derive_mirror_rescue_transfer_basis: "mirror_rescue_transfer_basis actor"
+  using derive_mirror_rescue_transfer derive_mirror_crossing
+  unfolding mirror_rescue_transfer_basis_def
+  by simp
+lemma trigger_art_unregistered_mirror_crossing: "article_triggered Art_Unregistered_Mirror_Crossing actor"
+  using derive_unregistered_mirror_crossing_basis
+  by simp
+lemma trigger_art_customs_clearance_authorization: "article_triggered Art_Customs_Clearance_Authorization actor"
+  using derive_customs_clearance_authorization_basis
+  by simp
+lemma trigger_art_mirror_rescue_transfer: "article_triggered Art_Mirror_Rescue_Transfer actor"
+  using derive_mirror_rescue_transfer_basis
+  by simp
+
+lemma overrides_art_customs_clearance_authorization_art_unregistered_mirror_crossing: "overrides Art_Customs_Clearance_Authorization Art_Unregistered_Mirror_Crossing"
+  unfolding overrides_def
+  by simp
+lemma overrides_art_mirror_rescue_transfer_art_unregistered_mirror_crossing: "overrides Art_Mirror_Rescue_Transfer Art_Unregistered_Mirror_Crossing"
+  unfolding overrides_def
+  by simp
+
+
+lemma not_defeated_art_customs_clearance_authorization: "\<not> defeated actor Art_Customs_Clearance_Authorization"
+  using trigger_art_customs_clearance_authorization
+  unfolding defeated_def overrides_def
+  by (auto split: article.splits)
+lemma applicable_art_customs_clearance_authorization: "applicable actor Art_Customs_Clearance_Authorization"
+  using trigger_art_customs_clearance_authorization not_defeated_art_customs_clearance_authorization
+  unfolding applicable_def
+  by blast
+lemma not_defeated_art_mirror_rescue_transfer: "\<not> defeated actor Art_Mirror_Rescue_Transfer"
+  using trigger_art_mirror_rescue_transfer
+  unfolding defeated_def overrides_def
+  by (auto split: article.splits)
+lemma applicable_art_mirror_rescue_transfer: "applicable actor Art_Mirror_Rescue_Transfer"
+  using trigger_art_mirror_rescue_transfer not_defeated_art_mirror_rescue_transfer
+  unfolding applicable_def
+  by blast
+lemma defeated_art_unregistered_mirror_crossing: "defeated actor Art_Unregistered_Mirror_Crossing"
+  using trigger_art_unregistered_mirror_crossing trigger_art_customs_clearance_authorization overrides_art_customs_clearance_authorization_art_unregistered_mirror_crossing
+  unfolding defeated_def
+  by blast
+lemma not_applicable_art_unregistered_mirror_crossing: "\<not> applicable actor Art_Unregistered_Mirror_Crossing"
+  using trigger_art_unregistered_mirror_crossing defeated_art_unregistered_mirror_crossing
+  unfolding applicable_def
+  by blast
+
+
+theorem final_result_no_liability: "final_no_liability actor"
+  using applicable_art_customs_clearance_authorization
+  unfolding final_no_liability_def
+  by auto
+
+end

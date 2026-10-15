@@ -1,0 +1,3 @@
+session MultiRef_archive_relic_with_rescue_exceptions = HOL +
+ options [document=false]
+ theories Paths_Validated

@@ -1,0 +1,18 @@
+session Cyber_Intrusion_With_Authorizations = HOL +
+  options [document = false]
+  theories
+    General
+    Case_kernel
+    Middle_concept
+    Conflict
+    case_demo
+    ciwa_case_01
+    ciwa_case_02
+    ciwa_case_03
+    ciwa_case_04
+    ciwa_case_05
+    ciwa_case_06
+    ciwa_case_07
+    ciwa_case_08
+    ciwa_case_09
+    ciwa_case_10

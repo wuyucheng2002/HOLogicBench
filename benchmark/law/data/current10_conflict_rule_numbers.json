@@ -1,0 +1,873 @@
+{
+  "bundle_count": 10,
+  "bundles": {
+    "aviation_security_with_authorizations": {
+      "stronger_conflict_rule_numbers": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "exemption_conflict_rule_numbers": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "stronger_conflict_rules": [
+        {
+          "rule_number": 21,
+          "target": [
+            "Art_Runway_Drone_Interference",
+            "Art_Airside_Access_Breach"
+          ]
+        },
+        {
+          "rule_number": 22,
+          "target": [
+            "Art_Navigation_Signal_Interference",
+            "Art_Airside_Access_Breach"
+          ]
+        },
+        {
+          "rule_number": 23,
+          "target": [
+            "Art_Compound_Airspace_Hazard",
+            "Art_Airside_Access_Breach"
+          ]
+        },
+        {
+          "rule_number": 24,
+          "target": [
+            "Art_Compound_Airspace_Hazard",
+            "Art_Runway_Drone_Interference"
+          ]
+        },
+        {
+          "rule_number": 25,
+          "target": [
+            "Art_Compound_Airspace_Hazard",
+            "Art_Navigation_Signal_Interference"
+          ]
+        }
+      ],
+      "exemption_conflict_rules": [
+        {
+          "rule_number": 26,
+          "target": [
+            "Art_Maintenance_Window_Authorization",
+            "Art_Airside_Access_Breach"
+          ]
+        },
+        {
+          "rule_number": 27,
+          "target": [
+            "Art_Maintenance_Window_Authorization",
+            "Art_Runway_Drone_Interference"
+          ]
+        },
+        {
+          "rule_number": 28,
+          "target": [
+            "Art_Emergency_Tarmac_Authorization",
+            "Art_Airside_Access_Breach"
+          ]
+        },
+        {
+          "rule_number": 29,
+          "target": [
+            "Art_Emergency_Tarmac_Authorization",
+            "Art_Runway_Drone_Interference"
+          ]
+        },
+        {
+          "rule_number": 30,
+          "target": [
+            "Art_Emergency_Tarmac_Authorization",
+            "Art_Compound_Airspace_Hazard"
+          ]
+        }
+      ]
+    },
+    "cyber_intrusion_with_authorizations": {
+      "stronger_conflict_rule_numbers": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "exemption_conflict_rule_numbers": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "stronger_conflict_rules": [
+        {
+          "rule_number": 21,
+          "target": [
+            "Art_Data_Theft",
+            "Art_Unauthorized_Access"
+          ]
+        },
+        {
+          "rule_number": 22,
+          "target": [
+            "Art_System_Disruption",
+            "Art_Unauthorized_Access"
+          ]
+        },
+        {
+          "rule_number": 23,
+          "target": [
+            "Art_Financial_Cyber_Fraud",
+            "Art_Unauthorized_Access"
+          ]
+        },
+        {
+          "rule_number": 24,
+          "target": [
+            "Art_Financial_Cyber_Fraud",
+            "Art_Data_Theft"
+          ]
+        },
+        {
+          "rule_number": 25,
+          "target": [
+            "Art_System_Disruption",
+            "Art_Data_Theft"
+          ]
+        }
+      ],
+      "exemption_conflict_rules": [
+        {
+          "rule_number": 26,
+          "target": [
+            "Art_Security_Testing_Authorization",
+            "Art_Unauthorized_Access"
+          ]
+        },
+        {
+          "rule_number": 27,
+          "target": [
+            "Art_Security_Testing_Authorization",
+            "Art_Data_Theft"
+          ]
+        },
+        {
+          "rule_number": 28,
+          "target": [
+            "Art_Security_Testing_Authorization",
+            "Art_System_Disruption"
+          ]
+        },
+        {
+          "rule_number": 29,
+          "target": [
+            "Art_Incident_Response_Authorization",
+            "Art_Unauthorized_Access"
+          ]
+        },
+        {
+          "rule_number": 30,
+          "target": [
+            "Art_Incident_Response_Authorization",
+            "Art_Data_Theft"
+          ]
+        },
+        {
+          "rule_number": 31,
+          "target": [
+            "Art_Incident_Response_Authorization",
+            "Art_System_Disruption"
+          ]
+        },
+        {
+          "rule_number": 32,
+          "target": [
+            "Art_Incident_Response_Authorization",
+            "Art_Financial_Cyber_Fraud"
+          ]
+        }
+      ]
+    },
+    "environmental_pollution_with_permits": {
+      "stronger_conflict_rule_numbers": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "exemption_conflict_rule_numbers": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "stronger_conflict_rules": [
+        {
+          "rule_number": 21,
+          "target": [
+            "Art_Serious_Contamination",
+            "Art_Unlawful_Discharge"
+          ]
+        },
+        {
+          "rule_number": 22,
+          "target": [
+            "Art_Serious_Contamination",
+            "Art_Hazardous_Waste_Dumping"
+          ]
+        },
+        {
+          "rule_number": 23,
+          "target": [
+            "Art_Serious_Contamination",
+            "Art_Falsified_Monitoring"
+          ]
+        },
+        {
+          "rule_number": 24,
+          "target": [
+            "Art_Falsified_Monitoring",
+            "Art_Unlawful_Discharge"
+          ]
+        },
+        {
+          "rule_number": 25,
+          "target": [
+            "Art_Hazardous_Waste_Dumping",
+            "Art_Unlawful_Discharge"
+          ]
+        }
+      ],
+      "exemption_conflict_rules": [
+        {
+          "rule_number": 26,
+          "target": [
+            "Art_Valid_Permit_Defense",
+            "Art_Unlawful_Discharge"
+          ]
+        },
+        {
+          "rule_number": 27,
+          "target": [
+            "Art_Valid_Permit_Defense",
+            "Art_Serious_Contamination"
+          ]
+        },
+        {
+          "rule_number": 28,
+          "target": [
+            "Art_Emergency_Release_Defense",
+            "Art_Unlawful_Discharge"
+          ]
+        },
+        {
+          "rule_number": 29,
+          "target": [
+            "Art_Emergency_Release_Defense",
+            "Art_Serious_Contamination"
+          ]
+        }
+      ]
+    },
+    "mirror_customs_border_rules": {
+      "stronger_conflict_rule_numbers": [
+        19,
+        20,
+        21
+      ],
+      "exemption_conflict_rule_numbers": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "stronger_conflict_rules": [
+        {
+          "rule_number": 19,
+          "target": [
+            "Art_Shadow_Cargo_Irregularity",
+            "Art_Unregistered_Mirror_Crossing"
+          ]
+        },
+        {
+          "rule_number": 20,
+          "target": [
+            "Art_Label_Inversion",
+            "Art_Unregistered_Mirror_Crossing"
+          ]
+        },
+        {
+          "rule_number": 21,
+          "target": [
+            "Art_Label_Inversion",
+            "Art_Shadow_Cargo_Irregularity"
+          ]
+        }
+      ],
+      "exemption_conflict_rules": [
+        {
+          "rule_number": 22,
+          "target": [
+            "Art_Customs_Clearance_Authorization",
+            "Art_Unregistered_Mirror_Crossing"
+          ]
+        },
+        {
+          "rule_number": 23,
+          "target": [
+            "Art_Customs_Clearance_Authorization",
+            "Art_Shadow_Cargo_Irregularity"
+          ]
+        },
+        {
+          "rule_number": 24,
+          "target": [
+            "Art_Mirror_Rescue_Transfer",
+            "Art_Unregistered_Mirror_Crossing"
+          ]
+        },
+        {
+          "rule_number": 25,
+          "target": [
+            "Art_Mirror_Rescue_Transfer",
+            "Art_Shadow_Cargo_Irregularity"
+          ]
+        },
+        {
+          "rule_number": 26,
+          "target": [
+            "Art_Mirror_Rescue_Transfer",
+            "Art_Label_Inversion"
+          ]
+        },
+        {
+          "rule_number": 27,
+          "target": [
+            "Art_Returned_Cargo_Allowance",
+            "Art_Shadow_Cargo_Irregularity"
+          ]
+        }
+      ]
+    },
+    "property_crime_with_defenses": {
+      "stronger_conflict_rule_numbers": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "exemption_conflict_rule_numbers": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "stronger_conflict_rules": [
+        {
+          "rule_number": 19,
+          "target": [
+            "Art_Robbery",
+            "Art_Theft"
+          ]
+        },
+        {
+          "rule_number": 20,
+          "target": [
+            "Art_Aggravated_Theft",
+            "Art_Theft"
+          ]
+        },
+        {
+          "rule_number": 21,
+          "target": [
+            "Art_Robbery",
+            "Art_Aggravated_Theft"
+          ]
+        },
+        {
+          "rule_number": 22,
+          "target": [
+            "Art_Fraud",
+            "Art_Theft"
+          ]
+        }
+      ],
+      "exemption_conflict_rules": [
+        {
+          "rule_number": 23,
+          "target": [
+            "Art_Consent_Defense",
+            "Art_Theft"
+          ]
+        },
+        {
+          "rule_number": 24,
+          "target": [
+            "Art_Consent_Defense",
+            "Art_Fraud"
+          ]
+        },
+        {
+          "rule_number": 25,
+          "target": [
+            "Art_Consent_Defense",
+            "Art_Robbery"
+          ]
+        },
+        {
+          "rule_number": 26,
+          "target": [
+            "Art_Consent_Defense",
+            "Art_Aggravated_Theft"
+          ]
+        },
+        {
+          "rule_number": 27,
+          "target": [
+            "Art_Necessity_Defense",
+            "Art_Theft"
+          ]
+        },
+        {
+          "rule_number": 28,
+          "target": [
+            "Art_Necessity_Defense",
+            "Art_Fraud"
+          ]
+        },
+        {
+          "rule_number": 29,
+          "target": [
+            "Art_Necessity_Defense",
+            "Art_Robbery"
+          ]
+        },
+        {
+          "rule_number": 30,
+          "target": [
+            "Art_Necessity_Defense",
+            "Art_Aggravated_Theft"
+          ]
+        }
+      ]
+    },
+    "archive_relic_with_rescue_exceptions": {
+      "stronger_conflict_rule_numbers": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "exemption_conflict_rule_numbers": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "stronger_conflict_rules": [
+        {
+          "rule_number": 20,
+          "target": [
+            "Art_Relic_Handling_Breach",
+            "Art_Restricted_Shelf_Access"
+          ]
+        },
+        {
+          "rule_number": 21,
+          "target": [
+            "Art_Catalog_Alteration",
+            "Art_Restricted_Shelf_Access"
+          ]
+        },
+        {
+          "rule_number": 22,
+          "target": [
+            "Art_Vault_Removal",
+            "Art_Restricted_Shelf_Access"
+          ]
+        },
+        {
+          "rule_number": 23,
+          "target": [
+            "Art_Vault_Removal",
+            "Art_Relic_Handling_Breach"
+          ]
+        },
+        {
+          "rule_number": 24,
+          "target": [
+            "Art_Vault_Removal",
+            "Art_Catalog_Alteration"
+          ]
+        }
+      ],
+      "exemption_conflict_rules": [
+        {
+          "rule_number": 25,
+          "target": [
+            "Art_Curator_Order_Authorization",
+            "Art_Restricted_Shelf_Access"
+          ]
+        },
+        {
+          "rule_number": 26,
+          "target": [
+            "Art_Curator_Order_Authorization",
+            "Art_Relic_Handling_Breach"
+          ]
+        },
+        {
+          "rule_number": 27,
+          "target": [
+            "Art_Curator_Order_Authorization",
+            "Art_Catalog_Alteration"
+          ]
+        },
+        {
+          "rule_number": 28,
+          "target": [
+            "Art_Flood_Rescue_Authorization",
+            "Art_Restricted_Shelf_Access"
+          ]
+        },
+        {
+          "rule_number": 29,
+          "target": [
+            "Art_Flood_Rescue_Authorization",
+            "Art_Relic_Handling_Breach"
+          ]
+        },
+        {
+          "rule_number": 30,
+          "target": [
+            "Art_Flood_Rescue_Authorization",
+            "Art_Vault_Removal"
+          ]
+        }
+      ]
+    },
+    "dream_archive_with_exceptions": {
+      "stronger_conflict_rule_numbers": [
+        20,
+        21,
+        22
+      ],
+      "exemption_conflict_rule_numbers": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "stronger_conflict_rules": [
+        {
+          "rule_number": 20,
+          "target": [
+            "Art_Dream_Page_Intervention",
+            "Art_Unregistered_Archive_Entry"
+          ]
+        },
+        {
+          "rule_number": 21,
+          "target": [
+            "Art_Fading_Archive_Damage",
+            "Art_Unregistered_Archive_Entry"
+          ]
+        },
+        {
+          "rule_number": 22,
+          "target": [
+            "Art_Fading_Archive_Damage",
+            "Art_Dream_Page_Intervention"
+          ]
+        }
+      ],
+      "exemption_conflict_rules": [
+        {
+          "rule_number": 23,
+          "target": [
+            "Art_Restorer_Route_Authorization",
+            "Art_Unregistered_Archive_Entry"
+          ]
+        },
+        {
+          "rule_number": 24,
+          "target": [
+            "Art_Restorer_Route_Authorization",
+            "Art_Dream_Page_Intervention"
+          ]
+        },
+        {
+          "rule_number": 25,
+          "target": [
+            "Art_Emergency_Preservation_Authorization",
+            "Art_Dream_Page_Intervention"
+          ]
+        },
+        {
+          "rule_number": 26,
+          "target": [
+            "Art_Emergency_Preservation_Authorization",
+            "Art_Fading_Archive_Damage"
+          ]
+        },
+        {
+          "rule_number": 27,
+          "target": [
+            "Art_Visitor_Escort_Allowance",
+            "Art_Unregistered_Archive_Entry"
+          ]
+        }
+      ]
+    },
+    "mechanical_city_maintenance_rules": {
+      "stronger_conflict_rule_numbers": [
+        19,
+        20,
+        21
+      ],
+      "exemption_conflict_rule_numbers": [
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "stronger_conflict_rules": [
+        {
+          "rule_number": 19,
+          "target": [
+            "Art_Unsafe_Automaton_Release",
+            "Art_Restricted_Gear_Access"
+          ]
+        },
+        {
+          "rule_number": 20,
+          "target": [
+            "Art_Public_Clock_Disruption",
+            "Art_Restricted_Gear_Access"
+          ]
+        },
+        {
+          "rule_number": 21,
+          "target": [
+            "Art_Public_Clock_Disruption",
+            "Art_Unsafe_Automaton_Release"
+          ]
+        }
+      ],
+      "exemption_conflict_rules": [
+        {
+          "rule_number": 22,
+          "target": [
+            "Art_Maintenance_Order_Authorization",
+            "Art_Restricted_Gear_Access"
+          ]
+        },
+        {
+          "rule_number": 23,
+          "target": [
+            "Art_Maintenance_Order_Authorization",
+            "Art_Unsafe_Automaton_Release"
+          ]
+        },
+        {
+          "rule_number": 24,
+          "target": [
+            "Art_Emergency_Reset_Authorization",
+            "Art_Restricted_Gear_Access"
+          ]
+        },
+        {
+          "rule_number": 25,
+          "target": [
+            "Art_Emergency_Reset_Authorization",
+            "Art_Public_Clock_Disruption"
+          ]
+        },
+        {
+          "rule_number": 26,
+          "target": [
+            "Art_Calibration_Fault_Exemption",
+            "Art_Public_Clock_Disruption"
+          ]
+        }
+      ]
+    },
+    "orbital_habitat_safety_rules": {
+      "stronger_conflict_rule_numbers": [
+        19,
+        20,
+        21
+      ],
+      "exemption_conflict_rule_numbers": [
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "stronger_conflict_rules": [
+        {
+          "rule_number": 19,
+          "target": [
+            "Art_Oxygen_System_Interference",
+            "Art_Restricted_Airlock_Operation"
+          ]
+        },
+        {
+          "rule_number": 20,
+          "target": [
+            "Art_Corridor_Safety_Obstruction",
+            "Art_Restricted_Airlock_Operation"
+          ]
+        },
+        {
+          "rule_number": 21,
+          "target": [
+            "Art_Oxygen_System_Interference",
+            "Art_Corridor_Safety_Obstruction"
+          ]
+        }
+      ],
+      "exemption_conflict_rules": [
+        {
+          "rule_number": 22,
+          "target": [
+            "Art_Habitat_Duty_Authorization",
+            "Art_Restricted_Airlock_Operation"
+          ]
+        },
+        {
+          "rule_number": 23,
+          "target": [
+            "Art_Habitat_Duty_Authorization",
+            "Art_Corridor_Safety_Obstruction"
+          ]
+        },
+        {
+          "rule_number": 24,
+          "target": [
+            "Art_Salvage_Emergency_Authorization",
+            "Art_Restricted_Airlock_Operation"
+          ]
+        },
+        {
+          "rule_number": 25,
+          "target": [
+            "Art_Salvage_Emergency_Authorization",
+            "Art_Oxygen_System_Interference"
+          ]
+        },
+        {
+          "rule_number": 26,
+          "target": [
+            "Art_Pressure_Stabilization_Exemption",
+            "Art_Oxygen_System_Interference"
+          ]
+        }
+      ]
+    },
+    "subterranean_signal_dispatch_rules": {
+      "stronger_conflict_rule_numbers": [
+        20,
+        21,
+        22
+      ],
+      "exemption_conflict_rule_numbers": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "stronger_conflict_rules": [
+        {
+          "rule_number": 20,
+          "target": [
+            "Art_Route_Misdirection",
+            "Art_Unauthorized_Signal_Change"
+          ]
+        },
+        {
+          "rule_number": 21,
+          "target": [
+            "Art_Sealed_Track_Breach",
+            "Art_Unauthorized_Signal_Change"
+          ]
+        },
+        {
+          "rule_number": 22,
+          "target": [
+            "Art_Sealed_Track_Breach",
+            "Art_Route_Misdirection"
+          ]
+        }
+      ],
+      "exemption_conflict_rules": [
+        {
+          "rule_number": 23,
+          "target": [
+            "Art_Dispatch_Order_Authorization",
+            "Art_Unauthorized_Signal_Change"
+          ]
+        },
+        {
+          "rule_number": 24,
+          "target": [
+            "Art_Dispatch_Order_Authorization",
+            "Art_Route_Misdirection"
+          ]
+        },
+        {
+          "rule_number": 25,
+          "target": [
+            "Art_Collapse_Avoidance_Authorization",
+            "Art_Unauthorized_Signal_Change"
+          ]
+        },
+        {
+          "rule_number": 26,
+          "target": [
+            "Art_Collapse_Avoidance_Authorization",
+            "Art_Route_Misdirection"
+          ]
+        },
+        {
+          "rule_number": 27,
+          "target": [
+            "Art_Collapse_Avoidance_Authorization",
+            "Art_Sealed_Track_Breach"
+          ]
+        },
+        {
+          "rule_number": 28,
+          "target": [
+            "Art_Sensor_Fault_Exemption",
+            "Art_Route_Misdirection"
+          ]
+        }
+      ]
+    }
+  }
+}

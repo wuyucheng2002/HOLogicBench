@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "samples": [
+    {
+      "model": "GLM-5.3-Flash",
+      "key": "finance/sample3/22",
+      "bert_witness_difference": 4.667687503179252e-08,
+      "independent_bert_max": 0.7493072748184204,
+      "roscoe_witness_difference": 0.0
+    },
+    {
+      "model": "GLM-5.3-Flash",
+      "key": "finance/sample1/107",
+      "bert_witness_difference": 1.6104195088573192e-08,
+      "independent_bert_max": null,
+      "roscoe_witness_difference": 0.0
+    },
+    {
+      "model": "GLM-5.3-Flash",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_01",
+      "bert_witness_difference": 1.98333623968594e-08,
+      "independent_bert_max": null,
+      "roscoe_witness_difference": 0.0
+    },
+    {
+      "model": "Kimi-K2.6",
+      "key": "finance/sample3/22",
+      "bert_witness_difference": 1.6584038475819796e-08,
+      "independent_bert_max": 0.7356330752372742,
+      "roscoe_witness_difference": 0.0
+    },
+    {
+      "model": "Kimi-K2.6",
+      "key": "finance/sample1/107",
+      "bert_witness_difference": 7.452633321580748e-08,
+      "independent_bert_max": null,
+      "roscoe_witness_difference": 0.0
+    },
+    {
+      "model": "Kimi-K2.6",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_01",
+      "bert_witness_difference": 6.549709963277195e-08,
+      "independent_bert_max": null,
+      "roscoe_witness_difference": 0.0
+    }
+  ]
+}

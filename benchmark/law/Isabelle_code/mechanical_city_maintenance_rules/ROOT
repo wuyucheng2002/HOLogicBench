@@ -1,0 +1,12 @@
+session Mechanical_City_Maintenance_Rules = HOL +
+  theories
+    mcmr_case_01
+    mcmr_case_02
+    mcmr_case_03
+    mcmr_case_04
+    mcmr_case_05
+    mcmr_case_06
+    mcmr_case_07
+    mcmr_case_08
+    mcmr_case_09
+    mcmr_case_10

@@ -1,0 +1,8 @@
+{
+  "semantics_version": 1,
+  "max_depth": 100,
+  "sources": {
+    "baoxiao_rules.thy": "bae1ef2761291f5de62b798e4db8ae6de8b311983bb7997e584ba994617fd632",
+    "baoxiao_cases.thy": "f2c772b24481a422471c0f8799bc7d4f80a89f8ff66f7dc37614d56ac74b19a0"
+  }
+}

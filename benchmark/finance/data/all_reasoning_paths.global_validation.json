@@ -1,0 +1,14 @@
+{
+  "semantics": "root-global support/size minimum per named-rule set",
+  "cases_checked": 1602,
+  "unpruned_root_trees": 414902,
+  "global_minimal_trees": 25108,
+  "oracle_mismatches": 0,
+  "changed_cases_vs_local_pruning_v1": 63,
+  "added_trees": 1298,
+  "removed_trees": 1120,
+  "net_added_trees": 178,
+  "changed_root_results": 0,
+  "validation_script": "verify_global_reasoning_paths.py",
+  "scope": "Independent exhaustive batch oracle over existing raw forests; structural SHA-256 comparison; not a machine-checked source-extraction or implementation refinement proof"
+}

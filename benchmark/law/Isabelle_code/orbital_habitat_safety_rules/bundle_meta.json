@@ -1,0 +1,674 @@
+{
+  "bundle_name": "orbital_habitat_safety_rules",
+  "bundle_dir": "rule_bundles/orbital_habitat_safety_rules",
+  "person_symbol": "actor",
+  "person_name_pool": [
+    "Arden",
+    "Bex",
+    "Cove",
+    "Demi",
+    "Eris",
+    "Fenn",
+    "Gio",
+    "Haven",
+    "Ilan",
+    "Jory"
+  ],
+  "article_order": [
+    "Art_Restricted_Airlock_Operation",
+    "Art_Oxygen_System_Interference",
+    "Art_Corridor_Safety_Obstruction",
+    "Art_Habitat_Duty_Authorization",
+    "Art_Salvage_Emergency_Authorization",
+    "Art_Pressure_Stabilization_Exemption"
+  ],
+  "articles": {
+    "Art_Restricted_Airlock_Operation": {
+      "title": "Restricted Airlock Operation",
+      "result": "airlock_reprimand",
+      "rule_text": "The restricted airlock operation article carries an airlock reprimand."
+    },
+    "Art_Oxygen_System_Interference": {
+      "title": "Oxygen System Interference",
+      "result": "oxygen_bay_quarantine",
+      "rule_text": "The oxygen system interference article carries oxygen bay quarantine."
+    },
+    "Art_Corridor_Safety_Obstruction": {
+      "title": "Corridor Safety Obstruction",
+      "result": "corridor_access_suspension",
+      "rule_text": "The corridor safety obstruction article carries corridor access suspension."
+    },
+    "Art_Habitat_Duty_Authorization": {
+      "title": "Habitat Duty Authorization",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The habitat duty authorization article carries no criminal liability."
+    },
+    "Art_Salvage_Emergency_Authorization": {
+      "title": "Salvage Emergency Authorization",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The salvage emergency authorization article carries no criminal liability."
+    },
+    "Art_Pressure_Stabilization_Exemption": {
+      "title": "Pressure Stabilization Exemption",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The pressure stabilization exemption article carries no criminal liability."
+    }
+  },
+  "nodes": {
+    "opens_outer_ring_airlock": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} opened the outer-ring airlock.",
+      "order": 10
+    },
+    "unlatches_pressure_console": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} unlatched the pressure console.",
+      "order": 11
+    },
+    "airlock_cycle_unlogged": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "The airlock cycle was unlogged.",
+      "negative_text": "The airlock cycle was logged.",
+      "order": 12
+    },
+    "skips_cycle_entry": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "The cycle entry was skipped.",
+      "negative_text": "The cycle entry was not skipped.",
+      "order": 14
+    },
+    "removes_algae_oxygen_filter": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} removed an algae oxygen filter.",
+      "order": 20
+    },
+    "removes_backup_oxygen_tab": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} removed a backup oxygen tab.",
+      "order": 21
+    },
+    "cabin_pressure_drops": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "Cabin pressure dropped.",
+      "negative_text": "Cabin pressure did not drop.",
+      "order": 22
+    },
+    "pressure_alarm_sounds": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "The pressure alarm sounded.",
+      "negative_text": "The pressure alarm did not sound.",
+      "order": 24
+    },
+    "turns_off_yellow_corridor_lamp": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} turned off a yellow corridor lamp.",
+      "order": 30
+    },
+    "crew_member_crosses_corridor": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "A crew member crossed that corridor.",
+      "order": 32
+    },
+    "holds_habitat_duty_permit": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "{name} held a habitat duty permit.",
+      "negative_text": "{name} did not hold a habitat duty permit.",
+      "order": 40
+    },
+    "central_log_confirms_permit": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "holds_habitat_duty_permit"
+      ],
+      "positive_text": "The central log confirmed the permit.",
+      "negative_text": "The central log did not confirm the permit.",
+      "order": 42
+    },
+    "maintenance_box_drifts_outside": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "A maintenance box drifted outside the station.",
+      "negative_text": "No maintenance box drifted outside the station.",
+      "order": 50
+    },
+    "rescue_tether_deployed": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "maintenance_box_drifts_outside"
+      ],
+      "positive_text": "A rescue tether was deployed.",
+      "negative_text": "No rescue tether was deployed.",
+      "order": 51
+    },
+    "vents_air_temporarily": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "maintenance_box_drifts_outside"
+      ],
+      "positive_text": "{name} vented air temporarily.",
+      "negative_text": "{name} did not vent air temporarily.",
+      "order": 52
+    },
+    "restores_pressure_after_venting": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} restored pressure after venting.",
+      "order": 60
+    },
+    "reports_stabilization_to_core": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "restores_pressure_after_venting"
+      ],
+      "positive_text": "{name} reported the stabilization to the core.",
+      "negative_text": "{name} did not report the stabilization to the core.",
+      "order": 62
+    }
+  },
+  "article_trigger_mappings": [
+    {
+      "article": "Art_Restricted_Airlock_Operation",
+      "source_predicate": "restricted_airlock_operation_basis"
+    },
+    {
+      "article": "Art_Oxygen_System_Interference",
+      "source_predicate": "oxygen_system_interference_basis"
+    },
+    {
+      "article": "Art_Corridor_Safety_Obstruction",
+      "source_predicate": "corridor_safety_obstruction_basis"
+    },
+    {
+      "article": "Art_Habitat_Duty_Authorization",
+      "source_predicate": "habitat_duty_authorization_basis"
+    },
+    {
+      "article": "Art_Salvage_Emergency_Authorization",
+      "source_predicate": "salvage_emergency_authorization_basis"
+    },
+    {
+      "article": "Art_Pressure_Stabilization_Exemption",
+      "source_predicate": "pressure_stabilization_exemption_basis"
+    }
+  ],
+  "rules": [
+    {
+      "name": "airlock_facts_imply_restricted_airlock_operation",
+      "head": {
+        "predicate": "restricted_airlock_operation",
+        "value": true
+      },
+      "body": {
+        "any_of_groups": [
+          [
+            {
+              "predicate": "opens_outer_ring_airlock",
+              "value": true
+            },
+            {
+              "predicate": "unlatches_pressure_console",
+              "value": true
+            }
+          ],
+          [
+            {
+              "predicate": "airlock_cycle_unlogged",
+              "value": true
+            },
+            {
+              "predicate": "skips_cycle_entry",
+              "value": true
+            }
+          ]
+        ]
+      },
+      "natural_text": "Restricted airlock operation requires opening an airlock-related control point and omitting the required cycle record."
+    },
+    {
+      "name": "filter_and_pressure_imply_oxygen_system_interference",
+      "head": {
+        "predicate": "oxygen_system_interference",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "cabin_pressure_drops",
+            "value": true
+          },
+          {
+            "predicate": "pressure_alarm_sounds",
+            "value": true
+          }
+        ],
+        "any_of_groups": [
+          [
+            {
+              "predicate": "removes_algae_oxygen_filter",
+              "value": true
+            },
+            {
+              "predicate": "removes_backup_oxygen_tab",
+              "value": true
+            }
+          ]
+        ]
+      },
+      "natural_text": "Oxygen system interference requires removal of an oxygen component, a pressure drop, and a pressure alarm."
+    },
+    {
+      "name": "lamp_and_crossing_imply_corridor_safety_obstruction",
+      "head": {
+        "predicate": "corridor_safety_obstruction",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "turns_off_yellow_corridor_lamp",
+            "value": true
+          },
+          {
+            "predicate": "crew_member_crosses_corridor",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "Corridor safety obstruction requires turning off a yellow corridor lamp while a crew member crosses that corridor."
+    },
+    {
+      "name": "permit_and_log_imply_habitat_authority",
+      "head": {
+        "predicate": "habitat_authority",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "holds_habitat_duty_permit",
+            "value": true
+          },
+          {
+            "predicate": "central_log_confirms_permit",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "Habitat authority requires a habitat duty permit confirmed by the central log."
+    },
+    {
+      "name": "box_and_venting_imply_salvage_emergency",
+      "head": {
+        "predicate": "salvage_emergency",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "maintenance_box_drifts_outside",
+            "value": true
+          },
+          {
+            "predicate": "rescue_tether_deployed",
+            "value": true
+          },
+          {
+            "predicate": "vents_air_temporarily",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "Salvage emergency requires an outside-drifting maintenance box, deployment of a rescue tether, and temporary air venting."
+    },
+    {
+      "name": "pressure_restore_and_report_imply_pressure_stabilization",
+      "head": {
+        "predicate": "pressure_stabilization",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "cabin_pressure_drops",
+            "value": true
+          },
+          {
+            "predicate": "restores_pressure_after_venting",
+            "value": true
+          },
+          {
+            "predicate": "reports_stabilization_to_core",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "Pressure stabilization requires a pressure drop, restoration after venting, and a report to the core."
+    },
+    {
+      "name": "restricted_airlock_operation_basis_rule",
+      "head": {
+        "predicate": "restricted_airlock_operation_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "restricted_airlock_operation",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The restricted airlock operation basis is present when restricted airlock operation occurs."
+    },
+    {
+      "name": "oxygen_system_interference_basis_rule",
+      "head": {
+        "predicate": "oxygen_system_interference_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "restricted_airlock_operation",
+            "value": true
+          },
+          {
+            "predicate": "oxygen_system_interference",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The oxygen system interference basis requires restricted airlock operation with oxygen-system interference."
+    },
+    {
+      "name": "corridor_safety_obstruction_basis_rule",
+      "head": {
+        "predicate": "corridor_safety_obstruction_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "restricted_airlock_operation",
+            "value": true
+          },
+          {
+            "predicate": "corridor_safety_obstruction",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The corridor safety obstruction basis requires restricted airlock operation with corridor safety obstruction."
+    },
+    {
+      "name": "habitat_duty_authorization_basis_rule",
+      "head": {
+        "predicate": "habitat_duty_authorization_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "habitat_authority",
+            "value": true
+          },
+          {
+            "predicate": "restricted_airlock_operation",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The habitat duty authorization basis requires habitat authority connected to restricted airlock operation."
+    },
+    {
+      "name": "salvage_emergency_authorization_basis_rule",
+      "head": {
+        "predicate": "salvage_emergency_authorization_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "salvage_emergency",
+            "value": true
+          },
+          {
+            "predicate": "restricted_airlock_operation",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The salvage emergency authorization basis requires salvage emergency action connected to restricted airlock operation."
+    },
+    {
+      "name": "pressure_stabilization_exemption_basis_rule",
+      "head": {
+        "predicate": "pressure_stabilization_exemption_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "pressure_stabilization",
+            "value": true
+          },
+          {
+            "predicate": "oxygen_system_interference",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The pressure stabilization exemption basis requires pressure stabilization connected to oxygen-system interference."
+    },
+    {
+      "name": "basis_triggers_restricted_airlock_operation",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Restricted_Airlock_Operation",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "restricted_airlock_operation_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_oxygen_system_interference",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Oxygen_System_Interference",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "oxygen_system_interference_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_corridor_safety_obstruction",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Corridor_Safety_Obstruction",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "corridor_safety_obstruction_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_habitat_duty_authorization",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Habitat_Duty_Authorization",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "habitat_duty_authorization_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_salvage_emergency_authorization",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Salvage_Emergency_Authorization",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "salvage_emergency_authorization_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_pressure_stabilization_exemption",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Pressure_Stabilization_Exemption",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "pressure_stabilization_exemption_basis",
+            "value": true
+          }
+        ]
+      }
+    }
+  ],
+  "conflicts": {
+    "stronger_than": [
+      [
+        "Art_Oxygen_System_Interference",
+        "Art_Restricted_Airlock_Operation"
+      ],
+      [
+        "Art_Corridor_Safety_Obstruction",
+        "Art_Restricted_Airlock_Operation"
+      ],
+      [
+        "Art_Oxygen_System_Interference",
+        "Art_Corridor_Safety_Obstruction"
+      ]
+    ],
+    "exception_to": [
+      [
+        "Art_Habitat_Duty_Authorization",
+        "Art_Restricted_Airlock_Operation"
+      ],
+      [
+        "Art_Habitat_Duty_Authorization",
+        "Art_Corridor_Safety_Obstruction"
+      ],
+      [
+        "Art_Salvage_Emergency_Authorization",
+        "Art_Restricted_Airlock_Operation"
+      ],
+      [
+        "Art_Salvage_Emergency_Authorization",
+        "Art_Oxygen_System_Interference"
+      ],
+      [
+        "Art_Pressure_Stabilization_Exemption",
+        "Art_Oxygen_System_Interference"
+      ]
+    ]
+  }
+}

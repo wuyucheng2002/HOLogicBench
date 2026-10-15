@@ -1,0 +1,12 @@
+session Aviation_Security_With_Authorizations = HOL +
+  theories
+    aswa_case_01
+    aswa_case_02
+    aswa_case_03
+    aswa_case_04
+    aswa_case_05
+    aswa_case_06
+    aswa_case_07
+    aswa_case_08
+    aswa_case_09
+    aswa_case_10

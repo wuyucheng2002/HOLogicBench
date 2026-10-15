@@ -1,0 +1,3 @@
+session MultiRef_mechanical_city_maintenance_rules = HOL +
+ options [document=false]
+ theories Paths_Validated

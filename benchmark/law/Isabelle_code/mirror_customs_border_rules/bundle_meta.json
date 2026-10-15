@@ -1,0 +1,684 @@
+{
+  "bundle_name": "mirror_customs_border_rules",
+  "bundle_dir": "rule_bundles/mirror_customs_border_rules",
+  "person_symbol": "actor",
+  "person_name_pool": [
+    "Avery",
+    "Blair",
+    "Corin",
+    "Drew",
+    "Ellis",
+    "Finch",
+    "Greer",
+    "Hayes",
+    "Indy",
+    "Jules"
+  ],
+  "article_order": [
+    "Art_Unregistered_Mirror_Crossing",
+    "Art_Shadow_Cargo_Irregularity",
+    "Art_Label_Inversion",
+    "Art_Customs_Clearance_Authorization",
+    "Art_Mirror_Rescue_Transfer",
+    "Art_Returned_Cargo_Allowance"
+  ],
+  "articles": {
+    "Art_Unregistered_Mirror_Crossing": {
+      "title": "Unregistered Mirror Crossing",
+      "result": "mirror_gate_warning",
+      "rule_text": "The unregistered mirror crossing article carries a mirror gate warning."
+    },
+    "Art_Shadow_Cargo_Irregularity": {
+      "title": "Shadow Cargo Irregularity",
+      "result": "shadow_cargo_hold",
+      "rule_text": "The shadow cargo irregularity article carries shadow cargo hold."
+    },
+    "Art_Label_Inversion": {
+      "title": "Label Inversion",
+      "result": "inversion_ledger_sealing",
+      "rule_text": "The label inversion article carries inversion ledger sealing."
+    },
+    "Art_Customs_Clearance_Authorization": {
+      "title": "Customs Clearance Authorization",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The customs clearance authorization article carries no criminal liability."
+    },
+    "Art_Mirror_Rescue_Transfer": {
+      "title": "Mirror Rescue Transfer",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The mirror rescue transfer article carries no criminal liability."
+    },
+    "Art_Returned_Cargo_Allowance": {
+      "title": "Returned Cargo Allowance",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The returned cargo allowance article carries no criminal liability."
+    }
+  },
+  "nodes": {
+    "passes_unlit_mirror_gate": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} passed through an unlit mirror gate.",
+      "order": 10
+    },
+    "crosses_without_reflection_stamp": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} crossed without a reflection stamp.",
+      "order": 12
+    },
+    "border_lantern_turns_blue": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "The border lantern turned blue.",
+      "negative_text": "The border lantern did not turn blue.",
+      "order": 14
+    },
+    "carries_shadowless_box": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} carried a shadowless box.",
+      "order": 20
+    },
+    "cargo_vanishes_in_mirror": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "The cargo vanished in the mirror.",
+      "order": 22
+    },
+    "switches_left_right_labels": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} switched left and right labels.",
+      "order": 30
+    },
+    "attaches_reversed_crescent_tag": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} attached a reversed crescent tag.",
+      "order": 32
+    },
+    "cargo_moves_after_label_change": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "The cargo moved after the label change.",
+      "negative_text": "The cargo did not move after the label change.",
+      "order": 34
+    },
+    "holds_silver_customs_token": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "{name} held a silver customs token.",
+      "negative_text": "{name} did not hold a silver customs token.",
+      "order": 40
+    },
+    "customs_clock_records_arrival": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "holds_silver_customs_token"
+      ],
+      "positive_text": "The customs clock recorded arrival.",
+      "negative_text": "The customs clock did not record arrival.",
+      "order": 42
+    },
+    "mirror_officer_confirms_token": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "holds_silver_customs_token"
+      ],
+      "positive_text": "A mirror officer confirmed the token.",
+      "negative_text": "No mirror officer confirmed the token.",
+      "order": 44
+    },
+    "broken_mirror_alarm_sounds": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "The broken-mirror alarm sounded.",
+      "negative_text": "The broken-mirror alarm did not sound.",
+      "order": 50
+    },
+    "transfers_cargo_for_rescue": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "broken_mirror_alarm_sounds"
+      ],
+      "positive_text": "{name} transferred cargo for rescue.",
+      "negative_text": "{name} did not transfer cargo for rescue.",
+      "order": 52
+    },
+    "rescue_logged_at_gate": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "broken_mirror_alarm_sounds"
+      ],
+      "positive_text": "The rescue was logged at the gate.",
+      "negative_text": "The rescue was not logged at the gate.",
+      "order": 54
+    },
+    "cargo_returned_to_origin": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "The cargo was returned to origin.",
+      "negative_text": "The cargo was not returned to origin.",
+      "order": 60
+    },
+    "return_receipt_issued": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "cargo_returned_to_origin"
+      ],
+      "positive_text": "A return receipt was issued.",
+      "negative_text": "No return receipt was issued.",
+      "order": 62
+    },
+    "crate_seal_matches_origin": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "cargo_returned_to_origin"
+      ],
+      "positive_text": "The crate seal matched the origin seal.",
+      "negative_text": "The crate seal did not match the origin seal.",
+      "order": 64
+    }
+  },
+  "article_trigger_mappings": [
+    {
+      "article": "Art_Unregistered_Mirror_Crossing",
+      "source_predicate": "unregistered_mirror_crossing_basis"
+    },
+    {
+      "article": "Art_Shadow_Cargo_Irregularity",
+      "source_predicate": "shadow_cargo_irregularity_basis"
+    },
+    {
+      "article": "Art_Label_Inversion",
+      "source_predicate": "label_inversion_basis"
+    },
+    {
+      "article": "Art_Customs_Clearance_Authorization",
+      "source_predicate": "customs_clearance_authorization_basis"
+    },
+    {
+      "article": "Art_Mirror_Rescue_Transfer",
+      "source_predicate": "mirror_rescue_transfer_basis"
+    },
+    {
+      "article": "Art_Returned_Cargo_Allowance",
+      "source_predicate": "returned_cargo_allowance_basis"
+    }
+  ],
+  "rules": [
+    {
+      "name": "gate_facts_imply_mirror_crossing",
+      "head": {
+        "predicate": "mirror_crossing",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "border_lantern_turns_blue",
+            "value": true
+          }
+        ],
+        "any_of_groups": [
+          [
+            {
+              "predicate": "passes_unlit_mirror_gate",
+              "value": true
+            },
+            {
+              "predicate": "crosses_without_reflection_stamp",
+              "value": true
+            }
+          ]
+        ]
+      },
+      "natural_text": "Mirror crossing requires a border lantern signal and either an unlit gate passage or crossing without a reflection stamp."
+    },
+    {
+      "name": "cargo_facts_imply_shadow_cargo_irregularity",
+      "head": {
+        "predicate": "shadow_cargo_irregularity",
+        "value": true
+      },
+      "body": {
+        "any_of_groups": [
+          [
+            {
+              "predicate": "carries_shadowless_box",
+              "value": true
+            },
+            {
+              "predicate": "cargo_vanishes_in_mirror",
+              "value": true
+            }
+          ]
+        ]
+      },
+      "natural_text": "Shadow cargo irregularity includes carrying a shadowless box or cargo vanishing in the mirror."
+    },
+    {
+      "name": "label_facts_imply_label_inversion",
+      "head": {
+        "predicate": "label_inversion",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "cargo_moves_after_label_change",
+            "value": true
+          }
+        ],
+        "any_of_groups": [
+          [
+            {
+              "predicate": "switches_left_right_labels",
+              "value": true
+            },
+            {
+              "predicate": "attaches_reversed_crescent_tag",
+              "value": true
+            }
+          ]
+        ]
+      },
+      "natural_text": "Label inversion requires an inverted label action followed by cargo movement."
+    },
+    {
+      "name": "clearance_facts_imply_customs_clearance",
+      "head": {
+        "predicate": "customs_clearance",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "holds_silver_customs_token",
+            "value": true
+          },
+          {
+            "predicate": "customs_clock_records_arrival",
+            "value": true
+          },
+          {
+            "predicate": "mirror_officer_confirms_token",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "Customs clearance requires a silver customs token, clock record, and officer confirmation."
+    },
+    {
+      "name": "rescue_facts_imply_mirror_rescue_transfer",
+      "head": {
+        "predicate": "mirror_rescue_transfer",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "broken_mirror_alarm_sounds",
+            "value": true
+          },
+          {
+            "predicate": "transfers_cargo_for_rescue",
+            "value": true
+          },
+          {
+            "predicate": "rescue_logged_at_gate",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "Mirror rescue transfer requires a broken-mirror alarm, rescue transfer, and gate log."
+    },
+    {
+      "name": "returned_cargo_facts_imply_returned_cargo_record",
+      "head": {
+        "predicate": "returned_cargo_record",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "cargo_returned_to_origin",
+            "value": true
+          },
+          {
+            "predicate": "return_receipt_issued",
+            "value": true
+          },
+          {
+            "predicate": "crate_seal_matches_origin",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "Returned cargo record requires return to origin, a return receipt, and a matching crate seal."
+    },
+    {
+      "name": "unregistered_mirror_crossing_basis_rule",
+      "head": {
+        "predicate": "unregistered_mirror_crossing_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "mirror_crossing",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The unregistered mirror crossing basis is present when mirror crossing occurs."
+    },
+    {
+      "name": "shadow_cargo_irregularity_basis_rule",
+      "head": {
+        "predicate": "shadow_cargo_irregularity_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "mirror_crossing",
+            "value": true
+          },
+          {
+            "predicate": "shadow_cargo_irregularity",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The shadow cargo irregularity basis requires mirror crossing with shadow-cargo irregularity."
+    },
+    {
+      "name": "label_inversion_basis_rule",
+      "head": {
+        "predicate": "label_inversion_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "shadow_cargo_irregularity",
+            "value": true
+          },
+          {
+            "predicate": "label_inversion",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The label inversion basis requires shadow-cargo irregularity with label inversion."
+    },
+    {
+      "name": "customs_clearance_authorization_basis_rule",
+      "head": {
+        "predicate": "customs_clearance_authorization_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "customs_clearance",
+            "value": true
+          },
+          {
+            "predicate": "mirror_crossing",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The customs clearance authorization basis requires customs clearance connected to mirror crossing."
+    },
+    {
+      "name": "mirror_rescue_transfer_basis_rule",
+      "head": {
+        "predicate": "mirror_rescue_transfer_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "mirror_rescue_transfer",
+            "value": true
+          },
+          {
+            "predicate": "mirror_crossing",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The mirror rescue transfer basis requires rescue transfer connected to mirror crossing."
+    },
+    {
+      "name": "returned_cargo_allowance_basis_rule",
+      "head": {
+        "predicate": "returned_cargo_allowance_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "returned_cargo_record",
+            "value": true
+          },
+          {
+            "predicate": "shadow_cargo_irregularity",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The returned cargo allowance basis requires a returned-cargo record connected to shadow-cargo irregularity."
+    },
+    {
+      "name": "basis_triggers_unregistered_mirror_crossing",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Unregistered_Mirror_Crossing",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "unregistered_mirror_crossing_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_shadow_cargo_irregularity",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Shadow_Cargo_Irregularity",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "shadow_cargo_irregularity_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_label_inversion",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Label_Inversion",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "label_inversion_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_customs_clearance_authorization",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Customs_Clearance_Authorization",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "customs_clearance_authorization_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_mirror_rescue_transfer",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Mirror_Rescue_Transfer",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "mirror_rescue_transfer_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_returned_cargo_allowance",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Returned_Cargo_Allowance",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "returned_cargo_allowance_basis",
+            "value": true
+          }
+        ]
+      }
+    }
+  ],
+  "conflicts": {
+    "stronger_than": [
+      [
+        "Art_Shadow_Cargo_Irregularity",
+        "Art_Unregistered_Mirror_Crossing"
+      ],
+      [
+        "Art_Label_Inversion",
+        "Art_Unregistered_Mirror_Crossing"
+      ],
+      [
+        "Art_Label_Inversion",
+        "Art_Shadow_Cargo_Irregularity"
+      ]
+    ],
+    "exception_to": [
+      [
+        "Art_Customs_Clearance_Authorization",
+        "Art_Unregistered_Mirror_Crossing"
+      ],
+      [
+        "Art_Customs_Clearance_Authorization",
+        "Art_Shadow_Cargo_Irregularity"
+      ],
+      [
+        "Art_Mirror_Rescue_Transfer",
+        "Art_Unregistered_Mirror_Crossing"
+      ],
+      [
+        "Art_Mirror_Rescue_Transfer",
+        "Art_Shadow_Cargo_Irregularity"
+      ],
+      [
+        "Art_Mirror_Rescue_Transfer",
+        "Art_Label_Inversion"
+      ],
+      [
+        "Art_Returned_Cargo_Allowance",
+        "Art_Shadow_Cargo_Irregularity"
+      ]
+    ]
+  }
+}

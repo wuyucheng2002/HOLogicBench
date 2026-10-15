@@ -1,0 +1,308 @@
+[
+  {
+    "case_id": "epwp_case_01",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "epwp_case_02",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Hazardous_Waste_Dumping"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "epwp_case_03",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Serious_Contamination",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "epwp_case_04",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Falsified_Monitoring",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "epwp_case_05",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Serious_Contamination",
+      "Art_Falsified_Monitoring",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "epwp_case_06",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "epwp_case_07",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Unlawful_Discharge",
+      "Art_Valid_Permit_Defense"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "epwp_case_08",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Serious_Contamination",
+      "Art_Unlawful_Discharge",
+      "Art_Valid_Permit_Defense"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "epwp_case_09",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Serious_Contamination",
+      "Art_Unlawful_Discharge",
+      "Art_Emergency_Release_Defense"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "epwp_case_10",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Serious_Contamination",
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Unlawful_Discharge",
+      "Art_Emergency_Release_Defense"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "epwp_case_11",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Falsified_Monitoring"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "epwp_case_12",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Serious_Contamination"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "epwp_case_13",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Serious_Contamination",
+      "Art_Hazardous_Waste_Dumping"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "epwp_case_14",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Serious_Contamination",
+      "Art_Falsified_Monitoring"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "epwp_case_15",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Falsified_Monitoring"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "epwp_case_16",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Serious_Contamination",
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Falsified_Monitoring",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "epwp_case_17",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Serious_Contamination",
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "epwp_case_18",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Serious_Contamination",
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Falsified_Monitoring"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "epwp_case_19",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Falsified_Monitoring",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "epwp_case_20",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Valid_Permit_Defense",
+      "Art_Emergency_Release_Defense",
+      "Art_Serious_Contamination",
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Falsified_Monitoring",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "epwp_case_21",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Emergency_Release_Defense",
+      "Art_Serious_Contamination",
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Falsified_Monitoring",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "epwp_case_22",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Valid_Permit_Defense",
+      "Art_Emergency_Release_Defense",
+      "Art_Serious_Contamination",
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "epwp_case_23",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Valid_Permit_Defense",
+      "Art_Serious_Contamination",
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Falsified_Monitoring",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "epwp_case_24",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Valid_Permit_Defense",
+      "Art_Emergency_Release_Defense",
+      "Art_Serious_Contamination",
+      "Art_Falsified_Monitoring",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "epwp_case_25",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Valid_Permit_Defense",
+      "Art_Serious_Contamination",
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "epwp_case_26",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Emergency_Release_Defense",
+      "Art_Serious_Contamination",
+      "Art_Falsified_Monitoring",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "epwp_case_27",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Valid_Permit_Defense",
+      "Art_Emergency_Release_Defense",
+      "Art_Serious_Contamination",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "epwp_case_28",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Valid_Permit_Defense",
+      "Art_Serious_Contamination",
+      "Art_Falsified_Monitoring",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "epwp_case_29",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Valid_Permit_Defense",
+      "Art_Emergency_Release_Defense",
+      "Art_Serious_Contamination",
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Falsified_Monitoring"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "epwp_case_30",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Hazardous_Waste_Dumping",
+      "Art_Falsified_Monitoring",
+      "Art_Valid_Permit_Defense",
+      "Art_Emergency_Release_Defense",
+      "Art_Unlawful_Discharge"
+    ],
+    "case_type": "liability_with_exception"
+  }
+]

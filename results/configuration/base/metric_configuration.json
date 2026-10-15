@@ -1,0 +1,24 @@
+{
+  "reference_sha256": "4a22e182fdbeb8f4755004cc600d8ea49bc5801b999d11acd80d34a4dd78d3d9",
+  "steps_sha256": "e607fca812b08e38e741591d736bbb7764c96d6e4a70ff1618a79f8800ebc773",
+  "bert_model": "answerdotai/ModernBERT-base",
+  "bert_layer": 22,
+  "bert_rescale_with_baseline": false,
+  "bert_idf": false,
+  "bert_window_tokens": 8192,
+  "bert_overlap_tokens": 1024,
+  "bert_overlap_handling": "midpoint ownership; each content token once",
+  "bert_matching": "global token cosine greedy precision/recall, then harmonic F1; not a mean of window scores",
+  "roscoe_model": "sentence-transformers/all-mpnet-base-v2",
+  "roscoe_max_seq_length": 512,
+  "roscoe_variant": "mean hypothesis-step max cosine to reference steps",
+  "empty_prediction_score": 0,
+  "reduction": "metricwise_max_over_all_references_then_unweighted_mean_over_cases",
+  "bert_configuration_signature": "3010ab72531d9afdf90bba9eab8b1ba4dbe87eedfd352891e3e49bd2f1760cd7",
+  "other_configuration_signature": "c97b950f394225d2a506c80d9134ed3fc42d9adabcb33a1890649a1a1759170d",
+  "execution_device_by_domain": {
+    "law": "NVIDIA GeForce RTX 4090 / CUDA",
+    "finance": "original NVIDIA CUDA"
+  },
+  "law_section_v3_provenance": "law_section_v3_rescore_summary.json"
+}

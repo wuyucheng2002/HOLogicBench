@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "annotation_count": 320,
+  "new_annotations": 240,
+  "unique_model_case_pairs": 320,
+  "unique_source_cases": 254,
+  "confirmed_error_rows": 140,
+  "original_correct_with_confirmed_error": 12,
+  "human_review_cases": 64,
+  "human_review_original_correct": 16,
+  "human_review_original_wrong": 48,
+  "actual_human_reviews_completed": 0,
+  "quote_validation": "All320 exact quotes matched scored text or complete stored response.",
+  "score_validation": "All40 full-population model/type/metric AUCs independently checked by rank sum. All10 sample semantic AUCs independently pairwise checked by Astra report reviewer.",
+  "ui_validation": "Isolated headless Chrome: navigation, default-visible GPT6 annotations, explicit agree-and-complete action, editing, local persistence, JSON export/import, HOL filter; visual previews reviewed.",
+  "limitations": "Astra qualitative labels await human review; no independent human agreement or new Isabelle proof.",
+  "artifact_sha256": {
+    "analysis_report.txt": "39d0fdd099dd383b79a639c3a0c2e047bb70a382a7f8f0a8078831dd1c41d7f9",
+    "annotations.jsonl": "0da203b2da8d587a4c286ef0ab3f8d03622e5ed92608d744b3e26d6e8ebfd01a",
+    "annotation_summary.json": "75c81bdd4939dba16cb9d92aff0828c7255135a9127bb4b5884738aa8f13284c",
+    "human_review_64.html": "8bcd2441a5f3e7d69e760bdcb65541fe0d9dba95feb4cf9d44eaef2142133963",
+    "human_review_manifest.json": "c6afc6965c7cf84e72e32d9a74f396c72da36b56be59c01f84aeff72490367ac",
+    "metric_audit.json": "7e6531087723153608cdf3918cb48c53d58e53ae0d2e045858e18e9a7ad7d8b7"
+  }
+}

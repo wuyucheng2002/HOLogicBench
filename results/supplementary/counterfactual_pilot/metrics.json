@@ -1,0 +1,2263 @@
+{
+  "status": "partial",
+  "valid_responses": 2248,
+  "expected": 2250,
+  "grouping": "Disjoint preassigned sampling strata, 50 original cases each; original overlapping HOL labels retained in selected_pairs.jsonl.",
+  "intervals": "Wilson 95% binomial intervals; conditional denominators reported. All unconditional rates use all assigned cases. Missing answers score zero for accuracy and decisive-change success; missing original/control answers count as failures in the control flip-or-missing rate (legacy key false_flip_rate). Missing decisive answers do not exclude observed control pairs.",
+  "results": {
+    "MiniMax-M3-Adaptive": {
+      "PR": {
+        "n": 50,
+        "complete_triplets": 50,
+        "original_accuracy": {
+          "value": 0.92,
+          "numerator": 46,
+          "denominator": 50,
+          "ci95": [
+            0.8116175308165755,
+            0.9684504859114064
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.9,
+          "numerator": 45,
+          "denominator": 50,
+          "ci95": [
+            0.7863976856252073,
+            0.9565242350681087
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.9,
+          "numerator": 45,
+          "denominator": 50,
+          "ci95": [
+            0.7863976856252073,
+            0.9565242350681087
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.8913043478260869,
+          "numerator": 41,
+          "denominator": 46,
+          "ci95": [
+            0.7696217135574959,
+            0.9526685414190095
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.82,
+          "numerator": 41,
+          "denominator": 50,
+          "ci95": [
+            0.6920394632569961,
+            0.9022980732976565
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.9782608695652174,
+          "numerator": 45,
+          "denominator": 46,
+          "ci95": [
+            0.8866470547848905,
+            0.9961521457419497
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.82,
+          "numerator": 41,
+          "denominator": 50,
+          "ci95": [
+            0.6920394632569961,
+            0.9022980732976565
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.94,
+          "numerator": 47,
+          "denominator": 50,
+          "ci95": [
+            0.8378290831116221,
+            0.9793850296510255
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.04,
+          "numerator": 2,
+          "denominator": 50,
+          "ci95": [
+            0.011038884327620152,
+            0.1346009068750665
+          ]
+        },
+        "selectivity_gap": 0.9,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.92,
+            "numerator": 46,
+            "denominator": 50,
+            "ci95": [
+              0.8116175308165755,
+              0.9684504859114064
+            ]
+          },
+          "decisive": {
+            "value": 0.9,
+            "numerator": 45,
+            "denominator": 50,
+            "ci95": [
+              0.7863976856252073,
+              0.9565242350681087
+            ]
+          },
+          "invariant": {
+            "value": 0.9,
+            "numerator": 45,
+            "denominator": 50,
+            "ci95": [
+              0.7863976856252073,
+              0.9565242350681087
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.8913043478260869,
+          "numerator": 41,
+          "denominator": 46,
+          "ci95": [
+            0.7696217135574959,
+            0.9526685414190095
+          ]
+        }
+      },
+      "PT": {
+        "n": 50,
+        "complete_triplets": 50,
+        "original_accuracy": {
+          "value": 0.66,
+          "numerator": 33,
+          "denominator": 50,
+          "ci95": [
+            0.52153826050233,
+            0.7756305077749965
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.74,
+          "numerator": 37,
+          "denominator": 50,
+          "ci95": [
+            0.6044684273515156,
+            0.841284725064474
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.56,
+          "numerator": 28,
+          "denominator": 50,
+          "ci95": [
+            0.4230602802165722,
+            0.6883780078874253
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.8787878787878788,
+          "numerator": 29,
+          "denominator": 33,
+          "ci95": [
+            0.7267449482892527,
+            0.9518383869058633
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.58,
+          "numerator": 29,
+          "denominator": 50,
+          "ci95": [
+            0.4423344176857861,
+            0.7062499664528771
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.8181818181818182,
+          "numerator": 27,
+          "denominator": 33,
+          "ci95": [
+            0.6561176836533059,
+            0.9138923179105917
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.5,
+          "numerator": 25,
+          "denominator": 50,
+          "ci95": [
+            0.36644514316828924,
+            0.6335548568317108
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.8,
+          "numerator": 40,
+          "denominator": 50,
+          "ci95": [
+            0.6696289406777499,
+            0.8875624998422372
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.2,
+          "numerator": 10,
+          "denominator": 50,
+          "ci95": [
+            0.11243750015776291,
+            0.3303710593222502
+          ]
+        },
+        "selectivity_gap": 0.6,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.66,
+            "numerator": 33,
+            "denominator": 50,
+            "ci95": [
+              0.52153826050233,
+              0.7756305077749965
+            ]
+          },
+          "decisive": {
+            "value": 0.74,
+            "numerator": 37,
+            "denominator": 50,
+            "ci95": [
+              0.6044684273515156,
+              0.841284725064474
+            ]
+          },
+          "invariant": {
+            "value": 0.56,
+            "numerator": 28,
+            "denominator": 50,
+            "ci95": [
+              0.4230602802165722,
+              0.6883780078874253
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.8787878787878788,
+          "numerator": 29,
+          "denominator": 33,
+          "ci95": [
+            0.7267449482892527,
+            0.9518383869058633
+          ]
+        }
+      },
+      "PC": {
+        "n": 50,
+        "complete_triplets": 50,
+        "original_accuracy": {
+          "value": 0.16,
+          "numerator": 8,
+          "denominator": 50,
+          "ci95": [
+            0.08337420678033552,
+            0.2851421606303459
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.16,
+          "numerator": 8,
+          "denominator": 50,
+          "ci95": [
+            0.08337420678033552,
+            0.2851421606303459
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.14,
+          "numerator": 7,
+          "denominator": 50,
+          "ci95": [
+            0.06950833427016426,
+            0.2618619371058515
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.375,
+          "numerator": 3,
+          "denominator": 8,
+          "ci95": [
+            0.13684428582360114,
+            0.6942576053973659
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.06,
+          "numerator": 3,
+          "denominator": 50,
+          "ci95": [
+            0.020614970348974512,
+            0.16217091688837793
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.625,
+          "numerator": 5,
+          "denominator": 8,
+          "ci95": [
+            0.3057423946026341,
+            0.8631557141763988
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.04,
+          "numerator": 2,
+          "denominator": 50,
+          "ci95": [
+            0.011038884327620152,
+            0.1346009068750665
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.56,
+          "numerator": 28,
+          "denominator": 50,
+          "ci95": [
+            0.4230602802165722,
+            0.6883780078874253
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.38,
+          "numerator": 19,
+          "denominator": 50,
+          "ci95": [
+            0.2586278931019388,
+            0.5184955306900664
+          ]
+        },
+        "selectivity_gap": 0.18,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.16,
+            "numerator": 8,
+            "denominator": 50,
+            "ci95": [
+              0.08337420678033552,
+              0.2851421606303459
+            ]
+          },
+          "decisive": {
+            "value": 0.16,
+            "numerator": 8,
+            "denominator": 50,
+            "ci95": [
+              0.08337420678033552,
+              0.2851421606303459
+            ]
+          },
+          "invariant": {
+            "value": 0.14,
+            "numerator": 7,
+            "denominator": 50,
+            "ci95": [
+              0.06950833427016426,
+              0.2618619371058515
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.375,
+          "numerator": 3,
+          "denominator": 8,
+          "ci95": [
+            0.13684428582360114,
+            0.6942576053973659
+          ]
+        }
+      },
+      "PS": {
+        "n": 50,
+        "complete_triplets": 50,
+        "original_accuracy": {
+          "value": 0.24,
+          "numerator": 12,
+          "denominator": 50,
+          "ci95": [
+            0.14297391396991932,
+            0.3741268375794252
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.34,
+          "numerator": 17,
+          "denominator": 50,
+          "ci95": [
+            0.22436949222500358,
+            0.4784617394976701
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.32,
+          "numerator": 16,
+          "denominator": 50,
+          "ci95": [
+            0.20758216260657106,
+            0.4581029730814369
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.75,
+          "numerator": 9,
+          "denominator": 12,
+          "ci95": [
+            0.46769466506644175,
+            0.9110583316059429
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.18,
+          "numerator": 9,
+          "denominator": 50,
+          "ci95": [
+            0.0977019267023434,
+            0.30796053674300383
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.8333333333333334,
+          "numerator": 10,
+          "denominator": 12,
+          "ci95": [
+            0.5519691377470349,
+            0.9530348578161448
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.14,
+          "numerator": 7,
+          "denominator": 50,
+          "ci95": [
+            0.06950833427016426,
+            0.2618619371058515
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.7,
+          "numerator": 35,
+          "denominator": 50,
+          "ci95": [
+            0.5624964953554699,
+            0.808964464991188
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.5,
+          "numerator": 25,
+          "denominator": 50,
+          "ci95": [
+            0.36644514316828924,
+            0.6335548568317108
+          ]
+        },
+        "selectivity_gap": 0.2,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.24,
+            "numerator": 12,
+            "denominator": 50,
+            "ci95": [
+              0.14297391396991932,
+              0.3741268375794252
+            ]
+          },
+          "decisive": {
+            "value": 0.34,
+            "numerator": 17,
+            "denominator": 50,
+            "ci95": [
+              0.22436949222500358,
+              0.4784617394976701
+            ]
+          },
+          "invariant": {
+            "value": 0.32,
+            "numerator": 16,
+            "denominator": 50,
+            "ci95": [
+              0.20758216260657106,
+              0.4581029730814369
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.75,
+          "numerator": 9,
+          "denominator": 12,
+          "ci95": [
+            0.46769466506644175,
+            0.9110583316059429
+          ]
+        }
+      },
+      "PQ": {
+        "n": 50,
+        "complete_triplets": 50,
+        "original_accuracy": {
+          "value": 0.94,
+          "numerator": 47,
+          "denominator": 50,
+          "ci95": [
+            0.8378290831116221,
+            0.9793850296510255
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.96,
+          "numerator": 48,
+          "denominator": 50,
+          "ci95": [
+            0.8653990931249335,
+            0.9889611156723798
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.96,
+          "numerator": 48,
+          "denominator": 50,
+          "ci95": [
+            0.8653990931249335,
+            0.9889611156723798
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.9574468085106383,
+          "numerator": 45,
+          "denominator": 47,
+          "ci95": [
+            0.8575147232210095,
+            0.9882517240332104
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.9,
+          "numerator": 45,
+          "denominator": 50,
+          "ci95": [
+            0.7863976856252073,
+            0.9565242350681087
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.9787234042553191,
+          "numerator": 46,
+          "denominator": 47,
+          "ci95": [
+            0.8888701895837106,
+            0.996234231961403
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.88,
+          "numerator": 44,
+          "denominator": 50,
+          "ci95": [
+            0.7619518261679741,
+            0.9438239984906762
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.94,
+          "numerator": 47,
+          "denominator": 50,
+          "ci95": [
+            0.8378290831116221,
+            0.9793850296510255
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.06,
+          "numerator": 3,
+          "denominator": 50,
+          "ci95": [
+            0.020614970348974512,
+            0.16217091688837793
+          ]
+        },
+        "selectivity_gap": 0.88,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.94,
+            "numerator": 47,
+            "denominator": 50,
+            "ci95": [
+              0.8378290831116221,
+              0.9793850296510255
+            ]
+          },
+          "decisive": {
+            "value": 0.96,
+            "numerator": 48,
+            "denominator": 50,
+            "ci95": [
+              0.8653990931249335,
+              0.9889611156723798
+            ]
+          },
+          "invariant": {
+            "value": 0.96,
+            "numerator": 48,
+            "denominator": 50,
+            "ci95": [
+              0.8653990931249335,
+              0.9889611156723798
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.9574468085106383,
+          "numerator": 45,
+          "denominator": 47,
+          "ci95": [
+            0.8575147232210095,
+            0.9882517240332104
+          ]
+        }
+      },
+      "Overall": {
+        "n": 250,
+        "complete_triplets": 250,
+        "original_accuracy": {
+          "value": 0.584,
+          "numerator": 146,
+          "denominator": 250,
+          "ci95": [
+            0.5220809648361139,
+            0.6433766408486515
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.62,
+          "numerator": 155,
+          "denominator": 250,
+          "ci95": [
+            0.5584453800189884,
+            0.6779226281021051
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.576,
+          "numerator": 144,
+          "denominator": 250,
+          "ci95": [
+            0.514044953838815,
+            0.6356547846378775
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.8698630136986302,
+          "numerator": 127,
+          "denominator": 146,
+          "ci95": [
+            0.8056814192377355,
+            0.9150803836037396
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.508,
+          "numerator": 127,
+          "denominator": 250,
+          "ci95": [
+            0.44637794987397356,
+            0.5693799173340993
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.910958904109589,
+          "numerator": 133,
+          "denominator": 146,
+          "ci95": [
+            0.8536207190922483,
+            0.9472257285093907
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.476,
+          "numerator": 119,
+          "denominator": 250,
+          "ci95": [
+            0.4149242863801134,
+            0.5378021119956677
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.788,
+          "numerator": 197,
+          "denominator": 250,
+          "ci95": [
+            0.7331727674153855,
+            0.834110452075239
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.236,
+          "numerator": 59,
+          "denominator": 250,
+          "ci95": [
+            0.18760668102989395,
+            0.2923837011037003
+          ]
+        },
+        "selectivity_gap": 0.552,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.584,
+            "numerator": 146,
+            "denominator": 250,
+            "ci95": [
+              0.5220809648361139,
+              0.6433766408486515
+            ]
+          },
+          "decisive": {
+            "value": 0.62,
+            "numerator": 155,
+            "denominator": 250,
+            "ci95": [
+              0.5584453800189884,
+              0.6779226281021051
+            ]
+          },
+          "invariant": {
+            "value": 0.576,
+            "numerator": 144,
+            "denominator": 250,
+            "ci95": [
+              0.514044953838815,
+              0.6356547846378775
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.8698630136986302,
+          "numerator": 127,
+          "denominator": 146,
+          "ci95": [
+            0.8056814192377355,
+            0.9150803836037396
+          ]
+        }
+      }
+    },
+    "MiniMax-M3-Non-thinking": {
+      "PR": {
+        "n": 50,
+        "complete_triplets": 50,
+        "original_accuracy": {
+          "value": 0.88,
+          "numerator": 44,
+          "denominator": 50,
+          "ci95": [
+            0.7619518261679741,
+            0.9438239984906762
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.8,
+          "numerator": 40,
+          "denominator": 50,
+          "ci95": [
+            0.6696289406777499,
+            0.8875624998422372
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.82,
+          "numerator": 41,
+          "denominator": 50,
+          "ci95": [
+            0.6920394632569961,
+            0.9022980732976565
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.8181818181818182,
+          "numerator": 36,
+          "denominator": 44,
+          "ci95": [
+            0.6803944911281576,
+            0.9048719428437211
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.72,
+          "numerator": 36,
+          "denominator": 50,
+          "ci95": [
+            0.5833487630404384,
+            0.8252582933408854
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.8863636363636364,
+          "numerator": 39,
+          "denominator": 44,
+          "ci95": [
+            0.7602084758339214,
+            0.9504721939890739
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.68,
+          "numerator": 34,
+          "denominator": 50,
+          "ci95": [
+            0.5418970269185632,
+            0.792417837393429
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.9,
+          "numerator": 45,
+          "denominator": 50,
+          "ci95": [
+            0.7863976856252073,
+            0.9565242350681087
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.14,
+          "numerator": 7,
+          "denominator": 50,
+          "ci95": [
+            0.06950833427016426,
+            0.2618619371058515
+          ]
+        },
+        "selectivity_gap": 0.76,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.88,
+            "numerator": 44,
+            "denominator": 50,
+            "ci95": [
+              0.7619518261679741,
+              0.9438239984906762
+            ]
+          },
+          "decisive": {
+            "value": 0.8,
+            "numerator": 40,
+            "denominator": 50,
+            "ci95": [
+              0.6696289406777499,
+              0.8875624998422372
+            ]
+          },
+          "invariant": {
+            "value": 0.82,
+            "numerator": 41,
+            "denominator": 50,
+            "ci95": [
+              0.6920394632569961,
+              0.9022980732976565
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.8181818181818182,
+          "numerator": 36,
+          "denominator": 44,
+          "ci95": [
+            0.6803944911281576,
+            0.9048719428437211
+          ]
+        }
+      },
+      "PT": {
+        "n": 50,
+        "complete_triplets": 50,
+        "original_accuracy": {
+          "value": 0.66,
+          "numerator": 33,
+          "denominator": 50,
+          "ci95": [
+            0.52153826050233,
+            0.7756305077749965
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.62,
+          "numerator": 31,
+          "denominator": 50,
+          "ci95": [
+            0.48150446930993357,
+            0.7413721068980612
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.58,
+          "numerator": 29,
+          "denominator": 50,
+          "ci95": [
+            0.4423344176857861,
+            0.7062499664528771
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.7575757575757576,
+          "numerator": 25,
+          "denominator": 33,
+          "ci95": [
+            0.5897538017044313,
+            0.8716828662282476
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.5,
+          "numerator": 25,
+          "denominator": 50,
+          "ci95": [
+            0.36644514316828924,
+            0.6335548568317108
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.8181818181818182,
+          "numerator": 27,
+          "denominator": 33,
+          "ci95": [
+            0.6561176836533059,
+            0.9138923179105917
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.38,
+          "numerator": 19,
+          "denominator": 50,
+          "ci95": [
+            0.2586278931019388,
+            0.5184955306900664
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.72,
+          "numerator": 36,
+          "denominator": 50,
+          "ci95": [
+            0.5833487630404384,
+            0.8252582933408854
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.32,
+          "numerator": 16,
+          "denominator": 50,
+          "ci95": [
+            0.20758216260657106,
+            0.4581029730814369
+          ]
+        },
+        "selectivity_gap": 0.4,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.66,
+            "numerator": 33,
+            "denominator": 50,
+            "ci95": [
+              0.52153826050233,
+              0.7756305077749965
+            ]
+          },
+          "decisive": {
+            "value": 0.62,
+            "numerator": 31,
+            "denominator": 50,
+            "ci95": [
+              0.48150446930993357,
+              0.7413721068980612
+            ]
+          },
+          "invariant": {
+            "value": 0.58,
+            "numerator": 29,
+            "denominator": 50,
+            "ci95": [
+              0.4423344176857861,
+              0.7062499664528771
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.7575757575757576,
+          "numerator": 25,
+          "denominator": 33,
+          "ci95": [
+            0.5897538017044313,
+            0.8716828662282476
+          ]
+        }
+      },
+      "PC": {
+        "n": 50,
+        "complete_triplets": 50,
+        "original_accuracy": {
+          "value": 0.1,
+          "numerator": 5,
+          "denominator": 50,
+          "ci95": [
+            0.043475764931891384,
+            0.2136023143747927
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.14,
+          "numerator": 7,
+          "denominator": 50,
+          "ci95": [
+            0.06950833427016426,
+            0.2618619371058515
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.08,
+          "numerator": 4,
+          "denominator": 50,
+          "ci95": [
+            0.031549514088593744,
+            0.18838246918342452
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.2,
+          "numerator": 1,
+          "denominator": 5,
+          "ci95": [
+            0.036224108632431695,
+            0.6244653702374652
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.02,
+          "numerator": 1,
+          "denominator": 50,
+          "ci95": [
+            0.003539259271646375,
+            0.1049544358963745
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.6,
+          "numerator": 3,
+          "denominator": 5,
+          "ci95": [
+            0.23072428127601946,
+            0.8823792257673482
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.0,
+          "numerator": 0,
+          "denominator": 50,
+          "ci95": [
+            0,
+            0.07134759913335506
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.86,
+          "numerator": 43,
+          "denominator": 50,
+          "ci95": [
+            0.7381380628941486,
+            0.9304916657298358
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.5,
+          "numerator": 25,
+          "denominator": 50,
+          "ci95": [
+            0.36644514316828924,
+            0.6335548568317108
+          ]
+        },
+        "selectivity_gap": 0.36,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.1,
+            "numerator": 5,
+            "denominator": 50,
+            "ci95": [
+              0.043475764931891384,
+              0.2136023143747927
+            ]
+          },
+          "decisive": {
+            "value": 0.14,
+            "numerator": 7,
+            "denominator": 50,
+            "ci95": [
+              0.06950833427016426,
+              0.2618619371058515
+            ]
+          },
+          "invariant": {
+            "value": 0.08,
+            "numerator": 4,
+            "denominator": 50,
+            "ci95": [
+              0.031549514088593744,
+              0.18838246918342452
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.2,
+          "numerator": 1,
+          "denominator": 5,
+          "ci95": [
+            0.036224108632431695,
+            0.6244653702374652
+          ]
+        }
+      },
+      "PS": {
+        "n": 50,
+        "complete_triplets": 50,
+        "original_accuracy": {
+          "value": 0.26,
+          "numerator": 13,
+          "denominator": 50,
+          "ci95": [
+            0.15871527493552606,
+            0.3955315726484844
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.26,
+          "numerator": 13,
+          "denominator": 50,
+          "ci95": [
+            0.15871527493552606,
+            0.3955315726484844
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.18,
+          "numerator": 9,
+          "denominator": 50,
+          "ci95": [
+            0.0977019267023434,
+            0.30796053674300383
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.23076923076923078,
+          "numerator": 3,
+          "denominator": 13,
+          "ci95": [
+            0.08179528718498785,
+            0.5025637594672676
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.06,
+          "numerator": 3,
+          "denominator": 50,
+          "ci95": [
+            0.020614970348974512,
+            0.16217091688837793
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.6923076923076923,
+          "numerator": 9,
+          "denominator": 13,
+          "ci95": [
+            0.4236934318054971,
+            0.8731929634428918
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.04,
+          "numerator": 2,
+          "denominator": 50,
+          "ci95": [
+            0.011038884327620152,
+            0.1346009068750665
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.78,
+          "numerator": 39,
+          "denominator": 50,
+          "ci95": [
+            0.6475845041874673,
+            0.872460840297854
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.62,
+          "numerator": 31,
+          "denominator": 50,
+          "ci95": [
+            0.48150446930993357,
+            0.7413721068980612
+          ]
+        },
+        "selectivity_gap": 0.16,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.26,
+            "numerator": 13,
+            "denominator": 50,
+            "ci95": [
+              0.15871527493552606,
+              0.3955315726484844
+            ]
+          },
+          "decisive": {
+            "value": 0.26,
+            "numerator": 13,
+            "denominator": 50,
+            "ci95": [
+              0.15871527493552606,
+              0.3955315726484844
+            ]
+          },
+          "invariant": {
+            "value": 0.18,
+            "numerator": 9,
+            "denominator": 50,
+            "ci95": [
+              0.0977019267023434,
+              0.30796053674300383
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.23076923076923078,
+          "numerator": 3,
+          "denominator": 13,
+          "ci95": [
+            0.08179528718498785,
+            0.5025637594672676
+          ]
+        }
+      },
+      "PQ": {
+        "n": 50,
+        "complete_triplets": 50,
+        "original_accuracy": {
+          "value": 0.92,
+          "numerator": 46,
+          "denominator": 50,
+          "ci95": [
+            0.8116175308165755,
+            0.9684504859114064
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.92,
+          "numerator": 46,
+          "denominator": 50,
+          "ci95": [
+            0.8116175308165755,
+            0.9684504859114064
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.96,
+          "numerator": 48,
+          "denominator": 50,
+          "ci95": [
+            0.8653990931249335,
+            0.9889611156723798
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.9130434782608695,
+          "numerator": 42,
+          "denominator": 46,
+          "ci95": [
+            0.7967533592588156,
+            0.9656641321052732
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.84,
+          "numerator": 42,
+          "denominator": 50,
+          "ci95": [
+            0.7148578393696541,
+            0.9166257932196644
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.9565217391304348,
+          "numerator": 44,
+          "denominator": 46,
+          "ci95": [
+            0.8546774097378134,
+            0.987994554401443
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.8,
+          "numerator": 40,
+          "denominator": 50,
+          "ci95": [
+            0.6696289406777499,
+            0.8875624998422372
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.9,
+          "numerator": 45,
+          "denominator": 50,
+          "ci95": [
+            0.7863976856252073,
+            0.9565242350681087
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.12,
+          "numerator": 6,
+          "denominator": 50,
+          "ci95": [
+            0.056176001509323906,
+            0.23804817383202598
+          ]
+        },
+        "selectivity_gap": 0.78,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.92,
+            "numerator": 46,
+            "denominator": 50,
+            "ci95": [
+              0.8116175308165755,
+              0.9684504859114064
+            ]
+          },
+          "decisive": {
+            "value": 0.92,
+            "numerator": 46,
+            "denominator": 50,
+            "ci95": [
+              0.8116175308165755,
+              0.9684504859114064
+            ]
+          },
+          "invariant": {
+            "value": 0.96,
+            "numerator": 48,
+            "denominator": 50,
+            "ci95": [
+              0.8653990931249335,
+              0.9889611156723798
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.9130434782608695,
+          "numerator": 42,
+          "denominator": 46,
+          "ci95": [
+            0.7967533592588156,
+            0.9656641321052732
+          ]
+        }
+      },
+      "Overall": {
+        "n": 250,
+        "complete_triplets": 250,
+        "original_accuracy": {
+          "value": 0.564,
+          "numerator": 141,
+          "denominator": 250,
+          "ci95": [
+            0.5020210030764032,
+            0.6240419345881798
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.548,
+          "numerator": 137,
+          "denominator": 250,
+          "ci95": [
+            0.48604464273690984,
+            0.6085025605115277
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.524,
+          "numerator": 131,
+          "denominator": 250,
+          "ci95": [
+            0.4621978880043322,
+            0.5850757136198865
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.7588652482269503,
+          "numerator": 107,
+          "denominator": 141,
+          "ci95": [
+            0.6819973043374551,
+            0.8220020380771375
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.428,
+          "numerator": 107,
+          "denominator": 250,
+          "ci95": [
+            0.36821217094158715,
+            0.4899670241857567
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.8652482269503546,
+          "numerator": 122,
+          "denominator": 141,
+          "ci95": [
+            0.7991154834716538,
+            0.9120068763735931
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.38,
+          "numerator": 95,
+          "denominator": 250,
+          "ci95": [
+            0.32207737189789487,
+            0.44155461998101164
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.832,
+          "numerator": 208,
+          "denominator": 250,
+          "ci95": [
+            0.7807100422284579,
+            0.8732414469065675
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.34,
+          "numerator": 85,
+          "denominator": 250,
+          "ci95": [
+            0.28409658843703917,
+            0.4007460674015029
+          ]
+        },
+        "selectivity_gap": 0.492,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.564,
+            "numerator": 141,
+            "denominator": 250,
+            "ci95": [
+              0.5020210030764032,
+              0.6240419345881798
+            ]
+          },
+          "decisive": {
+            "value": 0.548,
+            "numerator": 137,
+            "denominator": 250,
+            "ci95": [
+              0.48604464273690984,
+              0.6085025605115277
+            ]
+          },
+          "invariant": {
+            "value": 0.524,
+            "numerator": 131,
+            "denominator": 250,
+            "ci95": [
+              0.4621978880043322,
+              0.5850757136198865
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.7588652482269503,
+          "numerator": 107,
+          "denominator": 141,
+          "ci95": [
+            0.6819973043374551,
+            0.8220020380771375
+          ]
+        }
+      }
+    },
+    "GLM-5.3-Flash": {
+      "PR": {
+        "n": 50,
+        "complete_triplets": 49,
+        "original_accuracy": {
+          "value": 0.92,
+          "numerator": 46,
+          "denominator": 50,
+          "ci95": [
+            0.8116175308165755,
+            0.9684504859114064
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.88,
+          "numerator": 44,
+          "denominator": 50,
+          "ci95": [
+            0.7619518261679741,
+            0.9438239984906762
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.84,
+          "numerator": 42,
+          "denominator": 50,
+          "ci95": [
+            0.7148578393696541,
+            0.9166257932196644
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.8913043478260869,
+          "numerator": 41,
+          "denominator": 46,
+          "ci95": [
+            0.7696217135574959,
+            0.9526685414190095
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.82,
+          "numerator": 41,
+          "denominator": 50,
+          "ci95": [
+            0.6920394632569961,
+            0.9022980732976565
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.9130434782608695,
+          "numerator": 42,
+          "denominator": 46,
+          "ci95": [
+            0.7967533592588156,
+            0.9656641321052732
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.78,
+          "numerator": 39,
+          "denominator": 50,
+          "ci95": [
+            0.6475845041874673,
+            0.872460840297854
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.9,
+          "numerator": 45,
+          "denominator": 50,
+          "ci95": [
+            0.7863976856252073,
+            0.9565242350681087
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.08,
+          "numerator": 4,
+          "denominator": 50,
+          "ci95": [
+            0.031549514088593744,
+            0.18838246918342452
+          ]
+        },
+        "selectivity_gap": 0.82,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.92,
+            "numerator": 46,
+            "denominator": 50,
+            "ci95": [
+              0.8116175308165755,
+              0.9684504859114064
+            ]
+          },
+          "decisive": {
+            "value": 0.8979591836734694,
+            "numerator": 44,
+            "denominator": 49,
+            "ci95": [
+              0.7824363845080449,
+              0.9556204532552364
+            ]
+          },
+          "invariant": {
+            "value": 0.84,
+            "numerator": 42,
+            "denominator": 50,
+            "ci95": [
+              0.7148578393696541,
+              0.9166257932196644
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.9111111111111111,
+          "numerator": 41,
+          "denominator": 45,
+          "ci95": [
+            0.7926642466571105,
+            0.9648888832736289
+          ]
+        }
+      },
+      "PT": {
+        "n": 50,
+        "complete_triplets": 50,
+        "original_accuracy": {
+          "value": 0.54,
+          "numerator": 27,
+          "denominator": 50,
+          "ci95": [
+            0.4039887139915783,
+            0.6703034780777533
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.68,
+          "numerator": 34,
+          "denominator": 50,
+          "ci95": [
+            0.5418970269185632,
+            0.792417837393429
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.48,
+          "numerator": 24,
+          "denominator": 50,
+          "ci95": [
+            0.3479713528657838,
+            0.6148825510995504
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.8518518518518519,
+          "numerator": 23,
+          "denominator": 27,
+          "ci95": [
+            0.6752131457218759,
+            0.9408407222375553
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.46,
+          "numerator": 23,
+          "denominator": 50,
+          "ci95": [
+            0.32969652192224674,
+            0.5960112860084218
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.8518518518518519,
+          "numerator": 23,
+          "denominator": 27,
+          "ci95": [
+            0.6752131457218759,
+            0.9408407222375553
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.38,
+          "numerator": 19,
+          "denominator": 50,
+          "ci95": [
+            0.2586278931019388,
+            0.5184955306900664
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.74,
+          "numerator": 37,
+          "denominator": 50,
+          "ci95": [
+            0.6044684273515156,
+            0.841284725064474
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.18,
+          "numerator": 9,
+          "denominator": 50,
+          "ci95": [
+            0.0977019267023434,
+            0.30796053674300383
+          ]
+        },
+        "selectivity_gap": 0.56,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.54,
+            "numerator": 27,
+            "denominator": 50,
+            "ci95": [
+              0.4039887139915783,
+              0.6703034780777533
+            ]
+          },
+          "decisive": {
+            "value": 0.68,
+            "numerator": 34,
+            "denominator": 50,
+            "ci95": [
+              0.5418970269185632,
+              0.792417837393429
+            ]
+          },
+          "invariant": {
+            "value": 0.48,
+            "numerator": 24,
+            "denominator": 50,
+            "ci95": [
+              0.3479713528657838,
+              0.6148825510995504
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.8518518518518519,
+          "numerator": 23,
+          "denominator": 27,
+          "ci95": [
+            0.6752131457218759,
+            0.9408407222375553
+          ]
+        }
+      },
+      "PC": {
+        "n": 50,
+        "complete_triplets": 50,
+        "original_accuracy": {
+          "value": 0.08,
+          "numerator": 4,
+          "denominator": 50,
+          "ci95": [
+            0.031549514088593744,
+            0.18838246918342452
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.18,
+          "numerator": 9,
+          "denominator": 50,
+          "ci95": [
+            0.0977019267023434,
+            0.30796053674300383
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.06,
+          "numerator": 3,
+          "denominator": 50,
+          "ci95": [
+            0.020614970348974512,
+            0.16217091688837793
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.75,
+          "numerator": 3,
+          "denominator": 4,
+          "ci95": [
+            0.30064184258241056,
+            0.9544127391902976
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.06,
+          "numerator": 3,
+          "denominator": 50,
+          "ci95": [
+            0.020614970348974512,
+            0.16217091688837793
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.5,
+          "numerator": 2,
+          "denominator": 4,
+          "ci95": [
+            0.1500389891521544,
+            0.8499610108478456
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.02,
+          "numerator": 1,
+          "denominator": 50,
+          "ci95": [
+            0.003539259271646375,
+            0.1049544358963745
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.84,
+          "numerator": 42,
+          "denominator": 50,
+          "ci95": [
+            0.7148578393696541,
+            0.9166257932196644
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.38,
+          "numerator": 19,
+          "denominator": 50,
+          "ci95": [
+            0.2586278931019388,
+            0.5184955306900664
+          ]
+        },
+        "selectivity_gap": 0.46,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.08,
+            "numerator": 4,
+            "denominator": 50,
+            "ci95": [
+              0.031549514088593744,
+              0.18838246918342452
+            ]
+          },
+          "decisive": {
+            "value": 0.18,
+            "numerator": 9,
+            "denominator": 50,
+            "ci95": [
+              0.0977019267023434,
+              0.30796053674300383
+            ]
+          },
+          "invariant": {
+            "value": 0.06,
+            "numerator": 3,
+            "denominator": 50,
+            "ci95": [
+              0.020614970348974512,
+              0.16217091688837793
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.75,
+          "numerator": 3,
+          "denominator": 4,
+          "ci95": [
+            0.30064184258241056,
+            0.9544127391902976
+          ]
+        }
+      },
+      "PS": {
+        "n": 50,
+        "complete_triplets": 50,
+        "original_accuracy": {
+          "value": 0.22,
+          "numerator": 11,
+          "denominator": 50,
+          "ci95": [
+            0.1275391597021461,
+            0.35241549581253273
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.2,
+          "numerator": 10,
+          "denominator": 50,
+          "ci95": [
+            0.11243750015776291,
+            0.3303710593222502
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.22,
+          "numerator": 11,
+          "denominator": 50,
+          "ci95": [
+            0.1275391597021461,
+            0.35241549581253273
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.45454545454545453,
+          "numerator": 5,
+          "denominator": 11,
+          "ci95": [
+            0.21271271622460242,
+            0.7199084625906723
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.1,
+          "numerator": 5,
+          "denominator": 50,
+          "ci95": [
+            0.043475764931891384,
+            0.2136023143747927
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.9090909090909091,
+          "numerator": 10,
+          "denominator": 11,
+          "ci95": [
+            0.6226415635484137,
+            0.9837678271141146
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.1,
+          "numerator": 5,
+          "denominator": 50,
+          "ci95": [
+            0.043475764931891384,
+            0.2136023143747927
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.72,
+          "numerator": 36,
+          "denominator": 50,
+          "ci95": [
+            0.5833487630404384,
+            0.8252582933408854
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.38,
+          "numerator": 19,
+          "denominator": 50,
+          "ci95": [
+            0.2586278931019388,
+            0.5184955306900664
+          ]
+        },
+        "selectivity_gap": 0.34,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.22,
+            "numerator": 11,
+            "denominator": 50,
+            "ci95": [
+              0.1275391597021461,
+              0.35241549581253273
+            ]
+          },
+          "decisive": {
+            "value": 0.2,
+            "numerator": 10,
+            "denominator": 50,
+            "ci95": [
+              0.11243750015776291,
+              0.3303710593222502
+            ]
+          },
+          "invariant": {
+            "value": 0.22,
+            "numerator": 11,
+            "denominator": 50,
+            "ci95": [
+              0.1275391597021461,
+              0.35241549581253273
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.45454545454545453,
+          "numerator": 5,
+          "denominator": 11,
+          "ci95": [
+            0.21271271622460242,
+            0.7199084625906723
+          ]
+        }
+      },
+      "PQ": {
+        "n": 50,
+        "complete_triplets": 49,
+        "original_accuracy": {
+          "value": 0.98,
+          "numerator": 49,
+          "denominator": 50,
+          "ci95": [
+            0.8950455641036255,
+            0.9964607407283537
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.96,
+          "numerator": 48,
+          "denominator": 50,
+          "ci95": [
+            0.8653990931249335,
+            0.9889611156723798
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.9,
+          "numerator": 45,
+          "denominator": 50,
+          "ci95": [
+            0.7863976856252073,
+            0.9565242350681087
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.9591836734693877,
+          "numerator": 47,
+          "denominator": 49,
+          "ci95": [
+            0.862869676939203,
+            0.9887343666338138
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.94,
+          "numerator": 47,
+          "denominator": 50,
+          "ci95": [
+            0.8378290831116221,
+            0.9793850296510255
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.8979591836734694,
+          "numerator": 44,
+          "denominator": 49,
+          "ci95": [
+            0.7824363845080449,
+            0.9556204532552364
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.86,
+          "numerator": 43,
+          "denominator": 50,
+          "ci95": [
+            0.7381380628941486,
+            0.9304916657298358
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.98,
+          "numerator": 49,
+          "denominator": 50,
+          "ci95": [
+            0.8950455641036255,
+            0.9964607407283537
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.12,
+          "numerator": 6,
+          "denominator": 50,
+          "ci95": [
+            0.056176001509323906,
+            0.23804817383202598
+          ]
+        },
+        "selectivity_gap": 0.86,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.98,
+            "numerator": 49,
+            "denominator": 50,
+            "ci95": [
+              0.8950455641036255,
+              0.9964607407283537
+            ]
+          },
+          "decisive": {
+            "value": 0.96,
+            "numerator": 48,
+            "denominator": 50,
+            "ci95": [
+              0.8653990931249335,
+              0.9889611156723798
+            ]
+          },
+          "invariant": {
+            "value": 0.9183673469387755,
+            "numerator": 45,
+            "denominator": 49,
+            "ci95": [
+              0.808108724034291,
+              0.9677971823322356
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.9591836734693877,
+          "numerator": 47,
+          "denominator": 49,
+          "ci95": [
+            0.862869676939203,
+            0.9887343666338138
+          ]
+        }
+      },
+      "Overall": {
+        "n": 250,
+        "complete_triplets": 248,
+        "original_accuracy": {
+          "value": 0.548,
+          "numerator": 137,
+          "denominator": 250,
+          "ci95": [
+            0.48604464273690984,
+            0.6085025605115277
+          ]
+        },
+        "counterfactual_accuracy": {
+          "value": 0.58,
+          "numerator": 145,
+          "denominator": 250,
+          "ci95": [
+            0.5180609451155815,
+            0.6395177269651473
+          ]
+        },
+        "invariant_accuracy": {
+          "value": 0.5,
+          "numerator": 125,
+          "denominator": 250,
+          "ci95": [
+            0.4384912618089028,
+            0.5615087381910971
+          ]
+        },
+        "CRS_conditional": {
+          "value": 0.8686131386861314,
+          "numerator": 119,
+          "denominator": 137,
+          "ci95": [
+            0.8018685419891532,
+            0.9152498466281055
+          ]
+        },
+        "both_original_and_counterfactual_correct": {
+          "value": 0.476,
+          "numerator": 119,
+          "denominator": 250,
+          "ci95": [
+            0.4149242863801134,
+            0.5378021119956677
+          ]
+        },
+        "invariant_correct_given_original_correct": {
+          "value": 0.8832116788321168,
+          "numerator": 121,
+          "denominator": 137,
+          "ci95": [
+            0.8186981445312231,
+            0.9268209723481051
+          ]
+        },
+        "all_three_correct": {
+          "value": 0.428,
+          "numerator": 107,
+          "denominator": 250,
+          "ci95": [
+            0.36821217094158715,
+            0.4899670241857567
+          ]
+        },
+        "decisive_flip_rate": {
+          "value": 0.836,
+          "numerator": 209,
+          "denominator": 250,
+          "ci95": [
+            0.785081915945354,
+            0.8767485067937076
+          ]
+        },
+        "false_flip_rate": {
+          "value": 0.228,
+          "numerator": 57,
+          "denominator": 250,
+          "ci95": [
+            0.18034129807610583,
+            0.28389121684941554
+          ]
+        },
+        "selectivity_gap": 0.608,
+        "available_only_accuracy": {
+          "original": {
+            "value": 0.548,
+            "numerator": 137,
+            "denominator": 250,
+            "ci95": [
+              0.48604464273690984,
+              0.6085025605115277
+            ]
+          },
+          "decisive": {
+            "value": 0.5823293172690763,
+            "numerator": 145,
+            "denominator": 249,
+            "ci95": [
+              0.5202765695755175,
+              0.641880381231651
+            ]
+          },
+          "invariant": {
+            "value": 0.5020080321285141,
+            "numerator": 125,
+            "denominator": 249,
+            "ci95": [
+              0.4403477600978945,
+              0.5636072874827681
+            ]
+          }
+        },
+        "CRS_available_only": {
+          "value": 0.875,
+          "numerator": 119,
+          "denominator": 136,
+          "ci95": [
+            0.8089254333305319,
+            0.9204719918692824
+          ]
+        }
+      }
+    }
+  },
+  "missing": [
+    {
+      "model": "GLM-5.3-Flash",
+      "pair_id": "cf_127",
+      "variant": "invariant",
+      "status": "unfinished",
+      "finish_reason": "length"
+    },
+    {
+      "model": "GLM-5.3-Flash",
+      "pair_id": "cf_077",
+      "variant": "decisive",
+      "status": "unfinished",
+      "finish_reason": "length"
+    }
+  ]
+}

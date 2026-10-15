@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "formal_subcases": 1602,
+  "formal_paths": 25108,
+  "finance_cases": 1079,
+  "finance_composite_references": 262249,
+  "law_cases": 300,
+  "law_references": 2677,
+  "checks": [
+    "all source nodes, expressions, values, premises and input bindings identical",
+    "all roots preserved in order; every reachable node rendered once",
+    "no path/text deduplication",
+    "Cartesian counts exact",
+    "different missing-contract evidence remains separate",
+    "law proof supports unchanged; negative fact text corrected and verified"
+  ],
+  "reference_sha256": "4a22e182fdbeb8f4755004cc600d8ea49bc5801b999d11acd80d34a4dd78d3d9",
+  "catalog_sha256": "beb16c66e96a7d6de6b531e0636688f7ebbf0aff273c5c20e601794e32c4fec5",
+  "steps_sha256": "e607fca812b08e38e741591d736bbb7764c96d6e4a70ff1618a79f8800ebc773"
+}

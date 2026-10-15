@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "files_scanned": 650,
+  "uncompressed_bytes_scanned": 1408955889,
+  "findings": {},
+  "scope": [
+    "gzip contents",
+    "text and binary contents",
+    "common encoded ASCII paths",
+    "local username",
+    "credential patterns",
+    "email and IPv4 addresses"
+  ],
+  "exceptions": [
+    "portable Python interpreter shebang",
+    "known matrix-multiplication expression"
+  ],
+  "limitations": "Pattern-based audit; public benchmark source institution names are retained. This cannot rule out all indirect identification.",
+  "checked_at_utc": "2026-10-15T08:21:29.155703+00:00",
+  "compressed_files_scanned": 10,
+  "manual_review": {
+    "reviewed_files": [
+      "results/per_case/DeepSeek-V3.2_predictions.jsonl",
+      "results/per_case/DeepSeek-V4-Flash-Non-thinking_predictions.jsonl",
+      "results/per_case/Gemini-3.1-Flash_predictions.jsonl"
+    ],
+    "resolution": "All six matches were the ordinary phrase venue/etc in model answers. The scanner now requires a path boundary; all reviewed files were rescanned with the corrected rule. Model answers were not modified.",
+    "incrementally_rescanned_files": [
+      "results/per_case/DeepSeek-V3.2_predictions.jsonl",
+      "results/per_case/DeepSeek-V4-Flash-Non-thinking_predictions.jsonl",
+      "results/per_case/Gemini-3.1-Flash_predictions.jsonl",
+      "scripts/audit_release.py"
+    ]
+  },
+  "additional_checks": {
+    "extended_credential_prefixes": "passed",
+    "literal_credential_assignments": "passed",
+    "literal_bearer_tokens": "passed",
+    "credentials_embedded_in_urls": "passed",
+    "windows_paths_and_network_shares": "passed",
+    "home_relative_and_file_uri_paths": "passed",
+    "encoded_paths": "passed",
+    "python_string_constants": "reviewed",
+    "gzip_original_filename_and_comment_headers": "all 10 absent",
+    "symlinks": "none",
+    "hidden_credential_files": "none",
+    "configuration_credential_fields": "documentation only"
+  },
+  "cleanup": [
+    "Removed regenerated Finder metadata.",
+    "Changed the ROSCOE cache from a fixed system temporary directory to cache under the metric run directory."
+  ],
+  "pipeline_follow_up": {
+    "checked_at_utc": "2026-10-15T09:01:43.672663+00:00",
+    "files_checked": [
+      "README.md",
+      "README.cn.md",
+      "scripts/run_model_evaluation.py",
+      "evaluation/prediction_export.py",
+      "evaluation/test_model_pipeline.py",
+      "benchmark/finance/scripts/answer_grading.py"
+    ],
+    "status": "passed",
+    "checks": [
+      "hardcoded paths",
+      "credential patterns",
+      "email addresses",
+      "Markdown links and command syntax"
+    ],
+    "metadata_files_removed": 8,
+    "scope": "Incremental scan of all files changed or added by the new model pipeline; previous data and results verified unchanged."
+  }
+}

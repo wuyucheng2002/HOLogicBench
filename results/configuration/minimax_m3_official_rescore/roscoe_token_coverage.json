@@ -1,0 +1,6 @@
+{
+  "hypothesis_steps": "original domain-specific splitting",
+  "reference_steps_over_limit": 0,
+  "hypothesis_distinct_steps_over_limit": 0,
+  "hypothesis_long_step_handling": "existing per-step encoder truncation, now at native 512-token capacity; counted explicitly"
+}

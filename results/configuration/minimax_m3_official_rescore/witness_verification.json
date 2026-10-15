@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "samples": [
+    {
+      "model": "MiniMax-M3-Thinking",
+      "key": "finance/sample3/22",
+      "bert_witness_difference": 1.763840884461132e-08,
+      "independent_bert_max": 0.7468085289001465,
+      "roscoe_witness_difference": 1.1920928955078125e-07
+    },
+    {
+      "model": "MiniMax-M3-Thinking",
+      "key": "finance/sample1/107",
+      "bert_witness_difference": 1.739517263565915e-08,
+      "independent_bert_max": null,
+      "roscoe_witness_difference": 0.0
+    },
+    {
+      "model": "MiniMax-M3-Thinking",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_01",
+      "bert_witness_difference": 3.132245740555817e-08,
+      "independent_bert_max": null,
+      "roscoe_witness_difference": 5.960464477539063e-08
+    },
+    {
+      "model": "MiniMax-M3-Non-thinking",
+      "key": "finance/sample3/22",
+      "bert_witness_difference": 4.103663830967719e-08,
+      "independent_bert_max": 0.7606930136680603,
+      "roscoe_witness_difference": 0.0
+    },
+    {
+      "model": "MiniMax-M3-Non-thinking",
+      "key": "finance/sample1/107",
+      "bert_witness_difference": 2.977318613872626e-08,
+      "independent_bert_max": null,
+      "roscoe_witness_difference": 0.0
+    },
+    {
+      "model": "MiniMax-M3-Non-thinking",
+      "key": "law/archive_relic_with_rescue_exceptions/arwre_case_01",
+      "bert_witness_difference": 9.799492506346041e-08,
+      "independent_bert_max": null,
+      "roscoe_witness_difference": 5.960464477539063e-08
+    }
+  ]
+}

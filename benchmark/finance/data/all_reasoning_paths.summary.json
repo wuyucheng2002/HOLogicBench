@@ -1,0 +1,22 @@
+{
+  "total_cases": 1602,
+  "statuses": {
+    "complete": 1602
+  },
+  "backend_exit_code": 0,
+  "output": "data/all_reasoning_paths.jsonl",
+  "raw_output": "data/all_reasoning_paths.raw.jsonl",
+  "path_statistics": {
+    "total_paths": 25108,
+    "max_paths_per_case": 16384,
+    "cases_with_multiple_paths": 716
+  },
+  "semantics": "v2: exhaustive intermediate trees; root-global support/size minimum per named-rule set",
+  "verification": "Isabelle/NBE values; enumeration completeness is not a proved HOL theorem",
+  "source_sha256": {
+    "baoxiao_rules.thy": "bae1ef2761291f5de62b798e4db8ae6de8b311983bb7997e584ba994617fd632",
+    "baoxiao_cases.thy": "f2c772b24481a422471c0f8799bc7d4f80a89f8ff66f7dc37614d56ac74b19a0",
+    "reasoning_paths.ML": "2d08c51ac2f7b398528e3fa365fd6b9c5872ba0492e7153b445d6df916c1cb16",
+    "enumerate_reasoning_paths.py": "29ebd731d6619defd50865b59092f2d9d1a450c72370e746726b789d1d6e70be"
+  }
+}

@@ -1,0 +1,12 @@
+session Archive_Relic_With_Rescue_Exceptions = HOL +
+  theories
+    arwre_case_01
+    arwre_case_02
+    arwre_case_03
+    arwre_case_04
+    arwre_case_05
+    arwre_case_06
+    arwre_case_07
+    arwre_case_08
+    arwre_case_09
+    arwre_case_10

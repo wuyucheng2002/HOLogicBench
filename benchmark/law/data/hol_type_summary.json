@@ -1,0 +1,164 @@
+{
+  "version": "law-policy-semantics-v1",
+  "annotation_level": "policy_semantics",
+  "datasets": {
+    "archive_relic_with_rescue_exceptions": {
+      "case_count": 30,
+      "label_counts": {
+        "PR": 25,
+        "PT": 15,
+        "PC": 0,
+        "PS": 0,
+        "PQ": 30
+      },
+      "combinations": {
+        "PQ": 5,
+        "PR+PQ": 10,
+        "PR+PT+PQ": 15
+      }
+    },
+    "aviation_security_with_authorizations": {
+      "case_count": 30,
+      "label_counts": {
+        "PR": 26,
+        "PT": 15,
+        "PC": 0,
+        "PS": 0,
+        "PQ": 30
+      },
+      "combinations": {
+        "PQ": 4,
+        "PR+PQ": 11,
+        "PR+PT+PQ": 15
+      }
+    },
+    "cyber_intrusion_with_authorizations": {
+      "case_count": 30,
+      "label_counts": {
+        "PR": 25,
+        "PT": 15,
+        "PC": 0,
+        "PS": 0,
+        "PQ": 30
+      },
+      "combinations": {
+        "PQ": 5,
+        "PR+PQ": 10,
+        "PR+PT+PQ": 15
+      }
+    },
+    "dream_archive_with_exceptions": {
+      "case_count": 30,
+      "label_counts": {
+        "PR": 27,
+        "PT": 23,
+        "PC": 0,
+        "PS": 0,
+        "PQ": 30
+      },
+      "combinations": {
+        "PQ": 3,
+        "PR+PQ": 4,
+        "PR+PT+PQ": 23
+      }
+    },
+    "environmental_pollution_with_permits": {
+      "case_count": 30,
+      "label_counts": {
+        "PR": 25,
+        "PT": 15,
+        "PC": 0,
+        "PS": 0,
+        "PQ": 30
+      },
+      "combinations": {
+        "PQ": 5,
+        "PR+PQ": 10,
+        "PR+PT+PQ": 15
+      }
+    },
+    "mechanical_city_maintenance_rules": {
+      "case_count": 30,
+      "label_counts": {
+        "PR": 28,
+        "PT": 24,
+        "PC": 0,
+        "PS": 0,
+        "PQ": 30
+      },
+      "combinations": {
+        "PQ": 2,
+        "PR+PQ": 4,
+        "PR+PT+PQ": 24
+      }
+    },
+    "mirror_customs_border_rules": {
+      "case_count": 30,
+      "label_counts": {
+        "PR": 28,
+        "PT": 24,
+        "PC": 0,
+        "PS": 0,
+        "PQ": 30
+      },
+      "combinations": {
+        "PQ": 2,
+        "PR+PQ": 4,
+        "PR+PT+PQ": 24
+      }
+    },
+    "orbital_habitat_safety_rules": {
+      "case_count": 30,
+      "label_counts": {
+        "PR": 28,
+        "PT": 24,
+        "PC": 0,
+        "PS": 0,
+        "PQ": 30
+      },
+      "combinations": {
+        "PQ": 2,
+        "PR+PQ": 4,
+        "PR+PT+PQ": 24
+      }
+    },
+    "property_crime_with_defenses": {
+      "case_count": 30,
+      "label_counts": {
+        "PR": 24,
+        "PT": 15,
+        "PC": 0,
+        "PS": 0,
+        "PQ": 30
+      },
+      "combinations": {
+        "PQ": 6,
+        "PR+PQ": 9,
+        "PR+PT+PQ": 15
+      }
+    },
+    "subterranean_signal_dispatch_rules": {
+      "case_count": 30,
+      "label_counts": {
+        "PR": 28,
+        "PT": 24,
+        "PC": 0,
+        "PS": 0,
+        "PQ": 30
+      },
+      "combinations": {
+        "PQ": 2,
+        "PR+PQ": 4,
+        "PR+PT+PQ": 24
+      }
+    }
+  },
+  "total_cases": 300,
+  "label_counts": {
+    "PR": 264,
+    "PT": 194,
+    "PC": 0,
+    "PS": 0,
+    "PQ": 300
+  }
+}

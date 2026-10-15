@@ -1,0 +1,60 @@
+{
+  "version": "finance-policy-semantics-v1",
+  "annotation_level": "policy_semantics",
+  "datasets": {
+    "sample1": {
+      "case_count": 200,
+      "label_counts": {
+        "PR": 0,
+        "PT": 18,
+        "PC": 196,
+        "PS": 200,
+        "PQ": 0
+      },
+      "combinations": {
+        "PC+PS": 178,
+        "PS": 4,
+        "PT+PC+PS": 18
+      }
+    },
+    "sample2": {
+      "case_count": 200,
+      "label_counts": {
+        "PR": 0,
+        "PT": 0,
+        "PC": 200,
+        "PS": 200,
+        "PQ": 0
+      },
+      "combinations": {
+        "PC+PS": 200
+      }
+    },
+    "sample3": {
+      "case_count": 679,
+      "label_counts": {
+        "PR": 4,
+        "PT": 53,
+        "PC": 619,
+        "PS": 598,
+        "PQ": 0
+      },
+      "combinations": {
+        "PC": 61,
+        "PC+PS": 501,
+        "PR+PC+PS": 4,
+        "PS": 40,
+        "PT+PC+PS": 53,
+        "none": 20
+      }
+    }
+  },
+  "total_cases": 1079,
+  "label_counts": {
+    "PR": 4,
+    "PT": 71,
+    "PC": 1015,
+    "PS": 998,
+    "PQ": 0
+  }
+}

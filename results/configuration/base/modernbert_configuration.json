@@ -1,0 +1,32 @@
+{
+  "model": "answerdotai/ModernBERT-base",
+  "weights_sha256": "340ac08b74eef0d7bdec2d7981a6a3d4249bf0e6aab60634b72ad02c2b8023a9",
+  "tokenizer_sha256": "9fd55248d51d33976b324fc11592e28071da7d41e0e9401dfb7082e30574b7b1",
+  "layer": 22,
+  "window_tokens": 8192,
+  "content_tokens": 8190,
+  "overlap_content_tokens": 1024,
+  "overlap_handling": "midpoint ownership; each content token once",
+  "matching": "global token cosine greedy precision/recall, then harmonic F1; not a mean of window scores",
+  "idf": false,
+  "rescale_with_baseline": false,
+  "special_tokens": "first CLS and last SEP only; zero averaging weights, eligible matching targets",
+  "encoder_dtype": "float16",
+  "matching_dtype": "float32",
+  "reference_sha256": "4a22e182fdbeb8f4755004cc600d8ea49bc5801b999d11acd80d34a4dd78d3d9",
+  "steps_sha256": "e607fca812b08e38e741591d736bbb7764c96d6e4a70ff1618a79f8800ebc773",
+  "prediction_sha256": {
+    "DeepSeek-R1_predictions.jsonl": "ac5d0516aa419ba9b1594f25dcf12fb3ffb07478e47b9733c06f23154dfa6c22",
+    "DeepSeek-V3.2_predictions.jsonl": "e9ffe280441c0b49bfaad9d872423698e02482323655ff9ca8d995f20e355af2",
+    "DeepSeek-V4-Flash_predictions.jsonl": "0b7e70ae9cec634bc6ac26166c34f2496c668f583d299e40d696a5037bc4e414",
+    "DeepSeek-V4-Pro_predictions.jsonl": "867c6ffbcc358adf754561235abbea87a9287d28cd966c9776ae7d60806e68e8",
+    "GPT-5.4-Mini_predictions.jsonl": "c1efa9cb22c026dc5fd771331e2565552f8fd9f06041dd0ba5e705e11abab11f",
+    "Gemini-3.1-Flash_predictions.jsonl": "1f645b4b19e9ea8b9a9edb18903a89b52723b7b5914455d04a7edfc286e2171b",
+    "MiniMax-M2.5_predictions.jsonl": "43cd5a8802b871f1da8cdc4c227b7aa88cdad266c677ab3a88076d025f52f081",
+    "MiniMax-M2.7_predictions.jsonl": "d6000f3fcc089c730b6debbed4ea4ca4bb7ffcf42b5ea39f3df253d6e5bcf3f0",
+    "Qwen3-30B-Instruct_predictions.jsonl": "d1a6db96dfd2c3db12ef01dd73326083452519cf490387280753a5cf22f83e96",
+    "Qwen3-30B-Thinking_predictions.jsonl": "a5f8e28e64f7c57cf9bc53c276a34e56a964e6d119f88ac712b20e73736e1b50",
+    "Qwen3.6-Flash_predictions.jsonl": "f3c4f0e56f52eb24633395ac9e8ccd766015b7dd8af4dc460c69382f2329233a"
+  },
+  "signature": "3010ab72531d9afdf90bba9eab8b1ba4dbe87eedfd352891e3e49bd2f1760cd7"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "answerdotai/ModernBERT-base",
+  "weights_sha256": "340ac08b74eef0d7bdec2d7981a6a3d4249bf0e6aab60634b72ad02c2b8023a9",
+  "tokenizer_sha256": "9fd55248d51d33976b324fc11592e28071da7d41e0e9401dfb7082e30574b7b1",
+  "layer": 22,
+  "window_tokens": 8192,
+  "content_tokens": 8190,
+  "overlap_content_tokens": 1024,
+  "overlap_handling": "midpoint ownership; each content token once",
+  "matching": "global token cosine greedy precision/recall, then harmonic F1; not a mean of window scores",
+  "idf": false,
+  "rescale_with_baseline": false,
+  "special_tokens": "first CLS and last SEP only; zero averaging weights, eligible matching targets",
+  "encoder_dtype": "float16",
+  "matching_dtype": "float32",
+  "reference_sha256": "4a22e182fdbeb8f4755004cc600d8ea49bc5801b999d11acd80d34a4dd78d3d9",
+  "steps_sha256": "e607fca812b08e38e741591d736bbb7764c96d6e4a70ff1618a79f8800ebc773",
+  "prediction_sha256": {
+    "MiniMax-M3-Non-thinking_predictions.jsonl": "bd7fa38839e755d17cc45afbbafb5e60029952ba834aa26584c3609eab86d750",
+    "MiniMax-M3-Thinking_predictions.jsonl": "e983335daa7834e17586440759aab1c78a93038e8cf796a341fa4745336382a3"
+  },
+  "signature": "7270e47086a160d5c51689d915ce93e6a0eef9eead7a230b80d112a19ff9d987"
+}

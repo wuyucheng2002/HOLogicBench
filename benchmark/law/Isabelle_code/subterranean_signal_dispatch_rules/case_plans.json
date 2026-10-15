@@ -1,0 +1,320 @@
+[
+  {
+    "case_id": "ssdr_case_01",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "ssdr_case_02",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "ssdr_case_03",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Sealed_Track_Breach",
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "ssdr_case_04",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Dispatch_Order_Authorization",
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_05",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Sealed_Track_Breach",
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_06",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Sensor_Fault_Exemption",
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_07",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Sealed_Track_Breach",
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change",
+      "Art_Dispatch_Order_Authorization"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_08",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Sealed_Track_Breach",
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change",
+      "Art_Collapse_Avoidance_Authorization"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_09",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change",
+      "Art_Dispatch_Order_Authorization",
+      "Art_Sensor_Fault_Exemption"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_10",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Sealed_Track_Breach",
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change",
+      "Art_Dispatch_Order_Authorization",
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Sensor_Fault_Exemption"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_11",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Route_Misdirection"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "ssdr_case_12",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Sealed_Track_Breach",
+      "Art_Route_Misdirection"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "ssdr_case_13",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Sealed_Track_Breach",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "ssdr_case_14",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Dispatch_Order_Authorization",
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Sealed_Track_Breach",
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_15",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Sealed_Track_Breach",
+      "Art_Sensor_Fault_Exemption",
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_16",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Sealed_Track_Breach",
+      "Art_Dispatch_Order_Authorization",
+      "Art_Sensor_Fault_Exemption",
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_17",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Dispatch_Order_Authorization",
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Sensor_Fault_Exemption",
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_18",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Dispatch_Order_Authorization",
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_19",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Dispatch_Order_Authorization",
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Sealed_Track_Breach",
+      "Art_Unauthorized_Signal_Change",
+      "Art_Sensor_Fault_Exemption"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_20",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Sealed_Track_Breach",
+      "Art_Sensor_Fault_Exemption",
+      "Art_Route_Misdirection"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_21",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Dispatch_Order_Authorization",
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Sealed_Track_Breach",
+      "Art_Route_Misdirection"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_22",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Sealed_Track_Breach",
+      "Art_Sensor_Fault_Exemption",
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_23",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Sensor_Fault_Exemption",
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_24",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Dispatch_Order_Authorization",
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Sensor_Fault_Exemption",
+      "Art_Route_Misdirection"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_25",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Route_Misdirection",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_26",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Sealed_Track_Breach",
+      "Art_Dispatch_Order_Authorization",
+      "Art_Unauthorized_Signal_Change",
+      "Art_Sensor_Fault_Exemption"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_27",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Dispatch_Order_Authorization",
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Unauthorized_Signal_Change",
+      "Art_Sensor_Fault_Exemption"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_28",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Sealed_Track_Breach",
+      "Art_Dispatch_Order_Authorization",
+      "Art_Route_Misdirection"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_29",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Sealed_Track_Breach",
+      "Art_Dispatch_Order_Authorization",
+      "Art_Unauthorized_Signal_Change"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ssdr_case_30",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Collapse_Avoidance_Authorization",
+      "Art_Sensor_Fault_Exemption",
+      "Art_Route_Misdirection"
+    ],
+    "case_type": "liability_with_exception"
+  }
+]

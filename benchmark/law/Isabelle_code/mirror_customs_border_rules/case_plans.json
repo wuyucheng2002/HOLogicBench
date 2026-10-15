@@ -1,0 +1,316 @@
+[
+  {
+    "case_id": "mcbr_case_01",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "mcbr_case_02",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "mcbr_case_03",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Label_Inversion",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "mcbr_case_04",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Customs_Clearance_Authorization",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_05",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_06",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Returned_Cargo_Allowance",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_07",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Label_Inversion",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing",
+      "Art_Customs_Clearance_Authorization"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_08",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Label_Inversion",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing",
+      "Art_Mirror_Rescue_Transfer"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_09",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Label_Inversion",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing",
+      "Art_Returned_Cargo_Allowance"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_10",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Label_Inversion",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing",
+      "Art_Customs_Clearance_Authorization",
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Returned_Cargo_Allowance"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_11",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Label_Inversion"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "mcbr_case_12",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Label_Inversion",
+      "Art_Shadow_Cargo_Irregularity"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "mcbr_case_13",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Customs_Clearance_Authorization",
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Label_Inversion",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_14",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Label_Inversion",
+      "Art_Returned_Cargo_Allowance",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_15",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Customs_Clearance_Authorization",
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Returned_Cargo_Allowance",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_16",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Label_Inversion",
+      "Art_Customs_Clearance_Authorization",
+      "Art_Returned_Cargo_Allowance",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_17",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Customs_Clearance_Authorization",
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Label_Inversion",
+      "Art_Returned_Cargo_Allowance",
+      "Art_Shadow_Cargo_Irregularity"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_18",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Customs_Clearance_Authorization",
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_19",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Label_Inversion",
+      "Art_Returned_Cargo_Allowance",
+      "Art_Shadow_Cargo_Irregularity"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_20",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Customs_Clearance_Authorization",
+      "Art_Returned_Cargo_Allowance",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_21",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Returned_Cargo_Allowance",
+      "Art_Shadow_Cargo_Irregularity",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_22",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Customs_Clearance_Authorization",
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Returned_Cargo_Allowance",
+      "Art_Shadow_Cargo_Irregularity"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_23",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Label_Inversion",
+      "Art_Customs_Clearance_Authorization",
+      "Art_Returned_Cargo_Allowance",
+      "Art_Shadow_Cargo_Irregularity"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_24",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Label_Inversion",
+      "Art_Customs_Clearance_Authorization",
+      "Art_Shadow_Cargo_Irregularity"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_25",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Customs_Clearance_Authorization",
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Unregistered_Mirror_Crossing"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_26",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Customs_Clearance_Authorization",
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Label_Inversion"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_27",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Customs_Clearance_Authorization",
+      "Art_Unregistered_Mirror_Crossing",
+      "Art_Returned_Cargo_Allowance"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_28",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Label_Inversion",
+      "Art_Unregistered_Mirror_Crossing",
+      "Art_Returned_Cargo_Allowance"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_29",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Label_Inversion"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "mcbr_case_30",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Mirror_Rescue_Transfer",
+      "Art_Shadow_Cargo_Irregularity"
+    ],
+    "case_type": "liability_with_exception"
+  }
+]

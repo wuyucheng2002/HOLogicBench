@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "model_settings": 16,
+  "cases": 1379,
+  "model_case_pairs": 22064,
+  "table_rows": 102,
+  "law_proof_source_hashes_verified": true,
+  "neural_similarity_scores_recomputed": false,
+  "rule_recall_recomputed": true,
+  "checks": [
+    "case coverage",
+    "prediction/score agreement",
+    "finite metric ranges",
+    "reference counts",
+    "reference witness validity",
+    "rule recall maxima from recorded cited IDs",
+    "all table means",
+    "CSV agreement",
+    "proof source hashes"
+  ]
+}

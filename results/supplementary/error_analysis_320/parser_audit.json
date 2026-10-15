@@ -1,0 +1,240 @@
+{
+  "method": "Run existing compare_scalar_field read-only; interval equivalence reviewed by Astra, not automatically relabeled.",
+  "source": "law/scripts/run_llm_evaluation.py:370",
+  "cases": [
+    {
+      "sample_id": "S93",
+      "predicted": "imprisonment between 3 and 10 years",
+      "gold": "imprisonment_between_3_10_years",
+      "aliases": {
+        "No_Criminal_Liability": [
+          "No Criminal Liability",
+          "No_Criminal_Liability",
+          "no criminal liability"
+        ],
+        "imprisonment_between_3_10_years": [
+          "imprisonment between 3 10 years",
+          "imprisonment of between 3 and 10 years",
+          "imprisonment_between_3_10_years"
+        ],
+        "imprisonment_not_exceeding_3_years": [
+          "imprisonment not exceeding 3 years",
+          "imprisonment of not more than 3 years",
+          "imprisonment_not_exceeding_3_years"
+        ]
+      },
+      "compare_scalar_field_result": false
+    },
+    {
+      "sample_id": "S110",
+      "predicted": "Imprisonment of 7 to 15 years",
+      "gold": "imprisonment_between_7_15_years",
+      "aliases": {
+        "No_Criminal_Liability": [
+          "No Criminal Liability",
+          "No_Criminal_Liability",
+          "no criminal liability"
+        ],
+        "fine_or_short_detention": [
+          "a fine or short detention",
+          "fine or short detention",
+          "fine_or_short_detention"
+        ],
+        "imprisonment_between_3_7_years": [
+          "imprisonment between 3 7 years",
+          "imprisonment of between 3 and 7 years",
+          "imprisonment_between_3_7_years"
+        ],
+        "imprisonment_between_7_15_years": [
+          "imprisonment between 7 15 years",
+          "imprisonment of between 7 and 15 years",
+          "imprisonment_between_7_15_years"
+        ],
+        "imprisonment_not_exceeding_3_years": [
+          "imprisonment not exceeding 3 years",
+          "imprisonment of not more than 3 years",
+          "imprisonment_not_exceeding_3_years"
+        ]
+      },
+      "compare_scalar_field_result": false
+    },
+    {
+      "sample_id": "S111",
+      "predicted": "Imprisonment of 7 to 15 years",
+      "gold": "imprisonment_between_7_15_years",
+      "aliases": {
+        "No_Criminal_Liability": [
+          "No Criminal Liability",
+          "No_Criminal_Liability",
+          "no criminal liability"
+        ],
+        "fine_or_short_detention": [
+          "a fine or short detention",
+          "fine or short detention",
+          "fine_or_short_detention"
+        ],
+        "imprisonment_between_3_7_years": [
+          "imprisonment between 3 7 years",
+          "imprisonment of between 3 and 7 years",
+          "imprisonment_between_3_7_years"
+        ],
+        "imprisonment_between_7_15_years": [
+          "imprisonment between 7 15 years",
+          "imprisonment of between 7 and 15 years",
+          "imprisonment_between_7_15_years"
+        ],
+        "imprisonment_not_exceeding_3_years": [
+          "imprisonment not exceeding 3 years",
+          "imprisonment of not more than 3 years",
+          "imprisonment_not_exceeding_3_years"
+        ]
+      },
+      "compare_scalar_field_result": false
+    },
+    {
+      "sample_id": "S297",
+      "predicted": "imprisonment of 7 to 15 years",
+      "gold": "imprisonment_between_7_15_years",
+      "aliases": {
+        "No_Criminal_Liability": [
+          "No Criminal Liability",
+          "No_Criminal_Liability",
+          "no criminal liability"
+        ],
+        "fine_or_short_detention": [
+          "a fine or short detention",
+          "fine or short detention",
+          "fine_or_short_detention"
+        ],
+        "imprisonment_between_3_7_years": [
+          "imprisonment between 3 7 years",
+          "imprisonment of between 3 and 7 years",
+          "imprisonment_between_3_7_years"
+        ],
+        "imprisonment_between_7_15_years": [
+          "imprisonment between 7 15 years",
+          "imprisonment of between 7 and 15 years",
+          "imprisonment_between_7_15_years"
+        ],
+        "imprisonment_not_exceeding_3_years": [
+          "imprisonment not exceeding 3 years",
+          "imprisonment of not more than 3 years",
+          "imprisonment_not_exceeding_3_years"
+        ]
+      },
+      "compare_scalar_field_result": false
+    },
+    {
+      "sample_id": "S298",
+      "predicted": "imprisonment of 7 to 15 years",
+      "gold": "imprisonment_between_7_15_years",
+      "aliases": {
+        "No_Criminal_Liability": [
+          "No Criminal Liability",
+          "No_Criminal_Liability",
+          "no criminal liability"
+        ],
+        "fine_or_short_detention": [
+          "a fine or short detention",
+          "fine or short detention",
+          "fine_or_short_detention"
+        ],
+        "imprisonment_between_3_7_years": [
+          "imprisonment between 3 7 years",
+          "imprisonment of between 3 and 7 years",
+          "imprisonment_between_3_7_years"
+        ],
+        "imprisonment_between_7_15_years": [
+          "imprisonment between 7 15 years",
+          "imprisonment of between 7 and 15 years",
+          "imprisonment_between_7_15_years"
+        ],
+        "imprisonment_not_exceeding_3_years": [
+          "imprisonment not exceeding 3 years",
+          "imprisonment of not more than 3 years",
+          "imprisonment_not_exceeding_3_years"
+        ]
+      },
+      "compare_scalar_field_result": false
+    },
+    {
+      "sample_id": "S299",
+      "predicted": "Aggravated theft; imprisonment between 3 and 10 years",
+      "gold": "imprisonment_between_3_10_years",
+      "aliases": {
+        "No_Criminal_Liability": [
+          "No Criminal Liability",
+          "No_Criminal_Liability",
+          "no criminal liability"
+        ],
+        "imprisonment_between_3_10_years": [
+          "imprisonment between 3 10 years",
+          "imprisonment of between 3 and 10 years",
+          "imprisonment_between_3_10_years"
+        ],
+        "imprisonment_not_exceeding_3_years": [
+          "imprisonment not exceeding 3 years",
+          "imprisonment of not more than 3 years",
+          "imprisonment_not_exceeding_3_years"
+        ]
+      },
+      "compare_scalar_field_result": false
+    },
+    {
+      "sample_id": "S309",
+      "predicted": "Imprisonment of not less than 3 years and not more than 10 years under the aggravated theft article (which prevails over the basic theft article; the consent and necessity defenses do not apply).",
+      "gold": "imprisonment_between_3_10_years",
+      "aliases": {
+        "No_Criminal_Liability": [
+          "No Criminal Liability",
+          "No_Criminal_Liability",
+          "no criminal liability"
+        ],
+        "imprisonment_between_3_10_years": [
+          "imprisonment between 3 10 years",
+          "imprisonment of between 3 and 10 years",
+          "imprisonment_between_3_10_years"
+        ],
+        "imprisonment_not_exceeding_3_years": [
+          "imprisonment not exceeding 3 years",
+          "imprisonment of not more than 3 years",
+          "imprisonment_not_exceeding_3_years"
+        ]
+      },
+      "compare_scalar_field_result": false
+    },
+    {
+      "sample_id": "S317",
+      "predicted": "Casey is liable under the system disruption article for unauthorized service interference, with the prescribed consequence of imprisonment between 3 and 7 years (the system disruption article prevails over the data theft article; no authorization exception applies).",
+      "gold": "imprisonment_between_3_7_years",
+      "aliases": {
+        "No_Criminal_Liability": [
+          "No Criminal Liability",
+          "No_Criminal_Liability",
+          "no criminal liability"
+        ],
+        "fine_or_short_detention": [
+          "a fine or short detention",
+          "fine or short detention",
+          "fine_or_short_detention"
+        ],
+        "imprisonment_between_3_7_years": [
+          "imprisonment between 3 7 years",
+          "imprisonment of between 3 and 7 years",
+          "imprisonment_between_3_7_years"
+        ],
+        "imprisonment_between_7_15_years": [
+          "imprisonment between 7 15 years",
+          "imprisonment of between 7 and 15 years",
+          "imprisonment_between_7_15_years"
+        ],
+        "imprisonment_not_exceeding_3_years": [
+          "imprisonment not exceeding 3 years",
+          "imprisonment of not more than 3 years",
+          "imprisonment_not_exceeding_3_years"
+        ]
+      },
+      "compare_scalar_field_result": false
+    }
+  ]
+}

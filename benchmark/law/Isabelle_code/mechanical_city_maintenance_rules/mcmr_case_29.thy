@@ -1,0 +1,128 @@
+theory mcmr_case_29
+  imports Conflict
+begin
+
+consts
+  actor :: person
+
+axiomatization where
+  f1: "opens_gear_well_cover actor"
+and f2: "loosens_brass_regulator actor"
+and f3: "releases_uncalibrated_automaton actor"
+and f4: "runner_enters_public_square actor"
+and f5: "public_clock_stops actor"
+and f6: "wears_maintenance_badge actor"
+and f7: "receives_municipal_order actor"
+and f8: "supervisor_seals_work_ticket actor"
+and f9: "\<not> opens_service_hatch actor"
+and f10: "\<not> pulls_copper_speed_pin actor"
+and f11: "\<not> releases_clockwork_runner actor"
+and f12: "\<not> automaton_crosses_public_line actor"
+and f13: "\<not> reset_alarm_sounds actor"
+and f14: "\<not> turns_clocktower_reset_wheel actor"
+and f15: "\<not> reports_reset_to_clock_desk actor"
+and f16: "\<not> fault_flag_raised_before_contact actor"
+and f17: "\<not> calibration_panel_records_fault actor"
+
+lemma derive_restricted_mechanical_access: "restricted_mechanical_access actor"
+  using f1 f2
+  unfolding restricted_mechanical_access_def
+  by simp
+lemma derive_unsafe_automaton_release: "unsafe_automaton_release actor"
+  using f3 f4
+  unfolding unsafe_automaton_release_def
+  by simp
+lemma derive_clock_disruption: "clock_disruption actor"
+  using f5 derive_restricted_mechanical_access
+  unfolding clock_disruption_def
+  by simp
+lemma derive_maintenance_authority: "maintenance_authority actor"
+  using f6 f7 f8
+  unfolding maintenance_authority_def
+  by simp
+lemma derive_unsafe_automaton_release_basis: "unsafe_automaton_release_basis actor"
+  using derive_restricted_mechanical_access derive_unsafe_automaton_release
+  unfolding unsafe_automaton_release_basis_def
+  by simp
+lemma derive_public_clock_disruption_basis: "public_clock_disruption_basis actor"
+  using derive_clock_disruption derive_restricted_mechanical_access
+  unfolding public_clock_disruption_basis_def
+  by simp
+lemma derive_maintenance_order_authorization_basis: "maintenance_order_authorization_basis actor"
+  using derive_maintenance_authority derive_restricted_mechanical_access
+  unfolding maintenance_order_authorization_basis_def
+  by simp
+lemma trigger_art_unsafe_automaton_release: "article_triggered Art_Unsafe_Automaton_Release actor"
+  using derive_unsafe_automaton_release_basis
+  by simp
+lemma trigger_art_public_clock_disruption: "article_triggered Art_Public_Clock_Disruption actor"
+  using derive_public_clock_disruption_basis
+  by simp
+lemma trigger_art_maintenance_order_authorization: "article_triggered Art_Maintenance_Order_Authorization actor"
+  using derive_maintenance_order_authorization_basis
+  by simp
+
+lemma overrides_art_public_clock_disruption_art_unsafe_automaton_release: "overrides Art_Public_Clock_Disruption Art_Unsafe_Automaton_Release"
+  unfolding overrides_def
+  by simp
+lemma overrides_art_maintenance_order_authorization_art_unsafe_automaton_release: "overrides Art_Maintenance_Order_Authorization Art_Unsafe_Automaton_Release"
+  unfolding overrides_def
+  by simp
+
+lemma not_trigger_art_emergency_reset_authorization: "\<not> article_triggered Art_Emergency_Reset_Authorization actor"
+  using f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 f13 f14 f15 f16 f17
+  unfolding article_triggered.simps emergency_reset_authorization_basis_def emergency_reset_action_def clock_disruption_def restricted_mechanical_access_def
+  by simp
+lemma not_trigger_art_calibration_fault_exemption: "\<not> article_triggered Art_Calibration_Fault_Exemption actor"
+  using f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 f13 f14 f15 f16 f17
+  unfolding article_triggered.simps calibration_fault_exemption_basis_def calibration_fault_condition_def clock_disruption_def restricted_mechanical_access_def
+  by simp
+
+lemma not_defeated_art_public_clock_disruption: "\<not> defeated actor Art_Public_Clock_Disruption"
+proof
+  assume defeated_assm: "defeated actor Art_Public_Clock_Disruption"
+  then obtain higher where
+    higher_triggered: "article_triggered higher actor"
+    and higher_overrides: "overrides higher Art_Public_Clock_Disruption"
+    unfolding defeated_def by blast
+  then show False
+    using not_trigger_art_emergency_reset_authorization not_trigger_art_calibration_fault_exemption
+    unfolding overrides_def
+    by (cases higher) auto
+qed
+lemma applicable_art_public_clock_disruption: "applicable actor Art_Public_Clock_Disruption"
+  using trigger_art_public_clock_disruption not_defeated_art_public_clock_disruption
+  unfolding applicable_def
+  by blast
+lemma not_defeated_art_maintenance_order_authorization: "\<not> defeated actor Art_Maintenance_Order_Authorization"
+  using trigger_art_maintenance_order_authorization
+  unfolding defeated_def overrides_def
+  by (auto split: article.splits)
+lemma applicable_art_maintenance_order_authorization: "applicable actor Art_Maintenance_Order_Authorization"
+  using trigger_art_maintenance_order_authorization not_defeated_art_maintenance_order_authorization
+  unfolding applicable_def
+  by blast
+lemma defeated_art_unsafe_automaton_release: "defeated actor Art_Unsafe_Automaton_Release"
+  using trigger_art_unsafe_automaton_release trigger_art_public_clock_disruption overrides_art_public_clock_disruption_art_unsafe_automaton_release
+  unfolding defeated_def
+  by blast
+lemma not_applicable_art_unsafe_automaton_release: "\<not> applicable actor Art_Unsafe_Automaton_Release"
+  using trigger_art_unsafe_automaton_release defeated_art_unsafe_automaton_release
+  unfolding applicable_def
+  by blast
+
+lemma not_applicable_art_emergency_reset_authorization: "\<not> applicable actor Art_Emergency_Reset_Authorization"
+  using not_trigger_art_emergency_reset_authorization
+  unfolding applicable_def
+  by blast
+lemma not_applicable_art_calibration_fault_exemption: "\<not> applicable actor Art_Calibration_Fault_Exemption"
+  using not_trigger_art_calibration_fault_exemption
+  unfolding applicable_def
+  by blast
+
+theorem final_result_no_liability: "final_no_liability actor"
+  using applicable_art_maintenance_order_authorization
+  unfolding final_no_liability_def
+  by auto
+
+end

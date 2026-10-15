@@ -1,0 +1,822 @@
+{
+  "analyst": "GPT-6 Astra",
+  "n": 320,
+  "original_wrong": 240,
+  "original_correct": 80,
+  "types": {
+    "PR": {
+      "n": 64,
+      "benchmark_wrong": 48,
+      "benchmark_correct": 16,
+      "wrong_primary_status_counts": {
+        "confirmed_model_error": 12,
+        "ambiguous_spec": 27,
+        "evaluation_issue": 9
+      },
+      "correct_primary_status_counts": {
+        "no_substantive_error_observed": 14,
+        "confirmed_model_error": 2
+      },
+      "any_confirmed_error": 19,
+      "wrong_any_confirmed_error": 17,
+      "correct_any_confirmed_error": 2,
+      "correct_error_samples": [
+        "S92",
+        "S103"
+      ],
+      "confirmed_mechanism_counts": {
+        "explicit_exception_ignored": 5,
+        "unsupported_priority": 4,
+        "contract_priority_ignored": 3,
+        "conclusion_contradicts_checks": 3,
+        "unsupported_severity_priority": 2,
+        "applicable_exception_omitted": 1,
+        "unsupported_fact": 1,
+        "unsupported_semantic_premise": 1
+      },
+      "confirmed_family_counts": {
+        "例外与优先级执行": 14,
+        "推导与最终输出不一致": 3,
+        "事实读取与无依据前提": 2
+      },
+      "wrong_primary_mechanism_counts": {
+        "local_vs_global_exemption": 18,
+        "defeated_rule_reinstatement": 6,
+        "nonunique_formal_conclusion": 6,
+        "explicit_exception_ignored": 5,
+        "contract_priority_ignored": 3,
+        "conclusion_contradicts_checks": 3,
+        "answer_normalization_failure": 3,
+        "applicable_exception_omitted": 1,
+        "prompt_formal_coverage_gap": 1,
+        "extra_relational_premise": 1,
+        "unexplained_exception_condition_failure": 1
+      },
+      "sample_metric_audit": {
+        "bertscore_f1": {
+          "macro_auc": 0.7354166666666666,
+          "evaluable_model_cells": 4,
+          "high_score_count": 9,
+          "high_score_confirmed_errors": [
+            "S94",
+            "S103"
+          ],
+          "low_score_count": 24,
+          "low_score_no_error_observed": [
+            "S116",
+            "S126"
+          ]
+        },
+        "roscoe_sa_prec": {
+          "macro_auc": 0.7291666666666666,
+          "evaluable_model_cells": 4,
+          "high_score_count": 9,
+          "high_score_confirmed_errors": [],
+          "low_score_count": 24,
+          "low_score_no_error_observed": [
+            "S91",
+            "S114",
+            "S116",
+            "S126"
+          ]
+        }
+      },
+      "audit_auc_cells": [
+        {
+          "model": "Qwen3-30B-Instruct",
+          "n_no_error_observed": 3,
+          "n_confirmed_error": 7,
+          "auc": {
+            "bertscore_f1": 1.0,
+            "roscoe_sa_prec": 0.6666666666666666
+          }
+        },
+        {
+          "model": "Qwen3-30B-Thinking",
+          "n_no_error_observed": 3,
+          "n_confirmed_error": 5,
+          "auc": {
+            "bertscore_f1": 0.4,
+            "roscoe_sa_prec": 1.0
+          }
+        },
+        {
+          "model": "GPT-5.4-Mini",
+          "n_no_error_observed": 4,
+          "n_confirmed_error": 6,
+          "auc": {
+            "bertscore_f1": 0.7916666666666666,
+            "roscoe_sa_prec": 0.5
+          }
+        },
+        {
+          "model": "GLM-5.3-Flash",
+          "n_no_error_observed": 4,
+          "n_confirmed_error": 1,
+          "auc": {
+            "bertscore_f1": 0.75,
+            "roscoe_sa_prec": 0.75
+          }
+        }
+      ],
+      "population_original_label_metrics": {
+        "accuracy": 0.8087686567164178,
+        "bertscore_f1": 0.6672435362125457,
+        "roscoe_sa_prec": 0.6543330964097336
+      }
+    },
+    "PT": {
+      "n": 64,
+      "benchmark_wrong": 48,
+      "benchmark_correct": 16,
+      "wrong_primary_status_counts": {
+        "confirmed_model_error": 21,
+        "ambiguous_spec": 27
+      },
+      "correct_primary_status_counts": {
+        "no_substantive_error_observed": 13,
+        "confirmed_model_error": 2,
+        "ambiguous_spec": 1
+      },
+      "any_confirmed_error": 26,
+      "wrong_any_confirmed_error": 24,
+      "correct_any_confirmed_error": 2,
+      "correct_error_samples": [
+        "S139",
+        "S140"
+      ],
+      "confirmed_mechanism_counts": {
+        "output_field_inconsistency": 4,
+        "missing_quota_component_deduction": 4,
+        "unsupported_fact": 4,
+        "quota_transformation_omitted": 3,
+        "quota_comparison_error": 3,
+        "object_merge": 2,
+        "arithmetic_error": 2,
+        "closed_world_violation": 2,
+        "unsupported_location_assumption": 1,
+        "explicit_exception_ignored": 1,
+        "linked_policy_omitted": 1,
+        "object_oversplit": 1,
+        "condition_polarity_reversal": 1,
+        "lodging_category_misread": 1,
+        "conjunctive_condition_dropped": 1,
+        "wrong_guest_level_threshold": 1,
+        "check_result_polarity_error": 1,
+        "unsupported_severity_priority": 1,
+        "quota_as_actual_amount": 1,
+        "explicit_fact_misread": 1,
+        "unsupported_priority": 1,
+        "duration_cap_not_applied": 1,
+        "defense_erases_trigger_facts": 1,
+        "discount_actual_instead_of_cap": 1,
+        "unnecessary_information_requirement": 1,
+        "input_ignored": 1
+      },
+      "confirmed_family_counts": {
+        "额度／条件变换": 11,
+        "事实读取与无依据前提": 9,
+        "推导与最终输出不一致": 4,
+        "例外与优先级执行": 4,
+        "对象拆分与资料归属": 3,
+        "适用条件与政策分支": 3,
+        "数值计算与聚合": 2
+      },
+      "wrong_primary_mechanism_counts": {
+        "local_vs_global_exemption": 15,
+        "output_field_inconsistency": 3,
+        "missing_quota_component_deduction": 3,
+        "object_merge": 2,
+        "extra_relational_premise": 2,
+        "domestic_foreign_reception_scope": 2,
+        "hard_gate_vs_item_exclusion": 2,
+        "defeated_rule_reinstatement": 2,
+        "prompt_formal_coverage_gap": 2,
+        "explicit_exception_ignored": 1,
+        "linked_policy_omitted": 1,
+        "quota_transformation_omitted": 1,
+        "condition_polarity_reversal": 1,
+        "conjunctive_condition_dropped": 1,
+        "explicit_fact_misread": 1,
+        "duration_cap_not_applied": 1,
+        "general_docs_formal_coverage_gap": 1,
+        "defense_erases_trigger_facts": 1,
+        "discount_actual_instead_of_cap": 1,
+        "quota_comparison_error": 1,
+        "unnecessary_information_requirement": 1,
+        "closed_world_violation": 1,
+        "input_formal_alignment_gap": 1,
+        "input_ignored": 1
+      },
+      "sample_metric_audit": {
+        "bertscore_f1": {
+          "macro_auc": 0.8666666666666667,
+          "evaluable_model_cells": 4,
+          "high_score_count": 7,
+          "high_score_confirmed_errors": [],
+          "low_score_count": 25,
+          "low_score_no_error_observed": [
+            "S32",
+            "S152"
+          ]
+        },
+        "roscoe_sa_prec": {
+          "macro_auc": 0.6514880952380953,
+          "evaluable_model_cells": 4,
+          "high_score_count": 13,
+          "high_score_confirmed_errors": [
+            "S17",
+            "S140",
+            "S153",
+            "S156",
+            "S169"
+          ],
+          "low_score_count": 11,
+          "low_score_no_error_observed": [
+            "S174",
+            "S176"
+          ]
+        }
+      },
+      "audit_auc_cells": [
+        {
+          "model": "Qwen3-30B-Instruct",
+          "n_no_error_observed": 2,
+          "n_confirmed_error": 12,
+          "auc": {
+            "bertscore_f1": 0.9166666666666666,
+            "roscoe_sa_prec": 0.9166666666666666
+          }
+        },
+        {
+          "model": "Qwen3-30B-Thinking",
+          "n_no_error_observed": 4,
+          "n_confirmed_error": 5,
+          "auc": {
+            "bertscore_f1": 0.8,
+            "roscoe_sa_prec": 0.85
+          }
+        },
+        {
+          "model": "GPT-5.4-Mini",
+          "n_no_error_observed": 3,
+          "n_confirmed_error": 7,
+          "auc": {
+            "bertscore_f1": 1.0,
+            "roscoe_sa_prec": 0.7142857142857143
+          }
+        },
+        {
+          "model": "GLM-5.3-Flash",
+          "n_no_error_observed": 4,
+          "n_confirmed_error": 2,
+          "auc": {
+            "bertscore_f1": 0.75,
+            "roscoe_sa_prec": 0.125
+          }
+        }
+      ],
+      "population_original_label_metrics": {
+        "accuracy": 0.7094339622641509,
+        "bertscore_f1": 0.7112095738940972,
+        "roscoe_sa_prec": 0.5440953457800416
+      }
+    },
+    "PC": {
+      "n": 64,
+      "benchmark_wrong": 48,
+      "benchmark_correct": 16,
+      "wrong_primary_status_counts": {
+        "confirmed_model_error": 31,
+        "ambiguous_spec": 16,
+        "evaluation_issue": 1
+      },
+      "correct_primary_status_counts": {
+        "confirmed_model_error": 2,
+        "no_substantive_error_observed": 14
+      },
+      "any_confirmed_error": 36,
+      "wrong_any_confirmed_error": 34,
+      "correct_any_confirmed_error": 2,
+      "correct_error_samples": [
+        "S36",
+        "S187"
+      ],
+      "confirmed_mechanism_counts": {
+        "spurious_applicability": 7,
+        "object_merge": 6,
+        "applicable_requirement_omitted": 6,
+        "unsupported_numeric_inference": 5,
+        "unsupported_approval": 4,
+        "wrong_policy_branch": 4,
+        "numeric_aggregation_error": 3,
+        "object_fact_binding": 3,
+        "fact_polarity_reversal": 2,
+        "quota_transformation_omitted": 2,
+        "hard_gate_downgraded": 2,
+        "numeric_comparison_error": 1,
+        "applicable_condition_missed": 1,
+        "unsupported_exception": 1,
+        "quota_check_omitted": 1,
+        "object_omission_and_merge": 1,
+        "conclusion_contradicts_checks": 1,
+        "quota_limit_ignored": 1,
+        "output_field_inconsistency": 1
+      },
+      "confirmed_family_counts": {
+        "适用条件与政策分支": 16,
+        "事实读取与无依据前提": 11,
+        "对象拆分与资料归属": 10,
+        "额度／条件变换": 5,
+        "数值计算与聚合": 3,
+        "整单与局部结论聚合": 2,
+        "推导与最终输出不一致": 2,
+        "例外与优先级执行": 1
+      },
+      "wrong_primary_mechanism_counts": {
+        "decision_aggregation_disagreement": 7,
+        "input_formal_alignment_gap": 7,
+        "applicable_requirement_omitted": 6,
+        "object_merge": 5,
+        "spurious_applicability": 4,
+        "object_fact_binding": 3,
+        "fact_polarity_reversal": 2,
+        "prompt_formal_coverage_gap": 2,
+        "hard_gate_downgraded": 2,
+        "unsupported_numeric_inference": 2,
+        "unsupported_approval": 1,
+        "numeric_aggregation_error": 1,
+        "gold_reference_mismatch": 1,
+        "object_omission_and_merge": 1,
+        "quota_transformation_omitted": 1,
+        "quota_limit_ignored": 1,
+        "wrong_policy_branch": 1,
+        "output_field_inconsistency": 1
+      },
+      "sample_metric_audit": {
+        "bertscore_f1": {
+          "macro_auc": 0.32832532051282054,
+          "evaluable_model_cells": 4,
+          "high_score_count": 22,
+          "high_score_confirmed_errors": [
+            "S35",
+            "S36",
+            "S177",
+            "S181",
+            "S183",
+            "S184",
+            "S185",
+            "S189",
+            "S195",
+            "S196",
+            "S197",
+            "S201",
+            "S205",
+            "S208",
+            "S217"
+          ],
+          "low_score_count": 16,
+          "low_score_no_error_observed": [
+            "S186",
+            "S199",
+            "S212",
+            "S222"
+          ]
+        },
+        "roscoe_sa_prec": {
+          "macro_auc": 0.571113782051282,
+          "evaluable_model_cells": 4,
+          "high_score_count": 17,
+          "high_score_confirmed_errors": [
+            "S39",
+            "S41",
+            "S42",
+            "S187",
+            "S209",
+            "S220"
+          ],
+          "low_score_count": 16,
+          "low_score_no_error_observed": [
+            "S44",
+            "S48",
+            "S188",
+            "S211"
+          ]
+        }
+      },
+      "audit_auc_cells": [
+        {
+          "model": "Qwen3-30B-Instruct",
+          "n_no_error_observed": 2,
+          "n_confirmed_error": 13,
+          "auc": {
+            "bertscore_f1": 0.11538461538461539,
+            "roscoe_sa_prec": 0.46153846153846156
+          }
+        },
+        {
+          "model": "Qwen3-30B-Thinking",
+          "n_no_error_observed": 4,
+          "n_confirmed_error": 8,
+          "auc": {
+            "bertscore_f1": 0.34375,
+            "roscoe_sa_prec": 0.90625
+          }
+        },
+        {
+          "model": "GPT-5.4-Mini",
+          "n_no_error_observed": 4,
+          "n_confirmed_error": 12,
+          "auc": {
+            "bertscore_f1": 0.4375,
+            "roscoe_sa_prec": 0.4166666666666667
+          }
+        },
+        {
+          "model": "GLM-5.3-Flash",
+          "n_no_error_observed": 4,
+          "n_confirmed_error": 3,
+          "auc": {
+            "bertscore_f1": 0.4166666666666667,
+            "roscoe_sa_prec": 0.5
+          }
+        }
+      ],
+      "population_original_label_metrics": {
+        "accuracy": 0.4482758620689655,
+        "bertscore_f1": 0.45012450857223235,
+        "roscoe_sa_prec": 0.5772617040201304
+      }
+    },
+    "PS": {
+      "n": 64,
+      "benchmark_wrong": 48,
+      "benchmark_correct": 16,
+      "wrong_primary_status_counts": {
+        "confirmed_model_error": 34,
+        "ambiguous_spec": 13,
+        "evaluation_issue": 1
+      },
+      "correct_primary_status_counts": {
+        "no_substantive_error_observed": 9,
+        "confirmed_model_error": 6,
+        "ambiguous_spec": 1
+      },
+      "any_confirmed_error": 44,
+      "wrong_any_confirmed_error": 38,
+      "correct_any_confirmed_error": 6,
+      "correct_error_samples": [
+        "S60",
+        "S234",
+        "S235",
+        "S248",
+        "S258",
+        "S259"
+      ],
+      "confirmed_mechanism_counts": {
+        "spurious_applicability": 11,
+        "wrong_policy_branch": 5,
+        "numeric_aggregation_error": 5,
+        "object_fact_binding": 5,
+        "output_field_inconsistency": 4,
+        "unsupported_numeric_inference": 3,
+        "fact_polarity_reversal": 3,
+        "applicable_requirement_omitted": 3,
+        "quota_transformation_omitted": 3,
+        "unsupported_fact": 2,
+        "unsupported_exception": 2,
+        "numeric_comparison_error": 2,
+        "conclusion_contradicts_checks": 2,
+        "applicable_condition_missed": 2,
+        "wrong_linked_policy": 1,
+        "unknown_state_collapsed": 1,
+        "object_omission_and_merge": 1,
+        "object_merge": 1,
+        "numeric_component_omitted": 1,
+        "hard_gate_downgraded": 1,
+        "policy_check_replaced_by_input_flag": 1,
+        "unsupported_approval": 1,
+        "quota_limit_ignored": 1,
+        "condition_polarity_reversal": 1,
+        "quota_vs_claim_confusion": 1,
+        "unsupported_document_requirement": 1
+      },
+      "confirmed_family_counts": {
+        "适用条件与政策分支": 23,
+        "事实读取与无依据前提": 9,
+        "额度／条件变换": 7,
+        "推导与最终输出不一致": 6,
+        "数值计算与聚合": 6,
+        "对象拆分与资料归属": 6,
+        "例外与优先级执行": 2,
+        "整单与局部结论聚合": 1
+      },
+      "wrong_primary_mechanism_counts": {
+        "spurious_applicability": 7,
+        "decision_aggregation_disagreement": 5,
+        "output_field_inconsistency": 4,
+        "wrong_policy_branch": 3,
+        "applicable_requirement_omitted": 3,
+        "quota_transformation_omitted": 3,
+        "role_mapping_disagreement": 3,
+        "hard_gate_downgraded": 2,
+        "input_formal_alignment_gap": 2,
+        "applicable_condition_missed": 2,
+        "unsupported_numeric_inference": 1,
+        "object_omission_and_merge": 1,
+        "object_merge": 1,
+        "policy_check_replaced_by_input_flag": 1,
+        "fact_polarity_reversal": 1,
+        "unsupported_approval": 1,
+        "quota_limit_ignored": 1,
+        "numeric_aggregation_error": 1,
+        "unsupported_document_requirement": 1,
+        "unsupported_exception": 1,
+        "object_fact_binding": 1,
+        "numeric_comparison_error": 1,
+        "prompt_formal_coverage_gap": 1,
+        "gold_reference_mismatch": 1
+      },
+      "sample_metric_audit": {
+        "bertscore_f1": {
+          "macro_auc": 0.5355061605061605,
+          "evaluable_model_cells": 4,
+          "high_score_count": 17,
+          "high_score_confirmed_errors": [
+            "S50",
+            "S51",
+            "S60",
+            "S62",
+            "S225",
+            "S228",
+            "S231",
+            "S234",
+            "S237",
+            "S243",
+            "S249",
+            "S251",
+            "S258",
+            "S259"
+          ],
+          "low_score_count": 19,
+          "low_score_no_error_observed": [
+            "S52",
+            "S246"
+          ]
+        },
+        "roscoe_sa_prec": {
+          "macro_auc": 0.5293317793317793,
+          "evaluable_model_cells": 4,
+          "high_score_count": 17,
+          "high_score_confirmed_errors": [
+            "S54",
+            "S57",
+            "S226",
+            "S227",
+            "S239",
+            "S242",
+            "S243",
+            "S244",
+            "S248",
+            "S261",
+            "S264"
+          ],
+          "low_score_count": 19,
+          "low_score_no_error_observed": [
+            "S64",
+            "S270"
+          ]
+        }
+      },
+      "audit_auc_cells": [
+        {
+          "model": "Qwen3-30B-Instruct",
+          "n_no_error_observed": 2,
+          "n_confirmed_error": 13,
+          "auc": {
+            "bertscore_f1": 0.23076923076923078,
+            "roscoe_sa_prec": 0.5769230769230769
+          }
+        },
+        {
+          "model": "Qwen3-30B-Thinking",
+          "n_no_error_observed": 3,
+          "n_confirmed_error": 11,
+          "auc": {
+            "bertscore_f1": 0.36363636363636365,
+            "roscoe_sa_prec": 0.48484848484848486
+          }
+        },
+        {
+          "model": "GPT-5.4-Mini",
+          "n_no_error_observed": 1,
+          "n_confirmed_error": 14,
+          "auc": {
+            "bertscore_f1": 0.7142857142857143,
+            "roscoe_sa_prec": 1.0
+          }
+        },
+        {
+          "model": "GLM-5.3-Flash",
+          "n_no_error_observed": 3,
+          "n_confirmed_error": 6,
+          "auc": {
+            "bertscore_f1": 0.8333333333333334,
+            "roscoe_sa_prec": 0.05555555555555555
+          }
+        }
+      ],
+      "population_original_label_metrics": {
+        "accuracy": 0.4401302605210421,
+        "bertscore_f1": 0.43169929184721867,
+        "roscoe_sa_prec": 0.5800709623873985
+      }
+    },
+    "PQ": {
+      "n": 64,
+      "benchmark_wrong": 48,
+      "benchmark_correct": 16,
+      "wrong_primary_status_counts": {
+        "ambiguous_spec": 25,
+        "evaluation_issue": 18,
+        "confirmed_model_error": 5
+      },
+      "correct_primary_status_counts": {
+        "no_substantive_error_observed": 16
+      },
+      "any_confirmed_error": 15,
+      "wrong_any_confirmed_error": 15,
+      "correct_any_confirmed_error": 0,
+      "correct_error_samples": [],
+      "confirmed_mechanism_counts": {
+        "unsupported_severity_priority": 7,
+        "unsupported_priority": 5,
+        "explicit_exception_ignored": 4,
+        "conclusion_contradicts_checks": 3
+      },
+      "confirmed_family_counts": {
+        "例外与优先级执行": 14,
+        "推导与最终输出不一致": 3
+      },
+      "wrong_primary_mechanism_counts": {
+        "local_vs_global_exemption": 17,
+        "nonunique_formal_conclusion": 13,
+        "defeated_rule_reinstatement": 7,
+        "answer_normalization_false_negative": 5,
+        "explicit_exception_ignored": 4,
+        "conclusion_contradicts_checks": 1,
+        "extra_relational_premise": 1
+      },
+      "sample_metric_audit": {
+        "bertscore_f1": {
+          "macro_auc": 0.63125,
+          "evaluable_model_cells": 4,
+          "high_score_count": 15,
+          "high_score_confirmed_errors": [
+            "S278",
+            "S304"
+          ],
+          "low_score_count": 19,
+          "low_score_no_error_observed": [
+            "S283"
+          ]
+        },
+        "roscoe_sa_prec": {
+          "macro_auc": 0.6166666666666667,
+          "evaluable_model_cells": 4,
+          "high_score_count": 11,
+          "high_score_confirmed_errors": [
+            "S304"
+          ],
+          "low_score_count": 15,
+          "low_score_no_error_observed": [
+            "S80"
+          ]
+        }
+      },
+      "audit_auc_cells": [
+        {
+          "model": "Qwen3-30B-Instruct",
+          "n_no_error_observed": 4,
+          "n_confirmed_error": 6,
+          "auc": {
+            "bertscore_f1": 0.5416666666666666,
+            "roscoe_sa_prec": 0.8333333333333334
+          }
+        },
+        {
+          "model": "Qwen3-30B-Thinking",
+          "n_no_error_observed": 4,
+          "n_confirmed_error": 5,
+          "auc": {
+            "bertscore_f1": 0.65,
+            "roscoe_sa_prec": 0.55
+          }
+        },
+        {
+          "model": "GPT-5.4-Mini",
+          "n_no_error_observed": 4,
+          "n_confirmed_error": 3,
+          "auc": {
+            "bertscore_f1": 0.8333333333333334,
+            "roscoe_sa_prec": 0.5833333333333334
+          }
+        },
+        {
+          "model": "GLM-5.3-Flash",
+          "n_no_error_observed": 4,
+          "n_confirmed_error": 1,
+          "auc": {
+            "bertscore_f1": 0.5,
+            "roscoe_sa_prec": 0.5
+          }
+        }
+      ],
+      "population_original_label_metrics": {
+        "accuracy": 0.8258333333333333,
+        "bertscore_f1": 0.6528898465123755,
+        "roscoe_sa_prec": 0.6736026334486436
+      }
+    }
+  },
+  "primary_status_counts": {
+    "confirmed_model_error": 115,
+    "ambiguous_spec": 110,
+    "no_substantive_error_observed": 66,
+    "evaluation_issue": 29
+  },
+  "any_confirmed_error": 140,
+  "wrong_any_confirmed_error": 128,
+  "correct_any_confirmed_error": 12,
+  "reporting_taxonomy": {
+    "事实读取与无依据前提": [
+      "unsupported_fact",
+      "fact_polarity_reversal",
+      "explicit_fact_misread",
+      "check_result_polarity_error",
+      "input_ignored",
+      "closed_world_violation",
+      "unsupported_numeric_inference",
+      "unsupported_approval",
+      "unnecessary_information_requirement",
+      "unsupported_semantic_premise",
+      "unknown_state_collapsed",
+      "unsupported_location_assumption"
+    ],
+    "适用条件与政策分支": [
+      "spurious_applicability",
+      "wrong_policy_branch",
+      "condition_polarity_reversal",
+      "applicable_condition_missed",
+      "applicable_requirement_omitted",
+      "conjunctive_condition_dropped",
+      "policy_check_replaced_by_input_flag",
+      "lodging_category_misread",
+      "wrong_guest_level_threshold",
+      "wrong_linked_policy",
+      "unsupported_document_requirement"
+    ],
+    "例外与优先级执行": [
+      "explicit_exception_ignored",
+      "applicable_exception_omitted",
+      "contract_priority_ignored",
+      "unsupported_priority",
+      "unsupported_severity_priority",
+      "defense_erases_trigger_facts",
+      "unsupported_exception"
+    ],
+    "对象拆分与资料归属": [
+      "object_merge",
+      "object_omission_and_merge",
+      "object_omission",
+      "object_oversplit",
+      "object_fact_binding"
+    ],
+    "额度／条件变换": [
+      "quota_transformation_omitted",
+      "linked_policy_omitted",
+      "missing_quota_component_deduction",
+      "duration_cap_not_applied",
+      "discount_actual_instead_of_cap",
+      "quota_limit_ignored",
+      "quota_as_actual_amount",
+      "quota_comparison_error",
+      "numeric_comparison_error",
+      "quota_check_omitted",
+      "quota_vs_claim_confusion"
+    ],
+    "数值计算与聚合": [
+      "arithmetic_error",
+      "numeric_aggregation_error",
+      "numeric_component_omitted"
+    ],
+    "推导与最终输出不一致": [
+      "output_field_inconsistency",
+      "conclusion_contradicts_checks"
+    ],
+    "整单与局部结论聚合": [
+      "hard_gate_downgraded"
+    ]
+  },
+  "interpretation": "Fixed 3:1 original-wrong/correct quota, purposive four-model sample, overlapping task types but unique designated target_type. Frequencies describe this sample only. Families are multi-label and count each sample at most once per family. Audit-quality AUC contrasts confirmed errors (including secondary errors) with no_substantive_error_observed, excludes unresolved/evaluation cases without confirmed error; within-model/type then mean over evaluable cells. Small enriched sample, not population validation or independent human ground truth. Scores high/low use prespecified75th/25th midrank percentile within full model/type population."
+}

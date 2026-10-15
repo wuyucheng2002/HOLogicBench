@@ -1,0 +1,12 @@
+session Environmental_Pollution_With_Permits = HOL +
+  theories
+    epwp_case_01
+    epwp_case_02
+    epwp_case_03
+    epwp_case_04
+    epwp_case_05
+    epwp_case_06
+    epwp_case_07
+    epwp_case_08
+    epwp_case_09
+    epwp_case_10

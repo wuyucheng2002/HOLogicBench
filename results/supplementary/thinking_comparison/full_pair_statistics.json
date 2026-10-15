@@ -1,0 +1,350 @@
+{
+  "Qwen": {
+    "ALL": {
+      "n": 1379,
+      "off_correct": 669,
+      "on_correct": 778,
+      "gain": 235,
+      "loss": 126,
+      "both_correct": 543,
+      "both_wrong": 475,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.7388959291929366,
+          "roscoe_sa_prec": 0.5992750460423794
+        },
+        "on": {
+          "bertscore_f1": 0.736868340747087,
+          "roscoe_sa_prec": 0.6055684253043935
+        }
+      }
+    },
+    "PR": {
+      "n": 268,
+      "off_correct": 224,
+      "on_correct": 220,
+      "gain": 18,
+      "loss": 22,
+      "both_correct": 202,
+      "both_wrong": 26,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.78503374642013,
+          "roscoe_sa_prec": 0.621175088210782
+        },
+        "on": {
+          "bertscore_f1": 0.7730324600043669,
+          "roscoe_sa_prec": 0.6281002236168776
+        }
+      }
+    },
+    "PT": {
+      "n": 265,
+      "off_correct": 190,
+      "on_correct": 189,
+      "gain": 26,
+      "loss": 27,
+      "both_correct": 163,
+      "both_wrong": 49,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.7677754117444663,
+          "roscoe_sa_prec": 0.5984938265017743
+        },
+        "on": {
+          "bertscore_f1": 0.7608907070739437,
+          "roscoe_sa_prec": 0.6050021069229774
+        }
+      }
+    },
+    "PC": {
+      "n": 1015,
+      "off_correct": 367,
+      "on_correct": 477,
+      "gain": 209,
+      "loss": 99,
+      "both_correct": 268,
+      "both_wrong": 439,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.7255479424762764,
+          "roscoe_sa_prec": 0.5877257355915502
+        },
+        "on": {
+          "bertscore_f1": 0.7265890105487514,
+          "roscoe_sa_prec": 0.5922742210879115
+        }
+      }
+    },
+    "PS": {
+      "n": 998,
+      "off_correct": 358,
+      "on_correct": 460,
+      "gain": 199,
+      "loss": 97,
+      "both_correct": 261,
+      "both_wrong": 441,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.7252516571489694,
+          "roscoe_sa_prec": 0.588325411708417
+        },
+        "on": {
+          "bertscore_f1": 0.7253398727898174,
+          "roscoe_sa_prec": 0.592802938126132
+        }
+      }
+    },
+    "PQ": {
+      "n": 300,
+      "off_correct": 255,
+      "on_correct": 252,
+      "gain": 20,
+      "loss": 23,
+      "both_correct": 232,
+      "both_wrong": 25,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.7881870159241048,
+          "roscoe_sa_prec": 0.6317058071494103
+        },
+        "on": {
+          "bertscore_f1": 0.7752069018355237,
+          "roscoe_sa_prec": 0.6402378802498182
+        }
+      }
+    }
+  },
+  "MiniMax": {
+    "ALL": {
+      "n": 1379,
+      "off_correct": 693,
+      "on_correct": 853,
+      "gain": 246,
+      "loss": 86,
+      "both_correct": 607,
+      "both_wrong": 440,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.7469676511597817,
+          "roscoe_sa_prec": 0.6004593063083743
+        },
+        "on": {
+          "bertscore_f1": 0.7481025047515183,
+          "roscoe_sa_prec": 0.5995107358179722
+        }
+      }
+    },
+    "PR": {
+      "n": 268,
+      "off_correct": 224,
+      "on_correct": 220,
+      "gain": 7,
+      "loss": 11,
+      "both_correct": 213,
+      "both_wrong": 37,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.7796388552956588,
+          "roscoe_sa_prec": 0.6051491123082032
+        },
+        "on": {
+          "bertscore_f1": 0.7753825770930961,
+          "roscoe_sa_prec": 0.5989939688301799
+        }
+      }
+    },
+    "PT": {
+      "n": 265,
+      "off_correct": 187,
+      "on_correct": 197,
+      "gain": 20,
+      "loss": 10,
+      "both_correct": 177,
+      "both_wrong": 58,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.7652742164556136,
+          "roscoe_sa_prec": 0.5834481536217455
+        },
+        "on": {
+          "bertscore_f1": 0.7624750028477871,
+          "roscoe_sa_prec": 0.5772627963210052
+        }
+      }
+    },
+    "PC": {
+      "n": 1015,
+      "off_correct": 397,
+      "on_correct": 556,
+      "gain": 230,
+      "loss": 71,
+      "both_correct": 326,
+      "both_wrong": 388,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.7371721662420325,
+          "roscoe_sa_prec": 0.593153789624792
+        },
+        "on": {
+          "bertscore_f1": 0.7397290548020583,
+          "roscoe_sa_prec": 0.5932589221764081
+        }
+      }
+    },
+    "PS": {
+      "n": 998,
+      "off_correct": 376,
+      "on_correct": 534,
+      "gain": 227,
+      "loss": 69,
+      "both_correct": 307,
+      "both_wrong": 395,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.7364763950259192,
+          "roscoe_sa_prec": 0.5923934296699229
+        },
+        "on": {
+          "bertscore_f1": 0.7389558040833464,
+          "roscoe_sa_prec": 0.5930535213682121
+        }
+      }
+    },
+    "PQ": {
+      "n": 300,
+      "off_correct": 255,
+      "on_correct": 251,
+      "gain": 7,
+      "loss": 11,
+      "both_correct": 244,
+      "both_wrong": 38,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.7830478076759357,
+          "roscoe_sa_prec": 0.6171554573376974
+        },
+        "on": {
+          "bertscore_f1": 0.7791200780925098,
+          "roscoe_sa_prec": 0.6112460462252299
+        }
+      }
+    }
+  },
+  "V4Flash": {
+    "ALL": {
+      "n": 1379,
+      "off_correct": 707,
+      "on_correct": 716,
+      "gain": 209,
+      "loss": 200,
+      "both_correct": 507,
+      "both_wrong": 463,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.74052263877907,
+          "roscoe_sa_prec": 0.6012345979272498
+        },
+        "on": {
+          "bertscore_f1": 0.7422817279386801,
+          "roscoe_sa_prec": 0.604088682662412
+        }
+      }
+    },
+    "PR": {
+      "n": 268,
+      "off_correct": 208,
+      "on_correct": 189,
+      "gain": 17,
+      "loss": 36,
+      "both_correct": 172,
+      "both_wrong": 43,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.7788330125781422,
+          "roscoe_sa_prec": 0.6050969779269019
+        },
+        "on": {
+          "bertscore_f1": 0.7746357005896233,
+          "roscoe_sa_prec": 0.6052589052871092
+        }
+      }
+    },
+    "PT": {
+      "n": 265,
+      "off_correct": 181,
+      "on_correct": 156,
+      "gain": 20,
+      "loss": 45,
+      "both_correct": 136,
+      "both_wrong": 64,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.7635277791789563,
+          "roscoe_sa_prec": 0.5870938885886714
+        },
+        "on": {
+          "bertscore_f1": 0.7600849587901791,
+          "roscoe_sa_prec": 0.5844698898072512
+        }
+      }
+    },
+    "PC": {
+      "n": 1015,
+      "off_correct": 421,
+      "on_correct": 451,
+      "gain": 185,
+      "loss": 155,
+      "both_correct": 266,
+      "both_wrong": 409,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.729543542472464,
+          "roscoe_sa_prec": 0.594329693546436
+        },
+        "on": {
+          "bertscore_f1": 0.7325802396734917,
+          "roscoe_sa_prec": 0.5977024914595881
+        }
+      }
+    },
+    "PS": {
+      "n": 998,
+      "off_correct": 404,
+      "on_correct": 426,
+      "gain": 184,
+      "loss": 162,
+      "both_correct": 242,
+      "both_wrong": 410,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.7287087364111098,
+          "roscoe_sa_prec": 0.593785055922363
+        },
+        "on": {
+          "bertscore_f1": 0.7317793132992527,
+          "roscoe_sa_prec": 0.5986578581268658
+        }
+      }
+    },
+    "PQ": {
+      "n": 300,
+      "off_correct": 239,
+      "on_correct": 219,
+      "gain": 17,
+      "loss": 37,
+      "both_correct": 202,
+      "both_wrong": 44,
+      "metric_means": {
+        "off": {
+          "bertscore_f1": 0.7815630186162548,
+          "roscoe_sa_prec": 0.6167653958996137
+        },
+        "on": {
+          "bertscore_f1": 0.7778678466466032,
+          "roscoe_sa_prec": 0.6176851859688759
+        }
+      }
+    }
+  }
+}

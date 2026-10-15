@@ -1,0 +1,316 @@
+[
+  {
+    "case_id": "ohsr_case_01",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "ohsr_case_02",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Oxygen_System_Interference",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "ohsr_case_03",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "ohsr_case_04",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Habitat_Duty_Authorization",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_05",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_06",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Pressure_Stabilization_Exemption",
+      "Art_Oxygen_System_Interference",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_07",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Oxygen_System_Interference",
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "ohsr_case_08",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Restricted_Airlock_Operation",
+      "Art_Habitat_Duty_Authorization"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_09",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Oxygen_System_Interference",
+      "Art_Restricted_Airlock_Operation",
+      "Art_Habitat_Duty_Authorization",
+      "Art_Pressure_Stabilization_Exemption"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_10",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Oxygen_System_Interference",
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Restricted_Airlock_Operation",
+      "Art_Habitat_Duty_Authorization",
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Pressure_Stabilization_Exemption"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_11",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Oxygen_System_Interference"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "ohsr_case_12",
+    "difficulty_level": "basic",
+    "target_articles": [
+      "Art_Oxygen_System_Interference",
+      "Art_Corridor_Safety_Obstruction"
+    ],
+    "case_type": "liability_only"
+  },
+  {
+    "case_id": "ohsr_case_13",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Habitat_Duty_Authorization",
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Oxygen_System_Interference",
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_14",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Habitat_Duty_Authorization",
+      "Art_Pressure_Stabilization_Exemption",
+      "Art_Oxygen_System_Interference",
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_15",
+    "difficulty_level": "very_hard",
+    "target_articles": [
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Pressure_Stabilization_Exemption",
+      "Art_Oxygen_System_Interference",
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_16",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Habitat_Duty_Authorization",
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Pressure_Stabilization_Exemption",
+      "Art_Oxygen_System_Interference",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_17",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Oxygen_System_Interference",
+      "Art_Habitat_Duty_Authorization",
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_18",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Oxygen_System_Interference",
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_19",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Habitat_Duty_Authorization",
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Restricted_Airlock_Operation",
+      "Art_Pressure_Stabilization_Exemption"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_20",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Habitat_Duty_Authorization",
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_21",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Habitat_Duty_Authorization",
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Oxygen_System_Interference",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_22",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Pressure_Stabilization_Exemption",
+      "Art_Oxygen_System_Interference",
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_23",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Pressure_Stabilization_Exemption",
+      "Art_Oxygen_System_Interference",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_24",
+    "difficulty_level": "hard",
+    "target_articles": [
+      "Art_Habitat_Duty_Authorization",
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Oxygen_System_Interference",
+      "Art_Corridor_Safety_Obstruction"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_25",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Oxygen_System_Interference",
+      "Art_Restricted_Airlock_Operation"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_26",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Corridor_Safety_Obstruction",
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Restricted_Airlock_Operation",
+      "Art_Pressure_Stabilization_Exemption"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_27",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Habitat_Duty_Authorization",
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Pressure_Stabilization_Exemption",
+      "Art_Oxygen_System_Interference"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_28",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Oxygen_System_Interference",
+      "Art_Habitat_Duty_Authorization",
+      "Art_Corridor_Safety_Obstruction"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_29",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Pressure_Stabilization_Exemption",
+      "Art_Oxygen_System_Interference",
+      "Art_Corridor_Safety_Obstruction"
+    ],
+    "case_type": "liability_with_exception"
+  },
+  {
+    "case_id": "ohsr_case_30",
+    "difficulty_level": "medium",
+    "target_articles": [
+      "Art_Salvage_Emergency_Authorization",
+      "Art_Pressure_Stabilization_Exemption",
+      "Art_Oxygen_System_Interference"
+    ],
+    "case_type": "liability_with_exception"
+  }
+]

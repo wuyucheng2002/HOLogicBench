@@ -1,0 +1,81 @@
+Longest rule-dependency depth analysis
+
+{
+  "definition": "Maximum number of named derived-rule applications on a fact-to-target dependency chain across exported valid evaluation paths. Facts=0; Boolean, arithmetic and administrative wrappers=0. Parallel premises and composite claims use max, not sum.",
+  "finance": "Count rule:baoxiao_rules.* nodes, including named policy helper/selection/aggregation definitions. Exclude rule:baoxiao_cases.* harness wrappers. Max over reference path roots, then max over case components.",
+  "law": "Use the same Boolean rules and signed facts as validated reference generation. Count named concepts, triggers, defeated/applicable, no-liability and final result definitions. Explore outcome-supporting Boolean branches, choosing the maximum valid chain.",
+  "scope": "Finite exported explanation system, not the longest unrestricted HOL proof and not the minimum required proof depth. Formalization granularity affects depth.",
+  "statistics": "16 models equal weight; 2000 case-bootstrap replicates. Slopes are linear descriptive associations, unadjusted for other case properties; confidence intervals unadjusted for multiplicity. HOL groups overlap; within-type variation does not remove all confounding.",
+  "metrics": [
+    "Accuracy (%)",
+    "BERT-F1",
+    "ROSCOE-SA-P"
+  ],
+  "outside": "20 outside cases included only in Overall."
+}
+
+Overall {2: 64, 3: 96, 4: 88, 5: 183, 6: 630, 7: 139, 8: 130, 9: 2, 11: 47}
+depth | n | Accuracy (%) | BERT-F1 | ROSCOE-SA-P
+2 | 64 | 77.6367 | 0.7461 | 0.6079
+3 | 96 | 56.1198 | 0.7360 | 0.5486
+4 | 88 | 47.9403 | 0.7321 | 0.5900
+5 | 183 | 65.0956 | 0.7597 | 0.5587
+6 | 630 | 51.8849 | 0.7352 | 0.6235
+7 | 139 | 53.7320 | 0.7485 | 0.6359
+8 | 130 | 39.7115 | 0.7369 | 0.6017
+9 | 2 | 15.6250 | 0.7281 | 0.5297
+11 | 47 | 51.7287 | 0.7398 | 0.5912
+Slope per additional rule: [-2.8827992727842013, -0.0005331178977087315, 0.006231641900744805]; 95% CI [[-3.939952396980995, -1.8936819813551191], [-0.0009148374053428246, -0.00018742775328942364], [0.004676291366447752, 0.00781250383070368]]
+Exclude depth groups with fewer than 10 cases: {'minimum_cases_per_depth': 10, 'retained_cases': 1377, 'slope_per_rule': [-2.8386683681294693, -0.0005169812076635295, 0.006376032724316998]}
+PR {5: 131, 6: 103, 7: 33, 8: 1}
+depth | n | Accuracy (%) | BERT-F1 | ROSCOE-SA-P
+5 | 131 | 79.7233 | 0.7678 | 0.5696
+6 | 103 | 78.1553 | 0.7834 | 0.6428
+7 | 33 | 83.1439 | 0.7896 | 0.6969
+8 | 1 | 37.5000 | 0.7290 | 0.6281
+Slope per additional rule: [-0.030719392314515315, 0.010967682007360263, 0.06395628773902766]; 95% CI [[-5.210095484846676, 5.018761347391376], [0.007362456740397402, 0.014093785366726468], [0.054000874160782655, 0.07471853511015815]]
+Exclude depth groups with fewer than 10 cases: {'minimum_cases_per_depth': 10, 'retained_cases': 267, 'slope_per_rule': [0.7423063421481975, 0.012321659743573707, 0.06647679418640984]}
+PT {4: 13, 5: 130, 6: 77, 7: 15, 8: 21, 11: 9}
+depth | n | Accuracy (%) | BERT-F1 | ROSCOE-SA-P
+4 | 13 | 89.4231 | 0.7375 | 0.6468
+5 | 130 | 80.1442 | 0.7678 | 0.5695
+6 | 77 | 62.0130 | 0.7634 | 0.6177
+7 | 15 | 67.9167 | 0.7765 | 0.6242
+8 | 21 | 31.8452 | 0.7370 | 0.5969
+11 | 9 | 36.1111 | 0.7419 | 0.5975
+Slope per additional rule: [-10.140347934804076, -0.0037079539282410413, 0.005091664562955042]; 95% CI [[-13.149740672551689, -7.651271056372321], [-0.00508361608648279, -0.002280582524043382], [0.002292609528492972, 0.008869422443103419]]
+Exclude depth groups with fewer than 10 cases: {'minimum_cases_per_depth': 10, 'retained_cases': 256, 'slope_per_rule': [-14.04793996942142, -0.0035140317923853326, 0.009591206312005697]}
+PC {2: 44, 3: 96, 4: 88, 5: 52, 6: 458, 7: 99, 8: 129, 9: 2, 11: 47}
+depth | n | Accuracy (%) | BERT-F1 | ROSCOE-SA-P
+2 | 44 | 68.1818 | 0.7426 | 0.5772
+3 | 96 | 56.1198 | 0.7360 | 0.5486
+4 | 88 | 47.9403 | 0.7321 | 0.5900
+5 | 52 | 28.2452 | 0.7392 | 0.5313
+6 | 458 | 42.9995 | 0.7233 | 0.6150
+7 | 99 | 39.4571 | 0.7296 | 0.6049
+8 | 129 | 39.2442 | 0.7364 | 0.6005
+9 | 2 | 15.6250 | 0.7281 | 0.5297
+11 | 47 | 51.7287 | 0.7398 | 0.5912
+Slope per additional rule: [-2.015618240355448, -0.00023659103225707155, 0.005815993955608167]; 95% CI [[-3.048453064868278, -0.9589089566124519], [-0.0006230802847408887, 0.00011460373509650927], [0.004638625348010037, 0.007029081887769146]]
+Exclude depth groups with fewer than 10 cases: {'minimum_cases_per_depth': 10, 'retained_cases': 1013, 'slope_per_rule': [-1.9781681656952295, -0.0002347565246184856, 0.005956098171035984]}
+PS {2: 4, 3: 96, 4: 88, 5: 52, 6: 481, 7: 99, 8: 129, 9: 2, 11: 47}
+depth | n | Accuracy (%) | BERT-F1 | ROSCOE-SA-P
+2 | 4 | 28.1250 | 0.7417 | 0.5047
+3 | 96 | 56.1198 | 0.7360 | 0.5486
+4 | 88 | 47.9403 | 0.7321 | 0.5900
+5 | 52 | 28.2452 | 0.7392 | 0.5313
+6 | 481 | 43.3082 | 0.7229 | 0.6135
+7 | 99 | 39.4571 | 0.7296 | 0.6049
+8 | 129 | 39.2442 | 0.7364 | 0.6005
+9 | 2 | 15.6250 | 0.7281 | 0.5297
+11 | 47 | 51.7287 | 0.7398 | 0.5912
+Slope per additional rule: [-0.9921265151640989, 0.0003805588581587827, 0.0063753258980005275]; 95% CI [[-2.255357008192112, 0.11325855977018494], [5.241606579901849e-06, 0.0007284469533758527], [0.0049884179873320444, 0.007726461297082467]]
+Exclude depth groups with fewer than 10 cases: {'minimum_cases_per_depth': 10, 'retained_cases': 992, 'slope_per_rule': [-1.0481263376225216, 0.0004597956452551838, 0.006186310536354345]}
+PQ {5: 131, 6: 128, 7: 40, 8: 1}
+depth | n | Accuracy (%) | BERT-F1 | ROSCOE-SA-P
+5 | 131 | 79.7233 | 0.7678 | 0.5696
+6 | 128 | 80.2246 | 0.7857 | 0.6526
+7 | 40 | 89.0625 | 0.7952 | 0.7128
+8 | 1 | 100.0000 | 0.8040 | 0.7675
+Slope per additional rule: [3.701294331411677, 0.014698336125582065, 0.07428099409534847]; 95% CI [[-1.0297292175090098, 8.225115219129448], [0.0132593935183002, 0.016265136214801638], [0.0659661916974234, 0.08256231616322729]]
+Exclude depth groups with fewer than 10 cases: {'minimum_cases_per_depth': 10, 'retained_cases': 299, 'slope_per_rule': [3.536483616504773, 0.014842649430290572, 0.074729788340334]}

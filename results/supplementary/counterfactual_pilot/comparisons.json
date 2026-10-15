@@ -1,0 +1,48 @@
+{
+  "adaptive_minus_non_thinking": {
+    "CRS_conditional": {
+      "difference_pp": 11.099776547167984,
+      "paired_case_bootstrap_95ci_pp": [
+        4.602150537634408,
+        18.066933066933068
+      ]
+    },
+    "all_three_correct": {
+      "difference_pp": 9.599999999999998,
+      "paired_case_bootstrap_95ci_pp": [
+        5.199999999999999,
+        14.000000000000002
+      ]
+    },
+    "false_flip_rate": {
+      "difference_pp": -10.400000000000004,
+      "paired_case_bootstrap_95ci_pp": [
+        -16.799999999999997,
+        -4.0000000000000036
+      ]
+    }
+  },
+  "same_original_correct_subset": {
+    "MiniMax-M3-Adaptive": {
+      "correct": 116,
+      "n": 128
+    },
+    "MiniMax-M3-Non-thinking": {
+      "correct": 101,
+      "n": 128
+    }
+  },
+  "provider_counts": {
+    "MiniMax-M3-Adaptive": {
+      "https://api.minimaxi.com/v1/chat/completions": 750
+    },
+    "MiniMax-M3-Non-thinking": {
+      "https://api.minimaxi.com/v1/chat/completions": 750
+    },
+    "GLM-5.3-Flash": {
+      "DeepInfra": 439,
+      "Relace": 295,
+      "InferenceNet": 14
+    }
+  }
+}

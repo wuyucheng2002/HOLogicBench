@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "pairs_per_family": 1379,
+  "families": 3,
+  "reference_sha256": "4a22e182fdbeb8f4755004cc600d8ea49bc5801b999d11acd80d34a4dd78d3d9",
+  "checks": [
+    "identical keys",
+    "score/prediction accuracy agrees",
+    "paired counts sum",
+    "net change equals gains minus losses"
+  ],
+  "PC_PS_overlap": 954
+}

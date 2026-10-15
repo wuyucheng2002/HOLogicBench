@@ -1,0 +1,364 @@
+{
+  "bundle_name": "property_crime_with_defenses",
+  "bundle_dir": "rule_bundles/property_crime_with_defenses",
+  "person_symbol": "actor",
+  "person_name_pool": [
+    "Alex",
+    "Jordan",
+    "Taylor",
+    "Morgan",
+    "Casey",
+    "Riley",
+    "Jamie",
+    "Drew",
+    "Cameron",
+    "Quinn"
+  ],
+  "article_order": [
+    "Art_Theft",
+    "Art_Fraud",
+    "Art_Robbery",
+    "Art_Aggravated_Theft",
+    "Art_Consent_Defense",
+    "Art_Necessity_Defense"
+  ],
+  "articles": {
+    "Art_Theft": {
+      "title": "Theft",
+      "result": "imprisonment_not_exceeding_3_years",
+      "rule_text": "The theft article applies to theft conduct. The legal consequence is imprisonment not exceeding 3 years."
+    },
+    "Art_Fraud": {
+      "title": "Fraud",
+      "result": "imprisonment_not_exceeding_3_years",
+      "rule_text": "The fraud article applies to fraud conduct. The legal consequence is imprisonment not exceeding 3 years."
+    },
+    "Art_Robbery": {
+      "title": "Robbery",
+      "result": "imprisonment_between_3_10_years",
+      "rule_text": "The robbery article applies when theft conduct is accompanied by force or an immediate threat during the taking. The legal consequence is imprisonment between 3 and 10 years."
+    },
+    "Art_Aggravated_Theft": {
+      "title": "Aggravated Theft",
+      "result": "imprisonment_between_3_10_years",
+      "rule_text": "The aggravated theft article applies when theft conduct involves property of large value. The legal consequence is imprisonment between 3 and 10 years."
+    },
+    "Art_Consent_Defense": {
+      "title": "Consent Defense",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The consent defense article applies to taking authorized by the owner. The legal consequence is no criminal liability."
+    },
+    "Art_Necessity_Defense": {
+      "title": "Necessity Defense",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The necessity defense article applies to emergency taking necessary to avoid immediate danger. The legal consequence is no criminal liability."
+    }
+  },
+  "nodes": {
+    "takes_property": {
+      "layer": "atomic",
+      "assumable_values": [true],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} took the property.",
+      "order": 10
+    },
+    "property_belongs_to_another": {
+      "layer": "atomic",
+      "assumable_values": [true, false],
+      "case_text_policy": "always",
+      "positive_text": "The property belonged to another person.",
+      "negative_text": "The property did not belong to another person.",
+      "order": 20
+    },
+    "intent_to_keep_unlawfully": {
+      "layer": "atomic",
+      "assumable_values": [true, false],
+      "case_text_policy": "always",
+      "positive_text": "{name} intended to keep the property unlawfully.",
+      "negative_text": "{name} did not intend to keep the property unlawfully.",
+      "order": 30
+    },
+    "pushes_victim_during_taking": {
+      "layer": "atomic",
+      "assumable_values": [true],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} pushed the victim during the taking.",
+      "order": 40
+    },
+    "threatens_immediate_harm": {
+      "layer": "atomic",
+      "assumable_values": [true],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} threatened immediate harm during the taking.",
+      "order": 45
+    },
+    "deception_used": {
+      "layer": "atomic",
+      "assumable_values": [true],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} used deception against the victim.",
+      "order": 50
+    },
+    "victim_transfers_property": {
+      "layer": "atomic",
+      "assumable_values": [true],
+      "case_text_policy": "positive_only",
+      "positive_text": "The victim transferred the property because of the deception.",
+      "order": 60
+    },
+    "property_value_large": {
+      "layer": "atomic",
+      "assumable_values": [true, false],
+      "case_text_policy": "always",
+      "positive_text": "The value of the property was large.",
+      "negative_text": "The value of the property was not large.",
+      "order": 70
+    },
+    "owner_gave_permission": {
+      "layer": "atomic",
+      "assumable_values": [true, false],
+      "case_text_policy": "always",
+      "positive_text": "The owner gave permission for the taking.",
+      "negative_text": "The owner did not give permission for the taking.",
+      "order": 80
+    },
+    "immediate_danger": {
+      "layer": "atomic",
+      "assumable_values": [true, false],
+      "case_text_policy": "always",
+      "positive_text": "{name} faced an immediate danger.",
+      "negative_text": "{name} did not face an immediate danger.",
+      "order": 90
+    },
+    "taking_necessary_to_avoid_danger": {
+      "layer": "atomic",
+      "assumable_values": [true, false],
+      "case_text_policy": "always",
+      "case_text_requires_positive": ["immediate_danger"],
+      "positive_text": "Taking the property was necessary to avoid that danger.",
+      "negative_text": "Taking the property was not necessary to avoid that danger.",
+      "order": 100
+    }
+  },
+  "article_trigger_mappings": [
+    {
+      "name": "theft_conduct_triggers_theft",
+      "source_predicate": "theft_conduct",
+      "article": "Art_Theft"
+    },
+    {
+      "name": "fraud_conduct_triggers_fraud",
+      "source_predicate": "fraud_conduct",
+      "article": "Art_Fraud"
+    },
+    {
+      "name": "theft_and_force_trigger_robbery",
+      "source_predicates": ["theft_conduct", "force_or_threat_during_taking"],
+      "article": "Art_Robbery"
+    },
+    {
+      "name": "theft_and_large_value_trigger_aggravated_theft",
+      "source_predicates": ["theft_conduct", "high_value_property"],
+      "article": "Art_Aggravated_Theft"
+    },
+    {
+      "name": "consent_defense_triggers_exception",
+      "source_predicate": "consent_defense",
+      "article": "Art_Consent_Defense"
+    },
+    {
+      "name": "necessity_defense_triggers_exception",
+      "source_predicate": "necessity_defense",
+      "article": "Art_Necessity_Defense"
+    }
+  ],
+  "rules": [
+    {
+      "name": "property_facts_imply_property_taking",
+      "head": {"predicate": "property_taking", "value": true},
+      "body": {
+        "all_of": [
+          {"predicate": "takes_property", "value": true},
+          {"predicate": "property_belongs_to_another", "value": true}
+        ]
+      },
+      "natural_text": "Taking of another person's property is present when the person takes property and that property belongs to another."
+    },
+    {
+      "name": "intent_fact_implies_unlawful_intent",
+      "head": {"predicate": "unlawful_intent", "value": true},
+      "body": {
+        "all_of": [{"predicate": "intent_to_keep_unlawfully", "value": true}]
+      },
+      "natural_text": "Unlawful intent means an intent to keep the property without lawful entitlement."
+    },
+    {
+      "name": "force_or_threat_facts_imply_force_or_threat_during_taking",
+      "head": {"predicate": "force_or_threat_during_taking", "value": true},
+      "body": {
+        "any_of_groups": [[
+          {"predicate": "pushes_victim_during_taking", "value": true},
+          {"predicate": "threatens_immediate_harm", "value": true}
+        ]]
+      },
+      "natural_text": "Force or threat during the taking includes either pushing the victim during the taking or threatening immediate harm during the taking."
+    },
+    {
+      "name": "transfer_facts_imply_transferred_property_of_another",
+      "head": {"predicate": "transferred_property_of_another", "value": true},
+      "body": {
+        "all_of": [
+          {"predicate": "victim_transfers_property", "value": true},
+          {"predicate": "property_belongs_to_another", "value": true}
+        ]
+      },
+      "natural_text": "Transfer of another person's property is present when the victim transfers property and that property belongs to another person."
+    },
+    {
+      "name": "deception_facts_imply_deception_induced_transfer",
+      "head": {"predicate": "deception_induced_transfer", "value": true},
+      "body": {
+        "all_of": [
+          {"predicate": "deception_used", "value": true},
+          {"predicate": "transferred_property_of_another", "value": true}
+        ]
+      },
+      "natural_text": "A deception-induced transfer is present when deception causes a transfer of another person's property."
+    },
+    {
+      "name": "large_value_fact_implies_high_value_property",
+      "head": {"predicate": "high_value_property", "value": true},
+      "body": {
+        "all_of": [{"predicate": "property_value_large", "value": true}]
+      },
+      "natural_text": "High-value property means that the value of the property is large."
+    },
+    {
+      "name": "permission_facts_imply_owner_authorized_taking",
+      "head": {"predicate": "owner_authorized_taking", "value": true},
+      "body": {
+        "all_of": [
+          {"predicate": "takes_property", "value": true},
+          {"predicate": "owner_gave_permission", "value": true}
+        ]
+      },
+      "natural_text": "Owner-authorized taking is present when the person takes the property with the owner's permission."
+    },
+    {
+      "name": "danger_facts_imply_emergency_property_taking",
+      "head": {"predicate": "emergency_property_taking", "value": true},
+      "body": {
+        "all_of": [
+          {"predicate": "takes_property", "value": true},
+          {"predicate": "immediate_danger", "value": true},
+          {"predicate": "taking_necessary_to_avoid_danger", "value": true}
+        ]
+      },
+      "natural_text": "Emergency property taking is present when the person takes property as necessary to avoid an immediate danger."
+    },
+    {
+      "name": "property_taking_and_intent_imply_theft_conduct",
+      "head": {"predicate": "theft_conduct", "value": true},
+      "body": {
+        "all_of": [
+          {"predicate": "property_taking", "value": true},
+          {"predicate": "unlawful_intent", "value": true}
+        ]
+      },
+      "natural_text": "Theft conduct consists of taking another person's property together with unlawful intent."
+    },
+    {
+      "name": "deception_induced_transfer_and_intent_imply_fraud_conduct",
+      "head": {"predicate": "fraud_conduct", "value": true},
+      "body": {
+        "all_of": [
+          {"predicate": "deception_induced_transfer", "value": true},
+          {"predicate": "unlawful_intent", "value": true}
+        ]
+      },
+      "natural_text": "Fraud conduct consists of a deception-induced transfer of another person's property together with unlawful intent."
+    },
+    {
+      "name": "owner_authorized_taking_implies_consent_defense",
+      "head": {"predicate": "consent_defense", "value": true},
+      "body": {
+        "all_of": [{"predicate": "owner_authorized_taking", "value": true}]
+      },
+      "natural_text": "The consent defense is present when the taking was authorized by the owner."
+    },
+    {
+      "name": "emergency_property_taking_implies_necessity_defense",
+      "head": {"predicate": "necessity_defense", "value": true},
+      "body": {
+        "all_of": [{"predicate": "emergency_property_taking", "value": true}]
+      },
+      "natural_text": "The necessity defense is present when the taking was necessary to avoid an immediate danger."
+    },
+    {
+      "name": "theft_conduct_triggers_theft",
+      "head": {"predicate": "article_triggered", "article": "Art_Theft", "value": true},
+      "body": {
+        "all_of": [{"predicate": "theft_conduct", "value": true}]
+      }
+    },
+    {
+      "name": "fraud_conduct_triggers_fraud",
+      "head": {"predicate": "article_triggered", "article": "Art_Fraud", "value": true},
+      "body": {
+        "all_of": [{"predicate": "fraud_conduct", "value": true}]
+      }
+    },
+    {
+      "name": "theft_and_force_trigger_robbery",
+      "head": {"predicate": "article_triggered", "article": "Art_Robbery", "value": true},
+      "body": {
+        "all_of": [
+          {"predicate": "theft_conduct", "value": true},
+          {"predicate": "force_or_threat_during_taking", "value": true}
+        ]
+      }
+    },
+    {
+      "name": "theft_and_large_value_trigger_aggravated_theft",
+      "head": {"predicate": "article_triggered", "article": "Art_Aggravated_Theft", "value": true},
+      "body": {
+        "all_of": [
+          {"predicate": "theft_conduct", "value": true},
+          {"predicate": "high_value_property", "value": true}
+        ]
+      }
+    },
+    {
+      "name": "consent_defense_triggers_exception",
+      "head": {"predicate": "article_triggered", "article": "Art_Consent_Defense", "value": true},
+      "body": {
+        "all_of": [{"predicate": "consent_defense", "value": true}]
+      }
+    },
+    {
+      "name": "necessity_defense_triggers_exception",
+      "head": {"predicate": "article_triggered", "article": "Art_Necessity_Defense", "value": true},
+      "body": {
+        "all_of": [{"predicate": "necessity_defense", "value": true}]
+      }
+    }
+  ],
+  "conflicts": {
+    "stronger_than": [
+      ["Art_Robbery", "Art_Theft"],
+      ["Art_Aggravated_Theft", "Art_Theft"],
+      ["Art_Robbery", "Art_Aggravated_Theft"],
+      ["Art_Fraud", "Art_Theft"]
+    ],
+    "exception_to": [
+      ["Art_Consent_Defense", "Art_Theft"],
+      ["Art_Consent_Defense", "Art_Fraud"],
+      ["Art_Consent_Defense", "Art_Robbery"],
+      ["Art_Consent_Defense", "Art_Aggravated_Theft"],
+      ["Art_Necessity_Defense", "Art_Theft"],
+      ["Art_Necessity_Defense", "Art_Fraud"],
+      ["Art_Necessity_Defense", "Art_Robbery"],
+      ["Art_Necessity_Defense", "Art_Aggravated_Theft"]
+    ]
+  }
+}

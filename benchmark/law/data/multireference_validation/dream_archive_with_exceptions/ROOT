@@ -1,0 +1,3 @@
+session MultiRef_dream_archive_with_exceptions = HOL +
+ options [document=false]
+ theories Paths_Validated

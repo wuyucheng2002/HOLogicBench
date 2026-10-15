@@ -1,0 +1,89 @@
+{
+  "bundle_name": "environmental_pollution_with_permits",
+  "bundle_dir": "rule_bundles/environmental_pollution_with_permits",
+  "person_symbol": "actor",
+  "person_name_pool": ["Alex", "Jordan", "Taylor", "Morgan", "Casey", "Riley", "Jamie", "Drew", "Cameron", "Quinn"],
+  "article_order": [
+    "Art_Unlawful_Discharge",
+    "Art_Hazardous_Waste_Dumping",
+    "Art_Serious_Contamination",
+    "Art_Falsified_Monitoring",
+    "Art_Valid_Permit_Defense",
+    "Art_Emergency_Release_Defense"
+  ],
+  "articles": {
+    "Art_Unlawful_Discharge": {"title": "Unlawful Discharge", "result": "fine_or_short_detention", "rule_text": "The unlawful discharge article covers an excessive pollutant release and carries a fine or short detention."},
+    "Art_Hazardous_Waste_Dumping": {"title": "Hazardous Waste Dumping", "result": "imprisonment_not_exceeding_3_years", "rule_text": "The hazardous waste dumping article covers hazardous material disposed without protection and carries imprisonment of not more than 3 years."},
+    "Art_Serious_Contamination": {"title": "Serious Contamination", "result": "imprisonment_between_7_15_years", "rule_text": "The serious contamination article covers excessive pollutant release that causes environmental harm and carries imprisonment of between 7 and 15 years."},
+    "Art_Falsified_Monitoring": {"title": "Falsified Monitoring", "result": "imprisonment_between_3_7_years", "rule_text": "The falsified monitoring article covers excessive pollutant release accompanied by manipulation of monitoring information and carries imprisonment of between 3 and 7 years."},
+    "Art_Valid_Permit_Defense": {"title": "Valid Permit Defense", "result": "No_Criminal_Liability", "rule_text": "The valid permit defense covers excessive pollutant release that remains within valid permit records and carries no criminal liability."},
+    "Art_Emergency_Release_Defense": {"title": "Emergency Release Defense", "result": "No_Criminal_Liability", "rule_text": "The emergency release defense covers excessive pollutant release that is necessary to prevent an imminent explosion and is promptly reported; it carries no criminal liability."}
+  },
+  "nodes": {
+    "releases_wastewater_to_river": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} released wastewater into a river.", "order": 10},
+    "vents_emissions_to_air": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} vented emissions into the air.", "order": 12},
+    "leaks_storage_tank": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "A storage tank operated by {name} leaked pollutants.", "order": 14},
+    "pollutant_exceeds_limit": {"layer": "atomic", "assumable_values": [true, false], "case_text_policy": "always", "positive_text": "The pollutant level exceeded the applicable limit.", "negative_text": "The pollutant level did not exceed the applicable limit.", "order": 20},
+    "hazardous_solvent_present": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "Hazardous solvent was present.", "order": 30},
+    "heavy_metal_sludge_present": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "Heavy-metal sludge was present.", "order": 32},
+    "transports_waste_to_unlined_site": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} transported waste to an unlined site.", "order": 40},
+    "buries_waste_without_liner": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} buried waste without a liner.", "order": 42},
+    "fish_kill_observed": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "A fish kill was observed downstream.", "order": 50},
+    "drinking_water_intake_closed": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "A drinking-water intake was closed.", "order": 52},
+    "soil_contamination_confirmed": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "Soil contamination was confirmed.", "order": 54},
+    "monitoring_report_omits_exceedance": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} omitted the exceedance from a monitoring report.", "order": 60},
+    "changes_sampling_date": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} changed a sampling date.", "order": 62},
+    "disables_sensor_during_release": {"layer": "atomic", "assumable_values": [true], "case_text_policy": "positive_only", "positive_text": "{name} disabled a sensor during the release.", "order": 64},
+    "facility_has_valid_discharge_permit": {"layer": "atomic", "assumable_values": [true, false], "case_text_policy": "always", "positive_text": "The facility had a valid discharge permit.", "negative_text": "The facility had no valid discharge permit.", "order": 70},
+    "release_within_permit_scope": {"layer": "atomic", "assumable_values": [true, false], "case_text_policy": "always", "case_text_requires_positive": ["facility_has_valid_discharge_permit"], "positive_text": "The release stayed within the permit scope.", "negative_text": "The release did not stay within the permit scope.", "order": 72},
+    "required_monitoring_submitted": {"layer": "atomic", "assumable_values": [true, false], "case_text_policy": "always", "case_text_requires_positive": ["facility_has_valid_discharge_permit"], "positive_text": "Required monitoring was submitted.", "negative_text": "Required monitoring was not submitted.", "order": 74},
+    "imminent_equipment_failure": {"layer": "atomic", "assumable_values": [true, false], "case_text_policy": "always", "positive_text": "There was an imminent equipment failure.", "negative_text": "There was no imminent equipment failure.", "order": 80},
+    "release_needed_to_prevent_explosion": {"layer": "atomic", "assumable_values": [true, false], "case_text_policy": "always", "case_text_requires_positive": ["imminent_equipment_failure"], "positive_text": "The release was needed to prevent an explosion.", "negative_text": "The release was not needed to prevent an explosion.", "order": 82},
+    "authority_notified_promptly": {"layer": "atomic", "assumable_values": [true, false], "case_text_policy": "always", "case_text_requires_positive": ["imminent_equipment_failure"], "positive_text": "The authority was notified promptly.", "negative_text": "The authority was not notified promptly.", "order": 84}
+  },
+  "article_trigger_mappings": [
+    {"article": "Art_Unlawful_Discharge", "source_predicate": "unlawful_release_basis"},
+    {"article": "Art_Hazardous_Waste_Dumping", "source_predicate": "hazardous_dumping_basis"},
+    {"article": "Art_Serious_Contamination", "source_predicate": "serious_contamination_basis"},
+    {"article": "Art_Falsified_Monitoring", "source_predicate": "monitoring_falsification_basis"},
+    {"article": "Art_Valid_Permit_Defense", "source_predicate": "permit_authorization"},
+    {"article": "Art_Emergency_Release_Defense", "source_predicate": "emergency_release_authorization"}
+  ],
+  "rules": [
+    {"name": "release_facts_imply_pollutant_release", "head": {"predicate": "pollutant_release", "value": true}, "body": {"any_of_groups": [[{"predicate": "releases_wastewater_to_river", "value": true}, {"predicate": "vents_emissions_to_air", "value": true}, {"predicate": "leaks_storage_tank", "value": true}]]}, "natural_text": "A pollutant release includes any one of the following: wastewater discharge, air emissions, or a leaking storage tank."},
+    {"name": "exceedance_fact_implies_limit_exceedance", "head": {"predicate": "limit_exceedance", "value": true}, "body": {"all_of": [{"predicate": "pollutant_exceeds_limit", "value": true}]}, "natural_text": "Limit exceedance means that the pollutant level exceeds the applicable limit."},
+    {"name": "hazard_facts_imply_hazardous_material", "head": {"predicate": "hazardous_material", "value": true}, "body": {"any_of_groups": [[{"predicate": "hazardous_solvent_present", "value": true}, {"predicate": "heavy_metal_sludge_present", "value": true}]]}, "natural_text": "Hazardous material includes either hazardous solvent or heavy-metal sludge."},
+    {"name": "dumping_facts_imply_unprotected_disposal", "head": {"predicate": "unprotected_disposal", "value": true}, "body": {"any_of_groups": [[{"predicate": "transports_waste_to_unlined_site", "value": true}, {"predicate": "buries_waste_without_liner", "value": true}]]}, "natural_text": "Unprotected disposal includes either transport to an unlined site or burial without a liner."},
+    {"name": "harm_facts_imply_environmental_harm", "head": {"predicate": "environmental_harm", "value": true}, "body": {"any_of_groups": [[{"predicate": "fish_kill_observed", "value": true}, {"predicate": "drinking_water_intake_closed", "value": true}, {"predicate": "soil_contamination_confirmed", "value": true}]]}, "natural_text": "Environmental harm includes any one of the following: a fish kill, closure of a drinking-water intake, or confirmed soil contamination."},
+    {"name": "report_facts_imply_report_manipulation", "head": {"predicate": "report_manipulation", "value": true}, "body": {"any_of_groups": [[{"predicate": "monitoring_report_omits_exceedance", "value": true}, {"predicate": "changes_sampling_date", "value": true}, {"predicate": "disables_sensor_during_release", "value": true}]]}, "natural_text": "Monitoring manipulation includes any one of the following: omitting an exceedance, changing a sampling date, or disabling a sensor during release."},
+    {"name": "permit_facts_imply_permit_records", "head": {"predicate": "permit_records", "value": true}, "body": {"all_of": [{"predicate": "facility_has_valid_discharge_permit", "value": true}, {"predicate": "release_within_permit_scope", "value": true}, {"predicate": "required_monitoring_submitted", "value": true}]}, "natural_text": "Permit records require a valid discharge permit, release within scope, and submitted monitoring."},
+    {"name": "emergency_facts_imply_emergency_records", "head": {"predicate": "emergency_records", "value": true}, "body": {"all_of": [{"predicate": "imminent_equipment_failure", "value": true}, {"predicate": "release_needed_to_prevent_explosion", "value": true}, {"predicate": "authority_notified_promptly", "value": true}]}, "natural_text": "Emergency records require imminent equipment failure, release necessity to prevent explosion, and prompt notice to the authority."},
+    {"name": "release_and_exceedance_imply_unlawful_release_basis", "head": {"predicate": "unlawful_release_basis", "value": true}, "body": {"all_of": [{"predicate": "pollutant_release", "value": true}, {"predicate": "limit_exceedance", "value": true}]}, "natural_text": "Unlawful release is based on pollutant release together with limit exceedance."},
+    {"name": "hazard_and_disposal_imply_hazardous_dumping_basis", "head": {"predicate": "hazardous_dumping_basis", "value": true}, "body": {"all_of": [{"predicate": "hazardous_material", "value": true}, {"predicate": "unprotected_disposal", "value": true}]}, "natural_text": "Hazardous dumping is based on hazardous material together with unprotected disposal."},
+    {"name": "unlawful_release_and_harm_imply_serious_contamination_basis", "head": {"predicate": "serious_contamination_basis", "value": true}, "body": {"all_of": [{"predicate": "unlawful_release_basis", "value": true}, {"predicate": "environmental_harm", "value": true}]}, "natural_text": "Serious contamination is based on unlawful release together with environmental harm."},
+    {"name": "unlawful_release_and_report_manipulation_imply_monitoring_falsification_basis", "head": {"predicate": "monitoring_falsification_basis", "value": true}, "body": {"all_of": [{"predicate": "unlawful_release_basis", "value": true}, {"predicate": "report_manipulation", "value": true}]}, "natural_text": "Monitoring falsification is based on unlawful release together with monitoring manipulation."},
+    {"name": "unlawful_release_and_permit_records_imply_permit_authorization", "head": {"predicate": "permit_authorization", "value": true}, "body": {"all_of": [{"predicate": "unlawful_release_basis", "value": true}, {"predicate": "permit_records", "value": true}]}, "natural_text": "Permit authorization requires unlawful-release facts plus complete permit records."},
+    {"name": "unlawful_release_and_emergency_records_imply_emergency_release_authorization", "head": {"predicate": "emergency_release_authorization", "value": true}, "body": {"all_of": [{"predicate": "unlawful_release_basis", "value": true}, {"predicate": "emergency_records", "value": true}]}, "natural_text": "Emergency release authorization requires unlawful-release facts plus complete emergency records."},
+    {"name": "unlawful_release_basis_triggers_unlawful_discharge", "head": {"predicate": "article_triggered", "article": "Art_Unlawful_Discharge", "value": true}, "body": {"all_of": [{"predicate": "unlawful_release_basis", "value": true}]}},
+    {"name": "hazardous_dumping_basis_triggers_hazardous_waste_dumping", "head": {"predicate": "article_triggered", "article": "Art_Hazardous_Waste_Dumping", "value": true}, "body": {"all_of": [{"predicate": "hazardous_dumping_basis", "value": true}]}},
+    {"name": "serious_contamination_basis_triggers_serious_contamination", "head": {"predicate": "article_triggered", "article": "Art_Serious_Contamination", "value": true}, "body": {"all_of": [{"predicate": "serious_contamination_basis", "value": true}]}},
+    {"name": "monitoring_falsification_basis_triggers_falsified_monitoring", "head": {"predicate": "article_triggered", "article": "Art_Falsified_Monitoring", "value": true}, "body": {"all_of": [{"predicate": "monitoring_falsification_basis", "value": true}]}},
+    {"name": "permit_authorization_triggers_valid_permit_defense", "head": {"predicate": "article_triggered", "article": "Art_Valid_Permit_Defense", "value": true}, "body": {"all_of": [{"predicate": "permit_authorization", "value": true}]}},
+    {"name": "emergency_authorization_triggers_emergency_release_defense", "head": {"predicate": "article_triggered", "article": "Art_Emergency_Release_Defense", "value": true}, "body": {"all_of": [{"predicate": "emergency_release_authorization", "value": true}]}}
+  ],
+  "conflicts": {
+    "stronger_than": [
+      ["Art_Serious_Contamination", "Art_Unlawful_Discharge"],
+      ["Art_Serious_Contamination", "Art_Hazardous_Waste_Dumping"],
+      ["Art_Serious_Contamination", "Art_Falsified_Monitoring"],
+      ["Art_Falsified_Monitoring", "Art_Unlawful_Discharge"],
+      ["Art_Hazardous_Waste_Dumping", "Art_Unlawful_Discharge"]
+    ],
+    "exception_to": [
+      ["Art_Valid_Permit_Defense", "Art_Unlawful_Discharge"],
+      ["Art_Valid_Permit_Defense", "Art_Serious_Contamination"],
+      ["Art_Emergency_Release_Defense", "Art_Unlawful_Discharge"],
+      ["Art_Emergency_Release_Defense", "Art_Serious_Contamination"]
+    ]
+  }
+}

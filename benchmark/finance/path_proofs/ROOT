@@ -1,0 +1,5 @@
+session Reasoning_Tree_Proofs = HOL +
+  options [document = false]
+  theories
+    Reasoning_Tree_Completeness
+    Boolean_Reasoning_Trees

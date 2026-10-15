@@ -1,0 +1,12 @@
+session Dream_Archive_With_Exceptions = HOL +
+  theories
+    dawe_case_01
+    dawe_case_02
+    dawe_case_03
+    dawe_case_04
+    dawe_case_05
+    dawe_case_06
+    dawe_case_07
+    dawe_case_08
+    dawe_case_09
+    dawe_case_10

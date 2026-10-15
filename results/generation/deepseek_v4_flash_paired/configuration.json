@@ -1,0 +1,35 @@
+{
+  "model": "deepseek/deepseek-v4-flash",
+  "max_tokens": 32000,
+  "max_attempts_per_round": 4,
+  "concurrency": 64,
+  "socket_timeout": 600,
+  "stream_timeout": 3600,
+  "cases": 1379,
+  "pending_counts": {
+    "finance/off": 1034,
+    "finance/on": 45,
+    "law/off": 262,
+    "law/on": 38
+  },
+  "notes": [
+    "Legacy zero reasoning tokens plus no reasoning text is observed-off, not proof of an explicit off request.",
+    "Finance requests reconstructed; historical prompts and providers were not always fully logged.",
+    "Retained original providers when known and currently available; otherwise pinned DeepInfra.",
+    "No model answer, reference path or gold label is added to request messages.",
+    "This is a complementary observational split, not a fully controlled rerun."
+  ],
+  "concurrency_recovery": "Double up to 64 after 30 seconds without a 429 or previous recovery, while pending workers wait.",
+  "retry_providers": [
+    "Alibaba",
+    "StreamLake",
+    "Novita",
+    "GMICloud",
+    "SiliconFlow",
+    "Parasail",
+    "Baidu",
+    "DeepInfra"
+  ],
+  "interruption_note": "One authentication startup failed due to operator input error (retained in log). One low-concurrency run was terminated to install recovery; already saved successes are reused, any in-flight unsaved calls may have incurred unreported usage.",
+  "provider_policy": "Prefer the available original endpoint when healthy and lightly loaded; otherwise balance pinned 0423 providers. Avoid AtlasCloud/DeepInfra/DigitalOcean as first choices based on observed mode mismatch/rate limits. Cooldown a provider for 300 seconds after 429, 3600 seconds after mode mismatch."
+}

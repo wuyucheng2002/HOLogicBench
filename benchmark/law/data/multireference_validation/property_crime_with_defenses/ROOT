@@ -1,0 +1,3 @@
+session MultiRef_property_crime_with_defenses = HOL +
+ options [document=false]
+ theories Paths_Validated

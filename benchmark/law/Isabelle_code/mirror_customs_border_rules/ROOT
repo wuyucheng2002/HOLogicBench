@@ -1,0 +1,12 @@
+session Mirror_Customs_Border_Rules = HOL +
+  theories
+    mcbr_case_01
+    mcbr_case_02
+    mcbr_case_03
+    mcbr_case_04
+    mcbr_case_05
+    mcbr_case_06
+    mcbr_case_07
+    mcbr_case_08
+    mcbr_case_09
+    mcbr_case_10

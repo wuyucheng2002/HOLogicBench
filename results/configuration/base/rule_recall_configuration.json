@@ -1,0 +1,681 @@
+{
+  "version": "explicit_rule_ids_section_v3",
+  "formula": "max_r |PredictedRuleIDs intersect RuleIDs(r)| / |RuleIDs(r)|; macro-average over cases",
+  "semantic_paraphrases": false,
+  "finance_granularity": "Main source section IDs: 7, 7.2 and 7.3 all map to section 7 before deduplication and recall. Appendix content maps to its incorporating section. Formal helpers are excluded.",
+  "law_granularity": "Source rule catalog IDs, including evaluated override edges recovered from the formal definitions. Both positive and negative rule evaluations count.",
+  "prediction_extraction": "Explicit scored-text citations plus original structured rule_id fields for both domains; main section IDs, no semantic inference.",
+  "empty_reference_policy": "Assert nonempty; no cases excluded.",
+  "reference_reduction": "Identical rule sets share computation only; evidence references and paths remain unchanged.",
+  "reference_sha256": "4a22e182fdbeb8f4755004cc600d8ea49bc5801b999d11acd80d34a4dd78d3d9",
+  "catalog_sha256": "beb16c66e96a7d6de6b531e0636688f7ebbf0aff273c5c20e601794e32c4fec5",
+  "prediction_sha256": {
+    "DeepSeek-V3.2_predictions.jsonl": "e9ffe280441c0b49bfaad9d872423698e02482323655ff9ca8d995f20e355af2",
+    "DeepSeek-R1_predictions.jsonl": "ac5d0516aa419ba9b1594f25dcf12fb3ffb07478e47b9733c06f23154dfa6c22",
+    "DeepSeek-V4-Flash_predictions.jsonl": "0b7e70ae9cec634bc6ac26166c34f2496c668f583d299e40d696a5037bc4e414",
+    "DeepSeek-V4-Pro_predictions.jsonl": "867c6ffbcc358adf754561235abbea87a9287d28cd966c9776ae7d60806e68e8",
+    "Qwen3-30B-Instruct_predictions.jsonl": "d1a6db96dfd2c3db12ef01dd73326083452519cf490387280753a5cf22f83e96",
+    "Qwen3-30B-Thinking_predictions.jsonl": "a5f8e28e64f7c57cf9bc53c276a34e56a964e6d119f88ac712b20e73736e1b50",
+    "Qwen3.6-Flash_predictions.jsonl": "f3c4f0e56f52eb24633395ac9e8ccd766015b7dd8af4dc460c69382f2329233a",
+    "MiniMax-M2.5_predictions.jsonl": "43cd5a8802b871f1da8cdc4c227b7aa88cdad266c677ab3a88076d025f52f081",
+    "MiniMax-M2.7_predictions.jsonl": "d6000f3fcc089c730b6debbed4ea4ca4bb7ffcf42b5ea39f3df253d6e5bcf3f0",
+    "GPT-5.4-Mini_predictions.jsonl": "c1efa9cb22c026dc5fd771331e2565552f8fd9f06041dd0ba5e705e11abab11f",
+    "Gemini-3.1-Flash_predictions.jsonl": "1f645b4b19e9ea8b9a9edb18903a89b52723b7b5914455d04a7edfc286e2171b"
+  },
+  "raw_finance_sha256": {
+    "finance/results/Deepseek-V3.2/sample1_results.jsonl": "f75849b5dcfc8482339056b819848341482cb40bfdc9db7df1215b3fa76315b6",
+    "finance/results/Deepseek-V3.2/sample2_results.jsonl": "61182a95a2128cf0c11bef15ba3cbadb0c02849ff57ca5a521a5770f40ac8987",
+    "finance/results/Deepseek-V3.2/sample3_10_results.jsonl": "e98c0d70d5eb0899531959eaa33e2c6f01b0d5da90a83693379bd585de750a99",
+    "finance/results/Deepseek-V3.2/sample3_11_results.jsonl": "9cdc65976c865a8ec7e182ba74692aff8363002d1bb906fdb55d8b7270a26ed9",
+    "finance/results/Deepseek-V3.2/sample3_13_results.jsonl": "8533092ca37396d67412be10e524ffaf71be596cb7e52559986b371ad8328211",
+    "finance/results/Deepseek-V3.2/sample3_14_results.jsonl": "4030ce9420e79667950a183ad79747cbdf6f08f7d1d1c7e8b0f0341f6a373283",
+    "finance/results/Deepseek-V3.2/sample3_15_results.jsonl": "31858ac521f48864792a2a2a377f9df74c4f04d6960c846fee7f6228a89a6c01",
+    "finance/results/Deepseek-V3.2/sample3_16_results.jsonl": "5feeede8873a4ea572295592c4ff256aa9aef2b59a73a752a41870a261a9d41e",
+    "finance/results/Deepseek-V3.2/sample3_17_results.jsonl": "b981a253f41ccb8566f0ec88149253e8c8f72a77012e0265f2bcf5b2fee15a6d",
+    "finance/results/Deepseek-V3.2/sample3_18_results.jsonl": "c0f0abf0be4a0f5779490e1097e6ededbb5460aaff8b09c754a9469dd0411e21",
+    "finance/results/Deepseek-V3.2/sample3_19_results.jsonl": "bdfa38d14a5d2089897e55dc3d3efefe2acf8c5cb2eccdea213708677a279f25",
+    "finance/results/Deepseek-V3.2/sample3_20_results.jsonl": "364df72b6a4490657f0e81f8727a7a4da7116a0c1870be2bdf6141c774fd606f",
+    "finance/results/Deepseek-V3.2/sample3_3_results.jsonl": "84b1d4fbdfece3acbe951773db9c4829e800cb1db5d1103a097769a942b97c3d",
+    "finance/results/Deepseek-V3.2/sample3_4_results.jsonl": "c1daecf0347c25bcb41eff0dedfa30efc7b2ec8af4b0e8c8a41fd873ec36d1c5",
+    "finance/results/Deepseek-V3.2/sample3_6_results.jsonl": "d839b0786a5c6f0b77551f7c701f99d29201bf2355a67e9c3d0bd6e3252701d8",
+    "finance/results/Deepseek-V3.2/sample3_7_results.jsonl": "48b8167d888b3764aae68065b6fd15690a22603652f48b0142f10993dbc3153c",
+    "finance/results/Deepseek-V3.2/sample3_8_results.jsonl": "80de291ea08ee8ba72132fa0ab83d1e5ed983d2f6b861a034291c8165d208828",
+    "finance/results/Deepseek-V3.2/sample3_9_results.jsonl": "1e778b8f9e288fa7d3a78eb0b37f0cff839b73500a8e249611ec111ff722340d",
+    "finance/results/Deepseek-V3.2/sample3_amount_results.jsonl": "1a65a35a0b8a0a88b17a2726eb0308f7517e7181560bc028111e47471551cf3c",
+    "finance/results/Deepseek-R1/sample1_results.jsonl": "e7afdc1959ecf9176ff1f27eb21b8b7d28298e96bc8db799f93ba50c629cdb6a",
+    "finance/results/Deepseek-R1/sample2_results.jsonl": "0710b489403ee238134380e5553ca2d071b107039a81ed7e6c55f59f090563f9",
+    "finance/results/Deepseek-R1/sample3_10_results.jsonl": "ce0ff9043b30af352139baf03dab4b331456d99f07fb893a0fbca6413ccfd8b6",
+    "finance/results/Deepseek-R1/sample3_11_results.jsonl": "e9416942c5db7d12f3633ca6b72e00c89da8588a2d25e6eb9744ca608877a448",
+    "finance/results/Deepseek-R1/sample3_13_results.jsonl": "543b06a1862787b8387610f6dad3921df28ecb27f957ae43880ab9272617d887",
+    "finance/results/Deepseek-R1/sample3_14_results.jsonl": "5a6e8ab6cc67abd63cff96f844e888911e8d9e0a5a70eb72c94b964509a30061",
+    "finance/results/Deepseek-R1/sample3_15_results.jsonl": "3c6736d525e9eb27a5a1e75f13c5314a60ea407275a02f8d2775c244d5f5cbd3",
+    "finance/results/Deepseek-R1/sample3_16_results.jsonl": "cd6136ac54915a6ab098dde4b4d118ee39e200267de4a68ba6a71f7da5610608",
+    "finance/results/Deepseek-R1/sample3_17_results.jsonl": "689d6a98b4712ced3c1fd4212e8b0e9600e14e1418f7cdc7316d56e3e754665f",
+    "finance/results/Deepseek-R1/sample3_18_results.jsonl": "1d836f8b816c045b8256cdb2a0b5dcca50e1e9b4b00fab9cb479f9bd08f87af8",
+    "finance/results/Deepseek-R1/sample3_19_results.jsonl": "94606b68a4024eb5fe7057a0abe5b224d8eaf110e15c59ea1e8f4bb914fd0c98",
+    "finance/results/Deepseek-R1/sample3_20_results.jsonl": "def056eb1bd9f84ea2b965146a62f528054a7f4c6a31bac15c732650547c42e5",
+    "finance/results/Deepseek-R1/sample3_3_results.jsonl": "9a1947900b3d6653fef56ed8fb3e39d50a8d8034230766002110503c13219ff0",
+    "finance/results/Deepseek-R1/sample3_4_results.jsonl": "4d31aa36c7915db07814296541089e63196323fa799bda2756d6f2d5ea82fc24",
+    "finance/results/Deepseek-R1/sample3_6_results.jsonl": "96648ef4c2e80b14c355a15cb89a6d719279a32b475525896079215ed88bc4df",
+    "finance/results/Deepseek-R1/sample3_7_results.jsonl": "17b7f5d9b3af6fed0d8b9cb29e6e9cbad14133721760c33e4e3983f17e05cb78",
+    "finance/results/Deepseek-R1/sample3_8_results.jsonl": "c26cadd653da9f8a3964bf996a93c55c2ce2558c7bc0eb6f94ff0caf7d8c54a0",
+    "finance/results/Deepseek-R1/sample3_9_results.jsonl": "dc87166adaca5c159c788aa1392b6214dbe6717b26b8f89352a16bcb806e2084",
+    "finance/results/Deepseek-R1/sample3_amount_results.jsonl": "c80c4ecbe459a562985e732d62a04bdbafd03cdc04c7f0d3b2de370c184bb302",
+    "finance/results/DeepSeek-V4-Flash/sample1_results.jsonl": "756d1cbdad1f807c67d81ea5771a43a8b9d34c73aa5f1dc1b1e8799a078bb11b",
+    "finance/results/DeepSeek-V4-Flash/sample2_results.jsonl": "6135ab7bf9ccf3e7b8284cae7d54de2b732e7de23b720bbf1f14afd721cd8207",
+    "finance/results/DeepSeek-V4-Flash/sample3_10_results.jsonl": "60a365564b1b47a5f39caa2dbb83539639c98c2c7363dce2915c1b5c42619dee",
+    "finance/results/DeepSeek-V4-Flash/sample3_11_results.jsonl": "bbd69e9e222da238e272f40951fa5887120bce6367aa816da297290fd74e2ad0",
+    "finance/results/DeepSeek-V4-Flash/sample3_13_results.jsonl": "802a98e4105f9cc030a99e1247e2ad6bad8cc0274a378009240e7e4b7ae0dfd1",
+    "finance/results/DeepSeek-V4-Flash/sample3_14_results.jsonl": "a2a509473f0e85fa4625a47ee8466b7be69ae04ccd8f2bfa8aa2ae11c3a6ee4b",
+    "finance/results/DeepSeek-V4-Flash/sample3_15_results.jsonl": "030b37163ae71268fb78b5fdbb25461bfc6b478888de874970be9113b43c8891",
+    "finance/results/DeepSeek-V4-Flash/sample3_16_results.jsonl": "5bc92e5c5ed1447298cf584f850bbb88001d156e3423cb7e701a43df61e1b3bd",
+    "finance/results/DeepSeek-V4-Flash/sample3_17_results.jsonl": "2566cb88e7cac1887572d22938eb05048cc8a2f7f2a18df457e9a3144a2b6122",
+    "finance/results/DeepSeek-V4-Flash/sample3_18_results.jsonl": "33eb0c6a70f6eba6eeb0607c16fee92e6f80e762a504f4b3abb6847817838aa7",
+    "finance/results/DeepSeek-V4-Flash/sample3_19_results.jsonl": "50d9e9c706a9d3ba0667ad46f3ce88e9dc9b9023e0b51965fa63ff1e7a1c6140",
+    "finance/results/DeepSeek-V4-Flash/sample3_20_results.jsonl": "df0b3dbc5b5c27b81c7bd319a9878a2f1e8502a1f85dd2baf28781d175943926",
+    "finance/results/DeepSeek-V4-Flash/sample3_3_results.jsonl": "b953f593886787a5936adb88d7c434430b99b8b34d7656608e79cd93228dd349",
+    "finance/results/DeepSeek-V4-Flash/sample3_4_results.jsonl": "3aa60775002bb556f20439eeb471b3c39cba7f062f9d02d69b218011ae385692",
+    "finance/results/DeepSeek-V4-Flash/sample3_6_results.jsonl": "cc849669abad226ff6ea4ee71eb3a875e582c0cc3c58f23f7a57531d39ef2805",
+    "finance/results/DeepSeek-V4-Flash/sample3_7_results.jsonl": "62f1a66f2e69da33cad10577fe2647912075ce80c1de59e257a50d04ae245779",
+    "finance/results/DeepSeek-V4-Flash/sample3_8_results.jsonl": "56250432c7c1a4e4dfcb80f6a2aee95e1c6f4d8784c552045f0624d14c53f3d9",
+    "finance/results/DeepSeek-V4-Flash/sample3_9_results.jsonl": "f88330958d461d8fcc18f4d3df7cf9eb04084556c11b657ae928c69a1efe0546",
+    "finance/results/DeepSeek-V4-Flash/sample3_amount_results.jsonl": "bda5513bb2f153a7bd325bb6c0da4a7482ff543a27935629e5ca624a1fa0efd7",
+    "finance/results/DeepSeek-V4-Pro/sample1_results.jsonl": "66d248ef61274aa3ad87cbb444f81cf30f75fc576416ec4c3d663c8941b56892",
+    "finance/results/DeepSeek-V4-Pro/sample2_results.jsonl": "987ed66999a179a9405384e06f88683727fcc6af5e5e8e0462fdb9a083c5031e",
+    "finance/results/DeepSeek-V4-Pro/sample3_10_results.jsonl": "29999d7095a0fae660d7ccce0d2ee6f25e2bf076a2553d96b745dce9edc82da4",
+    "finance/results/DeepSeek-V4-Pro/sample3_11_results.jsonl": "b4366fdc6595ff0a06b944beed831267046b8d6bf918f73be8538d9c0f110728",
+    "finance/results/DeepSeek-V4-Pro/sample3_13_results.jsonl": "27eeb5ebc1fc5a953cff61f6a790c6f1feb210428d33eee1a0a42fb1c4c3439d",
+    "finance/results/DeepSeek-V4-Pro/sample3_14_results.jsonl": "4c371c223ac142d1729e6f82e01c322605df5969de1af16aeda9cbcd3deade1e",
+    "finance/results/DeepSeek-V4-Pro/sample3_15_results.jsonl": "3b0038b258f00d0cdae4e4c24f198096baa295e3a074b4641a5be1799a3008b3",
+    "finance/results/DeepSeek-V4-Pro/sample3_16_results.jsonl": "ecf481dea87bec4716d01573a37e466a52ecc75533c07f5432ee6db46ca2eb72",
+    "finance/results/DeepSeek-V4-Pro/sample3_17_results.jsonl": "3559ba4e4f84318ba94ff45018d0b8c3726e9004763e5c7ac412d69e5a7457a6",
+    "finance/results/DeepSeek-V4-Pro/sample3_18_results.jsonl": "e6aefc63d7ac12f0413716612b1f6c16dbd6826b8c9457bffae59c4b1e4abc42",
+    "finance/results/DeepSeek-V4-Pro/sample3_19_results.jsonl": "3363256fc4171d3c05e94c3249b1ec39bd2be6aee055f96127d03bc67efee611",
+    "finance/results/DeepSeek-V4-Pro/sample3_20_results.jsonl": "139d774986eadcf2bb7fc66946170f3fdbb34517e7bc7024a15dfd18bf2ef38c",
+    "finance/results/DeepSeek-V4-Pro/sample3_3_results.jsonl": "4d485049bb3762203e6debebcd576749d092ec7bcca47aff35b6b025d23bf5de",
+    "finance/results/DeepSeek-V4-Pro/sample3_4_results.jsonl": "672a81241eaa8215f94e12637bc92678f399ea4284e78ba2794b362438f9d59d",
+    "finance/results/DeepSeek-V4-Pro/sample3_6_results.jsonl": "5713b3fb53ce6c06379a760cead7ef3bb6869d84ea63c1905ba8798906987856",
+    "finance/results/DeepSeek-V4-Pro/sample3_7_results.jsonl": "1c173c1d31274e0ec9c15f29286582fe094c209f525f351508c100d2db2e34fc",
+    "finance/results/DeepSeek-V4-Pro/sample3_8_results.jsonl": "f94d4cb4a3ec869496e768e8becf8b74b1d21a1a3b5edff501685ad8f847f0f6",
+    "finance/results/DeepSeek-V4-Pro/sample3_9_results.jsonl": "c46c66714629909ad42aa24c67b660cbca54df82e02c60493c2838808bfc5859",
+    "finance/results/DeepSeek-V4-Pro/sample3_amount_results.jsonl": "19f618c183975d0bcb956c63113039e3d6c8c5abafed3b15b8ce01da2292e838",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample1_results.jsonl": "dced7dfe64bf4a8090804794711d03b2b177c632e932533a7b463a1128eb8f1a",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample2_results.jsonl": "b14096099d95a5045e809f1a431b4fa75129f14f20706bfb3c5c5944a2e28c67",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_10_results.jsonl": "b3b5f2e9b1673b7d469233f8f8b3d0b5c4e622bab53c4e125e6e8b09e27f9eda",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_11_results.jsonl": "9140fe366ac3902cd39f6154c3c652aecce4da471bc34a4e26a1cce84a000a7f",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_13_results.jsonl": "6c5057655185c49dfd71f148acb3e86dfce91b91d0d2a67ce202ede456255284",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_14_results.jsonl": "d514efed45c436ba0134902e8d9696c4c79bebc3a082e5b7610faa0dcb828592",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_15_results.jsonl": "efc9792643bce60eb56d60dfa7d75505df8374dc9ee7abbb0136b41e61a08e1f",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_16_results.jsonl": "297ab9672f34cf914f6ffdd3af72dc2faf433e069ba3e5308ea8c526717bc3f7",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_17_results.jsonl": "b3dbd956128c56c1bddc3c3f2e673da7c265fe46090d4516828e514ed2fc173b",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_18_results.jsonl": "e662677c6f14a78c81cf5ea98f3e42f5e4ac6ecca37624a057b4ea8545b22827",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_19_results.jsonl": "ff677a0514690184ec57387252998fafbe3ef8bd9f76a65594d8bc992f65664b",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_20_results.jsonl": "df1966aaa5013fa0c9434463a1fdfd59684a61af7f76e8540ceb31c7509f2535",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_3_results.jsonl": "69b44a97bc2a745a552927d3427cd7cbccbb6b4ef2379361a0962d4d900eb93b",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_4_results.jsonl": "a2f8edfd11973ef422920fdacd08e54805b1b967f63817c86084ef30504ee2e7",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_6_results.jsonl": "e7c45d52cab01fd413fd6c07eb79ca0038cadbd124e910efead47ab148ea3e7b",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_7_results.jsonl": "adaa7723709587588e03c483229648a348cec9f962e550cba40157902da993b5",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_8_results.jsonl": "205fdcb1cd64c7f0e3712af8279d8994d9f793098d84a092417d120df1008131",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_9_results.jsonl": "100554b73f2589a6946dec8ee5e9668d17073a0ac3ce5d5d66419c35afbb835b",
+    "finance/results/Qwen3-30B-A3B-Instruct-2507/sample3_amount_results.jsonl": "fbb11e446b7a252f6098e1069ea0b2b0a65165fc569854311eda2ba12416def0",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample1_results.jsonl": "d71091004be1b0fb71a64203a17528a4958f1cc2eddb251f6ec50e4340a7f174",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample2_results.jsonl": "e55c63c5beefe70d86571648d8202711826b63c448cc5984d70626db2a0e6864",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_10_results.jsonl": "097a308b44c595c9a65b5bdfaf730c9f033d04c4b4a78fa03b622aa859b238e4",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_11_results.jsonl": "ccd329335d02d402135be282cfe1ae162031f1aa5065f254176cccf64ba90988",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_13_results.jsonl": "b40ad167c47b476603991071fa6904390ac3ba184c69818b7b7385f5926acd97",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_14_results.jsonl": "0c8b73ffb2fbc7037edeb82e1c6f22ae53ad51c6ff40d9994bf995cbdf8dd3d8",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_15_results.jsonl": "d861f714dc8dd771001a07e9b7db4a4f217e5cf495910eb020ec4ccb0baa0156",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_16_results.jsonl": "be7c17a4423f9cd9e77e31ec0c83e8c406430d5829e027f5729d90b63814dc4a",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_17_results.jsonl": "dc74dc57b93ae68607109c38849281d576f9d903faecc0d49cd60e0ff7fb4914",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_18_results.jsonl": "09f30c380e27ad30b4ed855c784dfaf6091ede7b8df88076bb27829ac802106e",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_19_results.jsonl": "7c1edcebeedc50eba3085581e7c2655a256658662fa0721f23c29e1887b8d9bf",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_20_results.jsonl": "d96232654278fdf3267b03a8eb69196548cb399fcdd65b7e2f9f883a5912b6c3",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_3_results.jsonl": "ddf0e75bb2abff3b791bed0195414174d197d2ae2ca6ae1354f503597fd18378",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_4_results.jsonl": "b2b36ecb8f89dd2b39fb6e12bb54a2141963275ee3670a469470ea4267b6fdb3",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_6_results.jsonl": "6de93e9c98e26ad5485426a9623014dc027306e81940ce665ac49a0a2c6a15c8",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_7_results.jsonl": "95bf9c1f9bacddeacc2d61766dd35242556021bcce9004f6ed67f8ca409fd354",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_8_results.jsonl": "6dcd93f6f9e0f4cb8f556fa135416c09b722a8f6b16e05051d6004ea96e28c7b",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_9_results.jsonl": "df3610961df0a1ee51158c32907d3f889a3bd0373774609f33d9109bc4930efc",
+    "finance/results/Qwen3-30B-A3B-Thinking-2507/sample3_amount_results.jsonl": "30022270397153c58f7ddba64e1630248f358c2370ffdfcc591abf21f620cdaf",
+    "finance/results/Qwen3.6-Flash/sample1_results.jsonl": "dd54e647cd86c9acb0bdddeac51cfbd1849afd90af063c678e9efe259cea4278",
+    "finance/results/Qwen3.6-Flash/sample2_results.jsonl": "1a99baf641d948d35ced2a00d417a343d86e8fd96549e5a02a89351e2cc55ad5",
+    "finance/results/Qwen3.6-Flash/sample3_10_results.jsonl": "bff22bbe3d37fc7eddab29aa8c459427cea6ad340306d7d8ab5c1c4bddab2201",
+    "finance/results/Qwen3.6-Flash/sample3_11_results.jsonl": "a4d23af482797547f71bee06400a190c0a0f9ac88e5338f266a91019a03e7a24",
+    "finance/results/Qwen3.6-Flash/sample3_13_results.jsonl": "148890c0ff1ccbc1d85928abd82f0a58b44996854ccd9b961ea236d713bb33b7",
+    "finance/results/Qwen3.6-Flash/sample3_14_results.jsonl": "a371277be76c2faf90048a846d0004ae85bb0186f1aaaa8dc1b549d61218ec69",
+    "finance/results/Qwen3.6-Flash/sample3_15_results.jsonl": "70ba8784d8ee7867b81b0decf053bb9dc44df55e8f453d426e48da4737d03824",
+    "finance/results/Qwen3.6-Flash/sample3_16_results.jsonl": "89cba879f3585cd15b3b5f9e1cf5ef3b78f01f5439e2b7157ba4b5b8b00127b4",
+    "finance/results/Qwen3.6-Flash/sample3_17_results.jsonl": "b5051433b4ed2a141b7153ff69399fd61140eebeb4447d690a1ed6f0f375414a",
+    "finance/results/Qwen3.6-Flash/sample3_18_results.jsonl": "3d6ec97cd8cd90eba934c771c630e222ac2533cc6a2fb722bc9bf79f116d13b9",
+    "finance/results/Qwen3.6-Flash/sample3_19_results.jsonl": "853aa3a21d72485d34c1458fcb96023bf6f66a0fcc4ace3a621dd3dbc73440cd",
+    "finance/results/Qwen3.6-Flash/sample3_20_results.jsonl": "9a6ab31a8ff0d584c611310b45c19a87009764ba0e922eb8c657badb385f5758",
+    "finance/results/Qwen3.6-Flash/sample3_3_results.jsonl": "f9c05e0a309ac9ba6922a4ce5eadd1abfb827fb6f3f553a61d5c27d354a1f208",
+    "finance/results/Qwen3.6-Flash/sample3_4_results.jsonl": "aba30c6b8d2a4d5777a5a290986fba5f1bddeb2a44897dc92b7139231918a224",
+    "finance/results/Qwen3.6-Flash/sample3_6_results.jsonl": "d09e62a2cbb22ed27cf46b46b993c298d600c52acf425ccda4026c22b5f0368c",
+    "finance/results/Qwen3.6-Flash/sample3_7_results.jsonl": "ab02d9499260aebc90cd2f114baf2674bb3dd951c4ddc19518669d73ec03c9c7",
+    "finance/results/Qwen3.6-Flash/sample3_8_results.jsonl": "acb4a0e3bc200e03bafa0bbae44ce8cadc01cd64b8b1de377534e8f83096c544",
+    "finance/results/Qwen3.6-Flash/sample3_9_results.jsonl": "92d6f570056acf718ccdd386ff9ee4f0d70bb8a3b2597ed815b81879e368f9b9",
+    "finance/results/Qwen3.6-Flash/sample3_amount_results.jsonl": "4eea27d157a450f71961e23b38794618857be58fb26bae2f45553c01d634cdda",
+    "finance/results/MiniMax-M2.5/sample1_results.jsonl": "d598c9ae552bbaf7810e6d0f2c9703602e3d274d167538a2249b02a943ab7e63",
+    "finance/results/MiniMax-M2.5/sample2_results.jsonl": "f5057716f6406b177cf0d78d54b0a76cfac5bfadd930a99e3d8d6f275418f8d4",
+    "finance/results/MiniMax-M2.5/sample3_10_results.jsonl": "22bd3a3641a563b0539529f5a0721abfc5573b4e5ccbd4b8fb25ea5f07d30d93",
+    "finance/results/MiniMax-M2.5/sample3_11_results.jsonl": "ed0283a10bf163a1fdcc243b00c9e19982dec976bd31a8dd9b27fd967dfb14d2",
+    "finance/results/MiniMax-M2.5/sample3_13_results.jsonl": "4e67dca0444cfb50a5f0dd2003823a2e73107453d75f4249d8765ef50ed9608c",
+    "finance/results/MiniMax-M2.5/sample3_14_results.jsonl": "f637639cf23be70ac37968b6b9848304bc820f17969fd1188bf71c7341722abc",
+    "finance/results/MiniMax-M2.5/sample3_15_results.jsonl": "2d6c96644bfaf8a66f998fe885ab005fb2731399e7e1075a0a641856987c817d",
+    "finance/results/MiniMax-M2.5/sample3_16_results.jsonl": "d1b8b442540bec5382ff820c32f5a2dfb2aca6de4649fb3719fcee471030a75d",
+    "finance/results/MiniMax-M2.5/sample3_17_results.jsonl": "8415eb10ecf1c5fd9bcd608dfc2343e3f68620e9d0db29c105c287a8f9eeadd0",
+    "finance/results/MiniMax-M2.5/sample3_18_results.jsonl": "213fd210416f33ccbf6eceb1690c8b66050c670cef24b49341d4f1150920c856",
+    "finance/results/MiniMax-M2.5/sample3_19_results.jsonl": "e958f5923908bb83af071fb0ebf499fa10e93e01de4a9f04c0cb0e57fa5e1bdc",
+    "finance/results/MiniMax-M2.5/sample3_20_results.jsonl": "c00bbead2374b0934fbcb2ca4f87d85785e6d6834c76bade220c60665ec37970",
+    "finance/results/MiniMax-M2.5/sample3_3_results.jsonl": "ff93346130592cc81b4c07b5c3ce84959183c310097b112c949829b1f9d9eab2",
+    "finance/results/MiniMax-M2.5/sample3_4_results.jsonl": "b9210a540b0f10c270bdd22bf85dfa48d716403af16c41c4b1ed8c5adc6e64b1",
+    "finance/results/MiniMax-M2.5/sample3_6_results.jsonl": "e731d342043669b54074dbf47fc9f11fc9ec32a5e3de8389238dd658c684c70a",
+    "finance/results/MiniMax-M2.5/sample3_7_results.jsonl": "9ea9c55b2f8516e3aad18e9e75a6941a785d299fd7f312f34af3d625a8ebebb2",
+    "finance/results/MiniMax-M2.5/sample3_8_results.jsonl": "da2e244101a868fa4a9a0a4032c89152a069a001041e44a683bb9506c0623648",
+    "finance/results/MiniMax-M2.5/sample3_9_results.jsonl": "bb15f22364621bf1f273e1e7c62a7fd558c8c86eb432a88a39c09cca7d8c5320",
+    "finance/results/MiniMax-M2.5/sample3_amount_results.jsonl": "0da540bdad712d0261792a350eb8026723e1b73cb157b6f8d685ffa7971affcf",
+    "finance/results/MiniMax-M2.7/sample1_results.jsonl": "e0b0c124a7ba75173832c0dc26c22200bf1f80c3f29a7b3c8be89c7e34a684fa",
+    "finance/results/MiniMax-M2.7/sample2_results.jsonl": "e26e6c08788c33ce781034b6f0e24997c49bf0a4ee4389228b72690c0d4d6925",
+    "finance/results/MiniMax-M2.7/sample3_10_results.jsonl": "4143ddca7a53c7196c0b3a2c6c8c282091807aa114167eb845b6ff767b36f38f",
+    "finance/results/MiniMax-M2.7/sample3_11_results.jsonl": "3f71fbf9bf76abc600bf03ea5250f73b0978999fa6b46a353d11bf04623d13ee",
+    "finance/results/MiniMax-M2.7/sample3_13_results.jsonl": "a6936f59cc14b019edc69337cb61fcae80d72de419e6a67708e539bc22fc38d6",
+    "finance/results/MiniMax-M2.7/sample3_14_results.jsonl": "0b125301cbfd2d05a689b2f70f1f73c4b6e45368727d87f87c9a031a91c407c0",
+    "finance/results/MiniMax-M2.7/sample3_15_results.jsonl": "b26528e03033de7ec8babc73270113d20fbdff3a9915b908c6590a509cde413a",
+    "finance/results/MiniMax-M2.7/sample3_16_results.jsonl": "48e4fe39a0b9bd6847205368d093e8cc45f97a17f055abdc111710ae076249b7",
+    "finance/results/MiniMax-M2.7/sample3_17_results.jsonl": "7a8a2bba6a07f4c753946ddb52932ecd43e269bfaf5355bbda005effaa527413",
+    "finance/results/MiniMax-M2.7/sample3_18_results.jsonl": "0a2ae1801b3410073330c9940d7c1396bb6d74f39670f1afd22322d8674b1f1c",
+    "finance/results/MiniMax-M2.7/sample3_19_results.jsonl": "93890e08bfd2d2e4466b1de01de9ce1adfc421a4027c7da4ff379c1c12088723",
+    "finance/results/MiniMax-M2.7/sample3_20_results.jsonl": "39727a462211dc8b4771fda7d462c0ee4af8a8b4a8a84980b8213d70a651330d",
+    "finance/results/MiniMax-M2.7/sample3_3_results.jsonl": "d4296c490999740642ac351ac2fd9927a160d23e49c2a30b2ecfe85fbd08271e",
+    "finance/results/MiniMax-M2.7/sample3_4_results.jsonl": "c87ba1c0af8f8aa99c910d09b4859c59d6a4db2440598c4dded5429f7a7c15cf",
+    "finance/results/MiniMax-M2.7/sample3_6_results.jsonl": "b50a879d1bc498dd58e90ef6937db36892289c35ce2b9b47bff20d9250e7bfb5",
+    "finance/results/MiniMax-M2.7/sample3_7_results.jsonl": "539916a88a348cc74b1a05e27158186f540fd7bd5945e67753109840f5dc4fb3",
+    "finance/results/MiniMax-M2.7/sample3_8_results.jsonl": "67f27021893d8c2f134d1bd588e26a76c3d7f4a8e69b5937c94d80a7e89d45c0",
+    "finance/results/MiniMax-M2.7/sample3_9_results.jsonl": "857e63079c7c10923b53c413de3673edd5a4553be08105eaadadb3e004820aff",
+    "finance/results/MiniMax-M2.7/sample3_amount_results.jsonl": "a643a2775fd0365965180e978a8036fac0de40127010f6187e4a8ffc0e531762",
+    "finance/results/GPT-5.4-Mini/sample1_results.jsonl": "d2d661fb8a5c8b8e6f0afc548373f0910cd238a6ded61d4acedc9b8c886522ed",
+    "finance/results/GPT-5.4-Mini/sample2_results.jsonl": "db4551f24202633f88b0b5c42ee15cd3655aa8fb9be0fda9b79149990c4365ca",
+    "finance/results/GPT-5.4-Mini/sample3_10_results.jsonl": "d873ac9f0cde1aa7f858a8fd7945f2d34fbbc7cf491894fcba88a00c2830d1ba",
+    "finance/results/GPT-5.4-Mini/sample3_11_results.jsonl": "24c574ac94a046449e4c7b3861e1ecd83686a99b02c1e4e8737368bc3eb6cd09",
+    "finance/results/GPT-5.4-Mini/sample3_13_results.jsonl": "abfc4fce85d580035a7db819ca6082a1bee4bc38debea53ef0115f9660ed2b44",
+    "finance/results/GPT-5.4-Mini/sample3_14_results.jsonl": "1ace4e4c73b70f4cc1eceeb0bdcf878115204318133cc82552cb105a5b93ba79",
+    "finance/results/GPT-5.4-Mini/sample3_15_results.jsonl": "13b96c4c90f3f7c94ee308e864bd2ae5ad3f05b17ad8de4f9240b971bccb42a8",
+    "finance/results/GPT-5.4-Mini/sample3_16_results.jsonl": "5e251799f8a24907ef3f7b7f1588aeccccb3185bbffb42363ebf45b852bde391",
+    "finance/results/GPT-5.4-Mini/sample3_17_results.jsonl": "1fa1b93b839ad91364fe67e54179523adfa910c158414ddc8a150aa6ba112467",
+    "finance/results/GPT-5.4-Mini/sample3_18_results.jsonl": "ade89f2ee746ab19e49c4efcaa1f5113e97f8ebeb83a9b1f2c0dbfe8b309f1b4",
+    "finance/results/GPT-5.4-Mini/sample3_19_results.jsonl": "b90812c94d62c3d9e6ffa0811b32bbb5cce44491164d9901095ef749e88ccc9e",
+    "finance/results/GPT-5.4-Mini/sample3_20_results.jsonl": "47db1abcc7499417ea31b27dc11395a3649a039972ad4aa6f9002f091998c0f5",
+    "finance/results/GPT-5.4-Mini/sample3_3_results.jsonl": "5c94ddef6ed8e43ffea2368aa02c55689e5d8f921dbb14282e15d8eb049a841f",
+    "finance/results/GPT-5.4-Mini/sample3_4_results.jsonl": "657c6e0a0abf733939b82b34a6204967639abc18e06eecfb3b8fd2fe11433f42",
+    "finance/results/GPT-5.4-Mini/sample3_6_results.jsonl": "76875fa961bf44c09ac41464c203e8b6ada068d4577997adb859a2926db5dbd3",
+    "finance/results/GPT-5.4-Mini/sample3_7_results.jsonl": "10672eff7dfdffb920a7431a2f940b40ceaec1b1a63be5b0c33fafeb4bd77ae5",
+    "finance/results/GPT-5.4-Mini/sample3_8_results.jsonl": "b9a7b5caefc285481f9d5be7f33a7ff3f680a2792ba63f13682d13df5b8841da",
+    "finance/results/GPT-5.4-Mini/sample3_9_results.jsonl": "13bacc7766eee4d5bce51f69dc1aae85c213e971da34e9d487a10cb0c289646c",
+    "finance/results/GPT-5.4-Mini/sample3_amount_results.jsonl": "67ce29b5fd9bbc7f1a8084d4e4a841b38b5b4f4ce0a61f9e2634867d3848fa28",
+    "finance/results/gemini-3.1-flash-lite/sample1_results.jsonl": "0c32feffb909fdad054e4a02edb8e032e5800ed1fd771d7232701c97ca95737e",
+    "finance/results/gemini-3.1-flash-lite/sample2_results.jsonl": "57350b3a39be2d761bb57c02c3ec084486e770af2bb1949d9c090d762b47b663",
+    "finance/results/gemini-3.1-flash-lite/sample3_10_results.jsonl": "e71bfedebd2f952562ca8127c9eb41ab2d0c9562de9340b70149e94f89196b30",
+    "finance/results/gemini-3.1-flash-lite/sample3_11_results.jsonl": "61c2f30a334c08d5f34e2904ae3eb94172958525710f0182c18d4b00e1706071",
+    "finance/results/gemini-3.1-flash-lite/sample3_13_results.jsonl": "ccbe375897d6646a03df27ea42afffed226dd3f003386d9481fda1413550ac5a",
+    "finance/results/gemini-3.1-flash-lite/sample3_14_results.jsonl": "cf7699277c8cd2344ed0395e52d7b5da7db0a8ff34e43a23d3a231bef2671849",
+    "finance/results/gemini-3.1-flash-lite/sample3_15_results.jsonl": "8dae5b557c7da105a75a0b190ebbb42605a910d71fb9b35a23d5cba8fba92233",
+    "finance/results/gemini-3.1-flash-lite/sample3_16_results.jsonl": "52f05f487d9354e3784ee233a14bf9a1b65c7b082b83ed359c6850f7b8eaf15a",
+    "finance/results/gemini-3.1-flash-lite/sample3_17_results.jsonl": "465cfa2cd4a569ea4cba6381ed0eb70fe0b619fa80537e56b800f18805d045ab",
+    "finance/results/gemini-3.1-flash-lite/sample3_18_results.jsonl": "1f49006a99911c10aad7feb1491cd6d694eec0fcbaf1dea9c26146bdaf492c8b",
+    "finance/results/gemini-3.1-flash-lite/sample3_19_results.jsonl": "f6cf27cd7044d235eaf242c2f487ea60d4052f1237ef26fe0dc81b61ba0ca053",
+    "finance/results/gemini-3.1-flash-lite/sample3_20_results.jsonl": "d03fe918d46db9d2d5bf16c0a61900d14127cf2142747399875671c4b35d5193",
+    "finance/results/gemini-3.1-flash-lite/sample3_3_results.jsonl": "49ceea71ea409cf14a0f5fc0d6983ac4400dd160da1b631a9d68e537bdf5947e",
+    "finance/results/gemini-3.1-flash-lite/sample3_4_results.jsonl": "5ea91ad9c00ecb3a60e79408f1b2a69a486ddd9f72550adc342ba3c91a2ddb58",
+    "finance/results/gemini-3.1-flash-lite/sample3_6_results.jsonl": "e19b8afb14f5d939681561f86014d03467e8ac3d5506a378f90b699f4a211be6",
+    "finance/results/gemini-3.1-flash-lite/sample3_7_results.jsonl": "05795e1684b1752fc12495326560076403ac3679294dfb74703086545a8e9126",
+    "finance/results/gemini-3.1-flash-lite/sample3_8_results.jsonl": "0c489d0f117a9d04b5174924df9681e9c53126742af56ad6c3eb189741a8da78",
+    "finance/results/gemini-3.1-flash-lite/sample3_9_results.jsonl": "0c303abfc2b7d89994c29b6740f512630af154bca1d1daa54cdc7502790d38ff",
+    "finance/results/gemini-3.1-flash-lite/sample3_amount_results.jsonl": "b160a6dab39477ff9bee9b5b699e00255d7e535d9263b6ab5f8cae48eb37d625"
+  },
+  "law_source_sha256": {
+    "law/data/archive_relic_with_rescue_exceptions/dataset.json": "404797d85e4dc00e766931f41b15c21614459d42a98280e48841566ae9d71219",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/Case_kernel.thy": "ecc3eed7f54b9f5cb6a714d764e9e7b9f607ca67ce5c7f35d93af33cadc16cbc",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/Middle_concept.thy": "18dce7ec34264a03d4511b5f55400a6bcabfa9100ff042f664f1420d012a746a",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/General.thy": "82eddd8b7b6baa7598192b991f44595827c031322f44c7bf1c99ac0658841265",
+    "law/Isabelle_code/archive_relic_with_rescue_exceptions/Conflict.thy": "c8ec587bf8cc67feabf14196e7dd152c170ff6ca649dd60b23113e131e445e53",
+    "law/data/aviation_security_with_authorizations/dataset.json": "579526579bc46c71ebc33c08f93cd9075afea16f5b555e84ac96e394c7382f37",
+    "law/Isabelle_code/aviation_security_with_authorizations/Case_kernel.thy": "23cca26820e55839dedcf23218999c617e10efe66dfb099be42e8ec7c84cf22c",
+    "law/Isabelle_code/aviation_security_with_authorizations/Middle_concept.thy": "2a59dd7fb7bae4f9a5480044bad562d3e482c13835399264ce5d5c3768cee6e5",
+    "law/Isabelle_code/aviation_security_with_authorizations/General.thy": "7495f7525d2be15281c57e654709e6f41e8177c0fc86d64f9ee618acc1f9e1c7",
+    "law/Isabelle_code/aviation_security_with_authorizations/Conflict.thy": "a087bbe8ae909d5074a83e15e94cbb3abcc9f11db959e8d3ac5a3d949c5be001",
+    "law/data/cyber_intrusion_with_authorizations/dataset.json": "6a5988783dbaa71ee6f14cfde40129bbecc88cfa247db30547e79fca6487f56a",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/Case_kernel.thy": "b90cd5226656ac99df5664adbaa48f3ebf22ac39ca23747dc08fc012a6c62e1d",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/Middle_concept.thy": "73a726df7dc45ab26b7f4a414da1dcc3eb2c5fe66697fe0aacdf801d2edd880b",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/General.thy": "66266580f40413bfc8bd4b272a7c1ace291822cc0635d4a47de6326581114c9e",
+    "law/Isabelle_code/cyber_intrusion_with_authorizations/Conflict.thy": "76befb99c483f9972501f0cbf20ab2833a725968fccc3f880bb3edddc9cc622c",
+    "law/data/dream_archive_with_exceptions/dataset.json": "6e1cd66dbba6647c2b961f1145a1eed5f6f5fb47806d0bd93c59102fcc5513ec",
+    "law/Isabelle_code/dream_archive_with_exceptions/Case_kernel.thy": "514b388c84616987547c5f4baf62671a14d03ee05441ff05a3689139cebd640e",
+    "law/Isabelle_code/dream_archive_with_exceptions/Middle_concept.thy": "0232cdd48a4860be8cab82e096fc26abea7f187f8fefe6cb96e470ce9cab5477",
+    "law/Isabelle_code/dream_archive_with_exceptions/General.thy": "4726503b31f22f32bf0ef442d1ce4f1502284c6c68a63a55f33b335995c22ab3",
+    "law/Isabelle_code/dream_archive_with_exceptions/Conflict.thy": "f04e4ae887390b7c936a587b9bf296fede1da6f30897fcf69068ce39052cbc6e",
+    "law/data/environmental_pollution_with_permits/dataset.json": "cc5cec9ea05f295574af07cab5c97592f7c669aac0789ffbf36cca01eb0834b0",
+    "law/Isabelle_code/environmental_pollution_with_permits/Case_kernel.thy": "02ef9d4e3a9a06c5ed9940f948567bcfe4b611f5f0d4eb6876fe55ad33ef68d8",
+    "law/Isabelle_code/environmental_pollution_with_permits/Middle_concept.thy": "8879cc6d8d84449ae311e50072cf746e12c45290f762a6b5035f297da43035f4",
+    "law/Isabelle_code/environmental_pollution_with_permits/General.thy": "64dc5e0f7a6038a26fb5aeb04191d0674ff4647594dadd5d641df3c263c6380f",
+    "law/Isabelle_code/environmental_pollution_with_permits/Conflict.thy": "ab62085717f573e2e416a0c8255d2ed056c1ab3c80550f310aa51eaee1db66f0",
+    "law/data/mechanical_city_maintenance_rules/dataset.json": "82006a149b3ad2b42eb81b61785062152fbc429099f52c4018933344b25bf7ed",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/Case_kernel.thy": "14886d3b65a4a138239ab1f44d5b31b46754ef27219b6b11af309c23457d05b9",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/Middle_concept.thy": "399ddd8e0f691220f07fbbaf3249896fbe649fc5d88f22a4465c9c3f2c8c2cfb",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/General.thy": "48f748fdc73079f0602e0ca76c7049876ebdd5ee3b96d7a8ccc0b4420657674a",
+    "law/Isabelle_code/mechanical_city_maintenance_rules/Conflict.thy": "eeaa4e38d0e3bf6c62d050c943f9cc11282468a7ef20997aa934d2e769e6c850",
+    "law/data/mirror_customs_border_rules/dataset.json": "15ecd218d978f4bab9ce4d1a363a93d3b6be15ce297de3a1fc1cccc618f8385a",
+    "law/Isabelle_code/mirror_customs_border_rules/Case_kernel.thy": "e90ae9017ba74c14a3fb192507927ebc2960732566d04009bb21e0e205d5d7be",
+    "law/Isabelle_code/mirror_customs_border_rules/Middle_concept.thy": "906050969266056213f1ae2302db1c64338c687092fdd272a9aadda42843bc40",
+    "law/Isabelle_code/mirror_customs_border_rules/General.thy": "ac19fb0aa0041c213c81bfb095802d383acfd720626a03cdc3d866957a452539",
+    "law/Isabelle_code/mirror_customs_border_rules/Conflict.thy": "c0bd0500e61b3d2aafebadc5dc02c9d28f396df6e6100507f3c54acd67601c7b",
+    "law/data/orbital_habitat_safety_rules/dataset.json": "358ae1356e07fe8aee1cdc94cab40f6feade02fd20d602a15322a3a68ac9d6bf",
+    "law/Isabelle_code/orbital_habitat_safety_rules/Case_kernel.thy": "3ab2b7d522c2a48c5d2d2a9f0b4fc092b806d94c04fd778a3d0505679b60733b",
+    "law/Isabelle_code/orbital_habitat_safety_rules/Middle_concept.thy": "8c7a6424ea72117e6162408d021a0876623055c77fca1a5dd3ad584386523455",
+    "law/Isabelle_code/orbital_habitat_safety_rules/General.thy": "83a5c6246d19fc196fa912cb3bad700a8e2f3a293b0a1a9f26413e889b10dcd9",
+    "law/Isabelle_code/orbital_habitat_safety_rules/Conflict.thy": "23306131a369e9ac54ff63dac409a39371153d003931f9d112dc1cee9632aa9a",
+    "law/data/property_crime_with_defenses/dataset.json": "0e39071210c2d83731e59f8b05f3674c921cc2b5ab34090a14ab5a7669f4903d",
+    "law/Isabelle_code/property_crime_with_defenses/Case_kernel.thy": "2f8185e2dbe911a83769d76d2ee4dd1683fa0730e6e911741799fcc2e9b05d4b",
+    "law/Isabelle_code/property_crime_with_defenses/Middle_concept.thy": "8c494e7aaeffaf7cd4c45701f2968bb86a3cd544a9c9458ef534c3a024fab83f",
+    "law/Isabelle_code/property_crime_with_defenses/General.thy": "7b92814564bac2c47eb17e98d53c1820a87b921e4ea604472f013535a8667420",
+    "law/Isabelle_code/property_crime_with_defenses/Conflict.thy": "99a0123c26d32d2199533fa5ac81ede7647d62ab146f31017194fe80b1d9581c",
+    "law/data/subterranean_signal_dispatch_rules/dataset.json": "744846ee86971690aa58e3331261840b12023d062be3116f5ccdfcedd24f2127",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/Case_kernel.thy": "6a6cde42319d3ab592136cfd3322a5c10cc632b904be5e2994ba48fd64ecaa9e",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/Middle_concept.thy": "d4d6f3b6f033be2eadddd3158a6775fa10daffb8933205997628c998bce3f115",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/General.thy": "81fe6bd332629af2a54f7db6e1aacf5796da306fba935a97b9d886a2ff17d197",
+    "law/Isabelle_code/subterranean_signal_dispatch_rules/Conflict.thy": "c98f6bebe3cf7ca19fda3026687adb07678307bb787b7cc2ff6f445d6af171e8"
+  },
+  "finance_formal_symbol_mapping": {
+    "rule:baoxiao_rules.rule_3_appointment_form_requirements": [
+      "3.1"
+    ],
+    "rule:baoxiao_rules.rule_3_original_receipts_signatures": [
+      "3.2"
+    ],
+    "rule:baoxiao_rules.rule_3_project_leader_verification": [
+      "3.1"
+    ],
+    "rule:baoxiao_rules.rule_3_fund_type_approval": [
+      "3.2"
+    ],
+    "rule:baoxiao_rules.rule_3_electronic_invoice_handling": [
+      "3.2"
+    ],
+    "rule:baoxiao_rules.rule_3_contract_requirements": [
+      "3.4"
+    ],
+    "rule:baoxiao_rules.rule_3_large_sum_payment_requirements": [
+      "3.5"
+    ],
+    "rule:baoxiao_rules.rule_3_special_approval_requirements": [
+      "3.3"
+    ],
+    "rule:baoxiao_rules.rule_3_evaluate": [],
+    "rule:baoxiao_rules.rule_4_negative_invoice_condition": [],
+    "rule:baoxiao_rules.rule4_to_answer": [],
+    "rule:baoxiao_rules.claim_type_main_of_payload": [],
+    "rule:baoxiao_rules.claim_case_main_wf": [],
+    "rule:baoxiao_rules.rule_4_evaluate": [],
+    "rule:baoxiao_rules.rule34_global_ok": [],
+    "rule:baoxiao_rules.rule_6_no_artificial_splitting": [
+      "6.5"
+    ],
+    "rule:baoxiao_rules.rule_6_office_expenses_classification": [
+      "6.1"
+    ],
+    "rule:baoxiao_rules.rule_6_asset_management_review": [
+      "6.2"
+    ],
+    "rule:baoxiao_rules.rule_6_office_supplies_attachment": [
+      "6.2"
+    ],
+    "rule:baoxiao_rules.rule_6_book_expense_requirements": [
+      "6.3"
+    ],
+    "rule:baoxiao_rules.rule_6_high_value_book_registration": [
+      "6.3"
+    ],
+    "rule:baoxiao_rules.rule_6_printing_expenses_classification": [
+      "6.4"
+    ],
+    "rule:baoxiao_rules.rule_6_printing_detailed_list": [
+      "6.5"
+    ],
+    "rule:baoxiao_rules.rule_6_monograph_contract_requirements": [
+      "6.6"
+    ],
+    "rule:baoxiao_rules.rule_6_monograph_contract_approval": [
+      "6.6"
+    ],
+    "rule:baoxiao_rules.rule_6_requirements": [],
+    "rule:baoxiao_rules.rule_6_evaluate": [],
+    "rule:baoxiao_rules.gate_reimbursement_result": [],
+    "rule:baoxiao_rules.global_evaluate_by_claim_type_main": [],
+    "rule:baoxiao_rules.evaluate_claim_case_main": [],
+    "rule:baoxiao_cases.eval_by_claim_type1_rule6": [],
+    "rule:baoxiao_rules.rule7_1_basic_docs_ok": [
+      "7.1"
+    ],
+    "rule:baoxiao_rules.rule7_4_invoice_ok": [
+      "7.4"
+    ],
+    "rule:baoxiao_rules.rule7_6_subsidy_eligibility_ok": [
+      "7.6"
+    ],
+    "rule:baoxiao_rules.rule7_7_self_drive_ok": [
+      "7.7"
+    ],
+    "rule:baoxiao_rules.rule7_10_no_duplicate_ok": [
+      "7.10"
+    ],
+    "rule:baoxiao_rules.rule7_11_external_invitee_ok": [
+      "7.11"
+    ],
+    "rule:baoxiao_rules.rule7_hard_constraints_ok": [],
+    "rule:baoxiao_rules.rule7_position_to_tier": [],
+    "rule:baoxiao_rules.allowed_ticket": [
+      "7.2"
+    ],
+    "rule:baoxiao_rules.rule7_2_transport_ok": [
+      "7.2"
+    ],
+    "rule:baoxiao_rules.lodging_cap_lookup": [
+      "7.3"
+    ],
+    "rule:baoxiao_rules.rule7_3_lodging_ok": [
+      "7.3"
+    ],
+    "rule:baoxiao_rules.meal_cap_per_day": [
+      "7.8"
+    ],
+    "rule:baoxiao_rules.rule7_8_meal_amount_ok": [
+      "7.8"
+    ],
+    "rule:baoxiao_rules.rule7_9_city_transport_amount_ok": [
+      "7.9"
+    ],
+    "rule:baoxiao_rules.rule7_standard_constraints_ok": [],
+    "rule:baoxiao_rules.rule_7_evaluate": [],
+    "rule:baoxiao_cases.eval_by_claim_type1_rule7": [],
+    "rule:baoxiao_rules.rule8_1": [
+      "8.1"
+    ],
+    "rule:baoxiao_rules.rule8_2": [
+      "8.2"
+    ],
+    "rule:baoxiao_rules.rule8_4": [
+      "8.4"
+    ],
+    "rule:baoxiao_rules.rule8_5": [
+      "8.5"
+    ],
+    "rule:baoxiao_rules.rule8_6": [
+      "8.6"
+    ],
+    "rule:baoxiao_rules.role_to_tier": [],
+    "rule:baoxiao_rules.rule8_3": [
+      "8.3"
+    ],
+    "rule:baoxiao_rules.rule_8_evaluate": [],
+    "rule:baoxiao_cases.eval_by_claim_type1_rule8": [],
+    "rule:baoxiao_rules.r9_0_basic_numbers_ok": [],
+    "rule:baoxiao_rules.r9_2_docs_ok": [
+      "9.2"
+    ],
+    "rule:baoxiao_rules.r9_3_batch_ok": [
+      "9.3"
+    ],
+    "rule:baoxiao_rules.r9_4_regular_meal_ok": [
+      "9.4"
+    ],
+    "rule:baoxiao_rules.r9_5_advance_ok": [
+      "9.5"
+    ],
+    "rule:baoxiao_rules.r9_6_foreign_guest_ok": [
+      "9.6"
+    ],
+    "rule:baoxiao_rules.r9_7_duration_ok": [
+      "9.7"
+    ],
+    "rule:baoxiao_rules.r9_8_location_ok": [
+      "9.8"
+    ],
+    "rule:baoxiao_rules.rule9_hard_constraints_ok": [],
+    "rule:baoxiao_rules.rule9_research_fund_scope": [
+      "9.1.1"
+    ],
+    "rule:baoxiao_rules.r9_quota_research": [
+      "9.1.1"
+    ],
+    "rule:baoxiao_rules.r9_effective_total_cap_ppd": [
+      "9.1"
+    ],
+    "rule:baoxiao_rules.r9_1_quota_ok": [
+      "9.1"
+    ],
+    "rule:baoxiao_rules.rule9_research_standard_constraints_ok": [],
+    "rule:baoxiao_rules.rule_9_evaluate": [],
+    "rule:baoxiao_cases.eval_by_claim_type1_rule9": [],
+    "rule:baoxiao_rules.rule9_nonresearch_fund_scope": [
+      "9.1.2"
+    ],
+    "rule:baoxiao_rules.r9_intl_nonresearch_item_caps_ok": [
+      "9.1.2"
+    ],
+    "rule:baoxiao_rules.rule9_nonresearch_standard_constraints_ok": [],
+    "rule:baoxiao_rules.r9_quota_nonresearch_domestic": [
+      "9.1.2"
+    ],
+    "rule:baoxiao_rules.rule10_3_required_documents": [
+      "10.3"
+    ],
+    "rule:baoxiao_rules.rule10_1_comprehensive_quota": [
+      "10.1"
+    ],
+    "rule:baoxiao_rules.rule10_2_duration_adjustment": [
+      "10.2"
+    ],
+    "rule:baoxiao_rules.rule10_4_instructor_fees": [
+      "10.4"
+    ],
+    "rule:baoxiao_rules.rule_10_evaluate": [],
+    "rule:baoxiao_cases.eval_by_claim_type1_rule10": [],
+    "rule:baoxiao_rules.rule11_5_application_requirements": [
+      "11.4"
+    ],
+    "rule:baoxiao_rules.rule11_1_unmarried_staff": [
+      "11.1"
+    ],
+    "rule:baoxiao_rules.rule11_2_married_staff_spouse": [
+      "11.1"
+    ],
+    "rule:baoxiao_rules.rule11_3_married_staff_parents": [
+      "11.2"
+    ],
+    "rule:baoxiao_rules.rule11_4_reimbursable_expenses": [
+      "11.3"
+    ],
+    "rule:baoxiao_rules.rule_11_evaluate": [],
+    "rule:baoxiao_cases.eval_by_claim_type1_rule11": [],
+    "rule:baoxiao_rules.rule13_lecture_unknown": [
+      "13.2"
+    ],
+    "rule:baoxiao_rules.rule13_a_review_defense_within_cap": [
+      "13.1"
+    ],
+    "rule:baoxiao_rules.rule13_lecture_hour_cap_by_role": [
+      "13.2"
+    ],
+    "rule:baoxiao_rules.rule13_b_lecture_known_and_within_cap": [
+      "13.2"
+    ],
+    "rule:baoxiao_rules.rule13_consult_is_senior_role": [
+      "13.3"
+    ],
+    "rule:baoxiao_rules.rule13_c_consultation_within_cap": [
+      "13.3"
+    ],
+    "rule:baoxiao_rules.rule_13_evaluate": [],
+    "rule:baoxiao_cases.eval_by_claim_type1_rule13": [],
+    "rule:baoxiao_rules.rule14_1_approval_requirements": [
+      "14.1"
+    ],
+    "rule:baoxiao_rules.rule14_2_payment_discipline": [
+      "14.2"
+    ],
+    "rule:baoxiao_rules.rule14_3_first_payment_required_docs": [
+      "14.3"
+    ],
+    "rule:baoxiao_rules.rule14_4_final_settlement_required_docs": [
+      "14.4"
+    ],
+    "rule:baoxiao_rules.rule14_3_first_payment_partial_trigger": [
+      "14.3"
+    ],
+    "rule:baoxiao_rules.rule14_4_final_settlement_partial_trigger": [
+      "14.4"
+    ],
+    "rule:baoxiao_rules.rule_14_evaluate": [],
+    "rule:baoxiao_cases.eval_by_claim_type1_rule14": [],
+    "rule:baoxiao_rules.rule15_1_warranty_refund": [
+      "15.1"
+    ],
+    "rule:baoxiao_rules.rule_15_evaluate": [],
+    "rule:baoxiao_cases.eval_by_claim_type1_rule15": [],
+    "rule:baoxiao_rules.rule15_2_cost_review_fee": [
+      "15.2"
+    ],
+    "rule:baoxiao_rules.rule16_1_fixed_asset": [
+      "16.1"
+    ],
+    "rule:baoxiao_rules.rule_16_evaluate": [],
+    "rule:baoxiao_cases.eval_by_claim_type1_rule16": [],
+    "rule:baoxiao_rules.rule16_2_intangible_asset": [
+      "16.2"
+    ],
+    "rule:baoxiao_rules.rule16_3_purchased_material": [
+      "16.3"
+    ],
+    "rule:baoxiao_rules.rule17_1_maintenance_requirements": [
+      "17"
+    ],
+    "rule:baoxiao_rules.rule_17_evaluate": [],
+    "rule:baoxiao_cases.eval_by_claim_type1_rule17": [],
+    "rule:baoxiao_rules.rule18_1_basic_requirements": [
+      "18.1"
+    ],
+    "rule:baoxiao_rules.rule18_2_accommodation_rules": [
+      "18.2"
+    ],
+    "rule:baoxiao_rules.rule18_3_meal_standards": [
+      "18.3"
+    ],
+    "rule:baoxiao_rules.rule18_4_transportation_rules": [
+      "18.4"
+    ],
+    "rule:baoxiao_rules.rule_18_evaluate": [],
+    "rule:baoxiao_cases.eval_by_claim_type1_rule18": [],
+    "rule:baoxiao_rules.r19_0_scope_ok": [],
+    "rule:baoxiao_rules.r19_1_basic_docs_ok": [
+      "19.3"
+    ],
+    "rule:baoxiao_rules.r19_1b_domestic_visit_docs_ok": [
+      "19.2"
+    ],
+    "rule:baoxiao_rules.r19_1c_domestic_trip_link_rule7_ok": [
+      "19.2"
+    ],
+    "rule:baoxiao_rules.r19_rule9_hard_link_ok": [
+      "19.3"
+    ],
+    "rule:baoxiao_rules.rule19_hard_constraints_ok": [],
+    "rule:baoxiao_rules.r19_2_lodging_ok": [
+      "19.3"
+    ],
+    "rule:baoxiao_rules.r19_daily_meal_cap": [
+      "19.3"
+    ],
+    "rule:baoxiao_rules.r19_3_daily_meal_ok": [
+      "19.3"
+    ],
+    "rule:baoxiao_rules.r19_banquet_cap": [
+      "19.3"
+    ],
+    "rule:baoxiao_rules.r19_4_banquet_ok": [
+      "19.3"
+    ],
+    "rule:baoxiao_rules.r19_5_transport_ok": [
+      "19.3"
+    ],
+    "rule:baoxiao_rules.r19_6_gift_ok": [
+      "19.3"
+    ],
+    "rule:baoxiao_rules.r19_7_companion_ok": [
+      "19.3"
+    ],
+    "rule:baoxiao_rules.r19_8_staff_mismeal_ok": [
+      "19.3"
+    ],
+    "rule:baoxiao_rules.r19_rule9_standard_link_ok": [
+      "19.3"
+    ],
+    "rule:baoxiao_rules.rule19_standard_constraints_ok": [],
+    "rule:baoxiao_rules.rule_19_evaluate": [],
+    "rule:baoxiao_cases.eval_by_claim_type1_rule19": [],
+    "rule:baoxiao_rules.rule20_1_special_business": [
+      "20.1"
+    ],
+    "rule:baoxiao_rules.rule20_2_borrower_eligibility": [
+      "20.2"
+    ],
+    "rule:baoxiao_rules.rule20_3_borrower_exclusion": [
+      "20.3"
+    ],
+    "rule:baoxiao_rules.rule20_4_writeoff_deadline": [
+      "20.4"
+    ],
+    "rule:baoxiao_rules.rule20_5_outstanding_loan_control": [
+      "20.5"
+    ],
+    "rule:baoxiao_rules.rule_20_evaluate": [],
+    "rule:baoxiao_cases.eval_by_claim_type1_rule20": [],
+    "rule:baoxiao_rules.rule_7_evaluate_gated": [],
+    "rule:baoxiao_rules.rule7v2_intercity_doc_ok": [
+      "7.4"
+    ],
+    "rule:baoxiao_rules.rule7v2_lodging_doc_ok": [
+      "7.4"
+    ],
+    "rule:baoxiao_rules.rule7v2_lodging_cap_total": [
+      "7.3"
+    ],
+    "rule:baoxiao_rules.rule7v2_reimbursable_amount": [],
+    "rule:baoxiao_rules.rule7v2_amount_decision_gated": [],
+    "rule:baoxiao_cases.eval_sr_claim_new": []
+  },
+  "finance_invoice_fact_mapping": {
+    "invoice_lacks_supervision_seal": "4.1",
+    "invoice_scope_mismatch": "4.2",
+    "invoice_content_incomplete": "4.3",
+    "invoice_missing_date": "4.3",
+    "invoice_missing_quantity": "4.3",
+    "invoice_missing_unit_price": "4.3",
+    "invoice_missing_amount": "4.3",
+    "invoice_missing_description": "4.3",
+    "invoice_missing_payee_seal": "4.4",
+    "invoice_amount_figures_words_inconsistent": "4.5",
+    "invoice_altered": "4.6",
+    "invoice_forged": "4.6",
+    "invoice_fraudulent": "4.6",
+    "taxi_receipts_consecutive_numbers": "4.7",
+    "taxi_receipts_large_quantity_same_taxi": "4.7",
+    "reimbursement_procedure_incomplete": "4.8"
+  },
+  "finance_mapping_sha256": "23282f4c9ed7ad5641d8946ce757fb7d39b1dbc485a0a082c9f0f5178ea64c6d",
+  "finance_policy_sha256": "05b9d3ac03eec19f3379c598fc41919bbe43e06bfc591c614be18ffe7a60dc2b",
+  "scored_model_case_pairs": 15169,
+  "rule_reference_sha256": "681eacb1e96c4b432d300fef07fd81a5d4e1c2f83d07e5e50027afc5eda3adff",
+  "scores_sha256": "d7acb0b6a20a441ed29950e958c1bc0d47973069741dff383cb0715de1aa38e3",
+  "script_sha256": "50ca34b60065142a5ee9cc325a142a7cafd49e57184da40b3514263e88433e59",
+  "law_section_v3_merge_script_sha256": "233ba9a7e30a23a879d107dd1cee38c7c3c4c70c83c8c744c6de4a64de0917d7"
+}

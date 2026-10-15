@@ -1,0 +1,714 @@
+{
+  "bundle_name": "subterranean_signal_dispatch_rules",
+  "bundle_dir": "rule_bundles/subterranean_signal_dispatch_rules",
+  "person_symbol": "actor",
+  "person_name_pool": [
+    "Alex",
+    "Bailey",
+    "Cameron",
+    "Drew",
+    "Emery",
+    "Gray",
+    "Hayden",
+    "Kai",
+    "Morgan",
+    "Reese"
+  ],
+  "article_order": [
+    "Art_Unauthorized_Signal_Change",
+    "Art_Route_Misdirection",
+    "Art_Sealed_Track_Breach",
+    "Art_Dispatch_Order_Authorization",
+    "Art_Collapse_Avoidance_Authorization",
+    "Art_Sensor_Fault_Exemption"
+  ],
+  "articles": {
+    "Art_Unauthorized_Signal_Change": {
+      "title": "Unauthorized Signal Change",
+      "result": "signal_reprimand",
+      "rule_text": "The unauthorized signal change article carries a signal reprimand."
+    },
+    "Art_Route_Misdirection": {
+      "title": "Route Misdirection",
+      "result": "route_suspension",
+      "rule_text": "The route misdirection article carries route suspension."
+    },
+    "Art_Sealed_Track_Breach": {
+      "title": "Sealed Track Breach",
+      "result": "tunnel_access_ban",
+      "rule_text": "The sealed track breach article carries a tunnel access ban."
+    },
+    "Art_Dispatch_Order_Authorization": {
+      "title": "Dispatch Order Authorization",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The dispatch order authorization article carries no criminal liability."
+    },
+    "Art_Collapse_Avoidance_Authorization": {
+      "title": "Collapse Avoidance Authorization",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The collapse avoidance authorization article carries no criminal liability."
+    },
+    "Art_Sensor_Fault_Exemption": {
+      "title": "Sensor Fault Exemption",
+      "result": "No_Criminal_Liability",
+      "rule_text": "The sensor fault exemption article carries no criminal liability."
+    }
+  },
+  "nodes": {
+    "swaps_blue_signal_tile": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} swapped a blue signal tile in the lower tunnel.",
+      "order": 10
+    },
+    "lights_reverse_tunnel_lamp": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} lit a reverse tunnel lamp.",
+      "order": 12
+    },
+    "inserts_red_route_key": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} inserted a red route key into the signal panel.",
+      "order": 14
+    },
+    "flips_black_signal_lever": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} flipped a black signal lever.",
+      "order": 16
+    },
+    "ghost_train_changes_track": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "The ghost train changed track.",
+      "negative_text": "The ghost train did not change track.",
+      "order": 20
+    },
+    "dispatch_board_repaints_route": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "The dispatch board repainted the train route.",
+      "negative_text": "The dispatch board did not repaint the train route.",
+      "order": 22
+    },
+    "moves_seal_marker": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} moved a seal marker from the track gate.",
+      "order": 30
+    },
+    "enters_sealed_track": {
+      "layer": "atomic",
+      "assumable_values": [
+        true
+      ],
+      "case_text_policy": "positive_only",
+      "positive_text": "{name} entered the sealed track area.",
+      "order": 32
+    },
+    "seal_alarm_rings": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "The seal alarm rang.",
+      "negative_text": "The seal alarm did not ring.",
+      "order": 34
+    },
+    "holds_dispatch_order": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "{name} held a dispatch order.",
+      "negative_text": "{name} did not hold a dispatch order.",
+      "order": 40
+    },
+    "logs_order_in_signal_book": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "holds_dispatch_order"
+      ],
+      "positive_text": "{name} logged the order in the signal book.",
+      "negative_text": "{name} did not log the order in the signal book.",
+      "order": 42
+    },
+    "control_room_confirms_order": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "holds_dispatch_order"
+      ],
+      "positive_text": "The control room confirmed the order.",
+      "negative_text": "The control room did not confirm the order.",
+      "order": 44
+    },
+    "detects_ceiling_collapse": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "A ceiling collapse was detected near the track.",
+      "negative_text": "No ceiling collapse was detected near the track.",
+      "order": 50
+    },
+    "ground_sonar_marks_collapse": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "Ground sonar marked a collapse pocket near the track.",
+      "negative_text": "Ground sonar did not mark a collapse pocket near the track.",
+      "order": 51
+    },
+    "redirects_lamp_temporarily": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "detects_ceiling_collapse"
+      ],
+      "positive_text": "{name} redirected the tunnel lamp temporarily.",
+      "negative_text": "{name} did not redirect the tunnel lamp temporarily.",
+      "order": 52
+    },
+    "reports_change_to_control_room": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "redirects_lamp_temporarily"
+      ],
+      "positive_text": "{name} reported the change to the control room.",
+      "negative_text": "{name} did not report the change to the control room.",
+      "order": 54
+    },
+    "sensor_reports_fault": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "positive_text": "The tunnel sensor reported a fault.",
+      "negative_text": "The tunnel sensor did not report a fault.",
+      "order": 60
+    },
+    "panel_record_shows_no_hand_switch": {
+      "layer": "atomic",
+      "assumable_values": [
+        true,
+        false
+      ],
+      "case_text_policy": "always",
+      "case_text_requires_positive": [
+        "sensor_reports_fault"
+      ],
+      "positive_text": "The panel record showed no hand switch.",
+      "negative_text": "The panel record did not show absence of a hand switch.",
+      "order": 62
+    }
+  },
+  "article_trigger_mappings": [
+    {
+      "article": "Art_Unauthorized_Signal_Change",
+      "source_predicate": "unauthorized_signal_change_basis"
+    },
+    {
+      "article": "Art_Route_Misdirection",
+      "source_predicate": "route_misdirection_basis"
+    },
+    {
+      "article": "Art_Sealed_Track_Breach",
+      "source_predicate": "sealed_track_breach_basis"
+    },
+    {
+      "article": "Art_Dispatch_Order_Authorization",
+      "source_predicate": "dispatch_order_authorization_basis"
+    },
+    {
+      "article": "Art_Collapse_Avoidance_Authorization",
+      "source_predicate": "collapse_avoidance_authorization_basis"
+    },
+    {
+      "article": "Art_Sensor_Fault_Exemption",
+      "source_predicate": "sensor_fault_exemption_basis"
+    }
+  ],
+  "rules": [
+    {
+      "name": "signal_actions_imply_signal_tampering",
+      "head": {
+        "predicate": "signal_tampering",
+        "value": true
+      },
+      "body": {
+        "any_of_groups": [
+          [
+            {
+              "predicate": "swaps_blue_signal_tile",
+              "value": true
+            },
+            {
+              "predicate": "lights_reverse_tunnel_lamp",
+              "value": true
+            },
+            {
+              "predicate": "inserts_red_route_key",
+              "value": true
+            },
+            {
+              "predicate": "flips_black_signal_lever",
+              "value": true
+            }
+          ]
+        ]
+      },
+      "natural_text": "Signal tampering includes swapping a blue signal tile, lighting a reverse tunnel lamp, inserting a red route key, or flipping a black signal lever."
+    },
+    {
+      "name": "track_change_implies_train_rerouting",
+      "head": {
+        "predicate": "train_rerouting",
+        "value": true
+      },
+      "body": {
+        "any_of_groups": [
+          [
+            {
+              "predicate": "ghost_train_changes_track",
+              "value": true
+            },
+            {
+              "predicate": "dispatch_board_repaints_route",
+              "value": true
+            }
+          ]
+        ]
+      },
+      "natural_text": "Train rerouting is present when the ghost train changes track or the dispatch board repaints the route."
+    },
+    {
+      "name": "tampering_and_rerouting_imply_route_misdirection_risk",
+      "head": {
+        "predicate": "route_misdirection_risk",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "signal_tampering",
+            "value": true
+          },
+          {
+            "predicate": "train_rerouting",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "Route misdirection risk requires signal tampering together with train rerouting."
+    },
+    {
+      "name": "marker_and_track_entry_imply_seal_breach",
+      "head": {
+        "predicate": "seal_breach",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "moves_seal_marker",
+            "value": true
+          },
+          {
+            "predicate": "enters_sealed_track",
+            "value": true
+          },
+          {
+            "predicate": "seal_alarm_rings",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "Seal breach requires moving a seal marker, entering the sealed track area, and the seal alarm ringing."
+    },
+    {
+      "name": "order_and_log_imply_dispatch_authority",
+      "head": {
+        "predicate": "dispatch_authority",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "holds_dispatch_order",
+            "value": true
+          },
+          {
+            "predicate": "logs_order_in_signal_book",
+            "value": true
+          },
+          {
+            "predicate": "control_room_confirms_order",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "Dispatch authority requires a dispatch order, a matching signal-book entry, and confirmation from the control room."
+    },
+    {
+      "name": "collapse_facts_imply_collapse_avoidance",
+      "head": {
+        "predicate": "collapse_avoidance",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "redirects_lamp_temporarily",
+            "value": true
+          },
+          {
+            "predicate": "reports_change_to_control_room",
+            "value": true
+          }
+        ],
+        "any_of_groups": [
+          [
+            {
+              "predicate": "detects_ceiling_collapse",
+              "value": true
+            },
+            {
+              "predicate": "ground_sonar_marks_collapse",
+              "value": true
+            }
+          ]
+        ]
+      },
+      "natural_text": "Collapse avoidance requires a collapse indication, temporary lamp redirection, and a report to the control room."
+    },
+    {
+      "name": "sensor_facts_imply_sensor_fault_condition",
+      "head": {
+        "predicate": "sensor_fault_condition",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "sensor_reports_fault",
+            "value": true
+          },
+          {
+            "predicate": "panel_record_shows_no_hand_switch",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "A sensor fault condition requires a sensor fault report and a panel record showing no hand switch."
+    },
+    {
+      "name": "unauthorized_signal_change_basis_rule",
+      "head": {
+        "predicate": "unauthorized_signal_change_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "signal_tampering",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The unauthorized signal change basis is present when signal tampering occurs."
+    },
+    {
+      "name": "route_misdirection_basis_rule",
+      "head": {
+        "predicate": "route_misdirection_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "signal_tampering",
+            "value": true
+          },
+          {
+            "predicate": "train_rerouting",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The route misdirection basis requires signal tampering together with train rerouting."
+    },
+    {
+      "name": "sealed_track_breach_basis_rule",
+      "head": {
+        "predicate": "sealed_track_breach_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "seal_breach",
+            "value": true
+          },
+          {
+            "predicate": "route_misdirection_risk",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The sealed track breach basis requires breach of a sealed track condition and route-misdirection risk."
+    },
+    {
+      "name": "dispatch_order_authorization_basis_rule",
+      "head": {
+        "predicate": "dispatch_order_authorization_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "dispatch_authority",
+            "value": true
+          },
+          {
+            "predicate": "signal_tampering",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The dispatch order authorization basis requires dispatch authority connected to signal tampering."
+    },
+    {
+      "name": "collapse_avoidance_authorization_basis_rule",
+      "head": {
+        "predicate": "collapse_avoidance_authorization_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "collapse_avoidance",
+            "value": true
+          },
+          {
+            "predicate": "signal_tampering",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The collapse avoidance authorization basis requires collapse-avoidance action connected to signal tampering."
+    },
+    {
+      "name": "sensor_fault_exemption_basis_rule",
+      "head": {
+        "predicate": "sensor_fault_exemption_basis",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "sensor_fault_condition",
+            "value": true
+          },
+          {
+            "predicate": "train_rerouting",
+            "value": true
+          }
+        ]
+      },
+      "natural_text": "The sensor fault exemption basis requires a sensor-fault condition connected to train rerouting."
+    },
+    {
+      "name": "basis_triggers_unauthorized_signal_change",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Unauthorized_Signal_Change",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "unauthorized_signal_change_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_route_misdirection",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Route_Misdirection",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "route_misdirection_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_sealed_track_breach",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Sealed_Track_Breach",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "sealed_track_breach_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_dispatch_order_authorization",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Dispatch_Order_Authorization",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "dispatch_order_authorization_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_collapse_avoidance_authorization",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Collapse_Avoidance_Authorization",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "collapse_avoidance_authorization_basis",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "basis_triggers_sensor_fault_exemption",
+      "head": {
+        "predicate": "article_triggered",
+        "article": "Art_Sensor_Fault_Exemption",
+        "value": true
+      },
+      "body": {
+        "all_of": [
+          {
+            "predicate": "sensor_fault_exemption_basis",
+            "value": true
+          }
+        ]
+      }
+    }
+  ],
+  "conflicts": {
+    "stronger_than": [
+      [
+        "Art_Route_Misdirection",
+        "Art_Unauthorized_Signal_Change"
+      ],
+      [
+        "Art_Sealed_Track_Breach",
+        "Art_Unauthorized_Signal_Change"
+      ],
+      [
+        "Art_Sealed_Track_Breach",
+        "Art_Route_Misdirection"
+      ]
+    ],
+    "exception_to": [
+      [
+        "Art_Dispatch_Order_Authorization",
+        "Art_Unauthorized_Signal_Change"
+      ],
+      [
+        "Art_Dispatch_Order_Authorization",
+        "Art_Route_Misdirection"
+      ],
+      [
+        "Art_Collapse_Avoidance_Authorization",
+        "Art_Unauthorized_Signal_Change"
+      ],
+      [
+        "Art_Collapse_Avoidance_Authorization",
+        "Art_Route_Misdirection"
+      ],
+      [
+        "Art_Collapse_Avoidance_Authorization",
+        "Art_Sealed_Track_Breach"
+      ],
+      [
+        "Art_Sensor_Fault_Exemption",
+        "Art_Route_Misdirection"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "model": "MiniMax-M3",
+  "endpoint": "https://api.minimaxi.com/v1/chat/completions",
+  "cases_per_mode": 1379,
+  "law_per_mode": 300,
+  "finance_per_mode": 1079,
+  "total_requests": 2758,
+  "max_completion_tokens": 32000,
+  "max_attempts_per_case_per_round": 4,
+  "max_concurrency": 64,
+  "socket_timeout_seconds": 600,
+  "stream_timeout_seconds": 3600,
+  "on_mode": "adaptive (official hosted API rejects enabled); actual thinking evidence logged, including zero-thinking responses",
+  "off_mode": "disabled",
+  "reasoning_split": true,
+  "temperature": 1.0,
+  "top_p": 0.95,
+  "prompt_source": "evaluation/results/deepseek_v4_flash_paired/requests.jsonl",
+  "prompt_source_sha256": "b3bd1a7e79e26a98c70b9cb9d768757bdb442c47ac783137990e6e189115391c",
+  "credentials": "read into process memory only; never persisted",
+  "metrics": "same full evidence reference paths and explicit main-rule-ID recall as existing table",
+  "documentation_urls": [
+    "https://platform.minimax.io/docs/api-reference/text-openai-api",
+    "https://github.com/MiniMax-AI/MiniMax-M3",
+    "https://github.com/MiniMax-AI/MiniMax-MCP"
+  ],
+  "response_selection": "first valid response per setting/case in append-log order; no selection on correctness",
+  "stream_completion": "DONE marker or native finish_reason=stop followed by final usage and successful base_resp",
+  "pilot_protocol": "4 actual setting/domain cases reused; duplicate responses caused by initial DONE-marker mismatch retained in raw log but not selected"
+}

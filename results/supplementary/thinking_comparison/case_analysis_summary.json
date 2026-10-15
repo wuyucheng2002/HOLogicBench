@@ -1,0 +1,205 @@
+{
+  "Qwen": {
+    "n": 12,
+    "verdicts": {
+      "verified_improvement": 3,
+      "mixed_or_uncertain": 4,
+      "evaluation_or_spec_issue": 3,
+      "verified_regression": 2
+    },
+    "gain_cases": 5,
+    "loss_cases": 7,
+    "by_transition": {
+      "gain": {
+        "verified_improvement": 3,
+        "mixed_or_uncertain": 2
+      },
+      "loss": {
+        "mixed_or_uncertain": 2,
+        "evaluation_or_spec_issue": 3,
+        "verified_regression": 2
+      }
+    },
+    "mechanisms_by_verdict": {
+      "evaluation_or_spec_issue": {
+        "spec_ambiguity": 1,
+        "applicability_branch": 1,
+        "evaluation_issue": 2,
+        "exception_priority": 1,
+        "unsupported_assumption": 1
+      },
+      "mixed_or_uncertain": {
+        "unsupported_assumption": 2,
+        "applicability_branch": 2,
+        "output_consistency": 1,
+        "quota_arithmetic": 1,
+        "constraint_to_conclusion": 1
+      },
+      "verified_improvement": {
+        "constraint_to_conclusion": 3,
+        "object_binding": 1,
+        "quota_arithmetic": 2
+      },
+      "verified_regression": {
+        "quota_arithmetic": 1,
+        "constraint_to_conclusion": 1,
+        "exception_priority": 1
+      }
+    }
+  },
+  "MiniMax": {
+    "n": 20,
+    "verdicts": {
+      "verified_improvement": 7,
+      "mixed_or_uncertain": 7,
+      "evaluation_or_spec_issue": 5,
+      "verified_regression": 1
+    },
+    "gain_cases": 10,
+    "loss_cases": 10,
+    "by_transition": {
+      "gain": {
+        "verified_improvement": 7,
+        "mixed_or_uncertain": 3
+      },
+      "loss": {
+        "mixed_or_uncertain": 4,
+        "evaluation_or_spec_issue": 5,
+        "verified_regression": 1
+      }
+    },
+    "mechanisms_by_verdict": {
+      "evaluation_or_spec_issue": {
+        "spec_ambiguity": 3,
+        "applicability_branch": 1,
+        "constraint_to_conclusion": 1,
+        "evaluation_issue": 3,
+        "exception_priority": 1,
+        "unsupported_assumption": 1
+      },
+      "mixed_or_uncertain": {
+        "spec_ambiguity": 7,
+        "unsupported_assumption": 2,
+        "applicability_branch": 2,
+        "exception_priority": 3,
+        "constraint_to_conclusion": 2
+      },
+      "verified_improvement": {
+        "output_consistency": 4,
+        "applicability_branch": 2,
+        "quota_arithmetic": 1,
+        "constraint_to_conclusion": 3,
+        "exception_priority": 2
+      },
+      "verified_regression": {
+        "constraint_to_conclusion": 1,
+        "unsupported_assumption": 1
+      }
+    }
+  },
+  "V4Flash": {
+    "n": 20,
+    "verdicts": {
+      "verified_improvement": 7,
+      "mixed_or_uncertain": 5,
+      "verified_regression": 2,
+      "evaluation_or_spec_issue": 6
+    },
+    "gain_cases": 10,
+    "loss_cases": 10,
+    "by_transition": {
+      "gain": {
+        "verified_improvement": 7,
+        "evaluation_or_spec_issue": 2,
+        "mixed_or_uncertain": 1
+      },
+      "loss": {
+        "mixed_or_uncertain": 4,
+        "verified_regression": 2,
+        "evaluation_or_spec_issue": 4
+      }
+    },
+    "mechanisms_by_verdict": {
+      "evaluation_or_spec_issue": {
+        "object_binding": 1,
+        "evaluation_issue": 6,
+        "spec_ambiguity": 6,
+        "exception_priority": 4,
+        "applicability_branch": 1
+      },
+      "mixed_or_uncertain": {
+        "unsupported_assumption": 4,
+        "object_binding": 4,
+        "spec_ambiguity": 5,
+        "constraint_to_conclusion": 1,
+        "applicability_branch": 1,
+        "quota_arithmetic": 1,
+        "exception_priority": 2
+      },
+      "verified_improvement": {
+        "quota_arithmetic": 2,
+        "constraint_to_conclusion": 4,
+        "applicability_branch": 2,
+        "output_consistency": 3,
+        "exception_priority": 2,
+        "unsupported_assumption": 2
+      },
+      "verified_regression": {
+        "unsupported_assumption": 2,
+        "applicability_branch": 1,
+        "constraint_to_conclusion": 1
+      }
+    }
+  },
+  "ALL": {
+    "n": 52,
+    "unique_source_questions": 44,
+    "outputs": 104,
+    "verdicts": {
+      "verified_improvement": 17,
+      "mixed_or_uncertain": 16,
+      "evaluation_or_spec_issue": 14,
+      "verified_regression": 5
+    },
+    "gain_cases": 25,
+    "loss_cases": 27,
+    "mechanisms_by_verdict": {
+      "evaluation_or_spec_issue": {
+        "spec_ambiguity": 10,
+        "applicability_branch": 3,
+        "evaluation_issue": 11,
+        "exception_priority": 6,
+        "unsupported_assumption": 2,
+        "constraint_to_conclusion": 1,
+        "object_binding": 1
+      },
+      "mixed_or_uncertain": {
+        "unsupported_assumption": 8,
+        "applicability_branch": 5,
+        "output_consistency": 1,
+        "quota_arithmetic": 2,
+        "constraint_to_conclusion": 4,
+        "spec_ambiguity": 12,
+        "exception_priority": 5,
+        "object_binding": 4
+      },
+      "verified_improvement": {
+        "constraint_to_conclusion": 10,
+        "object_binding": 1,
+        "quota_arithmetic": 5,
+        "output_consistency": 7,
+        "applicability_branch": 4,
+        "exception_priority": 4,
+        "unsupported_assumption": 2
+      },
+      "verified_regression": {
+        "quota_arithmetic": 1,
+        "constraint_to_conclusion": 3,
+        "exception_priority": 1,
+        "unsupported_assumption": 3,
+        "applicability_branch": 1
+      }
+    }
+  },
+  "method": "Astra model judgments, not completed human review. Selected cases only; no population mechanism prevalence. Mechanisms may overlap. Exact quote and transition checks passed."
+}
